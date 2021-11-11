@@ -4,6 +4,8 @@ import { Connection, Keypair, PublicKey } from "@solana/web3.js";
 import * as fs from "fs/promises";
 import { groupBy, mapValues } from "lodash";
 
+import { KNOWN_REWARDERS } from "./constants";
+
 const serialize = (_: unknown, v: unknown) => {
   if (v instanceof PublicKey) {
     return v.toString();
@@ -24,6 +26,7 @@ export const fetchAllRewarders = async (): Promise<void> => {
   const rewardersJSON = allRegistries.map((reg) => ({
     rewarder: reg.account.rewarder,
     tokens: reg.account.tokens.filter((tok) => !tok.equals(PublicKey.default)),
+    info: KNOWN_REWARDERS[reg.account.rewarder.toString()],
   }));
 
   const rewardersByMint = mapValues(

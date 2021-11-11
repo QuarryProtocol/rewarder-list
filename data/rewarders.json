@@ -57,7 +57,8 @@
       "CLPKiHjoU5HwpPK5L6MBXHKqFsuzPr47dM1w4An3Lnvv",
       "HLPPmd7NzTTNiqKR6rAZYgrH9VhU47kxftecQSk2oD6J",
       "HLPC9r4gbeP6KagT3qJLzFj7iWcYTJs245k9tuHFQGyR"
-    ]
+    ],
+    "info": { "name": "Saber", "color": "#6966FB" }
   },
   {
     "rewarder": "4NCKdvCfgow7dxVvWcSCj9u22FL9rbgwNiRjQXzfpcDr",
@@ -112,7 +113,8 @@
       "DauSzTYjqWHtQu2eY7TdeFXz4RjB1wqftGdkgheoSfjK",
       "41bWR2kDEEbnbE6SFfabJp7PuTYJsNKa6PyMcZTWz8Wm",
       "BAjkwBMsY9T4wiJ8nGeMhg5rkbzo1Qp9Vcvzsh3SjhHf"
-    ]
+    ],
+    "info": { "name": "Sunny Aggregator", "color": "#DC723F" }
   },
   {
     "rewarder": "FwzgeCBvYjreUsH8nMXZ7ysijz5EpjXWF5aQh4SkWFnH",
