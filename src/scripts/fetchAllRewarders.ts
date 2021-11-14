@@ -1,10 +1,12 @@
 import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
+import type { Network } from "@saberhq/solana-contrib";
 import { SignerWallet, SolanaProvider } from "@saberhq/solana-contrib";
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
 import * as fs from "fs/promises";
 import { groupBy, mapValues } from "lodash";
 
-import { KNOWN_REWARDERS } from "./constants";
+import rewarderList from "../config/rewarder-list.json";
+import type { RedemptionMethod, RewarderInfo } from "../types";
 
 const serialize = (_: unknown, v: unknown) => {
   if (v instanceof PublicKey) {
@@ -12,6 +14,26 @@ const serialize = (_: unknown, v: unknown) => {
   }
   return v;
 };
+
+interface RewarderInfoRaw extends Omit<RewarderInfo, "networks" | "redeemer"> {
+  networks: string[];
+  redeemer?: Omit<NonNullable<RewarderInfo["redeemer"]>, "method"> & {
+    method: string;
+  };
+}
+
+const KNOWN_REWARDERS_RAW: RewarderInfoRaw[] = rewarderList;
+
+const KNOWN_REWARDERS: RewarderInfo[] = KNOWN_REWARDERS_RAW.map((kr) => ({
+  ...kr,
+  networks: kr.networks as Network[],
+  redeemer: kr.redeemer
+    ? {
+        ...kr.redeemer,
+        method: kr.redeemer.method as RedemptionMethod,
+      }
+    : undefined,
+}));
 
 export const fetchAllRewarders = async (): Promise<void> => {
   const provider = SolanaProvider.load({
@@ -26,7 +48,9 @@ export const fetchAllRewarders = async (): Promise<void> => {
   const rewardersJSON = allRegistries.map((reg) => ({
     rewarder: reg.account.rewarder,
     tokens: reg.account.tokens.filter((tok) => !tok.equals(PublicKey.default)),
-    info: KNOWN_REWARDERS[reg.account.rewarder.toString()],
+    info: KNOWN_REWARDERS.find(
+      (r) => r.address === reg.account.rewarder.toString()
+    ),
   }));
 
   const rewardersByMint = mapValues(
@@ -53,6 +77,7 @@ export const fetchAllRewarders = async (): Promise<void> => {
     "data/rewarders-by-mint.json",
     JSON.stringify(rewardersByMint)
   );
+  await fs.writeFile("data/rewarder-list.json", JSON.stringify(rewarderList));
 };
 
 fetchAllRewarders().catch((err) => {

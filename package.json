@@ -37,7 +37,7 @@
     "lodash": "^4.17.21"
   },
   "scripts": {
-    "fetch-all-rewarders": "ts-node src/fetchAllRewarders.ts",
+    "fetch-all-rewarders": "ts-node src/scripts/fetchAllRewarders.ts",
     "prepare": "husky install"
   },
   "lint-staged": {
