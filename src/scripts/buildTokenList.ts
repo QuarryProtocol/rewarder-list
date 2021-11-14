@@ -17,6 +17,22 @@ const TOKEN_LIST_URLS = [
   "https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/solana.tokenlist.json",
 ];
 
+const makeReplicaTokenInfo = (
+  mint: PublicKey,
+  primary: TokenInfo
+): TokenInfo => ({
+  ...primary,
+  symbol: `qr${primary.symbol}`,
+  name: `${primary.name} (Replica)`,
+  address: mint.toString(),
+  tags: [...(primary.tags ?? []), "quarry-merge-mine-replica"],
+  extensions: {
+    ...primary.extensions,
+    underlyingTokens: [primary.address],
+    source: "quarry-merge-mine-replica",
+  },
+});
+
 export const buildTokenList = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
 
@@ -91,13 +107,10 @@ export const buildTokenList = async (network: Network): Promise<void> => {
           (tok) => tok.address === replicaMapping.underlyingMint.toString()
         );
         if (existingToken) {
-          return {
-            ...existingToken,
-            symbol: `qr${existingToken.symbol}`,
-            name: `${existingToken.name} (Replica)`,
-            address: replicaMapping.replicaMint.toString(),
-            tags: [...(existingToken.tags ?? []), "quarry-merge-mine-replica"],
-          };
+          return makeReplicaTokenInfo(
+            replicaMapping.replicaMint,
+            existingToken
+          );
         } else {
           missingReplicaMappings.push(replicaMapping);
         }
@@ -129,13 +142,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
         existingToken,
         `missing ${underlyingMint.toString()} for ${replicaMint.toString()}`
       );
-      return {
-        ...existingToken,
-        symbol: `qr${existingToken.symbol}`,
-        name: `${existingToken.name} (Replica)`,
-        address: replicaMint.toString(),
-        tags: [...(existingToken.tags ?? []), "quarry-merge-mine-replica"],
-      };
+      return makeReplicaTokenInfo(replicaMint, existingToken);
     }
   );
 
