@@ -39,6 +39,7 @@
     "tiny-invariant": "^1.2.0"
   },
   "scripts": {
+    "lint": "eslint . --cache",
     "fetch-all-rewarders": "ts-node src/scripts/fetchAllRewarders.ts",
     "build-token-list": "ts-node src/scripts/buildTokenList.ts",
     "prepare": "husky install"
