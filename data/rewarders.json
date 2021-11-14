@@ -1,5 +1,66 @@
 [
   {
+    "rewarder": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
+    "tokens": [
+      "3T6Ftzvt7SLTm2HQXTtDbepsnQUxpAxxHvGWpEuGMgNM",
+      "4z5LnYfPHJEnzgyPKTkdHd2RNDnU6YUpQQsUY8QAL4oR",
+      "GVxZhiqjdiLSjSKwHtd3Fqf4YgY4vSDsgyzpA5xbq94K",
+      "HS8k4hP9PnLeKL9FYnprbPmUSNBNDm9LoGzZfWcabuAJ",
+      "3BX2cbMzQHTNrwQWcnDjJwpQQ14uq3N5hmg3k2nq5HRE",
+      "DMstNxE8CMc3ajCHHZp4VDia8QPQQpHfLBGRfTmeQLUh",
+      "5GiYdSyBkQegpqxsUUHwm4fJjd3qwdaMKt2qxVXUkbQ4",
+      "Ap8BbmNQHhHnMDX7j7YNVa4uV6pdmH2EfVC2tkfdySxk",
+      "DT26tjv9SEuSrQohJ7vSAVShy3xDqjBazGSciDYdZzNP",
+      "FU61MFJ8annMSYfA5D2V5DQ3CJ8UUFD9LXHvveSAe4SD",
+      "DhAqdjjj8aM6wakquwCeVe6KDysShnfz9uud7bHBhHEy",
+      "6J4zMS6PJ3g5p6s8fd97J3HBJucnk3crZ3yTpaRHd8SQ",
+      "5mLQTfsdDhXF7s7KYXYcKNSBWxpFVScvLUsi2F6fATMD",
+      "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
+      "9dmGtaUzYQisCzwLGJGSRexoLtwkjGZHTu8MDPff5bgP",
+      "AgSk7jnS9FNK6pLNizVtQvTHJ1NZq2KwkH7vqaPMj3qq",
+      "DNC5KD9PhqSEjbxtqNgYR4BYEFXepYHfi4zNYHu7oYpP",
+      "7jgvLxAqEYKXexwCwBXw9ztxxobe2AS9RuppfGnFXRqw",
+      "FLocut1r4ziUJuWCMjZa875XGkvhErFnEzzZC9sQve4r",
+      "C7wexfRxTm2Vc6szBF7DQDYYnEyZrpCqPbDDUK8Rwphs",
+      "HQiqXRu3YsoZDSxo73Q3GWDfRKtmm2kS49YixYQ3ojnQ",
+      "D7fk5ZZasQqXqGdsHaRoxqHkte61ubRN5HyorZddvVGt",
+      "DYBdnBx81Rr12FNE1rSCe4NWoLjhvVCcM8qYuUmioE6k",
+      "FH91oQqEoGLKhxJx1qQaHD9Jw1ND2KSCibm1Zj8Wj5Kw",
+      "CBkCh7zmjkWUVopr4t91fcMvs3ScziXf56mHXic5NM7q",
+      "aoooXdSCSi4D3hNtYffJtkktXuy4uPMe4pMJqFkA7XL",
+      "9wtUFSgXSSTP28G4QesRGkQxh8r3WW4kw98LZko16hNS",
+      "9sE6Rcaf3PBDnLhWTQ7R5sJiu6a3DuKsXFj4FGLK2CpN",
+      "HAbFcokDy82JroMCEiy8cKiRiU3FBWjM2mZksTxkDfVK",
+      "FeFQiet6qwZ95AtWxDEn4sypskxe6fmD2pi9muzoR4qy",
+      "4xtSPhhx28VfiYNiG2A1xs8cTeLYXWjcethpDsUhQd5g",
+      "HxkoCQY48GTT7hncTpATncmHwswboitC75bWMviAAgxh",
+      "EkzoVXTNw489Ru41TjmTemN7hbRgeeCp5KJ4ESTfnBUJ",
+      "7C9hvkE9BqwXbNiqMAejEwLwTCfgxpfzZi5QyLMwDmBv",
+      "FSTaurkQGVAdBbMnjwcUjAVcWaJ7YHAw2ygX6kpfxvfV",
+      "3jzooTwPcXe9jaWrYbHceK1JYX6W2qnkByQer5WRgZ5P",
+      "9zzqeZCX8xA72xFyPW4zt59r1LSfscKuzEpXViwwCi56",
+      "GFT1F4Zr7ETmuZrSmGhMAGk5rvmnD7S9g7nt2JdtwK83",
+      "6f3VcijBEeu1cNWV8BdQzoeAN4daNXpCG44PzwVRbV9Y",
+      "Bbs6aVcWKq1RcSpMD8XFSvnWwGxuWFpDpQeQhGXp6bhr",
+      "DauSzTYjqWHtQu2eY7TdeFXz4RjB1wqftGdkgheoSfjK",
+      "41bWR2kDEEbnbE6SFfabJp7PuTYJsNKa6PyMcZTWz8Wm",
+      "BAjkwBMsY9T4wiJ8nGeMhg5rkbzo1Qp9Vcvzsh3SjhHf"
+    ],
+    "info": {
+      "name": "Sunny Aggregator",
+      "color": "#DC723F",
+      "description": "Solana's cross-chain DeFi yield aggregator.",
+      "website": "https://sunny.ag"
+    }
+  },
+  {
+    "rewarder": "4NCKdvCfgow7dxVvWcSCj9u22FL9rbgwNiRjQXzfpcDr",
+    "tokens": [
+      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K"
+    ]
+  },
+  {
     "rewarder": "rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk",
     "tokens": [
       "BUSDjE9NEQ15aRFTxKFAjUf5vzqBhEgTNbYevWcSB5qp",
@@ -56,65 +117,16 @@
       "GEcowHQW46CrEkfAdbcsdt4SV7taCetZF4sFBXN4USDC",
       "CLPKiHjoU5HwpPK5L6MBXHKqFsuzPr47dM1w4An3Lnvv",
       "HLPPmd7NzTTNiqKR6rAZYgrH9VhU47kxftecQSk2oD6J",
-      "HLPC9r4gbeP6KagT3qJLzFj7iWcYTJs245k9tuHFQGyR"
+      "HLPC9r4gbeP6KagT3qJLzFj7iWcYTJs245k9tuHFQGyR",
+      "WLPyXq7WRfdWLiP4fvRfSisrfDzLiPmCeVTE6okKQWE",
+      "WLP59xUDvQMQdzC2SgPmZeRF1oj2RSvGZiQLksj4bwj"
     ],
-    "info": { "name": "Saber", "color": "#6966FB" }
-  },
-  {
-    "rewarder": "4NCKdvCfgow7dxVvWcSCj9u22FL9rbgwNiRjQXzfpcDr",
-    "tokens": [
-      "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-      "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K"
-    ]
-  },
-  {
-    "rewarder": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
-    "tokens": [
-      "3T6Ftzvt7SLTm2HQXTtDbepsnQUxpAxxHvGWpEuGMgNM",
-      "4z5LnYfPHJEnzgyPKTkdHd2RNDnU6YUpQQsUY8QAL4oR",
-      "GVxZhiqjdiLSjSKwHtd3Fqf4YgY4vSDsgyzpA5xbq94K",
-      "HS8k4hP9PnLeKL9FYnprbPmUSNBNDm9LoGzZfWcabuAJ",
-      "3BX2cbMzQHTNrwQWcnDjJwpQQ14uq3N5hmg3k2nq5HRE",
-      "DMstNxE8CMc3ajCHHZp4VDia8QPQQpHfLBGRfTmeQLUh",
-      "5GiYdSyBkQegpqxsUUHwm4fJjd3qwdaMKt2qxVXUkbQ4",
-      "Ap8BbmNQHhHnMDX7j7YNVa4uV6pdmH2EfVC2tkfdySxk",
-      "DT26tjv9SEuSrQohJ7vSAVShy3xDqjBazGSciDYdZzNP",
-      "FU61MFJ8annMSYfA5D2V5DQ3CJ8UUFD9LXHvveSAe4SD",
-      "DhAqdjjj8aM6wakquwCeVe6KDysShnfz9uud7bHBhHEy",
-      "6J4zMS6PJ3g5p6s8fd97J3HBJucnk3crZ3yTpaRHd8SQ",
-      "5mLQTfsdDhXF7s7KYXYcKNSBWxpFVScvLUsi2F6fATMD",
-      "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
-      "9dmGtaUzYQisCzwLGJGSRexoLtwkjGZHTu8MDPff5bgP",
-      "AgSk7jnS9FNK6pLNizVtQvTHJ1NZq2KwkH7vqaPMj3qq",
-      "DNC5KD9PhqSEjbxtqNgYR4BYEFXepYHfi4zNYHu7oYpP",
-      "7jgvLxAqEYKXexwCwBXw9ztxxobe2AS9RuppfGnFXRqw",
-      "FLocut1r4ziUJuWCMjZa875XGkvhErFnEzzZC9sQve4r",
-      "C7wexfRxTm2Vc6szBF7DQDYYnEyZrpCqPbDDUK8Rwphs",
-      "HQiqXRu3YsoZDSxo73Q3GWDfRKtmm2kS49YixYQ3ojnQ",
-      "D7fk5ZZasQqXqGdsHaRoxqHkte61ubRN5HyorZddvVGt",
-      "DYBdnBx81Rr12FNE1rSCe4NWoLjhvVCcM8qYuUmioE6k",
-      "FH91oQqEoGLKhxJx1qQaHD9Jw1ND2KSCibm1Zj8Wj5Kw",
-      "CBkCh7zmjkWUVopr4t91fcMvs3ScziXf56mHXic5NM7q",
-      "aoooXdSCSi4D3hNtYffJtkktXuy4uPMe4pMJqFkA7XL",
-      "9wtUFSgXSSTP28G4QesRGkQxh8r3WW4kw98LZko16hNS",
-      "9sE6Rcaf3PBDnLhWTQ7R5sJiu6a3DuKsXFj4FGLK2CpN",
-      "HAbFcokDy82JroMCEiy8cKiRiU3FBWjM2mZksTxkDfVK",
-      "FeFQiet6qwZ95AtWxDEn4sypskxe6fmD2pi9muzoR4qy",
-      "4xtSPhhx28VfiYNiG2A1xs8cTeLYXWjcethpDsUhQd5g",
-      "HxkoCQY48GTT7hncTpATncmHwswboitC75bWMviAAgxh",
-      "EkzoVXTNw489Ru41TjmTemN7hbRgeeCp5KJ4ESTfnBUJ",
-      "7C9hvkE9BqwXbNiqMAejEwLwTCfgxpfzZi5QyLMwDmBv",
-      "FSTaurkQGVAdBbMnjwcUjAVcWaJ7YHAw2ygX6kpfxvfV",
-      "3jzooTwPcXe9jaWrYbHceK1JYX6W2qnkByQer5WRgZ5P",
-      "9zzqeZCX8xA72xFyPW4zt59r1LSfscKuzEpXViwwCi56",
-      "GFT1F4Zr7ETmuZrSmGhMAGk5rvmnD7S9g7nt2JdtwK83",
-      "6f3VcijBEeu1cNWV8BdQzoeAN4daNXpCG44PzwVRbV9Y",
-      "Bbs6aVcWKq1RcSpMD8XFSvnWwGxuWFpDpQeQhGXp6bhr",
-      "DauSzTYjqWHtQu2eY7TdeFXz4RjB1wqftGdkgheoSfjK",
-      "41bWR2kDEEbnbE6SFfabJp7PuTYJsNKa6PyMcZTWz8Wm",
-      "BAjkwBMsY9T4wiJ8nGeMhg5rkbzo1Qp9Vcvzsh3SjhHf"
-    ],
-    "info": { "name": "Sunny Aggregator", "color": "#DC723F" }
+    "info": {
+      "name": "Saber",
+      "color": "#6966FB",
+      "description": "Saber is a protocol enabling seamless cross-chain liquidity exchange.",
+      "website": "https://saber.so"
+    }
   },
   {
     "rewarder": "FwzgeCBvYjreUsH8nMXZ7ysijz5EpjXWF5aQh4SkWFnH",
