@@ -24,5 +24,23 @@
       "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
       "method": "sunny"
     }
+  },
+  {
+    "id": "larry-test",
+    "name": "Larry's Testing Rewarder",
+    "networks": ["devnet"],
+    "address": "AaQnmceRh5phVdqYsH8QnoYeYPMvGm2PtYJoe2T3w5oE",
+    "color": "#ffdc00",
+    "description": "Larry is giving out fake and useless tokens on devnet.",
+    "website": "https://quarry.so"
+  },
+  {
+    "id": "larry-test-other",
+    "name": "Larry's Other Testing Rewarder",
+    "networks": ["devnet"],
+    "address": "BX6gJLjmviXQVuqxJB3V5mVEKvhD6k7ffc2UjdwcgNR7",
+    "color": "#00ffff",
+    "description": "Larry is giving out more fake and useless tokens on devnet.",
+    "website": "https://quarry.so"
   }
 ]
