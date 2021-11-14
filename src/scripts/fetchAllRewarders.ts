@@ -1,19 +1,20 @@
-import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
+import { Coder } from "@project-serum/anchor";
+import type { RewarderData } from "@quarryprotocol/quarry-sdk";
+import { QuarryMineJSON, QuarrySDK } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
-import { SignerWallet, SolanaProvider } from "@saberhq/solana-contrib";
-import { Connection, Keypair, PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@solana/web3.js";
 import * as fs from "fs/promises";
-import { groupBy, mapValues } from "lodash";
+import { groupBy, mapValues, zip } from "lodash";
+import invariant from "tiny-invariant";
 
 import rewarderList from "../config/rewarder-list.json";
 import type { RedemptionMethod, RewarderInfo } from "../types";
+import { makeProvider, serialize } from "../utils";
 
-const serialize = (_: unknown, v: unknown) => {
-  if (v instanceof PublicKey) {
-    return v.toString();
-  }
-  return v;
-};
+const mineCoder = new Coder(QuarryMineJSON);
+
+const parseRewarder = (data: Buffer) =>
+  mineCoder.accounts.decode<RewarderData>("Rewarder", data);
 
 interface RewarderInfoRaw extends Omit<RewarderInfo, "networks" | "redeemer"> {
   networks: string[];
@@ -35,23 +36,47 @@ const KNOWN_REWARDERS: RewarderInfo[] = KNOWN_REWARDERS_RAW.map((kr) => ({
     : undefined,
 }));
 
-export const fetchAllRewarders = async (): Promise<void> => {
-  const provider = SolanaProvider.load({
-    connection: new Connection("https://barry.rpcpool.com"),
-    wallet: new SignerWallet(Keypair.generate()),
-  });
+export const fetchAllRewarders = async (network: Network): Promise<void> => {
+  const provider = makeProvider(network);
 
   const quarry = QuarrySDK.load({ provider });
   const registry = quarry.programs.Registry;
   const allRegistries = await registry.account.registry.all();
 
-  const rewardersJSON = allRegistries.map((reg) => ({
-    rewarder: reg.account.rewarder,
-    tokens: reg.account.tokens.filter((tok) => !tok.equals(PublicKey.default)),
-    info: KNOWN_REWARDERS.find(
-      (r) => r.address === reg.account.rewarder.toString()
-    ),
-  }));
+  const networkRewarders = KNOWN_REWARDERS.filter((kr) =>
+    kr.networks.includes(network)
+  );
+
+  const rewarderKeys = allRegistries.map((r) => r.account.rewarder);
+
+  const rewarderInfo: Record<string, { rewardsTokenMint: PublicKey }> = {};
+  zip(
+    rewarderKeys,
+    await provider.connection.getMultipleAccountsInfo(rewarderKeys)
+  ).forEach(([rewarderKey, account]) => {
+    invariant(rewarderKey, "rewarder key");
+    invariant(account, "rewarder account");
+    const rewarderData = parseRewarder(account.data);
+    rewarderInfo[rewarderKey.toString()] = {
+      rewardsTokenMint: rewarderData.rewardsTokenMint,
+    };
+  });
+
+  const rewardersJSON = allRegistries.map((reg) => {
+    const rewardsTokenMint =
+      rewarderInfo[reg.account.rewarder.toString()]?.rewardsTokenMint;
+    invariant(rewardsTokenMint, "rewards token mint");
+    return {
+      rewarder: reg.account.rewarder,
+      tokens: reg.account.tokens.filter(
+        (tok) => !tok.equals(PublicKey.default)
+      ),
+      info: networkRewarders.find(
+        (r) => r.address === reg.account.rewarder.toString()
+      ),
+      rewardsTokenMint,
+    };
+  });
 
   const rewardersByMint = mapValues(
     groupBy(
@@ -68,18 +93,26 @@ export const fetchAllRewarders = async (): Promise<void> => {
     (group) => group.map((g) => g.rewarder.toString())
   );
 
-  await fs.mkdir("data/", { recursive: true });
+  const dir = `${__dirname}/../../data/${network}/`;
+
+  await fs.mkdir(dir, { recursive: true });
   await fs.writeFile(
-    "data/rewarders.json",
+    `${dir}/rewarders.json`,
     JSON.stringify(rewardersJSON, serialize)
   );
   await fs.writeFile(
-    "data/rewarders-by-mint.json",
-    JSON.stringify(rewardersByMint)
+    `${dir}/rewarders-by-mint.json`,
+    JSON.stringify(rewardersByMint, serialize)
   );
-  await fs.writeFile("data/rewarder-list.json", JSON.stringify(rewarderList));
+  await fs.writeFile(
+    `${dir}/rewarder-list.json`,
+    JSON.stringify(networkRewarders, serialize)
+  );
 };
 
-fetchAllRewarders().catch((err) => {
+Promise.all([
+  fetchAllRewarders("mainnet-beta"),
+  fetchAllRewarders("devnet"),
+]).catch((err) => {
   console.error(err);
 });

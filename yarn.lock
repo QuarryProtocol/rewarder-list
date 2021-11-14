@@ -244,15 +244,17 @@ __metadata:
     "@types/lodash": ^4.14.176
     "@types/node": ^16.11.7
     "@types/prettier": ^2.4.2
+    axios: ^0.24.0
     bn.js: ^5.2.0
     eslint: ^8.2.0
     eslint-import-resolver-node: ^0.3.6
     eslint-plugin-import: ^2.25.3
     husky: ^7.0.4
     jsbi: ^4.1.0
-    lint-staged: ^12.0.1
+    lint-staged: ^12.0.2
     lodash: ^4.17.21
     prettier: ^2.4.1
+    tiny-invariant: ^1.2.0
     ts-node: ^10.4.0
     typescript: ^4.4.4
   languageName: unknown
@@ -901,6 +903,15 @@ __metadata:
   version: 2.0.0
   resolution: "astral-regex@npm:2.0.0"
   checksum: 876231688c66400473ba505731df37ea436e574dd524520294cc3bbc54ea40334865e01fa0d074d74d036ee874ee7e62f486ea38bc421ee8e6a871c06f011766
+  languageName: node
+  linkType: hard
+
+"axios@npm:^0.24.0":
+  version: 0.24.0
+  resolution: "axios@npm:0.24.0"
+  dependencies:
+    follow-redirects: ^1.14.4
+  checksum: 468cf496c08a6aadfb7e699bebdac02851e3043d4e7d282350804ea8900e30d368daa6e3cd4ab83b8ddb5a3b1e17a5a21ada13fc9cebd27b74828f47a4236316
   languageName: node
   linkType: hard
 
@@ -1939,6 +1950,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.14.4":
+  version: 1.14.5
+  resolution: "follow-redirects@npm:1.14.5"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: f004a76b2ee3a849772c2816e30928253bf47537b0f00184d89f4966413add96a228a4d96ca8c702bc045a683c52c2ba41545c915cc1a5e33bf8fd9d07b59aee
+  languageName: node
+  linkType: hard
+
 "fs-minipass@npm:^2.0.0":
   version: 2.1.0
   resolution: "fs-minipass@npm:2.1.0"
@@ -2626,9 +2647,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^12.0.1":
-  version: 12.0.1
-  resolution: "lint-staged@npm:12.0.1"
+"lint-staged@npm:^12.0.2":
+  version: 12.0.2
+  resolution: "lint-staged@npm:12.0.2"
   dependencies:
     cli-truncate: 3.1.0
     colorette: ^2.0.16
@@ -2644,7 +2665,7 @@ __metadata:
     supports-color: 9.0.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 0a3a0cd6b5dc57c66736baeed3eb00eab4a07ac43fac19460f94606d66079fec153bd61bb9ac384f6a8e99dae41cdd3c9a8454ea3971ce6443d7611a418cbb88
+  checksum: dd90c182c762f4172ac470b47af4810ea1e637d82c47871e1aa4b44e79570235725bc0be166c054cf7cf9db1877f11a19e5258dee89ab00b00d336b147e803fb
   languageName: node
   linkType: hard
 

@@ -10,10 +10,11 @@ This will add the rewarder to the Quarry UI, allowing others to discover your pr
 
 ## Usage
 
-The following script should be run periodically:
+The following scripts should be run periodically:
 
 ```bash
 yarn fetch-all-rewarders
+yarn build-token-list
 ```
 
 This will ensure that all of the latest mints are always in the repo.
