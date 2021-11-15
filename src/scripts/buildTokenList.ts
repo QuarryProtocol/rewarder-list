@@ -11,6 +11,15 @@ import invariant from "tiny-invariant";
 import type { RewarderInfo } from "../types";
 import { makeProvider } from "../utils";
 
+const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
+  return tokens.filter((tok, i) => {
+    const prev = tokens.findIndex(
+      (otherTok) => tok.address === otherTok.address
+    );
+    return prev === i;
+  });
+};
+
 const TOKEN_LIST_URLS = [
   "https://registry.saber.so/data/token-list.mainnet.json",
   "https://registry.saber.so/data/token-list.devnet.json",
@@ -81,6 +90,20 @@ export const buildTokenList = async (network: Network): Promise<void> => {
     })
     .filter((x): x is TokenInfo => !!x);
 
+  const underlyingTokens = tokenListTokens
+    .flatMap((tok) => {
+      return (
+        tok.extensions?.underlyingTokens?.map((ut) => {
+          return allTokens.find(
+            (t) =>
+              t.address === ut.toString() &&
+              t.chainId === networkToChainId(network)
+          );
+        }) ?? []
+      );
+    })
+    .filter((t): t is TokenInfo => !!t);
+
   // check for all replicas that have a quarry
   const replicaMappings = (
     await Promise.all(
@@ -146,18 +169,21 @@ export const buildTokenList = async (network: Network): Promise<void> => {
     }
   );
 
+  const tokens = dedupeTokenList([
+    ...tokenListTokens,
+    ...underlyingTokens,
+    ...tokenListReplicas,
+    ...missingTokens,
+    ...missingReplicaTokens,
+  ]);
+
   const list: TokenList = {
     name: `Quarry Token List (${network})`,
     logoURI:
       "https://raw.githubusercontent.com/QuarryProtocol/rewarder-list/master/icon.png",
     tags: lists.reduce((acc, list) => ({ ...acc, ...list.tags }), {}),
     timestamp: new Date().toISOString(),
-    tokens: [
-      ...tokenListTokens,
-      ...tokenListReplicas,
-      ...missingTokens,
-      ...missingReplicaTokens,
-    ],
+    tokens,
   };
 
   await fs.mkdir("data/", { recursive: true });
