@@ -1,112 +1,96 @@
-import { Coder } from "@project-serum/anchor";
-import type { RewarderData } from "@quarryprotocol/quarry-sdk";
-import { QuarryMineJSON, QuarrySDK } from "@quarryprotocol/quarry-sdk";
+import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
-import { PublicKey } from "@solana/web3.js";
 import * as fs from "fs/promises";
-import { groupBy, mapValues, zip } from "lodash";
-import invariant from "tiny-invariant";
+import { groupBy, keyBy, mapValues } from "lodash";
 
-import rewarderList from "../config/rewarder-list.json";
-import type { RedemptionMethod, RewarderInfo } from "../types";
-import { makeProvider, serialize } from "../utils";
-
-const mineCoder = new Coder(QuarryMineJSON);
-
-const parseRewarder = (data: Buffer) =>
-  mineCoder.accounts.decode<RewarderData>("Rewarder", data);
-
-interface RewarderInfoRaw extends Omit<RewarderInfo, "networks" | "redeemer"> {
-  networks: string[];
-  redeemer?: Omit<NonNullable<RewarderInfo["redeemer"]>, "method"> & {
-    method: string;
-  };
-}
-
-const KNOWN_REWARDERS_RAW: RewarderInfoRaw[] = rewarderList;
-
-const KNOWN_REWARDERS: RewarderInfo[] = KNOWN_REWARDERS_RAW.map((kr) => ({
-  ...kr,
-  networks: kr.networks as Network[],
-  redeemer: kr.redeemer
-    ? {
-        ...kr.redeemer,
-        method: kr.redeemer.method as RedemptionMethod,
-      }
-    : undefined,
-}));
+import { makeProvider } from "../utils";
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
-
   const quarry = QuarrySDK.load({ provider });
-  const registry = quarry.programs.Registry;
-  const allRegistries = await registry.account.registry.all();
-
-  const networkRewarders = KNOWN_REWARDERS.filter((kr) =>
-    kr.networks.includes(network)
-  );
-
-  const rewarderKeys = allRegistries.map((r) => r.account.rewarder);
-
-  const rewarderInfo: Record<string, { rewardsTokenMint: PublicKey }> = {};
-  zip(
-    rewarderKeys,
-    await provider.connection.getMultipleAccountsInfo(rewarderKeys)
-  ).forEach(([rewarderKey, account]) => {
-    invariant(rewarderKey, "rewarder key");
-    invariant(account, "rewarder account");
-    const rewarderData = parseRewarder(account.data);
-    rewarderInfo[rewarderKey.toString()] = {
-      rewardsTokenMint: rewarderData.rewardsTokenMint,
-    };
-  });
-
-  const rewardersJSON = allRegistries.map((reg) => {
-    const rewardsTokenMint =
-      rewarderInfo[reg.account.rewarder.toString()]?.rewardsTokenMint;
-    invariant(rewardsTokenMint, "rewards token mint");
-    return {
-      rewarder: reg.account.rewarder,
-      tokens: reg.account.tokens.filter(
-        (tok) => !tok.equals(PublicKey.default)
-      ),
-      info: networkRewarders.find(
-        (r) => r.address === reg.account.rewarder.toString()
-      ),
-      rewardsTokenMint,
-    };
-  });
-
-  const rewardersByMint = mapValues(
-    groupBy(
-      allRegistries.flatMap((reg) =>
-        reg.account.tokens
-          .filter((tok) => !tok.equals(PublicKey.default))
-          .map((token) => ({
-            rewarder: reg.account.rewarder,
-            token: token.toString(),
-          }))
-      ),
-      (el) => el.token
-    ),
-    (group) => group.map((g) => g.rewarder.toString())
-  );
+  const allRewarders = await quarry.programs.Mine.account.rewarder.all();
+  const allQuarries = await quarry.programs.Mine.account.quarry.all();
 
   const dir = `${__dirname}/../../data/${network}/`;
-
   await fs.mkdir(dir, { recursive: true });
-  await fs.writeFile(
-    `${dir}/rewarders.json`,
-    JSON.stringify(rewardersJSON, serialize)
+
+  // addresses of each quarry
+  const allQuarriesJSON = allQuarries.map((q) => ({
+    rewarder: q.account.rewarderKey.toString(),
+    quarry: q.publicKey.toString(),
+    stakedToken: {
+      address: q.account.tokenMintKey.toString(),
+      decimals: q.account.tokenMintDecimals,
+    },
+    cached: {
+      index: q.account.index,
+      famineTs: q.account.famineTs.toString(),
+      lastUpdateTs: q.account.lastUpdateTs.toString(),
+      rewardsPerTokenStored: q.account.rewardsPerTokenStored.toString(),
+      rewardsShare: q.account.rewardsShare.toString(),
+      numMiners: q.account.numMiners.toString(),
+      totalTokensDeposited: q.account.totalTokensDeposited.toString(),
+    },
+  }));
+
+  const allRewarderQuarries = mapValues(
+    groupBy(allQuarriesJSON, (q) => q.rewarder),
+    (v) => {
+      return v
+        .map(({ rewarder: _rewarder, ...rest }) => rest)
+        .sort((a, b) => (a.cached.index < b.cached.index ? -1 : 1));
+    }
   );
-  await fs.writeFile(
-    `${dir}/rewarders-by-mint.json`,
-    JSON.stringify(rewardersByMint, serialize)
+
+  const allRewardersList = allRewarders.map((rewarder) => {
+    const quarries = allRewarderQuarries[rewarder.publicKey.toString()] ?? [];
+    if (rewarder.account.numQuarries !== quarries.length) {
+      console.warn(
+        `Expected ${
+          rewarder.account.numQuarries
+        } quarries on rewarder ${rewarder.publicKey.toString()}; got ${
+          quarries.length
+        }`
+      );
+    }
+    return {
+      rewarder: rewarder.publicKey.toString(),
+      authority: rewarder.account.authority.toString(),
+      rewardsTokenMint: rewarder.account.rewardsTokenMint.toString(),
+      mintWrapper: rewarder.account.mintWrapper.toString(),
+      quarries,
+    };
+  });
+  const allRewardersJSON = mapValues(
+    keyBy(allRewardersList, (r) => r.rewarder),
+    ({ rewarder: _rewarder, quarries, ...info }) => ({
+      ...info,
+      quarries: quarries.map(
+        ({ cached: _cached, ...quarryInfo }) => quarryInfo
+      ),
+    })
   );
+
+  // rewarders without the cached values
   await fs.writeFile(
-    `${dir}/rewarder-list.json`,
-    JSON.stringify(networkRewarders, serialize)
+    `${dir}/all-rewarders.json`,
+    JSON.stringify(allRewardersJSON, null, 2)
+  );
+
+  // quarries with cached values -- go in their own files
+  await fs.mkdir(`${dir}/rewarders`, { recursive: true });
+  for (const [rewarderKey, rewarderInfo] of Object.entries(allRewardersJSON)) {
+    await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
+    await fs.writeFile(
+      `${dir}/rewarders/${rewarderKey}/meta.json`,
+      JSON.stringify(rewarderInfo, null, 2)
+    );
+  }
+
+  console.log(
+    `Fetched ${allQuarriesJSON.length} quarries across ${
+      Object.keys(allRewarders).length
+    } rewarders.`
   );
 };
 
@@ -115,4 +99,5 @@ Promise.all([
   fetchAllRewarders("devnet"),
 ]).catch((err) => {
   console.error(err);
+  process.exit(1);
 });

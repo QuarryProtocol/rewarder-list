@@ -13,7 +13,7 @@ export const makeProvider = (network: Network) => {
   return SolanaProvider.load({
     connection: new Connection(
       network === "mainnet-beta"
-        ? "https://barry.rpcpool.com"
+        ? "https://api.mainnet-beta.solana.com"
         : "https://api.devnet.solana.com"
     ),
     wallet: new SignerWallet(Keypair.generate()),

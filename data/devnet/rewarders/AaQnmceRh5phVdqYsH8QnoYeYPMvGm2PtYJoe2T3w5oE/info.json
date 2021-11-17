@@ -1,0 +1,11 @@
+{
+  "id": "larry-test",
+  "name": "Larry's Testing Rewarder",
+  "networks": [
+    "devnet"
+  ],
+  "address": "AaQnmceRh5phVdqYsH8QnoYeYPMvGm2PtYJoe2T3w5oE",
+  "color": "#ffdc00",
+  "description": "Larry is giving out fake and useless tokens on devnet.",
+  "website": "https://quarry.so"
+}

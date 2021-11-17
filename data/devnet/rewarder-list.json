@@ -1,1 +1,57 @@
-[{"id":"saber","name":"Saber","address":"rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk","networks":["mainnet-beta","devnet"],"color":"#6966FB","description":"Saber is a protocol enabling seamless cross-chain liquidity exchange.","website":"https://saber.so","redeemer":{"underlyingToken":"Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1","method":"saber"}},{"id":"sunny","name":"Sunny Aggregator","networks":["mainnet-beta","devnet"],"address":"97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44","color":"#DC723F","description":"Solana's cross-chain DeFi yield aggregator.","website":"https://sunny.ag","hidden":true,"redeemer":{"underlyingToken":"SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag","method":"sunny"}},{"id":"larry-test","name":"Larry's Testing Rewarder","networks":["devnet"],"address":"AaQnmceRh5phVdqYsH8QnoYeYPMvGm2PtYJoe2T3w5oE","color":"#ffdc00","description":"Larry is giving out fake and useless tokens on devnet.","website":"https://quarry.so"},{"id":"larry-test-other","name":"Larry's Other Testing Rewarder","networks":["devnet"],"address":"BX6gJLjmviXQVuqxJB3V5mVEKvhD6k7ffc2UjdwcgNR7","color":"#00ffff","description":"Larry is giving out more fake and useless tokens on devnet.","website":"https://quarry.so"}]
+[
+  {
+    "id": "saber",
+    "name": "Saber",
+    "address": "rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk",
+    "networks": [
+      "mainnet-beta",
+      "devnet"
+    ],
+    "color": "#6966FB",
+    "description": "Saber is a protocol enabling seamless cross-chain liquidity exchange.",
+    "website": "https://saber.so",
+    "redeemer": {
+      "underlyingToken": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1",
+      "method": "saber"
+    }
+  },
+  {
+    "id": "sunny",
+    "name": "Sunny Aggregator",
+    "networks": [
+      "mainnet-beta",
+      "devnet"
+    ],
+    "address": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
+    "color": "#DC723F",
+    "description": "Solana's cross-chain DeFi yield aggregator.",
+    "website": "https://sunny.ag",
+    "hidden": true,
+    "redeemer": {
+      "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
+      "method": "sunny"
+    }
+  },
+  {
+    "id": "larry-test",
+    "name": "Larry's Testing Rewarder",
+    "networks": [
+      "devnet"
+    ],
+    "address": "AaQnmceRh5phVdqYsH8QnoYeYPMvGm2PtYJoe2T3w5oE",
+    "color": "#ffdc00",
+    "description": "Larry is giving out fake and useless tokens on devnet.",
+    "website": "https://quarry.so"
+  },
+  {
+    "id": "larry-test-other",
+    "name": "Larry's Other Testing Rewarder",
+    "networks": [
+      "devnet"
+    ],
+    "address": "BX6gJLjmviXQVuqxJB3V5mVEKvhD6k7ffc2UjdwcgNR7",
+    "color": "#00ffff",
+    "description": "Larry is giving out more fake and useless tokens on devnet.",
+    "website": "https://quarry.so"
+  }
+]

@@ -43,5 +43,14 @@
     "color": "#00ffff",
     "description": "Larry is giving out more fake and useless tokens on devnet.",
     "website": "https://quarry.so"
+  },
+  {
+    "id": "marinade",
+    "name": "Marinade",
+    "networks": ["mainnet-beta", "devnet"],
+    "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
+    "color": "#EF39F8",
+    "description": "The easiest way to stake Solana.",
+    "website": "https://marinade.finance"
   }
 ]

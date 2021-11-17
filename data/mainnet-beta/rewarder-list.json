@@ -1,1 +1,35 @@
-[{"id":"saber","name":"Saber","address":"rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk","networks":["mainnet-beta","devnet"],"color":"#6966FB","description":"Saber is a protocol enabling seamless cross-chain liquidity exchange.","website":"https://saber.so","redeemer":{"underlyingToken":"Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1","method":"saber"}},{"id":"sunny","name":"Sunny Aggregator","networks":["mainnet-beta","devnet"],"address":"97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44","color":"#DC723F","description":"Solana's cross-chain DeFi yield aggregator.","website":"https://sunny.ag","hidden":true,"redeemer":{"underlyingToken":"SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag","method":"sunny"}}]
+[
+  {
+    "id": "saber",
+    "name": "Saber",
+    "address": "rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk",
+    "networks": [
+      "mainnet-beta",
+      "devnet"
+    ],
+    "color": "#6966FB",
+    "description": "Saber is a protocol enabling seamless cross-chain liquidity exchange.",
+    "website": "https://saber.so",
+    "redeemer": {
+      "underlyingToken": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1",
+      "method": "saber"
+    }
+  },
+  {
+    "id": "sunny",
+    "name": "Sunny Aggregator",
+    "networks": [
+      "mainnet-beta",
+      "devnet"
+    ],
+    "address": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
+    "color": "#DC723F",
+    "description": "Solana's cross-chain DeFi yield aggregator.",
+    "website": "https://sunny.ag",
+    "hidden": true,
+    "redeemer": {
+      "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
+      "method": "sunny"
+    }
+  }
+]

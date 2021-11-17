@@ -6,6 +6,22 @@ import type { Network } from "@saberhq/solana-contrib";
 export type RedemptionMethod = "quarry-redeemer" | "saber";
 
 /**
+ * Fetched information about a rewarder.
+ */
+export interface RewarderMeta {
+  authority: string;
+  rewardsTokenMint: string;
+  mintWrapper: string;
+  quarries: {
+    quarry: string;
+    stakedToken: {
+      address: string;
+      decimals: number;
+    };
+  }[];
+}
+
+/**
  * Information about a rewarder.
  */
 export interface RewarderInfo {
