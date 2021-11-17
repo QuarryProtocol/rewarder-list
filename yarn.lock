@@ -237,11 +237,11 @@ __metadata:
     "@saberhq/eslint-config": ^1.7.1
     "@saberhq/solana-contrib": ^1.7.1
     "@saberhq/token-utils": ^1.7.1
-    "@solana/spl-token-registry": ^0.2.291
+    "@solana/spl-token-registry": ^0.2.303
     "@solana/web3.js": ^1.30.2
     "@types/bn.js": ^5.1.0
-    "@types/eslint": ^7.28.2
-    "@types/lodash": ^4.14.176
+    "@types/eslint": ^7.29.0
+    "@types/lodash": ^4.14.177
     "@types/node": ^16.11.7
     "@types/prettier": ^2.4.2
     axios: ^0.24.0
@@ -343,12 +343,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solana/spl-token-registry@npm:^0.2.291":
-  version: 0.2.291
-  resolution: "@solana/spl-token-registry@npm:0.2.291"
+"@solana/spl-token-registry@npm:^0.2.303":
+  version: 0.2.303
+  resolution: "@solana/spl-token-registry@npm:0.2.303"
   dependencies:
     cross-fetch: 3.0.6
-  checksum: 732ef97b102f171b5bfd40d8189dd9ff113736f04fc07599c4b7d632d8dc869bc1408820e66c478f0ab6b876b0ef359433eedea0be876ff0ba049e02ed15ada7
+  checksum: a226164d7e4511014fe11a854274955406924b1a55696a709a9161dbfdba8cffcfebb77be701ed4f8914114398e8c1f20c528c76ead2a12e465a301b404f0401
   languageName: node
   linkType: hard
 
@@ -450,13 +450,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^7.28.2":
-  version: 7.28.2
-  resolution: "@types/eslint@npm:7.28.2"
+"@types/eslint@npm:^7.29.0":
+  version: 7.29.0
+  resolution: "@types/eslint@npm:7.29.0"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
-  checksum: d177f3eec22971baeef8f244693687ee4c0357125f4a8fb7e614b83e36b98318a0b1a13b31230199d2a91af54122b67883faa7b4d2c29f0c83e2650f6b0d4d9c
+  checksum: df13991c554954353ce8f3bb03e19da6cc71916889443d68d178d4f858b561ba4cc4a4f291c6eb9eebb7f864b12b9b9313051b3a8dfea3e513dadf3188a77bdf
   languageName: node
   linkType: hard
 
@@ -492,10 +492,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.159, @types/lodash@npm:^4.14.176":
+"@types/lodash@npm:^4.14.159":
   version: 4.14.176
   resolution: "@types/lodash@npm:4.14.176"
   checksum: 9e949704dfffab60365b5cdca0477926af6eabe82c64b7be8f74b3a117bb373d58371be962c2b159dd0cf8fad49a7dcacc748564aea4ce6b6883c197a6f0bfa8
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:^4.14.177":
+  version: 4.14.177
+  resolution: "@types/lodash@npm:4.14.177"
+  checksum: 00f9eb300ed5219cfbabb3448d4a71744895edad60dcfda9f028c0808a50eb6ad1ca9f673b56a85f85668a4ea54b9870643625468a747039c435643e52253a75
   languageName: node
   linkType: hard
 

@@ -43,6 +43,10 @@ export interface RewarderInfo {
    * Allows pools of this rewarder to be mined via Quarry. Defaults to false.
    */
   allowQuarryMine?: boolean;
+  /**
+   * If true, this pool does not show up on the main farming page.
+   */
+  hidden?: boolean;
 
   /**
    * Information on how to redeem an IOU reward token for the underlying reward token, if applicable.

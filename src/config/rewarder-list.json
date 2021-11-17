@@ -20,6 +20,7 @@
     "color": "#DC723F",
     "description": "Solana's cross-chain DeFi yield aggregator.",
     "website": "https://sunny.ag",
+    "hidden": true,
     "redeemer": {
       "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
       "method": "sunny"
