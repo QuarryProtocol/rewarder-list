@@ -21,6 +21,10 @@ export interface RewarderMeta {
   }[];
 }
 
+export interface RewarderMetaWithInfo extends RewarderMeta {
+  info?: RewarderInfo;
+}
+
 /**
  * Information about a rewarder.
  */
@@ -69,14 +73,16 @@ export interface RewarderInfo {
    *
    * The Quarry application will automatically register the reward token in its internal token list.
    */
-  redeemer?: {
-    /**
-     * Mint of the underlying reward token.
-     */
-    underlyingToken: string;
-    /**
-     * Redemption method.
-     */
-    method: RedemptionMethod;
-  };
+  redeemer?: RedeemerInfo;
+}
+
+export interface RedeemerInfo {
+  /**
+   * Mint of the underlying reward token.
+   */
+  underlyingToken: string;
+  /**
+   * Redemption method.
+   */
+  method: RedemptionMethod;
 }
