@@ -1,0 +1,12 @@
+{
+  "id": "marinade",
+  "name": "Marinade",
+  "networks": [
+    "mainnet-beta",
+    "devnet"
+  ],
+  "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
+  "color": "#EF39F8",
+  "description": "The easiest way to stake Solana.",
+  "website": "https://marinade.finance"
+}

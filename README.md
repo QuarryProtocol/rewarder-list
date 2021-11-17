@@ -14,6 +14,7 @@ The following scripts should be run periodically:
 
 ```bash
 yarn fetch-all-rewarders
+yarn decorate-rewarders
 yarn build-token-list
 ```
 

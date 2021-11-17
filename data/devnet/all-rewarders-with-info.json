@@ -1491,7 +1491,19 @@
           "decimals": 9
         }
       }
-    ]
+    ],
+    "info": {
+      "id": "marinade",
+      "name": "Marinade",
+      "networks": [
+        "mainnet-beta",
+        "devnet"
+      ],
+      "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
+      "color": "#EF39F8",
+      "description": "The easiest way to stake Solana.",
+      "website": "https://marinade.finance"
+    }
   },
   "3b1VNw4s9DR9p78Pn42unRJbdjP2ZP8xivUDuQkse6av": {
     "authority": "DvbS11Ymu9MJ2Wd82nWiPeXLmCmnQJvrJAuwhqFH6usy",
