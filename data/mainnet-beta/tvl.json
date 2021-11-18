@@ -324,5 +324,10 @@
     "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K": [
       "HCz37H8xoXim4zQmtSfjy1qGG5327RGL1NPU5c6ruEKj"
     ]
+  },
+  "coingeckoIDs": {
+    "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So": "msol",
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": "usd-coin",
+    "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K": "mercurial"
   }
 }
