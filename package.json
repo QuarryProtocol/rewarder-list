@@ -40,9 +40,10 @@
   },
   "scripts": {
     "lint": "eslint . --cache",
+    "build-token-list": "ts-node src/scripts/buildTokenList.ts",
+    "build-tvl-list": "ts-node src/scripts/buildTVLList.ts",
     "fetch-all-rewarders": "ts-node src/scripts/fetchAllRewarders.ts",
     "decorate-rewarders": "ts-node src/scripts/decorateRewarders.ts",
-    "build-token-list": "ts-node src/scripts/buildTokenList.ts",
     "prepare": "husky install"
   },
   "lint-staged": {

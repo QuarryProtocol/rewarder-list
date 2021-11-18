@@ -16,6 +16,7 @@ The following scripts should be run periodically:
 yarn fetch-all-rewarders
 yarn decorate-rewarders
 yarn build-token-list
+yarn build-tvl-list
 ```
 
 This will ensure that all of the latest mints are always in the repo.
