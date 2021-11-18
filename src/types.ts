@@ -3,7 +3,11 @@ import type { Network } from "@saberhq/solana-contrib";
 /**
  * Method on how to redeem the rewards tokens.
  */
-export type RedemptionMethod = "quarry-redeemer" | "saber";
+export type RedemptionMethod =
+  | "quarry-redeemer"
+  | "saber"
+  | "sunny"
+  | "marinade";
 
 /**
  * Fetched information about a rewarder.
