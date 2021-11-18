@@ -42,6 +42,10 @@
     "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
     "color": "#EF39F8",
     "description": "The easiest way to stake Solana.",
-    "website": "https://marinade.finance"
+    "website": "https://marinade.finance",
+    "redeemer": {
+      "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
+      "method": "marinade"
+    }
   }
 ]
