@@ -1,6 +1,14 @@
 import type { Network } from "@saberhq/solana-contrib";
 import { SignerWallet, SolanaProvider } from "@saberhq/solana-contrib";
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
+import fastStringify from "fast-json-stable-stringify";
+
+export const stringify = (v: unknown) =>
+  JSON.stringify(
+    JSON.parse(fastStringify(JSON.parse(JSON.stringify(v, serialize)))),
+    null,
+    2
+  );
 
 export const serialize = (_: unknown, v: unknown) => {
   if (v instanceof PublicKey) {

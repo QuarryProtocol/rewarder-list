@@ -4,7 +4,7 @@ import { groupBy, mapValues } from "lodash";
 
 import rewarderList from "../config/rewarder-list.json";
 import type { RedemptionMethod, RewarderInfo, RewarderMeta } from "../types";
-import { serialize } from "../utils";
+import { stringify } from "../utils";
 
 interface RewarderInfoRaw extends Omit<RewarderInfo, "networks" | "redeemer"> {
   networks: string[];
@@ -54,13 +54,13 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
   for (const rewarderInfo of networkRewarders) {
     await fs.writeFile(
       `${dir}/rewarders/${rewarderInfo.address}/info.json`,
-      JSON.stringify(rewarderInfo, null, 2)
+      stringify(rewarderInfo)
     );
   }
 
   await fs.writeFile(
     `${dir}/all-rewarders-with-info.json`,
-    JSON.stringify(
+    stringify(
       mapValues(rewarderMetas, (meta, rewarderKey) => {
         const info = networkRewarders.find((nr) => nr.address === rewarderKey);
         if (info) {
@@ -70,19 +70,14 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           };
         }
         return meta;
-      }),
-      serialize,
-      2
+      })
     )
   );
   await fs.writeFile(
     `${dir}/rewarders-by-mint.json`,
-    JSON.stringify(rewardersByMint, serialize, 2)
+    stringify(rewardersByMint)
   );
-  await fs.writeFile(
-    `${dir}/rewarder-list.json`,
-    JSON.stringify(networkRewarders, serialize, 2)
-  );
+  await fs.writeFile(`${dir}/rewarder-list.json`, stringify(networkRewarders));
 };
 
 Promise.all([

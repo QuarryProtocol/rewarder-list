@@ -4,6 +4,7 @@ import * as fs from "fs/promises";
 import { groupBy, mapValues } from "lodash";
 
 import type { RewarderMeta } from "../types";
+import { stringify } from "../utils";
 
 export const buildTVLList = async (network: Network): Promise<void> => {
   const dir = `${__dirname}/../../data/${network}/`;
@@ -44,7 +45,7 @@ export const buildTVLList = async (network: Network): Promise<void> => {
 
   const tvl = { quarriesByStakedMint, coingeckoIDs };
 
-  await fs.writeFile(`${dir}/tvl.json`, JSON.stringify(tvl, null, 2));
+  await fs.writeFile(`${dir}/tvl.json`, stringify(tvl));
 };
 
 Promise.all([buildTVLList("mainnet-beta")]).catch((err) => {

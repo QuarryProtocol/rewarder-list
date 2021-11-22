@@ -3,7 +3,7 @@ import type { Network } from "@saberhq/solana-contrib";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
-import { makeProvider } from "../utils";
+import { makeProvider, stringify } from "../utils";
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
@@ -72,10 +72,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   );
 
   // rewarders without the cached values
-  await fs.writeFile(
-    `${dir}/all-rewarders.json`,
-    JSON.stringify(allRewardersJSON, null, 2)
-  );
+  await fs.writeFile(`${dir}/all-rewarders.json`, stringify(allRewardersJSON));
 
   // quarries with cached values -- go in their own files
   await fs.mkdir(`${dir}/rewarders`, { recursive: true });
@@ -83,7 +80,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/meta.json`,
-      JSON.stringify(rewarderInfo, null, 2)
+      stringify(rewarderInfo)
     );
   }
 

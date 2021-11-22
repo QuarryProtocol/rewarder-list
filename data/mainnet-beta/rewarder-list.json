@@ -1,62 +1,62 @@
 [
   {
+    "address": "rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk",
+    "color": "#6966FB",
+    "description": "Saber is a protocol enabling seamless cross-chain liquidity exchange.",
     "id": "saber",
     "name": "Saber",
-    "address": "rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk",
     "networks": [
       "mainnet-beta",
       "devnet"
     ],
-    "color": "#6966FB",
-    "description": "Saber is a protocol enabling seamless cross-chain liquidity exchange.",
-    "website": "https://saber.so",
     "redeemer": {
-      "underlyingToken": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1",
-      "method": "saber"
-    }
+      "method": "saber",
+      "underlyingToken": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1"
+    },
+    "website": "https://saber.so"
   },
   {
+    "address": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
+    "color": "#DC723F",
+    "description": "Solana's cross-chain DeFi yield aggregator.",
+    "hidden": true,
     "id": "sunny",
     "name": "Sunny Aggregator",
     "networks": [
       "mainnet-beta",
       "devnet"
     ],
-    "address": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
-    "color": "#DC723F",
-    "description": "Solana's cross-chain DeFi yield aggregator.",
-    "website": "https://sunny.ag",
-    "hidden": true,
     "redeemer": {
-      "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
-      "method": "sunny"
-    }
+      "method": "sunny",
+      "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag"
+    },
+    "website": "https://sunny.ag"
   },
   {
+    "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
+    "color": "#EF39F8",
+    "description": "The easiest way to stake Solana.",
     "id": "marinade",
     "name": "Marinade",
     "networks": [
       "mainnet-beta",
       "devnet"
     ],
-    "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
-    "color": "#EF39F8",
-    "description": "The easiest way to stake Solana.",
-    "website": "https://marinade.finance",
     "redeemer": {
-      "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
-      "method": "marinade"
-    }
+      "method": "marinade",
+      "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey"
+    },
+    "website": "https://marinade.finance"
   },
   {
+    "address": "5LAZ5rUe1CLJoKYauyVXdbG6e7nBmY2j5mJ8PnesCA8z",
+    "color": "#01EB00",
+    "description": "Cashio’s fair launch memecoin",
     "id": "cash-cow",
     "name": "Cash Cow",
     "networks": [
       "mainnet-beta"
     ],
-    "address": "5LAZ5rUe1CLJoKYauyVXdbG6e7nBmY2j5mJ8PnesCA8z",
-    "color": "#01EB00",
-    "description": "Cashio’s fair launch memecoin",
     "website": "https://cashio.app"
   }
 ]

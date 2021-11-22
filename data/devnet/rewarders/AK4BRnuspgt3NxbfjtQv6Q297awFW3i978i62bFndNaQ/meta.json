@@ -1,6 +1,5 @@
 {
   "authority": "EnHBYsRckMqtAkpfXhhRTpCo3XF5CFgywXyktqMYoJcV",
-  "rewardsTokenMint": "4U1fumk5727jVkQ5YJUyHH9M95HyfLqG3GwwPZbGWD3p",
   "mintWrapper": "EmZtLH16AC5Z1uAhjTYKXdPPq2tAEpnNsSGsT8J69Unt",
   "quarries": [
     {
@@ -10,5 +9,6 @@
         "decimals": 2
       }
     }
-  ]
+  ],
+  "rewardsTokenMint": "4U1fumk5727jVkQ5YJUyHH9M95HyfLqG3GwwPZbGWD3p"
 }

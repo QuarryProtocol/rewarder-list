@@ -9,7 +9,7 @@ import { chunk, uniq, zip } from "lodash";
 import invariant from "tiny-invariant";
 
 import type { RewarderInfo, RewarderMeta } from "../types";
-import { makeProvider } from "../utils";
+import { makeProvider, stringify } from "../utils";
 
 const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
   return tokens
@@ -196,7 +196,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   };
 
   await fs.mkdir("data/", { recursive: true });
-  await fs.writeFile(`${dir}/token-list.json`, JSON.stringify(list, null, 2));
+  await fs.writeFile(`${dir}/token-list.json`, stringify(list));
 };
 
 Promise.all([buildTokenList("mainnet-beta"), buildTokenList("devnet")]).catch(

@@ -1,1366 +1,1366 @@
 {
-  "name": "Quarry Token List (devnet)",
   "logoURI": "https://raw.githubusercontent.com/QuarryProtocol/rewarder-list/master/icon.png",
+  "name": "Quarry Token List (devnet)",
   "tags": {
-    "stablecoin": {
-      "name": "stablecoin",
-      "description": "Tokens that are fixed to an external asset, e.g. the US dollar"
-    },
-    "ethereum": {
-      "name": "ethereum",
-      "description": "Asset bridged from ethereum"
-    },
-    "lp-token": {
-      "name": "lp-token",
-      "description": "Asset representing liquidity provider token"
-    },
-    "wrapped-sollet": {
-      "name": "wrapped-sollet",
-      "description": "Asset wrapped using sollet bridge"
-    },
-    "wrapped": {
-      "name": "wrapped",
-      "description": "Asset wrapped using wormhole bridge"
-    },
-    "leveraged": {
-      "name": "leveraged",
-      "description": "Leveraged asset"
+    "bear": {
+      "description": "Leveraged Bear asset",
+      "name": "bear"
     },
     "bull": {
-      "name": "bull",
-      "description": "Leveraged Bull asset"
+      "description": "Leveraged Bull asset",
+      "name": "bull"
     },
-    "bear": {
-      "name": "bear",
-      "description": "Leveraged Bear asset"
+    "ethereum": {
+      "description": "Asset bridged from ethereum",
+      "name": "ethereum"
+    },
+    "leveraged": {
+      "description": "Leveraged asset",
+      "name": "leveraged"
+    },
+    "lp-token": {
+      "description": "Asset representing liquidity provider token",
+      "name": "lp-token"
     },
     "nft": {
-      "name": "nft",
-      "description": "Non-fungible token"
-    },
-    "security-token": {
-      "name": "security-token",
-      "description": "Tokens that are used to gain access to an electronically restricted resource"
-    },
-    "utility-token": {
-      "name": "utility-token",
-      "description": "Tokens that are designed to be spent within a certain blockchain ecosystem e.g. most of the SPL-Tokens"
-    },
-    "tokenized-stock": {
-      "name": "tokenized-stock",
-      "description": "Tokenized stocks are tokenized derivatives that represent traditional securities, particularly shares in publicly firms traded on regulated exchanges"
-    },
-    "saber-hidden": {
-      "name": "saber-hidden",
-      "description": "Hidden from main Saber UI."
+      "description": "Non-fungible token",
+      "name": "nft"
     },
     "saber-decimal-wrapped": {
-      "name": "saber-decimal-wrapped",
-      "description": "Decimal wrapper for a different token. See `assetContract` for the mint of the underlying."
+      "description": "Decimal wrapper for a different token. See `assetContract` for the mint of the underlying.",
+      "name": "saber-decimal-wrapped"
     },
-    "saber-stableswap-lp": {
-      "name": "saber-stableswap-lp",
-      "description": "Saber StableSwap LP token."
-    },
-    "saber-swappable": {
-      "name": "saber-swappable",
-      "description": "May be swapped on Saber."
-    },
-    "wormhole-v1": {
-      "name": "wormhole-v1",
-      "description": "Wormhole V1 asset."
-    },
-    "wormhole-v2": {
-      "name": "wormhole-v2",
-      "description": "Wormhole V2 asset."
-    },
-    "saber-market-usd": {
-      "name": "saber-market-usd",
-      "description": "Token which trades against other representations of USD."
+    "saber-hidden": {
+      "description": "Hidden from main Saber UI.",
+      "name": "saber-hidden"
     },
     "saber-market-btc": {
-      "name": "saber-market-btc",
-      "description": "Token which trades against other representations of BTC."
-    },
-    "saber-market-luna": {
-      "name": "saber-market-luna",
-      "description": "Token which trades against other representations of LUNA."
-    },
-    "saber-market-ftt": {
-      "name": "saber-market-ftt",
-      "description": "Token which trades against other representations of FTT."
-    },
-    "saber-market-srm": {
-      "name": "saber-market-srm",
-      "description": "Token which trades against other representations of SRM."
-    },
-    "saber-market-sol": {
-      "name": "saber-market-sol",
-      "description": "Token which trades against other representations of SOL."
+      "description": "Token which trades against other representations of BTC.",
+      "name": "saber-market-btc"
     },
     "saber-market-eth": {
-      "name": "saber-market-eth",
-      "description": "Token which trades against other representations of ETH."
+      "description": "Token which trades against other representations of ETH.",
+      "name": "saber-market-eth"
+    },
+    "saber-market-ftt": {
+      "description": "Token which trades against other representations of FTT.",
+      "name": "saber-market-ftt"
+    },
+    "saber-market-luna": {
+      "description": "Token which trades against other representations of LUNA.",
+      "name": "saber-market-luna"
+    },
+    "saber-market-sol": {
+      "description": "Token which trades against other representations of SOL.",
+      "name": "saber-market-sol"
+    },
+    "saber-market-srm": {
+      "description": "Token which trades against other representations of SRM.",
+      "name": "saber-market-srm"
+    },
+    "saber-market-usd": {
+      "description": "Token which trades against other representations of USD.",
+      "name": "saber-market-usd"
+    },
+    "saber-stableswap-lp": {
+      "description": "Saber StableSwap LP token.",
+      "name": "saber-stableswap-lp"
+    },
+    "saber-swappable": {
+      "description": "May be swapped on Saber.",
+      "name": "saber-swappable"
+    },
+    "security-token": {
+      "description": "Tokens that are used to gain access to an electronically restricted resource",
+      "name": "security-token"
+    },
+    "stablecoin": {
+      "description": "Tokens that are fixed to an external asset, e.g. the US dollar",
+      "name": "stablecoin"
+    },
+    "tokenized-stock": {
+      "description": "Tokenized stocks are tokenized derivatives that represent traditional securities, particularly shares in publicly firms traded on regulated exchanges",
+      "name": "tokenized-stock"
+    },
+    "utility-token": {
+      "description": "Tokens that are designed to be spent within a certain blockchain ecosystem e.g. most of the SPL-Tokens",
+      "name": "utility-token"
+    },
+    "wormhole-v1": {
+      "description": "Wormhole V1 asset.",
+      "name": "wormhole-v1"
+    },
+    "wormhole-v2": {
+      "description": "Wormhole V2 asset.",
+      "name": "wormhole-v2"
+    },
+    "wrapped": {
+      "description": "Asset wrapped using wormhole bridge",
+      "name": "wrapped"
+    },
+    "wrapped-sollet": {
+      "description": "Asset wrapped using sollet bridge",
+      "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-22T16:50:22.426Z",
+  "timestamp": "2021-11-22T16:59:03.659Z",
   "tokens": [
     {
       "address": "24bB56DwuV3AgfqGWX7rn4WuyYUL4Udn45d5BNQMQjkJ",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 24bB",
-      "symbol": "24bB5",
-      "chainId": 104
+      "symbol": "24bB5"
     },
     {
       "address": "2B31ATstGvHyc1gdz4Pwig9uthjec8wtqcmHpBuqz3ts",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 2B31",
-      "symbol": "2B31A",
-      "chainId": 104
+      "symbol": "2B31A"
     },
     {
       "address": "2DNmDYfK18vk9aPfD9ckSuZGU9htaesgxTaw36Tuuu76",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 2DNm",
-      "symbol": "2DNmD",
-      "chainId": 104
+      "symbol": "2DNmD"
     },
     {
       "address": "2hZXzPPWVFekiVW5nWqkt7Vsu7guZ9r6JytG1PMCvm6Q",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 2hZX",
-      "symbol": "2hZXz",
-      "chainId": 104
+      "symbol": "2hZXz"
     },
     {
       "address": "2jmzZmwSnL9B6WRt9ZG1ayK8A2iQsNbvz3XR8KnXSheB",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 2jmz",
-      "symbol": "2jmzZ",
-      "chainId": 104
+      "symbol": "2jmzZ"
     },
     {
       "address": "2ND78QzETd1D52iAH7EhJ4jGE6hePAWmvqnVkaaT4S3q",
-      "decimals": 9,
-      "name": "Token FebM (Replica)",
-      "symbol": "qrFebMu",
       "chainId": 104,
-      "tags": [
-        "quarry-merge-mine-replica"
-      ],
+      "decimals": 9,
       "extensions": {
+        "source": "quarry-merge-mine-replica",
         "underlyingTokens": [
           "FebMuhkkhx61MhzfYYLfr3dXJwUf441kUK6W1hnzxUKh"
-        ],
-        "source": "quarry-merge-mine-replica"
-      }
+        ]
+      },
+      "name": "Token FebM (Replica)",
+      "symbol": "qrFebMu",
+      "tags": [
+        "quarry-merge-mine-replica"
+      ]
     },
     {
-      "symbol": "USDC",
-      "name": "USD Coin",
-      "logoURI": "https://registry.saber.so/token-icons/usdc.svg",
       "address": "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8",
-      "decimals": 6,
       "chainId": 103,
+      "decimals": 6,
+      "extensions": {},
+      "logoURI": "https://registry.saber.so/token-icons/usdc.svg",
+      "name": "USD Coin",
+      "symbol": "USDC",
       "tags": [
         "saber-market-usd",
         "saber-swappable"
-      ],
-      "extensions": {}
+      ]
     },
     {
       "address": "35HUKZe2PAf6G2wja7TghTKFhHSiq4R7amJ8N3SU7uSu",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 35HU",
-      "symbol": "35HUK",
-      "chainId": 104
+      "symbol": "35HUK"
     },
     {
       "address": "3cWFAPT7Atdvs4Z23gn1aVYbxnsxyEB469DWLWLwzNom",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 3cWF",
-      "symbol": "3cWFA",
-      "chainId": 104
+      "symbol": "3cWFA"
     },
     {
       "address": "3g5xFfFPwTvT1ZmGSsb42rSpPdbAVwKjMHyWJoRQxD3E",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 3g5x",
-      "symbol": "3g5xF",
-      "chainId": 104
+      "symbol": "3g5xF"
     },
     {
       "address": "3Nhn8KsVpGfmSSptWsPsP1Jwcsp28zccerujpxjX7mgy",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 3Nhn",
-      "symbol": "3Nhn8",
-      "chainId": 104
+      "symbol": "3Nhn8"
     },
     {
       "address": "3QgcCAY2MjZXdrSa6ns6nHphy2JpdcUoKKCySJxbfr84",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 3Qgc",
-      "symbol": "3QgcC",
-      "chainId": 104
+      "symbol": "3QgcC"
     },
     {
       "address": "3tnb6ntvEKa8EKTJ9CodJfHViFHFhA1WKUdxNDh1oJix",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 3tnb",
-      "symbol": "3tnb6",
-      "chainId": 104
+      "symbol": "3tnb6"
     },
     {
       "address": "3veyX6s64htGGLisaPt9iWwqXCRNLUt9qtKTGQb4Bvpj",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 3vey",
-      "symbol": "3veyX",
-      "chainId": 104
+      "symbol": "3veyX"
     },
     {
       "address": "415G9N5ucDhfvnnjApuJeCC6XPc5pdgn9BVyRRBW1duR",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 415G",
-      "symbol": "415G9",
-      "chainId": 104
+      "symbol": "415G9"
     },
     {
       "address": "4arXyGHtcDGSFBVvZdgZfhnB3XtJH5wFoohPaKjm8zLD",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 4arX",
-      "symbol": "4arXy",
-      "chainId": 104
+      "symbol": "4arXy"
     },
     {
       "address": "4EnMxrGshQHg8eNoop7z22HKYoCEgcUSQrS9s4N9eKQo",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 4EnM",
-      "symbol": "4EnMx",
-      "chainId": 104
+      "symbol": "4EnMx"
     },
     {
       "address": "4foEYhrGbBVh4jQZgdJNSAvL4k8AtrXxc1UibKcsdZFZ",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 4foE",
-      "symbol": "4foEY",
-      "chainId": 104
+      "symbol": "4foEY"
     },
     {
       "address": "4JedMb1P5mdqBSWSMxg3Vky7U8J4sCBHz5gUPzUVKdUb",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 4Jed",
-      "symbol": "4JedM",
-      "chainId": 104
+      "symbol": "4JedM"
     },
     {
       "address": "4MmWJotHTzKyy12UikwymgXD1qsfLgudnu8uaCwZYnJH",
+      "chainId": 104,
       "decimals": 0,
       "name": "Token 4MmW",
-      "symbol": "4MmWJ",
-      "chainId": 104
+      "symbol": "4MmWJ"
     },
     {
       "address": "4NTUQ9N7wg2eBPH14AvkXLLhiAeKNAbipULEcHfsw9v1",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 4NTU",
-      "symbol": "4NTUQ",
-      "chainId": 104
+      "symbol": "4NTUQ"
     },
     {
-      "symbol": "TEST",
-      "name": "Test USD",
-      "logoURI": "https://registry.saber.so/token-icons/candy-usd.png",
       "address": "4QgnWUPQmfGB5dTDCcc4ZFeZDK7xNVhCUFoNmmYFwAme",
-      "decimals": 6,
       "chainId": 103,
+      "decimals": 6,
+      "extensions": {},
+      "logoURI": "https://registry.saber.so/token-icons/candy-usd.png",
+      "name": "Test USD",
+      "symbol": "TEST",
       "tags": [
         "saber-market-usd",
         "saber-swappable"
-      ],
-      "extensions": {}
+      ]
     },
     {
-      "symbol": "PAI",
-      "name": "PAI",
-      "logoURI": "https://registry.saber.so/token-icons/pai.svg",
       "address": "4ry1pMstKzMJvMZSms62HduTyCbbqkUyrz17x1dajBmL",
-      "decimals": 6,
       "chainId": 103,
+      "decimals": 6,
+      "extensions": {},
+      "logoURI": "https://registry.saber.so/token-icons/pai.svg",
+      "name": "PAI",
+      "symbol": "PAI",
       "tags": [
         "saber-market-usd",
         "saber-swappable"
-      ],
-      "extensions": {}
+      ]
     },
     {
       "address": "4U1fumk5727jVkQ5YJUyHH9M95HyfLqG3GwwPZbGWD3p",
+      "chainId": 104,
       "decimals": 2,
       "name": "Token 4U1f",
-      "symbol": "4U1fu",
-      "chainId": 104
+      "symbol": "4U1fu"
     },
     {
       "address": "4vxJymUVudmj57aKA7Q934Vb81GuTtRvR4vXrgtszQgy",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 4vxJ",
-      "symbol": "4vxJy",
-      "chainId": 104
+      "symbol": "4vxJy"
     },
     {
       "address": "4Zv79wUfLHT289UdVqfmdkWCitVaYUMZmNNhUji6t7cS",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token 4Zv7",
-      "symbol": "4Zv79",
-      "chainId": 104
+      "symbol": "4Zv79"
     },
     {
       "address": "5BKwJiTuoi328CYpxV6LEDTisH1w6kVwc8Yx9HoH5Hj3",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5BKw",
-      "symbol": "5BKwJ",
-      "chainId": 104
+      "symbol": "5BKwJ"
     },
     {
       "address": "5eT5GMSwCYdg5ygoAWQLpKTRjrHYmY5NbDwwqqrhGhAk",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5eT5",
-      "symbol": "5eT5G",
-      "chainId": 104
+      "symbol": "5eT5G"
     },
     {
       "address": "5HFP5tF8mVmNza8sAavjD9gz5CCq9Cn5X1x65R5NSPCt",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5HFP",
-      "symbol": "5HFP5",
-      "chainId": 104
+      "symbol": "5HFP5"
     },
     {
       "address": "5KLUeVwHUcfL9NKJoUXKyUSmMEmSTpqSZZoTTB4hnWUR",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5KLU",
-      "symbol": "5KLUe",
-      "chainId": 104
+      "symbol": "5KLUe"
     },
     {
       "address": "5KXEBo3NCpZka43N1sCo3d7uVhxfpsuoFfAZZK48xs7C",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5KXE",
-      "symbol": "5KXEB",
-      "chainId": 104
+      "symbol": "5KXEB"
     },
     {
       "address": "5pc4XQAbrkQsbvooeEPVcwAg2jnP8hj5XKKsUsGLFhSu",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5pc4",
-      "symbol": "5pc4X",
-      "chainId": 104
+      "symbol": "5pc4X"
     },
     {
       "address": "5pc98Rx8Qa2NgrJEBT2B2jMwmKNeutWB2vvBoENiN5En",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5pc9",
-      "symbol": "5pc98",
-      "chainId": 104
+      "symbol": "5pc98"
     },
     {
       "address": "5PhhFhqPBrkKoafeGFmhKHNvU53rXPG7oZSE6iWC1PV2",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5Phh",
-      "symbol": "5PhhF",
-      "chainId": 104
+      "symbol": "5PhhF"
     },
     {
       "address": "5u8kh1XekCmSQJR1uGMTHXxmVrhYLkdT14A6DUAoeZjJ",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token 5u8k",
-      "symbol": "5u8kh",
-      "chainId": 104
+      "symbol": "5u8kh"
     },
     {
       "address": "5xLXrzmnGP52iezMaKMCSrtzfozGxb8sZJNgBsThAo33",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5xLX",
-      "symbol": "5xLXr",
-      "chainId": 104
+      "symbol": "5xLXr"
     },
     {
       "address": "5xM8Ngg1GLaSx8X7uKUPURVU2pSQMoi5rhKcarv3iXWH",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5xM8",
-      "symbol": "5xM8N",
-      "chainId": 104
+      "symbol": "5xM8N"
     },
     {
       "address": "5ZEXQmdr863cXujXoyCwv3waNbWt7f2cm31CjzeZsefS",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 5ZEX",
-      "symbol": "5ZEXQ",
-      "chainId": 104
+      "symbol": "5ZEXQ"
     },
     {
       "address": "6ptyadKeqT7bHPGDMuiErLngDPwmoEQ1SQCfydmWhhcB",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 6pty",
-      "symbol": "6ptya",
-      "chainId": 104
+      "symbol": "6ptya"
     },
     {
       "address": "6S3JkC2fvNrQ4i5dRHbr8sT8oTbctQvqgUzRwj2GhRDf",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 6S3J",
-      "symbol": "6S3Jk",
-      "chainId": 104
+      "symbol": "6S3Jk"
     },
     {
       "address": "6sjMh2ig6mY2AEXxraECh9F3B5VZFfQTzcaVbR3cGRgw",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 6sjM",
-      "symbol": "6sjMh",
-      "chainId": 104
+      "symbol": "6sjMh"
     },
     {
       "address": "6y5M4CMCoB4gqJDwzrHR99ZouaCvnkhqjimAy7cj48iN",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 6y5M",
-      "symbol": "6y5M4",
-      "chainId": 104
+      "symbol": "6y5M4"
     },
     {
       "address": "7AdXDvC82P9SGfLHpFRG3YCyeT8G3qWG7nEYYgT2GqZy",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 7AdX",
-      "symbol": "7AdXD",
-      "chainId": 104
+      "symbol": "7AdXD"
     },
     {
       "address": "7BVZpYdwWq5szds8xYhob3qovMPZ6u2X1HytwniqrKq2",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 7BVZ",
-      "symbol": "7BVZp",
-      "chainId": 104
+      "symbol": "7BVZp"
     },
     {
       "address": "7gES79m7wxw1RBAPTQoLYYp13jCPgCYN8sNCxMJkfZUw",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 7gES",
-      "symbol": "7gES7",
-      "chainId": 104
+      "symbol": "7gES7"
     },
     {
       "address": "7GMbbYXgDUm9sbivUQ6wSu7dMLw4KxBApf9E6ik9E2kZ",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 7GMb",
-      "symbol": "7GMbb",
-      "chainId": 104
+      "symbol": "7GMbb"
     },
     {
       "address": "7J6nkCNd15hbA9EJA1ePEz1njXHsxDf59ixbKmi3sQeE",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 7J6n",
-      "symbol": "7J6nk",
-      "chainId": 104
+      "symbol": "7J6nk"
     },
     {
       "address": "7niASAQs1YitnAQrpM8DW7enHiAPWQFdMFkGSm1RBtBD",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 7niA",
-      "symbol": "7niAS",
-      "chainId": 104
+      "symbol": "7niAS"
     },
     {
       "address": "7sbYKrWs5Rn5NVWB5soNHiwLeHaS3xwLwd4nzzMpMzLH",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 7sbY",
-      "symbol": "7sbYK",
-      "chainId": 104
+      "symbol": "7sbYK"
     },
     {
       "address": "7zMssWL23q9KTuCbhop4X2c84M3NbjnAXYwbpEXuBTmM",
+      "chainId": 104,
       "decimals": 2,
       "name": "Token 7zMs",
-      "symbol": "7zMss",
-      "chainId": 104
+      "symbol": "7zMss"
     },
     {
       "address": "838iZCcmNJHVhcDcB78wjb6dsCXec4ogBeVmMfL5RhZJ",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 838i",
-      "symbol": "838iZ",
-      "chainId": 104
+      "symbol": "838iZ"
     },
     {
       "address": "8BMy6D4TxE7jPrn9fz2k9MFcETp2MpcYmvkraZvGRt4W",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8BMy",
-      "symbol": "8BMy6",
-      "chainId": 104
+      "symbol": "8BMy6"
     },
     {
       "address": "8cXngDmMyD1LKFTj34zDiDFpktDdHpaddS2ZZRaS5vc7",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8cXn",
-      "symbol": "8cXng",
-      "chainId": 104
+      "symbol": "8cXng"
     },
     {
       "address": "8rzwZsAP2NmdSGgkfJyRLvakQAPFNA9hsrHVsjvwbzUD",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8rzw",
-      "symbol": "8rzwZ",
-      "chainId": 104
+      "symbol": "8rzwZ"
     },
     {
       "address": "8u5cGdFN3wzAuhMkYYii8PAVoQeHNWNUYbSc85jL1Jzk",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8u5c",
-      "symbol": "8u5cG",
-      "chainId": 104
+      "symbol": "8u5cG"
     },
     {
       "address": "8W3TeEaBhZJPQsDVzd24zocJEuZdbviXRyjDb6PPM72N",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8W3T",
-      "symbol": "8W3Te",
-      "chainId": 104
+      "symbol": "8W3Te"
     },
     {
       "address": "8WPaKGVxno3YUnnid8WDtvQpicaEQT8ETpbdvkBy2rog",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8WPa",
-      "symbol": "8WPaK",
-      "chainId": 104
+      "symbol": "8WPaK"
     },
     {
       "address": "8ZDA8ig2KhehrFEVJZ4WjCARCfWfT9WrCieFYWTWTCmU",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8ZDA",
-      "symbol": "8ZDA8",
-      "chainId": 104
+      "symbol": "8ZDA8"
     },
     {
       "address": "8zkpHgr2QFuUzTe5CVYTNHTiM8sFnMJQeeV3ApF3zxSY",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 8zkp",
-      "symbol": "8zkpH",
-      "chainId": 104
+      "symbol": "8zkpH"
     },
     {
       "address": "91kVKjUe2n6KiyU2CX8gYoycF3GrjTgCf92eDa4HD1VX",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 91kV",
-      "symbol": "91kVK",
-      "chainId": 104
+      "symbol": "91kVK"
     },
     {
       "address": "98L2mzb4KhuboYZt8ebXqhAjKYgpGUjJ1JHNQgQ74hQq",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 98L2",
-      "symbol": "98L2m",
-      "chainId": 104
+      "symbol": "98L2m"
     },
     {
       "address": "9DjVo4AehZYpmxLiqGdRzDhkEGW1EpAyNDyWfnPDknt6",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token 9DjV",
-      "symbol": "9DjVo",
-      "chainId": 104
+      "symbol": "9DjVo"
     },
     {
       "address": "9jeVcCkkpJazCzsGM5bkQhgLDtzDRLpTPG7iC9FjmR5C",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 9jeV",
-      "symbol": "9jeVc",
-      "chainId": 104
+      "symbol": "9jeVc"
     },
     {
       "address": "9RbHUG8wowT63rLyRkDzxRutzsfsBUqUwP6auaofoWET",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 9RbH",
-      "symbol": "9RbHU",
-      "chainId": 104
+      "symbol": "9RbHU"
     },
     {
       "address": "9xQGzGead5dVTDxP5Ma4QVr7hrv5pwnk1ojXwBWjh185",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token 9xQG",
-      "symbol": "9xQGz",
-      "chainId": 104
+      "symbol": "9xQGz"
     },
     {
       "address": "9yLp3jCZntFySdxWapXLXe5hGt4VNyhe7ChPmY4Pp4Et",
+      "chainId": 104,
       "decimals": 8,
       "name": "Token 9yLp",
-      "symbol": "9yLp3",
-      "chainId": 104
+      "symbol": "9yLp3"
     },
     {
       "address": "AaxMy1RqyWJPhzJixYxpBMK9VSSSbfUpcPV89TdGAMjg",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token AaxM",
-      "symbol": "AaxMy",
-      "chainId": 104
+      "symbol": "AaxMy"
     },
     {
       "address": "AC1dwFWtu3mMKo4oSLbMVAqxCkXqcah28tmk54qkUGnM",
+      "chainId": 104,
       "decimals": 0,
       "name": "Token AC1d",
-      "symbol": "AC1dw",
-      "chainId": 104
+      "symbol": "AC1dw"
     },
     {
       "address": "ACR2oE5Jww8AspkjRTHnzDgTgW7zK487GouLbpPpcpUa",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token ACR2",
-      "symbol": "ACR2o",
-      "chainId": 104
+      "symbol": "ACR2o"
     },
     {
       "address": "AdGeg18o8RjKCkSQujuhwbTRRvEdshCqkB4dwr3Xe9Gk",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token AdGe",
-      "symbol": "AdGeg",
-      "chainId": 104
+      "symbol": "AdGeg"
     },
     {
       "address": "AeK7vX9HuvjA6eabgamQXnkfxTv5QmMtFQRtAcHu4Ser",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token AeK7",
-      "symbol": "AeK7v",
-      "chainId": 104
+      "symbol": "AeK7v"
     },
     {
       "address": "ARXMmqVLcUf3Jsf27KmU5PeLsVJoK2DHpv7AomCwAV2P",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token ARXM",
-      "symbol": "ARXMm",
-      "chainId": 104
+      "symbol": "ARXMm"
     },
     {
       "address": "BCEK4pE5Yim9yaSYKKDHW8C717UCSQgfkbyGakJcrnpP",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token BCEK",
-      "symbol": "BCEK4",
-      "chainId": 104
+      "symbol": "BCEK4"
     },
     {
       "address": "Bgx5DBbop9VJYQfMDDVu1H6169mWdHXPbbb4T9edSFcV",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Bgx5",
-      "symbol": "Bgx5D",
-      "chainId": 104
+      "symbol": "Bgx5D"
     },
     {
       "address": "BiTBwsBnnpyCfem1A4zeBRjtCxEn1AwvwyBdRBH6Aeg3",
+      "chainId": 104,
       "decimals": 0,
       "name": "Token BiTB",
-      "symbol": "BiTBw",
-      "chainId": 104
+      "symbol": "BiTBw"
     },
     {
-      "symbol": "renBTC-WBTC",
-      "name": "Saber renBTC-WBTC LP",
-      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/bLpASoWNdsz5DsjCaxpbM2FrkMowTJCydpwiDP4Vdzm/icon.png",
-      "decimals": 8,
       "address": "bLpASoWNdsz5DsjCaxpbM2FrkMowTJCydpwiDP4Vdzm",
       "chainId": 103,
-      "tags": [
-        "saber-stableswap-lp"
-      ],
+      "decimals": 8,
       "extensions": {
-        "website": "https://app.saber.so/#/pools/btc",
+        "source": "saber",
         "underlyingTokens": [
           "Ren3RLPCG6hpKay86d2fQccQLuGG331UNxwn2VTw3GJ",
           "BtceyXMo5kwg8u6es4NoukBWQuMwtcBCZpFWUfZgVuZs"
         ],
-        "source": "saber"
-      }
+        "website": "https://app.saber.so/#/pools/btc"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/bLpASoWNdsz5DsjCaxpbM2FrkMowTJCydpwiDP4Vdzm/icon.png",
+      "name": "Saber renBTC-WBTC LP",
+      "symbol": "renBTC-WBTC",
+      "tags": [
+        "saber-stableswap-lp"
+      ]
     },
     {
       "address": "BNMqZ51YYfjU4aMddqAEY4VQNkx5JfLM51D6CnKT2svU",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token BNMq",
-      "symbol": "BNMqZ",
-      "chainId": 104
+      "symbol": "BNMqZ"
     },
     {
       "address": "BnqYrBVAvV7SsZmo6NfUtvJN9gZTyAcAPU9FCGF1gRnu",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token BnqY",
-      "symbol": "BnqYr",
-      "chainId": 104
+      "symbol": "BnqYr"
     },
     {
       "address": "BpaaZQY1SANvLrY9txeCTWXHAwwRbLuSFSnkhNJTYxfV",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Bpaa",
-      "symbol": "BpaaZ",
-      "chainId": 104
+      "symbol": "BpaaZ"
     },
     {
       "address": "BPrS3q34uKp3FT6DcshvWJ9AUU2EsFvPGNyEB9Gx5BEs",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token BPrS",
-      "symbol": "BPrS3",
-      "chainId": 104
+      "symbol": "BPrS3"
     },
     {
       "address": "BSritkVEhidc4x8G38R6ftr69mncswnWJ8yzr96L8Mzb",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token BSri",
-      "symbol": "BSrit",
-      "chainId": 104
+      "symbol": "BSrit"
     },
     {
-      "name": "Saber Wrapped Test WBTC (8 decimals)",
       "address": "BtceyXMo5kwg8u6es4NoukBWQuMwtcBCZpFWUfZgVuZs",
-      "decimals": 8,
-      "symbol": "sWBTC-8",
       "chainId": 103,
-      "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/bitcoin/info/logo.png",
-      "tags": [
-        "saber-market-btc",
-        "saber-decimal-wrapped",
-        "saber-swappable"
-      ],
+      "decimals": 8,
       "extensions": {
         "assetContract": "Wbt2CgkkD3eVckD5XxWJmT8pTnFTyWrwvGM7bUMLvsM",
         "underlyingTokens": [
           "Wbt2CgkkD3eVckD5XxWJmT8pTnFTyWrwvGM7bUMLvsM"
         ]
-      }
+      },
+      "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/bitcoin/info/logo.png",
+      "name": "Saber Wrapped Test WBTC (8 decimals)",
+      "symbol": "sWBTC-8",
+      "tags": [
+        "saber-market-btc",
+        "saber-decimal-wrapped",
+        "saber-swappable"
+      ]
     },
     {
       "address": "By2JBJdhuhRRwUnGDF2VvVdh1QwjM672hmgXC1i94aiy",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token By2J",
-      "symbol": "By2JB",
-      "chainId": 104
+      "symbol": "By2JB"
     },
     {
       "address": "C1JUmbRT2e4RzZ7TXATugpJMhB5VdbLiMPH9jAGeZKKo",
+      "chainId": 104,
       "decimals": 2,
       "name": "Token C1JU",
-      "symbol": "C1JUm",
-      "chainId": 104
+      "symbol": "C1JUm"
     },
     {
       "address": "C8P36KdX1oQC4zJw5sC8C3hJtUTbnjJFE138gT89m9yy",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token C8P3",
-      "symbol": "C8P36",
-      "chainId": 104
+      "symbol": "C8P36"
     },
     {
       "address": "CajXYbhhqL72xuhQnRuDkSzBCY4VyrMonnAjQSx7h7cg",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token CajX",
-      "symbol": "CajXY",
-      "chainId": 104
+      "symbol": "CajXY"
     },
     {
       "address": "CcTVarRwiKWrKUDKZXaeqH5cq3LVPyShB96b4RZQBpsQ",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token CcTV",
-      "symbol": "CcTVa",
-      "chainId": 104
+      "symbol": "CcTVa"
     },
     {
       "address": "CkYM3TAwwtbRkxQxkH5ng8R8KwCJSVJMXjt9vk9GcUjJ",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token CkYM",
-      "symbol": "CkYM3",
-      "chainId": 104
+      "symbol": "CkYM3"
     },
     {
       "address": "CNxb8WdKv55ep89YgFx6s384xLbEvnWTPgMaf8yisG3j",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token CNxb",
-      "symbol": "CNxb8",
-      "chainId": 104
+      "symbol": "CNxb8"
     },
     {
       "address": "CsiBbbktEPwpm3Cxm1XknCgCA8BCMWhscRjkTfQHMQs3",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token CsiB",
-      "symbol": "CsiBb",
-      "chainId": 104
+      "symbol": "CsiBb"
     },
     {
       "address": "CY4ik2njvDjCLU1DJMksYXY6iiUNgxf3AHjrpMiegKEE",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token CY4i",
-      "symbol": "CY4ik",
-      "chainId": 104
+      "symbol": "CY4ik"
     },
     {
       "address": "D6y75EGYya3aZoWFExnPUDL2kiW8BfA1XAUpPfHsqRbj",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token D6y7",
-      "symbol": "D6y75",
-      "chainId": 104
+      "symbol": "D6y75"
     },
     {
       "address": "Db9461yHyeBXjDpUCjUab36E1r5h7P433tKsN7Uabjrt",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Db94",
-      "symbol": "Db946",
-      "chainId": 104
+      "symbol": "Db946"
     },
     {
       "address": "DEjsoW2aNiSqdw57828BukUkQemwsx483SX95xNX9hzW",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token DEjs",
-      "symbol": "DEjso",
-      "chainId": 104
+      "symbol": "DEjso"
     },
     {
       "address": "DGqqWyF7nAAzKuaehnjF6FhJtssbvqzwkxxZHpA4qyKe",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token DGqq",
-      "symbol": "DGqqW",
-      "chainId": 104
+      "symbol": "DGqqW"
     },
     {
       "address": "DhBbx641KtRk8ZzwrhLZHncC2tudyUrf6oJDwkUgxNL1",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token DhBb",
-      "symbol": "DhBbx",
-      "chainId": 104
+      "symbol": "DhBbx"
     },
     {
       "address": "DHK2XEeh1Zs3XEUe5eNqaAUzSZuZnECDyNkWVeSQKqFD",
+      "chainId": 104,
       "decimals": 2,
       "name": "Token DHK2",
-      "symbol": "DHK2X",
-      "chainId": 104
+      "symbol": "DHK2X"
     },
     {
       "address": "DmvFWifiSHgPKJtXr3r2HCQnc7LzoGaUCQucuhCSh7oN",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token DmvF",
-      "symbol": "DmvFW",
-      "chainId": 104
+      "symbol": "DmvFW"
     },
     {
       "address": "DrjXoTBFF9j3Cc6qyntEvhFaWod6bnmCqujBNHwpnXBk",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token DrjX",
-      "symbol": "DrjXo",
-      "chainId": 104
+      "symbol": "DrjXo"
     },
     {
       "address": "Dv1Py7UhH4nvwW3iEEhWfSRXEXcecEbMENpy3gHCkucb",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Dv1P",
-      "symbol": "Dv1Py",
-      "chainId": 104
+      "symbol": "Dv1Py"
     },
     {
       "address": "DvpdGFYNK8nEN5SAk9B96skxqrWDAQwTBMuMctshBEVj",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Dvpd",
-      "symbol": "DvpdG",
-      "chainId": 104
+      "symbol": "DvpdG"
     },
     {
       "address": "DXcWGAMRMVwrCT5hxDRY43uyrhr7JdTa8kjDNfqmc6zX",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token DXcW",
-      "symbol": "DXcWG",
-      "chainId": 104
+      "symbol": "DXcWG"
     },
     {
       "address": "DY9utNb9jid9khwQViJoZ3gw3RAyvvsgsBmRu1vgcYS6",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token DY9u",
-      "symbol": "DY9ut",
-      "chainId": 104
+      "symbol": "DY9ut"
     },
     {
       "address": "DYJu3FAaK9eCGXBKVm1EXJpyy6NVgXdZ8q9BymB1dfyH",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token DYJu",
-      "symbol": "DYJu3",
-      "chainId": 104
+      "symbol": "DYJu3"
     },
     {
-      "symbol": "TEST-USDC",
-      "name": "Saber TEST-USDC LP",
-      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/E2XcZ3WR9Qt19JLNjCEWkbtfJiYhWbpTbw3wZbmj2AQo/icon.png",
-      "decimals": 6,
       "address": "E2XcZ3WR9Qt19JLNjCEWkbtfJiYhWbpTbw3wZbmj2AQo",
       "chainId": 103,
-      "tags": [
-        "saber-stableswap-lp"
-      ],
+      "decimals": 6,
       "extensions": {
-        "website": "https://app.saber.so/#/pools/usdc_test",
+        "source": "saber",
         "underlyingTokens": [
           "4QgnWUPQmfGB5dTDCcc4ZFeZDK7xNVhCUFoNmmYFwAme",
           "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8"
         ],
-        "source": "saber"
-      }
+        "website": "https://app.saber.so/#/pools/usdc_test"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/E2XcZ3WR9Qt19JLNjCEWkbtfJiYhWbpTbw3wZbmj2AQo/icon.png",
+      "name": "Saber TEST-USDC LP",
+      "symbol": "TEST-USDC",
+      "tags": [
+        "saber-stableswap-lp"
+      ]
     },
     {
       "address": "E3hBfieiKS87xvziPAfW2ANMiMUE61grMsFxQ8ajKPEM",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token E3hB",
-      "symbol": "E3hBf",
-      "chainId": 104
+      "symbol": "E3hBf"
     },
     {
       "address": "E8QJa8ibkwDABbQc71JXJ4Kpm4U3W9bmkGJneBJ4M78a",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token E8QJ",
-      "symbol": "E8QJa",
-      "chainId": 104
+      "symbol": "E8QJa"
     },
     {
       "address": "EAvTKsJDwnb2FaN87b4vEUEA5seg3xNUe1o7785SFPKQ",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token EAvT",
-      "symbol": "EAvTK",
-      "chainId": 104
+      "symbol": "EAvTK"
     },
     {
       "address": "EC25daJ4zugxxUz3odfcWj4J2h42DTyZzPRhQ74ELGrY",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token EC25",
-      "symbol": "EC25d",
-      "chainId": 104
+      "symbol": "EC25d"
     },
     {
       "address": "EehjFGiGCtiZ1SmFXFb2hjJe7Wyfm8WXcfDR3EcnbkYA",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Eehj",
-      "symbol": "EehjF",
-      "chainId": 104
+      "symbol": "EehjF"
     },
     {
       "address": "EG6SH5VSk6EHGF8pEtR2vakXhKyFLmaZ8uYrBCy7fehr",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token EG6S",
-      "symbol": "EG6SH",
-      "chainId": 104
+      "symbol": "EG6SH"
     },
     {
       "address": "EgbUSNdoDn4xtXH33seduGuaLr7g7aBtw9LcitH7oRHd",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token EgbU",
-      "symbol": "EgbUS",
-      "chainId": 104
+      "symbol": "EgbUS"
     },
     {
       "address": "Ejhd1XwFws7MWcmWKZgZWM5hkm4jTYx3Azc6D5Zq9ePa",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Ejhd",
-      "symbol": "Ejhd1",
-      "chainId": 104
+      "symbol": "Ejhd1"
     },
     {
-      "symbol": "USDT",
-      "name": "Tether USD",
-      "logoURI": "https://registry.saber.so/token-icons/usdt.svg",
       "address": "EJwZgeZrdC8TXTQbQBoL6bfuAnFUUy1PVCMB4DYPzVaS",
-      "decimals": 6,
       "chainId": 103,
+      "decimals": 6,
+      "extensions": {},
+      "logoURI": "https://registry.saber.so/token-icons/usdt.svg",
+      "name": "Tether USD",
+      "symbol": "USDT",
       "tags": [
         "saber-market-usd",
         "saber-swappable"
-      ],
-      "extensions": {}
+      ]
     },
     {
       "address": "EkpmTxuRCVRNuDRyeHGkaEZW6vFNHGyndDA8YBnPKkwD",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Ekpm",
-      "symbol": "EkpmT",
-      "chainId": 104
+      "symbol": "EkpmT"
     },
     {
       "address": "ENBS5gxFfZ1oMvbckQb7AvEeXio3HuKXN9Hq48SGJyJ",
-      "decimals": 9,
-      "name": "Token u8bK (Replica)",
-      "symbol": "qru8bKR",
       "chainId": 104,
-      "tags": [
-        "quarry-merge-mine-replica"
-      ],
+      "decimals": 9,
       "extensions": {
+        "source": "quarry-merge-mine-replica",
         "underlyingTokens": [
           "u8bKRdJGNuHq9q4Q3jcFbwoRDCx2zZF2iAr94VzrNHn"
-        ],
-        "source": "quarry-merge-mine-replica"
-      }
+        ]
+      },
+      "name": "Token u8bK (Replica)",
+      "symbol": "qru8bKR",
+      "tags": [
+        "quarry-merge-mine-replica"
+      ]
     },
     {
       "address": "EVrhc7PQutCuPtw93vNrENGvJMaMoW8LRXngdCXCQfQi",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token EVrh",
-      "symbol": "EVrhc",
-      "chainId": 104
+      "symbol": "EVrhc"
     },
     {
       "address": "EyBomBBashTM3w27dMBH1twVvJF6JHA8NAFM1b5u2WZS",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token EyBo",
-      "symbol": "EyBom",
-      "chainId": 104
+      "symbol": "EyBom"
     },
     {
       "address": "FbbCq4QWvDWj59pe3Ee1htS3kmxMaJVePFQbei6QbnXp",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FbbC",
-      "symbol": "FbbCq",
-      "chainId": 104
+      "symbol": "FbbCq"
     },
     {
       "address": "Fd35SRikKGtPxAFFA4szN2BDmq3GyaHStVVEfU2usjP3",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Fd35",
-      "symbol": "Fd35S",
-      "chainId": 104
+      "symbol": "Fd35S"
     },
     {
       "address": "FD8a8ZAnjtjyTQFYTD6zQ1z6UGP6DGWhbpwWJ1gkgSax",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FD8a",
-      "symbol": "FD8a8",
-      "chainId": 104
+      "symbol": "FD8a8"
     },
     {
       "address": "FebMuhkkhx61MhzfYYLfr3dXJwUf441kUK6W1hnzxUKh",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token FebM",
-      "symbol": "FebMu",
-      "chainId": 104
+      "symbol": "FebMu"
     },
     {
       "address": "FgTejrDwL2QC9n6Eyekq2L6W1JYTZo5uxxqCXCD9m8P7",
+      "chainId": 104,
       "decimals": 0,
       "name": "Token FgTe",
-      "symbol": "FgTej",
-      "chainId": 104
+      "symbol": "FgTej"
     },
     {
       "address": "FJhzHF3fzDJpdE6sX3PokjTeuuDyH365oY4NNVwdLiVQ",
+      "chainId": 104,
       "decimals": 0,
       "name": "Token FJhz",
-      "symbol": "FJhzH",
-      "chainId": 104
+      "symbol": "FJhzH"
     },
     {
       "address": "FksrddE4onZkkVkmezCyq9XPcsAg3gA1SgG6yvEc5pKK",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Fksr",
-      "symbol": "Fksrd",
-      "chainId": 104
+      "symbol": "Fksrd"
     },
     {
       "address": "FnHA1GbWfBHqZPPUSwhXuYwoL8h5Uks6vD6FmQdFehP3",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FnHA",
-      "symbol": "FnHA1",
-      "chainId": 104
+      "symbol": "FnHA1"
     },
     {
       "address": "FpEHZrb3M3PzTAFYTGS4kVJdU6J5HaRY3tSguHJHLQky",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FpEH",
-      "symbol": "FpEHZ",
-      "chainId": 104
+      "symbol": "FpEHZ"
     },
     {
       "address": "FQkaBPYPNNoW2ysphvC5syE5GS5AwBP4DGDBRh73pCHd",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FQka",
-      "symbol": "FQkaB",
-      "chainId": 104
+      "symbol": "FQkaB"
     },
     {
       "address": "FQxRLKEPwV3XFFFLN5GoGs8UjBeU4pLBpMHTp6hHwKt5",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FQxR",
-      "symbol": "FQxRL",
-      "chainId": 104
+      "symbol": "FQxRL"
     },
     {
       "address": "FtjNnvRkr3cjUM93PDzuTU1Pyvx18iTxMzikfYABZrXj",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FtjN",
-      "symbol": "FtjNn",
-      "chainId": 104
+      "symbol": "FtjNn"
     },
     {
       "address": "FUgTFTFpFAKK38gG59kpHqybor5BkUqa1EnoaeoJJPYb",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FUgT",
-      "symbol": "FUgTF",
-      "chainId": 104
+      "symbol": "FUgTF"
     },
     {
       "address": "FyZ6iCf893zc9EU4ppmYvN9s2BXNXoA7ejR53USkjYhD",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FyZ6",
-      "symbol": "FyZ6i",
-      "chainId": 104
+      "symbol": "FyZ6i"
     },
     {
       "address": "FzbViGEaCdCZpcmc7qEtiinrRb9AH7zdc8QBVsuPs66m",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FzbV",
-      "symbol": "FzbVi",
-      "chainId": 104
+      "symbol": "FzbVi"
     },
     {
       "address": "FzZVD4Kcp2xdjMvAjg3ifGPnujLvnzizG8JSECs7oicB",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token FzZV",
-      "symbol": "FzZVD",
-      "chainId": 104
+      "symbol": "FzZVD"
     },
     {
       "address": "gb7fwH8feJbw2ohv7jD7RW7cJresknz9bJpUMw6X9o6",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token gb7f",
-      "symbol": "gb7fw",
-      "chainId": 104
+      "symbol": "gb7fw"
     },
     {
       "address": "GcLdgaANSB3d3p1wBuCfNCfsiMLLV1mKFSCLxpvQcnou",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token GcLd",
-      "symbol": "GcLdg",
-      "chainId": 104
+      "symbol": "GcLdg"
     },
     {
       "address": "GDAjEttt4PbmRuFMbqWzmY9HjE1ZsVNcY4dXjBtkK8fT",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token GDAj",
-      "symbol": "GDAjE",
-      "chainId": 104
+      "symbol": "GDAjE"
     },
     {
-      "symbol": "qrUSDC",
-      "name": "USD Coin (Replica)",
-      "logoURI": "https://registry.saber.so/token-icons/usdc.svg",
       "address": "GEiGczRMX3RQt9EN2CYcbmG5SSth1o9MzjV1bEiemNeS",
-      "decimals": 6,
       "chainId": 103,
+      "decimals": 6,
+      "extensions": {
+        "source": "quarry-merge-mine-replica",
+        "underlyingTokens": [
+          "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8"
+        ]
+      },
+      "logoURI": "https://registry.saber.so/token-icons/usdc.svg",
+      "name": "USD Coin (Replica)",
+      "symbol": "qrUSDC",
       "tags": [
         "saber-market-usd",
         "saber-swappable",
         "quarry-merge-mine-replica"
-      ],
-      "extensions": {
-        "underlyingTokens": [
-          "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8"
-        ],
-        "source": "quarry-merge-mine-replica"
-      }
+      ]
     },
     {
       "address": "GNcqBr4RtQoeNDjMmQFUZES3TWecriYfo18AStAogsLi",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token GNcq",
-      "symbol": "GNcqB",
-      "chainId": 104
+      "symbol": "GNcqB"
     },
     {
       "address": "GpWR8x4ynBwvU63deFToaUcmZVy9UHThozsbXWYqCbjx",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token GpWR",
-      "symbol": "GpWR8",
-      "chainId": 104
+      "symbol": "GpWR8"
     },
     {
       "address": "gZQSgFka4EN6ZPprCA12T2qwDPqi8aaMfjbu7QTWeUB",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token gZQS",
-      "symbol": "gZQSg",
-      "chainId": 104
+      "symbol": "gZQSg"
     },
     {
       "address": "HAjm9tvBeR2wVfYULdQesPFzsFhP7NUYAdwMT2M26X6b",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token HAjm",
-      "symbol": "HAjm9",
-      "chainId": 104
+      "symbol": "HAjm9"
     },
     {
       "address": "HBQREAG7na17RN7kow3bz1Q9k2FkMtFA93LpeG8rvWiT",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token HBQR",
-      "symbol": "HBQRE",
-      "chainId": 104
+      "symbol": "HBQRE"
     },
     {
       "address": "HSxMV2c7rmiXCojuSjtKvTF9zNDYfZBD6EfZW6GebVjs",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token HSxM",
-      "symbol": "HSxMV",
-      "chainId": 104
+      "symbol": "HSxMV"
     },
     {
       "address": "HT9ca5LHE73o1BNnDHGf2aWwX9qwSUGmtUmSqxoD6V2H",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token HT9c",
-      "symbol": "HT9ca",
-      "chainId": 104
+      "symbol": "HT9ca"
     },
     {
       "address": "HURd9hTAmYWaLokmLGwSxwjcLoUsTEz21ZDBry6bsBW7",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token HURd",
-      "symbol": "HURd9",
-      "chainId": 104
+      "symbol": "HURd9"
     },
     {
       "address": "HvkE3cRCmHNE4iCvLSZLxUyPnitbwQAH6b1XL67xs9Nj",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token HvkE",
-      "symbol": "HvkE3",
-      "chainId": 104
+      "symbol": "HvkE3"
     },
     {
       "address": "HXwUgHpRaxxE55YftfLKabLdRwqMbLP23GLw3iz3hFtr",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token HXwU",
-      "symbol": "HXwUg",
-      "chainId": 104
+      "symbol": "HXwUg"
     },
     {
       "address": "iouQcQBAiEXe6cKLS85zmZxUqaCqBdeHFpqKoSz615u",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token iouQ",
-      "symbol": "iouQc",
-      "chainId": 104
+      "symbol": "iouQc"
     },
     {
       "address": "J6puCGgnbgjWFzYo5SKyLXDLo9SnUpU2T2UDVuxBUmww",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token J6pu",
-      "symbol": "J6puC",
-      "chainId": 104
+      "symbol": "J6puC"
     },
     {
-      "symbol": "USDC-PAI",
-      "name": "Saber USDC-PAI LP",
-      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/J8fDLz5bfef14jDNC32nJLbVzpS9Rj1LBHwaSGfYn83J/icon.png",
-      "decimals": 6,
       "address": "J8fDLz5bfef14jDNC32nJLbVzpS9Rj1LBHwaSGfYn83J",
       "chainId": 103,
-      "tags": [
-        "saber-stableswap-lp"
-      ],
+      "decimals": 6,
       "extensions": {
-        "website": "https://app.saber.so/#/pools/usdc_pai",
+        "source": "saber",
         "underlyingTokens": [
           "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8",
           "4ry1pMstKzMJvMZSms62HduTyCbbqkUyrz17x1dajBmL"
         ],
-        "source": "saber"
-      }
+        "website": "https://app.saber.so/#/pools/usdc_pai"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/J8fDLz5bfef14jDNC32nJLbVzpS9Rj1LBHwaSGfYn83J/icon.png",
+      "name": "Saber USDC-PAI LP",
+      "symbol": "USDC-PAI",
+      "tags": [
+        "saber-stableswap-lp"
+      ]
     },
     {
       "address": "LPmSozJJ8Jh69ut2WP3XmVohTjL4ipR18yiCzxrUmVj",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token LPmS",
-      "symbol": "LPmSo",
-      "chainId": 104
+      "symbol": "LPmSo"
     },
     {
       "address": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token MNDE",
-      "symbol": "MNDEF",
-      "chainId": 104
+      "symbol": "MNDEF"
     },
     {
       "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token mSoL",
-      "symbol": "mSoLz",
-      "chainId": 104
+      "symbol": "mSoLz"
     },
     {
       "address": "Mu7R9QkDv897P46ATvj6Yv7AuwqZ6pAijBXtgyzSaV5",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token Mu7R",
-      "symbol": "Mu7R9",
-      "chainId": 104
+      "symbol": "Mu7R9"
     },
     {
-      "name": "Test RenBTC",
       "address": "Ren3RLPCG6hpKay86d2fQccQLuGG331UNxwn2VTw3GJ",
-      "decimals": 8,
       "chainId": 103,
-      "symbol": "renBTC",
+      "decimals": 8,
+      "extensions": {},
       "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D/logo.png",
+      "name": "Test RenBTC",
+      "symbol": "renBTC",
       "tags": [
         "saber-market-btc",
         "saber-swappable"
-      ],
-      "extensions": {}
+      ]
     },
     {
+      "address": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1",
+      "chainId": 103,
+      "decimals": 6,
+      "extensions": {},
+      "logoURI": "/tokens/sbr.svg",
       "name": "Saber Protocol Token",
       "symbol": "SBR",
-      "address": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1",
-      "logoURI": "/tokens/sbr.svg",
-      "decimals": 6,
-      "chainId": 103,
-      "tags": [],
-      "extensions": {}
+      "tags": []
     },
     {
       "address": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token SRYW",
-      "symbol": "SRYWv",
-      "chainId": 104
+      "symbol": "SRYWv"
     },
     {
       "address": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token SUNN",
-      "symbol": "SUNNY",
-      "chainId": 104
+      "symbol": "SUNNY"
     },
     {
       "address": "u8bKRdJGNuHq9q4Q3jcFbwoRDCx2zZF2iAr94VzrNHn",
+      "chainId": 104,
       "decimals": 9,
       "name": "Token u8bK",
-      "symbol": "u8bKR",
-      "chainId": 104
+      "symbol": "u8bKR"
     },
     {
       "address": "XKfZeKAwomobvqQKujWBA3z6E7GyNuK7fq4KSw53bXs",
+      "chainId": 104,
       "decimals": 6,
       "name": "Token XKfZ",
-      "symbol": "XKfZe",
-      "chainId": 104
+      "symbol": "XKfZe"
     },
     {
-      "symbol": "USDC-USDT",
-      "name": "Saber USDC-USDT LP",
-      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/YakofBo4X3zMxa823THQJwZ8QeoU8pxPdFdxJs7JW57/icon.png",
-      "decimals": 6,
       "address": "YakofBo4X3zMxa823THQJwZ8QeoU8pxPdFdxJs7JW57",
       "chainId": 103,
-      "tags": [
-        "saber-stableswap-lp"
-      ],
+      "decimals": 6,
       "extensions": {
-        "website": "https://app.saber.so/#/pools/usdc_usdt",
+        "source": "saber",
         "underlyingTokens": [
           "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8",
           "EJwZgeZrdC8TXTQbQBoL6bfuAnFUUy1PVCMB4DYPzVaS"
         ],
-        "source": "saber"
-      }
+        "website": "https://app.saber.so/#/pools/usdc_usdt"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/devnet/YakofBo4X3zMxa823THQJwZ8QeoU8pxPdFdxJs7JW57/icon.png",
+      "name": "Saber USDC-USDT LP",
+      "symbol": "USDC-USDT",
+      "tags": [
+        "saber-stableswap-lp"
+      ]
     }
   ]
 }
