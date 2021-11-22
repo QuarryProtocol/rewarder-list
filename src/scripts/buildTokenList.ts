@@ -5,22 +5,25 @@ import { deserializeMint, networkToChainId, Token } from "@saberhq/token-utils";
 import { PublicKey } from "@solana/web3.js";
 import axios from "axios";
 import * as fs from "fs/promises";
-import { zip } from "lodash";
+import { chunk, uniq, zip } from "lodash";
 import invariant from "tiny-invariant";
 
-import type { RewarderInfo } from "../types";
+import type { RewarderInfo, RewarderMeta } from "../types";
 import { makeProvider } from "../utils";
 
 const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
-  return tokens.filter((tok, i) => {
-    const prev = tokens.findIndex(
-      (otherTok) => tok.address === otherTok.address
-    );
-    return prev === i;
-  });
+  return tokens
+    .filter((tok, i) => {
+      const prev = tokens.findIndex(
+        (otherTok) => tok.address === otherTok.address
+      );
+      return prev === i;
+    })
+    .sort((a, b) => a.address.localeCompare(b.address));
 };
 
 const TOKEN_LIST_URLS = [
+  "https://raw.githubusercontent.com/cashioapp/cashio-token-list/main/cashio.mainnet.json",
   "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.mainnet-beta.json",
   "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.devnet.json",
   "https://registry.saber.so/data/token-list.mainnet.json",
@@ -58,21 +61,21 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   const rewarderList = JSON.parse(
     (await fs.readFile(`${dir}/rewarder-list.json`)).toString()
   ) as RewarderInfo[];
-  const rewarderMints = rewarderList
-    .map((rwl) => rwl.redeemer?.underlyingToken)
-    .filter((x): x is string => !!x)
-    .map((x) => new PublicKey(x));
+  const allRewarders = JSON.parse(
+    (await fs.readFile(`${dir}/all-rewarders.json`)).toString()
+  ) as Record<string, RewarderMeta>;
 
-  const allMints = [
-    ...rewarderMints,
+  const allMints = uniq([
+    ...rewarderList
+      .map((rwl) => rwl.redeemer?.underlyingToken)
+      .filter((x): x is string => !!x),
+    ...Object.values(allRewarders).map((r) => r.rewardsTokenMint),
     ...Object.keys(
       JSON.parse(
         (await fs.readFile(`${dir}/rewarders-by-mint.json`)).toString()
       ) as Record<string, unknown>
-    )
-      .map((mint) => new PublicKey(mint))
-      .filter((k) => !rewarderMints.find((rm) => rm.equals(k))),
-  ];
+    ),
+  ]).map((x) => new PublicKey(x));
 
   const allTokens = lists.flatMap((l) => l.tokens);
 
@@ -147,9 +150,13 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   const missingMintsNonReplica = missingMints.filter(
     (mm) => !missingReplicaMappings.find((mrm) => mrm.replicaMint.equals(mm))
   );
-  const missingMintsData = await provider.connection.getMultipleAccountsInfo(
-    missingMintsNonReplica
-  );
+  const missingMintsData = (
+    await Promise.all(
+      chunk(missingMintsNonReplica, 100).map(async (mintsChunk) =>
+        provider.connection.getMultipleAccountsInfo(mintsChunk)
+      )
+    )
+  ).flat();
   const missingTokens = zip(missingMintsNonReplica, missingMintsData).map(
     ([mint, mintDataRaw]) => {
       invariant(mint);
@@ -189,7 +196,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   };
 
   await fs.mkdir("data/", { recursive: true });
-  await fs.writeFile(`${dir}/token-list.json`, JSON.stringify(list));
+  await fs.writeFile(`${dir}/token-list.json`, JSON.stringify(list, null, 2));
 };
 
 Promise.all([buildTokenList("mainnet-beta"), buildTokenList("devnet")]).catch(
