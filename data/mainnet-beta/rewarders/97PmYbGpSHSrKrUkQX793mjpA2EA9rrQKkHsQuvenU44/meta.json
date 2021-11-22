@@ -317,6 +317,13 @@
         "address": "BtAwcgJ5DZWvvjdfHXZ3T8QiwxUjRbwDgsfqyCpG7yEZ",
         "decimals": 6
       }
+    },
+    {
+      "quarry": "3rKH1WSPjzyRfbXYyww5Gct1FKPbpuCZXDsuRjipuWAr",
+      "stakedToken": {
+        "address": "CnxwJAg5oroTFDr3NJtEoM954EYH2bNgiswnJcUUa1Vn",
+        "decimals": 6
+      }
     }
   ]
 }

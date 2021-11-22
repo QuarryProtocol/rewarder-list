@@ -1,0 +1,11 @@
+{
+  "id": "cash-cow",
+  "name": "Cash Cow",
+  "networks": [
+    "mainnet-beta"
+  ],
+  "address": "5LAZ5rUe1CLJoKYauyVXdbG6e7nBmY2j5mJ8PnesCA8z",
+  "color": "#01EB00",
+  "description": "Cashio’s fair launch memecoin",
+  "website": "https://cashio.app"
+}

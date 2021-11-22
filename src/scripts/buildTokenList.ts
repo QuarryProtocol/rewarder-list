@@ -21,6 +21,7 @@ const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
 };
 
 const TOKEN_LIST_URLS = [
+  "https://raw.githubusercontent.com/cashioapp/cashio-token-list/main/cashio.mainnet.json",
   "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.mainnet-beta.json",
   "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.devnet.json",
   "https://registry.saber.so/data/token-list.mainnet.json",
@@ -189,7 +190,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   };
 
   await fs.mkdir("data/", { recursive: true });
-  await fs.writeFile(`${dir}/token-list.json`, JSON.stringify(list));
+  await fs.writeFile(`${dir}/token-list.json`, JSON.stringify(list, null, 2));
 };
 
 Promise.all([buildTokenList("mainnet-beta"), buildTokenList("devnet")]).catch(
