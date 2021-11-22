@@ -12,12 +12,14 @@ import type { RewarderInfo, RewarderMeta } from "../types";
 import { makeProvider } from "../utils";
 
 const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
-  return tokens.filter((tok, i) => {
-    const prev = tokens.findIndex(
-      (otherTok) => tok.address === otherTok.address
-    );
-    return prev === i;
-  });
+  return tokens
+    .filter((tok, i) => {
+      const prev = tokens.findIndex(
+        (otherTok) => tok.address === otherTok.address
+      );
+      return prev === i;
+    })
+    .sort((a, b) => a.address.localeCompare(b.address));
 };
 
 const TOKEN_LIST_URLS = [
