@@ -103,7 +103,7 @@
       "description": "Token which trades against other representations of ETH."
     }
   },
-  "timestamp": "2021-11-22T01:43:52.737Z",
+  "timestamp": "2021-11-22T01:52:18.090Z",
   "tokens": [
     {
       "chainId": 101,
@@ -158,6 +158,23 @@
         "medium": "https://medium.com/marinade-finance",
         "twitter": "https://twitter.com/MarinadeFinance",
         "website": "https://marinade.finance"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "CowKesoLUaHSbAMaUxJUj7eodHHsaLsS65cy8NFyRDGP",
+      "symbol": "COW",
+      "name": "Cash Cow",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/cashioapp/cashio-token-list/main/assets/cow.png",
+      "tags": [
+        "governance-token"
+      ],
+      "extensions": {
+        "website": "https://cashio.app",
+        "twitter": "https://twitter.com/CashioApp",
+        "discord": "https://discord.com/invite/GmkRRKJkuh",
+        "medium": "https://medium.com/@cashioapp"
       }
     },
     {
@@ -2883,6 +2900,55 @@
         ],
         "source": "quarry-merge-mine-replica"
       }
+    },
+    {
+      "address": "iouQcQBAiEXe6cKLS85zmZxUqaCqBdeHFpqKoSz615u",
+      "decimals": 6,
+      "name": "Token iouQ",
+      "symbol": "iouQc",
+      "chainId": 104
+    },
+    {
+      "address": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC",
+      "decimals": 6,
+      "name": "Token SRYW",
+      "symbol": "SRYWv",
+      "chainId": 104
+    },
+    {
+      "address": "CNxb8WdKv55ep89YgFx6s384xLbEvnWTPgMaf8yisG3j",
+      "decimals": 9,
+      "name": "Token CNxb",
+      "symbol": "CNxb8",
+      "chainId": 104
+    },
+    {
+      "address": "GhhEPm3Jb9idakj7Jrqs5y4mAzBEwqXymg1kv2n7nNKP",
+      "decimals": 6,
+      "name": "Token GhhE",
+      "symbol": "GhhEP",
+      "chainId": 104
+    },
+    {
+      "address": "9812Jsmt2uRyRioG2RcZyqn5zoHLu69nrbHEhgEucw5o",
+      "decimals": 6,
+      "name": "Token 9812",
+      "symbol": "9812J",
+      "chainId": 104
+    },
+    {
+      "address": "BRZLJRECJwRk6v1KtQscMoRK4BtcgFyo2wCHo9sMYhfn",
+      "decimals": 6,
+      "name": "Token BRZL",
+      "symbol": "BRZLJ",
+      "chainId": 104
+    },
+    {
+      "address": "3EqD5i6HnSuXf37tFHmkZuxhPD44zTH4jXoAWjrsv431",
+      "decimals": 6,
+      "name": "Token 3EqD",
+      "symbol": "3EqD5",
+      "chainId": 104
     },
     {
       "address": "3T6Ftzvt7SLTm2HQXTtDbepsnQUxpAxxHvGWpEuGMgNM",
