@@ -1,0 +1,33 @@
+name: Refresh Registry
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    name: Refresh Registry from chain
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Yarn Cache
+        uses: actions/cache@v2
+        with:
+          path: ./.yarn
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-modules-
+      - run: yarn install
+      - run: yarn fetch-all-rewarders
+      - run: yarn decorate-rewarders
+      - run: yarn build-token-list
+      - run: yarn build-tvl-list
+      - run: git push origin HEAD
