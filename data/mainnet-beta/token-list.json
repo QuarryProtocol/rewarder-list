@@ -103,7 +103,7 @@
       "description": "Token which trades against other representations of ETH."
     }
   },
-  "timestamp": "2021-11-22T01:53:55.006Z",
+  "timestamp": "2021-11-22T16:50:21.722Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -1459,6 +1459,13 @@
         "currency": "USD",
         "source": "wormhole-v1"
       }
+    },
+    {
+      "address": "CyzrCNQ6hcwZVywbJx6XXHCe56U3cTAtfXRNxWtdDR6P",
+      "decimals": 6,
+      "name": "Token Cyzr",
+      "symbol": "CyzrC",
+      "chainId": 104
     },
     {
       "address": "D7fk5ZZasQqXqGdsHaRoxqHkte61ubRN5HyorZddvVGt",

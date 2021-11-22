@@ -1,8 +1,5 @@
 {
   "quarriesByStakedMint": {
-    "HoiqP8QaE1bvikWrRjrvcWL2v2AjYtnwKrveu2vNReMy": [
-      "9bPMa5dzJ44UGnkx4st2apPJNxb1h5DT2XbzqBh7ELUZ"
-    ],
     "BUSDjE9NEQ15aRFTxKFAjUf5vzqBhEgTNbYevWcSB5qp": [
       "8RA7KUL1KJaN2hgexWy6iST8XdqVv2FapB6LbkQZdkfT"
     ],
@@ -318,17 +315,20 @@
     "LPmSozJJ8Jh69ut2WP3XmVohTjL4ipR18yiCzxrUmVj": [
       "AUxNeq9F3BWmX8Kcc4ZstHpkRXxFXKjKudePJt1LtfiS"
     ],
-    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": [
-      "BhBYD5zxXobckBGjAv1mFZ8qTSwBKAdJYEVptUu8ppdU"
-    ],
-    "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K": [
-      "HCz37H8xoXim4zQmtSfjy1qGG5327RGL1NPU5c6ruEKj"
+    "HoiqP8QaE1bvikWrRjrvcWL2v2AjYtnwKrveu2vNReMy": [
+      "9bPMa5dzJ44UGnkx4st2apPJNxb1h5DT2XbzqBh7ELUZ"
     ],
     "Ck9t5PgHSxm3TAcwHB7Ncw1HvGGRwRehdWLzSanUtxzJ": [
       "HB8fGxYC9fuWJuZvap7kKpNaaS1tqugVvvoimADMet7v"
     ],
     "4jL2htQtstTzatmtJL85M6z89E238ozg5eUa9u54Qyxb": [
       "BR3JRSfVUJ6Dub6gsRRBzFeeTVubzzwAj3YyaxqzwSMP"
+    ],
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v": [
+      "BhBYD5zxXobckBGjAv1mFZ8qTSwBKAdJYEVptUu8ppdU"
+    ],
+    "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K": [
+      "HCz37H8xoXim4zQmtSfjy1qGG5327RGL1NPU5c6ruEKj"
     ]
   },
   "coingeckoIDs": {
