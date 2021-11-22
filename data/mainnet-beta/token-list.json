@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-22T17:00:12.181Z",
+  "timestamp": "2021-11-22T19:14:07.408Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -1315,6 +1315,28 @@
       "symbol": "C7wex"
     },
     {
+      "address": "C9xqJe3gMTUDKidZsZ6jJ7tL9zSLimDUKVpgUbLZnNbi",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "assetContract": "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT",
+        "coingeckoId": "usd-coin",
+        "currency": "USD",
+        "underlyingTokens": [
+          "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
+        ]
+      },
+      "logoURI": "https://cashio.app/images/icon.png",
+      "name": "Saber Wrapped CASH (9 decimals)",
+      "symbol": "sCASH-9",
+      "tags": [
+        "stablecoin",
+        "saber-market-usd",
+        "saber-decimal-wrapped",
+        "saber-swappable"
+      ]
+    },
+    {
       "address": "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT",
       "chainId": 101,
       "decimals": 6,
@@ -1364,6 +1386,26 @@
       "symbol": "Ck9t5"
     },
     {
+      "address": "CLP2aB2bCXZEaoQjUNQdn64dCSzCVxKE3Kjgo3PcAYeY",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "Ea5SjE2Y6yvCeW5dYTn7PYMuW5ikXkvbGdcmSnXeaLjS",
+          "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
+        ],
+        "website": "https://app.saber.so/#/pools/pai_cash"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/CLP2aB2bCXZEaoQjUNQdn64dCSzCVxKE3Kjgo3PcAYeY/icon.png",
+      "name": "Saber PAI-CASH LP",
+      "symbol": "PAI-CASH",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-cashio"
+      ]
+    },
+    {
       "address": "CLPKiHjoU5HwpPK5L6MBXHKqFsuzPr47dM1w4An3Lnvv",
       "chainId": 101,
       "decimals": 6,
@@ -1381,6 +1423,46 @@
       "tags": [
         "saber-stableswap-lp",
         "saber-stableswap-lp"
+      ]
+    },
+    {
+      "address": "CLPLCvWFycur9CysMT3pmdkUXxPfBjXVkWyxTGntzoZ7",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "EwxNF8g9UfmsJVcZFTpL9Hx5MCkoQFoJi6XNWzKf1j8e",
+          "C9xqJe3gMTUDKidZsZ6jJ7tL9zSLimDUKVpgUbLZnNbi"
+        ],
+        "website": "https://app.saber.so/#/pools/acusd_cash"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/CLPLCvWFycur9CysMT3pmdkUXxPfBjXVkWyxTGntzoZ7/icon.png",
+      "name": "Saber acUSD-CASH LP",
+      "symbol": "acUSD-CASH",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-cashio"
+      ]
+    },
+    {
+      "address": "CLPRkuzQFiYnXddGTTKLvqgjgh4Tm7q16sVvivWNRzo8",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "9vMJfxuKxXBoEa7rM12mYLMwTacLMLDJqHozw96WQL8i",
+          "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
+        ],
+        "website": "https://app.saber.so/#/pools/ust_cash"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/CLPRkuzQFiYnXddGTTKLvqgjgh4Tm7q16sVvivWNRzo8/icon.png",
+      "name": "Saber wUST-CASH LP",
+      "symbol": "wUST-CASH",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-cashio"
       ]
     },
     {
