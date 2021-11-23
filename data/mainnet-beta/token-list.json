@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-23T00:44:50.257Z",
+  "timestamp": "2021-11-23T01:08:52.957Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -1315,6 +1315,8 @@
         "assetContract": "CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5",
         "coingeckoId": "renbtc",
         "currency": "BTC",
+        "source": "renbridge",
+        "sourceUrl": "https://bridge.renproject.io/mint",
         "underlyingTokens": [
           "CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5"
         ]
@@ -1412,6 +1414,8 @@
         "assetContract": "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT",
         "coingeckoId": "usd-coin",
         "currency": "USD",
+        "source": "cashio",
+        "sourceUrl": "https://cashio.app/#/print",
         "underlyingTokens": [
           "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
         ]
@@ -2053,6 +2057,8 @@
         "assetContract": "CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5",
         "coingeckoId": "renbtc",
         "currency": "BTC",
+        "source": "renbridge",
+        "sourceUrl": "https://bridge.renproject.io/mint",
         "underlyingTokens": [
           "CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5"
         ]
@@ -2224,6 +2230,8 @@
         "assetContract": "EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv",
         "coingeckoId": "ftx-token",
         "currency": "FTT",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer",
         "underlyingTokens": [
           "EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv"
         ]
@@ -2678,6 +2686,8 @@
         "assetContract": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
         "coingeckoId": "ethereum",
         "currency": "ETH",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer",
         "underlyingTokens": [
           "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs"
         ]
@@ -2699,6 +2709,8 @@
       "extensions": {
         "assetContract": "8wv2KAykQstNAj2oW6AHANGBiFKVFhvMiyyzzjhkmGvE",
         "currency": "LUNA",
+        "source": "renbridge",
+        "sourceUrl": "https://bridge.renproject.io/mint",
         "underlyingTokens": [
           "8wv2KAykQstNAj2oW6AHANGBiFKVFhvMiyyzzjhkmGvE"
         ]
