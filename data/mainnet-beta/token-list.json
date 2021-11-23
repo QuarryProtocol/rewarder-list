@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-23T01:08:52.957Z",
+  "timestamp": "2021-11-23T01:12:48.035Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -2657,6 +2657,26 @@
       "symbol": "iouQc"
     },
     {
+      "address": "J8Le9FqYK12xadDw3Mm8k37rWj4tLtHZaWs65fgFjf4F",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "description": "Sencha LP token between Cashio Dollar and Cash Cow",
+        "discord": "https://discord.gg/aF9USSwG33",
+        "medium": "https://medium.com/senchadex",
+        "source": "sencha",
+        "twitter": "https://twitter.com/SenchaDEX",
+        "underlyingTokens": [
+          "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT",
+          "CowKesoLUaHSbAMaUxJUj7eodHHsaLsS65cy8NFyRDGP"
+        ],
+        "website": "https://sencha.so/#/pool/CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT/CowKesoLUaHSbAMaUxJUj7eodHHsaLsS65cy8NFyRDGP"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/J8Le9FqYK12xadDw3Mm8k37rWj4tLtHZaWs65fgFjf4F/icon.png",
+      "name": "Sencha CASH-COW LP",
+      "symbol": "sCASH-COW"
+    },
+    {
       "address": "JEFFSQ3s8T3wKsvp4tnRAsUBW7Cqgnf8ukBZC4C8XBm1",
       "chainId": 101,
       "decimals": 9,
@@ -2677,6 +2697,26 @@
         "saber-decimal-wrapped",
         "saber-swappable"
       ]
+    },
+    {
+      "address": "jXWR3mBofnAU1Gv4URvYTu3Yedkv7JZA8zHJzxXdzeA",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "description": "Sencha LP token between aSOL Aggregate Solana Stake Pool and Cashio Dollar",
+        "discord": "https://discord.gg/aF9USSwG33",
+        "medium": "https://medium.com/senchadex",
+        "source": "sencha",
+        "twitter": "https://twitter.com/SenchaDEX",
+        "underlyingTokens": [
+          "ASoLXbfe7cd6igh5yiEsU8M7FW64QRxPKkxk7sjAfond",
+          "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
+        ],
+        "website": "https://sencha.so/#/pool/ASoLXbfe7cd6igh5yiEsU8M7FW64QRxPKkxk7sjAfond/CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/jXWR3mBofnAU1Gv4URvYTu3Yedkv7JZA8zHJzxXdzeA/icon.png",
+      "name": "Sencha aSOL-CASH LP",
+      "symbol": "saSOL-CASH"
     },
     {
       "address": "KNVfdSJyq1pRQk9AKKv1g5uyGuk6wpm4WG16Bjuwdma",
