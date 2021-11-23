@@ -323,6 +323,13 @@
         "address": "CnxwJAg5oroTFDr3NJtEoM954EYH2bNgiswnJcUUa1Vn",
         "decimals": 6
       }
+    },
+    {
+      "quarry": "8hMGkpj9EuTNnMsqrcZ9a9LXh4UCgRS2DaGFJzK5KyaM",
+      "stakedToken": {
+        "address": "2saGyuRCVBkNqaJthYzsXBg6c7frdBbzxR1NpGoe4rEq",
+        "decimals": 9
+      }
     }
   ],
   "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
