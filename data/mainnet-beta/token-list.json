@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-23T04:26:59.923Z",
+  "timestamp": "2021-11-23T05:51:45.598Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -2197,6 +2197,26 @@
       "symbol": "FLocu"
     },
     {
+      "address": "FNmgYiucbSPjwmzK3ZqUydBsHMXMRHt3ouoNfF3amqVi",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "source": "quarry-merge-mine-replica",
+        "underlyingTokens": [
+          "SoLEao8wTzSfqhuou8rcYsVoLjthVmiXuEjzdNPMnCz"
+        ],
+        "website": "https://app.saber.so/#/pools/msol_sol"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/SoLEao8wTzSfqhuou8rcYsVoLjthVmiXuEjzdNPMnCz/icon.png",
+      "name": "Saber mSOL-SOL LP (Replica)",
+      "symbol": "qrmSOL-SOL",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-stableswap-lp",
+        "quarry-merge-mine-replica"
+      ]
+    },
+    {
       "address": "Fr3W7NPVvdVbwMcHgA7Gx2wUxP43txdsn3iULJGFbKz9",
       "chainId": 101,
       "decimals": 8,
@@ -2896,6 +2916,13 @@
         "saber-stableswap-lp",
         "saber-lp-wormhole-v1"
       ]
+    },
+    {
+      "address": "M1KJcP7NGRoHHdjbzeLt2fCMFQBEneK1pj3ubhuLRtP",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token M1KJ",
+      "symbol": "M1KJc"
     },
     {
       "address": "MAiP3Zmjhc6NYiCb2xK2893ifvTTDHciCS57Kga39pC",
