@@ -23,6 +23,7 @@ const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
 };
 
 const TOKEN_LIST_URLS = [
+  "https://raw.githubusercontent.com/SenchaHQ/sencha-lp-token-list/master/lists/sencha-lp.mainnet-beta.json",
   "https://raw.githubusercontent.com/cashioapp/cashio-token-list/main/cashio.mainnet.json",
   "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.mainnet-beta.json",
   "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.devnet.json",
