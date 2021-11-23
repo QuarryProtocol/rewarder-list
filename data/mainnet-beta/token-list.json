@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-23T01:12:48.035Z",
+  "timestamp": "2021-11-23T01:22:01.700Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -2672,7 +2672,7 @@
         ],
         "website": "https://sencha.so/#/pool/CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT/CowKesoLUaHSbAMaUxJUj7eodHHsaLsS65cy8NFyRDGP"
       },
-      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/J8Le9FqYK12xadDw3Mm8k37rWj4tLtHZaWs65fgFjf4F/icon.png",
+      "logoURI": "https://raw.githubusercontent.com/SenchaHQ/sencha-lp-token-list/master/assets/mainnet/J8Le9FqYK12xadDw3Mm8k37rWj4tLtHZaWs65fgFjf4F/icon.png",
       "name": "Sencha CASH-COW LP",
       "symbol": "sCASH-COW"
     },
@@ -2714,7 +2714,7 @@
         ],
         "website": "https://sencha.so/#/pool/ASoLXbfe7cd6igh5yiEsU8M7FW64QRxPKkxk7sjAfond/CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
       },
-      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/jXWR3mBofnAU1Gv4URvYTu3Yedkv7JZA8zHJzxXdzeA/icon.png",
+      "logoURI": "https://raw.githubusercontent.com/SenchaHQ/sencha-lp-token-list/master/assets/mainnet/jXWR3mBofnAU1Gv4URvYTu3Yedkv7JZA8zHJzxXdzeA/icon.png",
       "name": "Sencha aSOL-CASH LP",
       "symbol": "saSOL-CASH"
     },
