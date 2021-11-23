@@ -1,0 +1,15 @@
+{
+  "address": "9eNj2Y4YdqM9Unw8qTm8kzx1Xt64Rft8a6HjvpkPL7QJ",
+  "color": "#6966FB",
+  "description": "Luna rewards for Saber.",
+  "id": "saber-luna",
+  "name": "Saber Luna Rewards",
+  "networks": [
+    "mainnet-beta"
+  ],
+  "redeemer": {
+    "method": "quarry-redeemer",
+    "underlyingToken": "F6v4wfAdJB8D8p77bMXZgYt8TDKsYxLYxH5AFhUkYx9W"
+  },
+  "website": "https://saber.so"
+}
