@@ -407,6 +407,20 @@
           "address": "2saGyuRCVBkNqaJthYzsXBg6c7frdBbzxR1NpGoe4rEq",
           "decimals": 9
         }
+      },
+      {
+        "quarry": "13nUpv7rJ1Sz6Chqh3kD5ZHxfPVh38abSrVT54xpXBsD",
+        "stakedToken": {
+          "address": "78zx22DH6towgM7mGT7nZGmnPyJEgVgcSThDDsQRRQgw",
+          "decimals": 6
+        }
+      },
+      {
+        "quarry": "EuLpc9s1caxWetHBLRxnetQUKkAygngRb1PgYA8qwK1S",
+        "stakedToken": {
+          "address": "F7tt5sohvc1D4dvn2cmJkD2mR6cwtujWG2naKX8x7L7o",
+          "decimals": 8
+        }
       }
     ],
     "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
@@ -936,6 +950,34 @@
         "stakedToken": {
           "address": "WLPAEUgB95YrU7Vk1FVPeSP5C3e66bf63frHRgsyxHv",
           "decimals": 8
+        }
+      },
+      {
+        "quarry": "3gx2cvAG1kwCcmGHPekfGESeFKchbVdXKC5uyesb6D8S",
+        "stakedToken": {
+          "address": "ALPi51sXwH9kNcQuneDwz7kPzJs3hJ5xV6SmnuyqodQP",
+          "decimals": 9
+        }
+      },
+      {
+        "quarry": "4ywU1D73ip7hf5ZqLWdGsRVpLtNPnw39FDNPHQTVccC",
+        "stakedToken": {
+          "address": "ALPb4SssuKFScyUFnTcXLtF3NAkwFuFpQFric5yo4Qpo",
+          "decimals": 9
+        }
+      },
+      {
+        "quarry": "AJExbb6wfD71dUD7QCcQASmHB5B6VqzWV9UjrCHsdDbU",
+        "stakedToken": {
+          "address": "ALPaPPo6xmeGv3a63Pc4S8NJFAAuchhD7XnkkWJqzvXJ",
+          "decimals": 9
+        }
+      },
+      {
+        "quarry": "FTxEbVX18g592J2EjxVg1BcHfCES7pgcnFo2VPcPAKLT",
+        "stakedToken": {
+          "address": "ALPX6x8FkkdQyn9YuoVZjPAapL4nUC7vjJ3AtwStmj9P",
+          "decimals": 9
         }
       }
     ],

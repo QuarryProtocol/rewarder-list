@@ -442,6 +442,34 @@
         "address": "WLPAEUgB95YrU7Vk1FVPeSP5C3e66bf63frHRgsyxHv",
         "decimals": 8
       }
+    },
+    {
+      "quarry": "3gx2cvAG1kwCcmGHPekfGESeFKchbVdXKC5uyesb6D8S",
+      "stakedToken": {
+        "address": "ALPi51sXwH9kNcQuneDwz7kPzJs3hJ5xV6SmnuyqodQP",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "4ywU1D73ip7hf5ZqLWdGsRVpLtNPnw39FDNPHQTVccC",
+      "stakedToken": {
+        "address": "ALPb4SssuKFScyUFnTcXLtF3NAkwFuFpQFric5yo4Qpo",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "AJExbb6wfD71dUD7QCcQASmHB5B6VqzWV9UjrCHsdDbU",
+      "stakedToken": {
+        "address": "ALPaPPo6xmeGv3a63Pc4S8NJFAAuchhD7XnkkWJqzvXJ",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "FTxEbVX18g592J2EjxVg1BcHfCES7pgcnFo2VPcPAKLT",
+      "stakedToken": {
+        "address": "ALPX6x8FkkdQyn9YuoVZjPAapL4nUC7vjJ3AtwStmj9P",
+        "decimals": 9
+      }
     }
   ],
   "rewardsTokenMint": "iouQcQBAiEXe6cKLS85zmZxUqaCqBdeHFpqKoSz615u"
