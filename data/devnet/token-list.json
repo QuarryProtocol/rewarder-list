@@ -30,37 +30,33 @@
       "description": "Decimal wrapper for a different token. See `assetContract` for the mint of the underlying.",
       "name": "saber-dec-wrapped"
     },
-    "saber-hidden": {
-      "description": "Hidden from main Saber UI.",
-      "name": "saber-hidden"
-    },
-    "saber-market-btc": {
+    "saber-mkt-btc": {
       "description": "Token which trades against other representations of BTC.",
-      "name": "saber-market-btc"
+      "name": "saber-mkt-btc"
     },
-    "saber-market-eth": {
+    "saber-mkt-eth": {
       "description": "Token which trades against other representations of ETH.",
-      "name": "saber-market-eth"
+      "name": "saber-mkt-eth"
     },
-    "saber-market-ftt": {
+    "saber-mkt-ftt": {
       "description": "Token which trades against other representations of FTT.",
-      "name": "saber-market-ftt"
+      "name": "saber-mkt-ftt"
     },
-    "saber-market-luna": {
+    "saber-mkt-luna": {
       "description": "Token which trades against other representations of LUNA.",
-      "name": "saber-market-luna"
+      "name": "saber-mkt-luna"
     },
-    "saber-market-sol": {
+    "saber-mkt-sol": {
       "description": "Token which trades against other representations of SOL.",
-      "name": "saber-market-sol"
+      "name": "saber-mkt-sol"
     },
-    "saber-market-srm": {
+    "saber-mkt-srm": {
       "description": "Token which trades against other representations of SRM.",
-      "name": "saber-market-srm"
+      "name": "saber-mkt-srm"
     },
-    "saber-market-usd": {
+    "saber-mkt-usd": {
       "description": "Token which trades against other representations of USD.",
-      "name": "saber-market-usd"
+      "name": "saber-mkt-usd"
     },
     "saber-stableswap-lp": {
       "description": "Saber StableSwap LP token.",
@@ -103,7 +99,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-24T00:44:52.598Z",
+  "timestamp": "2021-11-25T00:46:06.377Z",
   "tokens": [
     {
       "address": "24bB56DwuV3AgfqGWX7rn4WuyYUL4Udn45d5BNQMQjkJ",
@@ -160,13 +156,14 @@
       "address": "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8",
       "chainId": 103,
       "decimals": 6,
-      "extensions": {},
+      "extensions": {
+        "currency": "USD"
+      },
       "logoURI": "https://registry.saber.so/token-icons/usdc.svg",
       "name": "USD Coin",
       "symbol": "USDC",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -271,26 +268,28 @@
       "address": "4QgnWUPQmfGB5dTDCcc4ZFeZDK7xNVhCUFoNmmYFwAme",
       "chainId": 103,
       "decimals": 6,
-      "extensions": {},
+      "extensions": {
+        "currency": "USD"
+      },
       "logoURI": "https://registry.saber.so/token-icons/candy-usd.png",
       "name": "Test USD",
       "symbol": "TEST",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
       "address": "4ry1pMstKzMJvMZSms62HduTyCbbqkUyrz17x1dajBmL",
       "chainId": 103,
       "decimals": 6,
-      "extensions": {},
+      "extensions": {
+        "currency": "USD"
+      },
       "logoURI": "https://registry.saber.so/token-icons/pai.svg",
       "name": "PAI",
       "symbol": "PAI",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -717,6 +716,7 @@
       "decimals": 8,
       "extensions": {
         "assetContract": "Wbt2CgkkD3eVckD5XxWJmT8pTnFTyWrwvGM7bUMLvsM",
+        "currency": "BTC",
         "underlyingTokens": [
           "Wbt2CgkkD3eVckD5XxWJmT8pTnFTyWrwvGM7bUMLvsM"
         ],
@@ -726,9 +726,8 @@
       "name": "Saber Wrapped Test WBTC (8 decimals)",
       "symbol": "sWBTC-8",
       "tags": [
-        "saber-market-btc",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-btc",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -842,6 +841,13 @@
       "decimals": 6,
       "name": "Token DmvF",
       "symbol": "DmvFW"
+    },
+    {
+      "address": "DqNTx3jrzAPpoYG6WXLsyD8XaGBJPEAofWgyHYUrbZqr",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token DqNT",
+      "symbol": "DqNTx"
     },
     {
       "address": "DrjXoTBFF9j3Cc6qyntEvhFaWod6bnmCqujBNHwpnXBk",
@@ -964,13 +970,14 @@
       "address": "EJwZgeZrdC8TXTQbQBoL6bfuAnFUUy1PVCMB4DYPzVaS",
       "chainId": 103,
       "decimals": 6,
-      "extensions": {},
+      "extensions": {
+        "currency": "USD"
+      },
       "logoURI": "https://registry.saber.so/token-icons/usdt.svg",
       "name": "Tether USD",
       "symbol": "USDT",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -1148,6 +1155,7 @@
       "chainId": 103,
       "decimals": 6,
       "extensions": {
+        "currency": "USD",
         "source": "quarry-merge-mine-replica",
         "underlyingTokens": [
           "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8"
@@ -1157,8 +1165,7 @@
       "name": "USD Coin (Replica)",
       "symbol": "qrUSDC",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable",
+        "saber-mkt-usd",
         "quarry-merge-mine-replica"
       ]
     },
@@ -1297,24 +1304,22 @@
       "address": "Ren3RLPCG6hpKay86d2fQccQLuGG331UNxwn2VTw3GJ",
       "chainId": 103,
       "decimals": 8,
-      "extensions": {},
+      "extensions": {
+        "currency": "BTC"
+      },
       "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/ethereum/assets/0xEB4C2781e4ebA804CE9a9803C67d0893436bB27D/logo.png",
       "name": "Test RenBTC",
       "symbol": "renBTC",
       "tags": [
-        "saber-market-btc",
-        "saber-swappable"
+        "saber-mkt-btc"
       ]
     },
     {
       "address": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1",
-      "chainId": 103,
+      "chainId": 104,
       "decimals": 6,
-      "extensions": {},
-      "logoURI": "/tokens/sbr.svg",
-      "name": "Saber Protocol Token",
-      "symbol": "SBR",
-      "tags": []
+      "name": "Token Sabe",
+      "symbol": "Saber"
     },
     {
       "address": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC",

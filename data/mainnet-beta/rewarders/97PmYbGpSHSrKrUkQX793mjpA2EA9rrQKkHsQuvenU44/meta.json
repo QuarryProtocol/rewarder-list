@@ -344,6 +344,13 @@
         "address": "F7tt5sohvc1D4dvn2cmJkD2mR6cwtujWG2naKX8x7L7o",
         "decimals": 8
       }
+    },
+    {
+      "quarry": "3n2mXWgnWwUdPnkc258oPTB3YvSHJiw8AJALbgg6bpV3",
+      "stakedToken": {
+        "address": "DsFMPzEE7F6CG3PJDa5KFFaYEetTwDWxuHe844fMrHz3",
+        "decimals": 9
+      }
     }
   ],
   "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"

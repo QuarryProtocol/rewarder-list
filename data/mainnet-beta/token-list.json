@@ -30,37 +30,33 @@
       "description": "Decimal wrapper for a different token. See `assetContract` for the mint of the underlying.",
       "name": "saber-dec-wrapped"
     },
-    "saber-hidden": {
-      "description": "Hidden from main Saber UI.",
-      "name": "saber-hidden"
-    },
-    "saber-market-btc": {
+    "saber-mkt-btc": {
       "description": "Token which trades against other representations of BTC.",
-      "name": "saber-market-btc"
+      "name": "saber-mkt-btc"
     },
-    "saber-market-eth": {
+    "saber-mkt-eth": {
       "description": "Token which trades against other representations of ETH.",
-      "name": "saber-market-eth"
+      "name": "saber-mkt-eth"
     },
-    "saber-market-ftt": {
+    "saber-mkt-ftt": {
       "description": "Token which trades against other representations of FTT.",
-      "name": "saber-market-ftt"
+      "name": "saber-mkt-ftt"
     },
-    "saber-market-luna": {
+    "saber-mkt-luna": {
       "description": "Token which trades against other representations of LUNA.",
-      "name": "saber-market-luna"
+      "name": "saber-mkt-luna"
     },
-    "saber-market-sol": {
+    "saber-mkt-sol": {
       "description": "Token which trades against other representations of SOL.",
-      "name": "saber-market-sol"
+      "name": "saber-mkt-sol"
     },
-    "saber-market-srm": {
+    "saber-mkt-srm": {
       "description": "Token which trades against other representations of SRM.",
-      "name": "saber-market-srm"
+      "name": "saber-mkt-srm"
     },
-    "saber-market-usd": {
+    "saber-mkt-usd": {
       "description": "Token which trades against other representations of USD.",
-      "name": "saber-market-usd"
+      "name": "saber-mkt-usd"
     },
     "saber-stableswap-lp": {
       "description": "Saber StableSwap LP token.",
@@ -103,7 +99,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-24T00:44:52.495Z",
+  "timestamp": "2021-11-25T00:46:06.219Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -126,9 +122,8 @@
       "name": "Serum (Wormhole V1)",
       "symbol": "wSRM_V1",
       "tags": [
-        "saber-market-srm",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-srm",
+        "wormhole-v1"
       ]
     },
     {
@@ -145,9 +140,8 @@
       "name": "USDK (Wormhole V1)",
       "symbol": "wUSDK_V1",
       "tags": [
-        "saber-market-usd",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v1"
       ]
     },
     {
@@ -195,9 +189,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-luna",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-luna",
+        "wormhole-v1"
       ]
     },
     {
@@ -219,9 +212,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -255,12 +247,11 @@
         "source": "allbridge",
         "sourceUrl": "https://app.allbridge.io/bridge"
       },
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/qfnqNqs3nCAHjnyCgLRDbBtq4p2MtHZxw8YjSyYhPoL/logo.png",
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/3os2M3bX9qta154PRbU9rzaPUYAKAqVpaMMS8u2hoUQu.png",
       "name": "Wrapped BTC (Allbridge from BSC)",
       "symbol": "abBTCB",
       "tags": [
-        "saber-market-btc",
-        "saber-swappable"
+        "saber-mkt-btc"
       ]
     },
     {
@@ -274,14 +265,17 @@
         "sourceUrl": "https://mainnet.port.finance/#/markets",
         "underlyingTokens": [
           "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
-        ]
+        ],
+        "website": "https://port.finance"
       },
-      "logoURI": "https://registry.saber.so/token-icons/usdt.svg",
-      "name": "Port USDT",
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/3RudPTAkfcq9Q9Jk8SVeCoecCBmdKMj6q5smsWzxqtqZ/USDT.svg",
+      "name": "Port Finance USDT",
       "symbol": "pUSDT",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "port",
+        "lending",
+        "collateral-tokens",
+        "saber-mkt-usd"
       ]
     },
     {
@@ -317,10 +311,16 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
+    },
+    {
+      "address": "4Bc2xGiHFmfkSWH2csinUTKVymGrYVADVZD2iKdWw5dp",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 4Bc2",
+      "symbol": "4Bc2x"
     },
     {
       "address": "4jL2htQtstTzatmtJL85M6z89E238ozg5eUa9u54Qyxb",
@@ -364,9 +364,8 @@
       "name": "USDT (Polygon Wormhole)",
       "symbol": "wpUSDT",
       "tags": [
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -395,8 +394,7 @@
       "symbol": "scnSOL",
       "tags": [
         "stake-pool",
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -418,9 +416,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -437,9 +434,8 @@
       "name": "ibBTC (Wormhole V1)",
       "symbol": "wibBTC_V1",
       "tags": [
-        "saber-market-btc",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-btc",
+        "wormhole-v1"
       ]
     },
     {
@@ -471,8 +467,7 @@
       "symbol": "abBUSD",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -524,8 +519,7 @@
       "name": "Lido Staked SOL",
       "symbol": "stSOL",
       "tags": [
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -554,9 +548,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-eth",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-eth",
+        "wormhole-v2"
       ]
     },
     {
@@ -578,9 +571,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -599,8 +591,7 @@
       "name": "Synthetic USD",
       "symbol": "xUSD",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -622,9 +613,8 @@
       "symbol": "sUSDC-8",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -643,8 +633,7 @@
       "name": "Synthetic ETH",
       "symbol": "xETH",
       "tags": [
-        "saber-market-eth",
-        "saber-swappable"
+        "saber-mkt-eth"
       ]
     },
     {
@@ -666,9 +655,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v1"
       ]
     },
     {
@@ -690,9 +678,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-btc",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-btc",
+        "wormhole-v1"
       ]
     },
     {
@@ -713,9 +700,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -733,8 +719,7 @@
       "name": "renLUNA",
       "symbol": "renLUNA",
       "tags": [
-        "saber-market-luna",
-        "saber-swappable"
+        "saber-mkt-luna"
       ]
     },
     {
@@ -747,13 +732,12 @@
         "source": "allbridge",
         "sourceUrl": "https://app.allbridge.io/bridge"
       },
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/BXXkv6z8ykpG1yuvUDPgh732wzVHB69RnB9YgSYh3itW/logo.png",
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/8XSsNvaKU9FDhYWAv7Yc7qSNwuJSzVrXBNEk7AFiWF69.png",
       "name": "Wrapped USDC (Allbridge from BSC)",
       "symbol": "abUSDC",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -771,8 +755,7 @@
       "symbol": "aaUSDC",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -808,8 +791,7 @@
       "symbol": "pSOL",
       "tags": [
         "stablecoin",
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -826,8 +808,7 @@
       "name": "MAI (miMATIC)",
       "symbol": "MAI",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -855,9 +836,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -875,8 +855,7 @@
       "symbol": "aeDAI",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -911,9 +890,8 @@
       "symbol": "weUSDC",
       "tags": [
         "wrapped",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -931,8 +909,7 @@
       "symbol": "aeWETH",
       "tags": [
         "stablecoin",
-        "saber-market-eth",
-        "saber-swappable"
+        "saber-mkt-eth"
       ]
     },
     {
@@ -1034,9 +1011,8 @@
       "symbol": "sUSDT-9",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -1065,9 +1041,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v1"
       ]
     },
     {
@@ -1221,8 +1196,7 @@
       "name": "aSOL Aggregate Solana Stake Pool",
       "symbol": "aSOL",
       "tags": [
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -1355,8 +1329,7 @@
       "name": "Synthetic SOL",
       "symbol": "xSOL",
       "tags": [
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -1373,8 +1346,7 @@
       "name": "Parrot Stake Pool SOL",
       "symbol": "prtSOL",
       "tags": [
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -1391,8 +1363,7 @@
       "name": "Wrapped FTT (Allbridge from Ethereum)",
       "symbol": "aeFTT",
       "tags": [
-        "saber-market-ftt",
-        "saber-swappable"
+        "saber-mkt-ftt"
       ]
     },
     {
@@ -1410,8 +1381,7 @@
       "symbol": "aeUSDT",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -1429,8 +1399,7 @@
       "symbol": "ahBTC",
       "tags": [
         "stablecoin",
-        "saber-market-btc",
-        "saber-swappable"
+        "saber-mkt-btc"
       ]
     },
     {
@@ -1507,9 +1476,8 @@
       "name": "Saber Wrapped renBTC (10 decimals)",
       "symbol": "srenBTC-10",
       "tags": [
-        "saber-market-btc",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-btc",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -1572,9 +1540,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v1"
       ]
     },
     {
@@ -1583,6 +1550,13 @@
       "decimals": 8,
       "name": "Token C7we",
       "symbol": "C7wex"
+    },
+    {
+      "address": "C9PXceoq8uho2RZDGdtxYmyGYXeJUABaUP4qn37wQCgB",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token C9PX",
+      "symbol": "C9PXc"
     },
     {
       "address": "C9xqJe3gMTUDKidZsZ6jJ7tL9zSLimDUKVpgUbLZnNbi",
@@ -1607,9 +1581,8 @@
       "symbol": "sCASH-9",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -1652,8 +1625,7 @@
       "name": "renBTC",
       "symbol": "renBTC",
       "tags": [
-        "saber-market-btc",
-        "saber-swappable"
+        "saber-mkt-btc"
       ]
     },
     {
@@ -1813,9 +1785,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v1"
       ]
     },
     {
@@ -1894,8 +1865,7 @@
       "symbol": "aeUSDC",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -1920,8 +1890,7 @@
       "symbol": "acUSDC",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -1949,9 +1918,8 @@
       "symbol": "weUSDT",
       "tags": [
         "wrapped",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -1976,9 +1944,15 @@
       "symbol": "apUSDT",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
+    },
+    {
+      "address": "DsFMPzEE7F6CG3PJDa5KFFaYEetTwDWxuHe844fMrHz3",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token DsFM",
+      "symbol": "DsFMP"
     },
     {
       "address": "DT26tjv9SEuSrQohJ7vSAVShy3xDqjBazGSciDYdZzNP",
@@ -2015,7 +1989,7 @@
         "stablecoin",
         "saber-market-btc",
         "saber-swappable",
-        "saber-swappable"
+        "saber-mkt-btc"
       ]
     },
     {
@@ -2032,9 +2006,8 @@
       "name": "USDC (Polygon Wormhole)",
       "symbol": "wpUSDC",
       "tags": [
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -2047,13 +2020,12 @@
         "source": "allbridge",
         "sourceUrl": "https://app.allbridge.io/bridge"
       },
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/BQcdHdAQW1hczDbBi9hiegXAR7A98Q9jx3X3iBBBDiq4/logo.png",
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/E77cpQ4VncGmcAXX16LHFFzNBEBb2U7Ar7LBmZNfCgwL.png",
       "name": "Wrapped USDT (Allbridge from BSC)",
       "symbol": "abUSDT",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2077,8 +2049,7 @@
       "tags": [
         "utility-token",
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2096,8 +2067,7 @@
       "symbol": "aaDAI",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2118,9 +2088,8 @@
       "symbol": "weDAI",
       "tags": [
         "wrapped",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -2145,8 +2114,7 @@
       "symbol": "USDC",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2164,8 +2132,7 @@
       "symbol": "apUSDC",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2183,8 +2150,7 @@
       "symbol": "USDT",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2202,8 +2168,7 @@
       "symbol": "acUSD",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2216,12 +2181,11 @@
         "source": "allbridge",
         "sourceUrl": "https://app.allbridge.io/bridge"
       },
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/FeGn77dhg1KXRRFeSwwMiykZnZPw5JXW6naf2aQgZDQf/logo.png",
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/EyrnrbE5ujd3HQG5PZd9MbECN9yaQrqc8pRwGtaLoyC.png",
       "name": "Wrapped ETH (Allbridge from BSC)",
       "symbol": "abETH",
       "tags": [
-        "saber-market-eth",
-        "saber-swappable"
+        "saber-mkt-eth"
       ]
     },
     {
@@ -2243,9 +2207,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-ftt",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-ftt",
+        "wormhole-v2"
       ]
     },
     {
@@ -2266,9 +2229,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-luna",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-luna",
+        "wormhole-v2"
       ]
     },
     {
@@ -2298,9 +2260,8 @@
       "name": "Saber Wrapped renBTC (9 decimals)",
       "symbol": "srenBTC-9",
       "tags": [
-        "saber-market-btc",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-btc",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -2321,9 +2282,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -2340,8 +2300,7 @@
       "name": "Wrapped BTC (Allbridge from Avalanche)",
       "symbol": "aaWBTC",
       "tags": [
-        "saber-market-btc",
-        "saber-swappable"
+        "saber-mkt-btc"
       ]
     },
     {
@@ -2362,14 +2321,17 @@
         "sourceUrl": "https://mainnet.port.finance/#/markets",
         "underlyingTokens": [
           "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
-        ]
+        ],
+        "website": "https://port.finance"
       },
-      "logoURI": "https://registry.saber.so/token-icons/usdc.svg",
-      "name": "Port USDC",
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/FgSsGV8GByPaMERxeQJPvZRZHf7zCBhrdYtztKorJS58/USDC.svg",
+      "name": "Port Finance USDC",
       "symbol": "pUSDC",
       "tags": [
-        "saber-market-usd",
-        "saber-swappable"
+        "port",
+        "lending",
+        "collateral-tokens",
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2421,8 +2383,7 @@
       "name": "Synthetic FTT",
       "symbol": "xFTT",
       "tags": [
-        "saber-market-ftt",
-        "saber-swappable"
+        "saber-mkt-ftt"
       ]
     },
     {
@@ -2444,9 +2405,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v2",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v2"
       ]
     },
     {
@@ -2519,10 +2479,9 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-ftt",
+        "saber-mkt-ftt",
         "wormhole-v2",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -2548,9 +2507,8 @@
       "tags": [
         "wrapped-sollet",
         "ethereum",
-        "saber-market-ftt",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-ftt",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -2615,8 +2573,7 @@
       "symbol": "aaUSDT",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2638,9 +2595,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-usd",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "wormhole-v1"
       ]
     },
     {
@@ -2662,9 +2618,8 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-ftt",
-        "wormhole-v1",
-        "saber-swappable"
+        "saber-mkt-ftt",
+        "wormhole-v1"
       ]
     },
     {
@@ -2709,8 +2664,7 @@
       "symbol": "ahUSDT",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-swappable"
+        "saber-mkt-usd"
       ]
     },
     {
@@ -2903,8 +2857,7 @@
       "name": "Synthetic BTC",
       "symbol": "xBTC",
       "tags": [
-        "saber-market-btc",
-        "saber-swappable"
+        "saber-mkt-btc"
       ]
     },
     {
@@ -2960,9 +2913,8 @@
       "symbol": "sUSDC-9",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -3008,10 +2960,9 @@
       "tags": [
         "wrapped",
         "wormhole",
-        "saber-market-eth",
+        "saber-mkt-eth",
         "wormhole-v2",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -3033,9 +2984,8 @@
       "name": "Saber Wrapped renLUNA (9 decimals)",
       "symbol": "srenLUNA-9",
       "tags": [
-        "saber-market-luna",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-luna",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -3180,8 +3130,7 @@
       "name": "Marinade staked SOL (mSOL)",
       "symbol": "mSOL",
       "tags": [
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -3314,12 +3263,9 @@
         "waterfallbot": "https://bit.ly/SBRwaterfall",
         "website": "https://saber.so"
       },
-      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1.svg",
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1/logo.svg",
       "name": "Saber Protocol Token",
-      "symbol": "SBR",
-      "tags": [
-        "saber-hidden"
-      ]
+      "symbol": "SBR"
     },
     {
       "address": "SBTCB6pWqeDo6zGi9WVRMLCsKsN6JiR1RMUqvLtgSRv",
@@ -3332,6 +3278,8 @@
         "currency": "BTC",
         "serumV3Usdc": "A8YFbxQYFVqKZaoYJLLUVcQiWP7G2MeEgW5wsAQgMvFw",
         "serumV3Usdt": "C1EuT9VokAKLiW7i2ASnZUvxDoKuKkCpDDeNxAptuNe4",
+        "source": "sollet",
+        "sourceUrl": "https://www.sollet.io/",
         "underlyingTokens": [
           "9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E"
         ],
@@ -3343,9 +3291,8 @@
       "tags": [
         "wrapped-sollet",
         "ethereum",
-        "saber-market-btc",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-btc",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -3359,6 +3306,8 @@
         "currency": "ETH",
         "serumV3Usdc": "4tSvZvnbyzHXLMTiFonMyxZoHmFqau1XArcRCVHLZ5gX",
         "serumV3Usdt": "7dLVkUfBVfCGkFhSXDCq1ukM9usathSgS716t643iFGF",
+        "source": "sollet",
+        "sourceUrl": "https://www.sollet.io/",
         "underlyingTokens": [
           "2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk"
         ],
@@ -3370,9 +3319,8 @@
       "tags": [
         "wrapped-sollet",
         "ethereum",
-        "saber-market-eth",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-eth",
+        "saber-dec-wrapped"
       ]
     },
     {
@@ -3409,8 +3357,7 @@
       "name": "Wrapped SOL",
       "symbol": "SOL",
       "tags": [
-        "saber-market-sol",
-        "saber-swappable"
+        "saber-mkt-sol"
       ]
     },
     {
@@ -3487,8 +3434,7 @@
       "name": "Serum",
       "symbol": "SRM",
       "tags": [
-        "saber-market-srm",
-        "saber-swappable"
+        "saber-mkt-srm"
       ]
     },
     {
@@ -3554,9 +3500,8 @@
       "symbol": "sUSDT-8",
       "tags": [
         "stablecoin",
-        "saber-market-usd",
-        "saber-dec-wrapped",
-        "saber-swappable"
+        "saber-mkt-usd",
+        "saber-dec-wrapped"
       ]
     },
     {
