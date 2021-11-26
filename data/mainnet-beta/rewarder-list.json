@@ -88,5 +88,20 @@
       "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey"
     },
     "website": "https://saber.so"
+  },
+  {
+    "address": "3ahWtCwoyv4HHYdDtSzSPzD8DDo6jJKqEmPJrdztFnw4",
+    "color": "#8d459a",
+    "description": "Pole Finance is a leveraged yield aggregator on Solana.",
+    "id": "pole",
+    "name": "Pole Aggregator",
+    "networks": [
+      "mainnet-beta"
+    ],
+    "redeemer": {
+      "method": "quarry-redeemer",
+      "underlyingToken": "PoLEXM5xikzieXENFvP7WwHJPorcFiCUVuMo9BAGZT3"
+    },
+    "website": "https://pole.finance/"
   }
 ]
