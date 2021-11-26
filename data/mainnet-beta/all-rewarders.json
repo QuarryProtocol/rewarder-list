@@ -442,6 +442,13 @@
           "address": "DsFMPzEE7F6CG3PJDa5KFFaYEetTwDWxuHe844fMrHz3",
           "decimals": 9
         }
+      },
+      {
+        "quarry": "8BhgfEMKFSqNUmhCKyh255A67EAqPc9vkCxZRwp1Y5Yz",
+        "stakedToken": {
+          "address": "AUSDK6tzpjBSd7ZJH46wTHAgxaU4Q2CoUSvcFY2fg3fr",
+          "decimals": 6
+        }
       }
     ],
     "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
