@@ -99,7 +99,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-25T00:46:06.219Z",
+  "timestamp": "2021-11-27T00:43:33.807Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -259,13 +259,9 @@
       "chainId": 101,
       "decimals": 6,
       "extensions": {
-        "coingeckoId": "tether",
         "currency": "USD",
         "source": "port",
         "sourceUrl": "https://mainnet.port.finance/#/markets",
-        "underlyingTokens": [
-          "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
-        ],
         "website": "https://port.finance"
       },
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/3RudPTAkfcq9Q9Jk8SVeCoecCBmdKMj6q5smsWzxqtqZ/USDT.svg",
@@ -1200,6 +1196,13 @@
       ]
     },
     {
+      "address": "AUSDK6tzpjBSd7ZJH46wTHAgxaU4Q2CoUSvcFY2fg3fr",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token AUSD",
+      "symbol": "AUSDK"
+    },
+    {
       "address": "AVBDpg1UYpDYQLbzEnRY76R3u82PYHtDuc3NBdFS2k39",
       "chainId": 101,
       "decimals": 9,
@@ -2053,6 +2056,13 @@
       ]
     },
     {
+      "address": "EGP5zsP1dECtPpxj4rXhrgFSMsdvwTQ4SRDLoFnzTpzT",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token EGP5",
+      "symbol": "EGP5z"
+    },
+    {
       "address": "EgQ3yNtVhdHz7g1ZhjfGbxhFKMPPaFkz8QHXM5RBZBgi",
       "chainId": 101,
       "decimals": 9,
@@ -2315,13 +2325,9 @@
       "chainId": 101,
       "decimals": 6,
       "extensions": {
-        "coingeckoId": "usd-coin",
         "currency": "USD",
         "source": "port",
         "sourceUrl": "https://mainnet.port.finance/#/markets",
-        "underlyingTokens": [
-          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
-        ],
         "website": "https://port.finance"
       },
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/FgSsGV8GByPaMERxeQJPvZRZHf7zCBhrdYtztKorJS58/USDC.svg",
@@ -2989,6 +2995,13 @@
       ]
     },
     {
+      "address": "LDdq4KhNRuGUjno4waam4HTkyftYpeRjC6Rbjtiao8b",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token LDdq",
+      "symbol": "LDdq4"
+    },
+    {
       "address": "LPmSozJJ8Jh69ut2WP3XmVohTjL4ipR18yiCzxrUmVj",
       "chainId": 101,
       "decimals": 9,
@@ -3204,8 +3217,8 @@
         "website": "https://app.saber.so/#/pools/port_2pool"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/PortuzxBGYMQXeNmM9Kc6AtHLBwqSrb6xWwZ4trQ1en/icon.png",
-      "name": "Saber USDT-USDC LP",
-      "symbol": "USDT-USDC",
+      "name": "Saber pUSDT-pUSDC LP",
+      "symbol": "pUSDT-pUSDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-port"

@@ -351,6 +351,20 @@
         "address": "DsFMPzEE7F6CG3PJDa5KFFaYEetTwDWxuHe844fMrHz3",
         "decimals": 9
       }
+    },
+    {
+      "quarry": "8BhgfEMKFSqNUmhCKyh255A67EAqPc9vkCxZRwp1Y5Yz",
+      "stakedToken": {
+        "address": "AUSDK6tzpjBSd7ZJH46wTHAgxaU4Q2CoUSvcFY2fg3fr",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "G1ZpzaBpqNt7hpbRnc6vbiA6fvt2wAoESpnoEM2uFKyk",
+      "stakedToken": {
+        "address": "LDdq4KhNRuGUjno4waam4HTkyftYpeRjC6Rbjtiao8b",
+        "decimals": 9
+      }
     }
   ],
   "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
