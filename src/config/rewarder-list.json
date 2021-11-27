@@ -95,5 +95,18 @@
       "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
       "method": "quarry-redeemer"
     }
+  },
+  {
+    "id": "pole",
+    "name": "Pole Aggregator",
+    "networks": ["mainnet-beta"],
+    "address": "3ahWtCwoyv4HHYdDtSzSPzD8DDo6jJKqEmPJrdztFnw4",
+    "color": "#8d459a",
+    "description": "Pole Finance is a leveraged yield aggregator on Solana.",
+    "website": "https://pole.finance/",
+    "redeemer": {
+      "underlyingToken": "PoLEXM5xikzieXENFvP7WwHJPorcFiCUVuMo9BAGZT3",
+      "method": "quarry-redeemer"
+    }
   }
 ]
