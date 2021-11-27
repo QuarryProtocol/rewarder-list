@@ -99,7 +99,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-27T00:43:33.807Z",
+  "timestamp": "2021-11-27T15:53:46.860Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -2297,6 +2297,13 @@
       ]
     },
     {
+      "address": "FCUpJvENak32mM9PQPxKKUejR4X8GLs2mhmdLva2hEuJ",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token FCUp",
+      "symbol": "FCUpJ"
+    },
+    {
       "address": "Fd8xyHHRjTvxfZrBirb6MaxSmrZYw99gRSqFUKdFwFvw",
       "chainId": 101,
       "decimals": 9,
@@ -3203,6 +3210,22 @@
         "saber-stableswap-lp",
         "saber-lp-allbridge"
       ]
+    },
+    {
+      "address": "PoLEXM5xikzieXENFvP7WwHJPorcFiCUVuMo9BAGZT3",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "discord": "https://discord.gg/RASngHfHhS",
+        "github": "https://github.com/pole-finance",
+        "medium": "https://medium.com/pole-aggregator",
+        "serumV3Usdc": "Ak1UDskYAjztX5YkxW8dmERjLwS9fYmk1b3G6fpWDxp6",
+        "twitter": "https://twitter.com/Pole_Finance",
+        "website": "https://pole.finance"
+      },
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/PoLEXM5xikzieXENFvP7WwHJPorcFiCUVuMo9BAGZT3/logo.svg",
+      "name": "Pole Aggregator Governance Token",
+      "symbol": "POLE"
     },
     {
       "address": "PortuzxBGYMQXeNmM9Kc6AtHLBwqSrb6xWwZ4trQ1en",

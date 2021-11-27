@@ -89,6 +89,12 @@
     ],
     "rewardsTokenMint": "CowKesoLUaHSbAMaUxJUj7eodHHsaLsS65cy8NFyRDGP"
   },
+  "8sgwNqjEMNqKrJEAxSiRBtrqa5upAAoBiDKixXyfbZvb": {
+    "authority": "AWzUk7H29tjhJpY6Fiky6WXM5XUhSVTyBhaJC9XkBt2g",
+    "mintWrapper": "BJnXnoFVMLt1z1cGnEVKuNfwRiPrzSjXu9CkZPSQB6BL",
+    "quarries": [],
+    "rewardsTokenMint": "FCUpJvENak32mM9PQPxKKUejR4X8GLs2mhmdLva2hEuJ"
+  },
   "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44": {
     "authority": "6nkKEQNWkMS1EXeypCQB5QvRVqSbDDxJM7furzPGmxmR",
     "mintWrapper": "9AMTd87fjLQzVt2fM9fdm2h4RNWHBVv9QR1UvYt8fVHP",
