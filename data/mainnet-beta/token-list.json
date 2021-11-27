@@ -99,7 +99,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-26T00:52:17.113Z",
+  "timestamp": "2021-11-27T00:43:33.807Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -2056,6 +2056,13 @@
       ]
     },
     {
+      "address": "EGP5zsP1dECtPpxj4rXhrgFSMsdvwTQ4SRDLoFnzTpzT",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token EGP5",
+      "symbol": "EGP5z"
+    },
+    {
       "address": "EgQ3yNtVhdHz7g1ZhjfGbxhFKMPPaFkz8QHXM5RBZBgi",
       "chainId": 101,
       "decimals": 9,
@@ -2986,6 +2993,13 @@
         "saber-mkt-luna",
         "saber-dec-wrapped"
       ]
+    },
+    {
+      "address": "LDdq4KhNRuGUjno4waam4HTkyftYpeRjC6Rbjtiao8b",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token LDdq",
+      "symbol": "LDdq4"
     },
     {
       "address": "LPmSozJJ8Jh69ut2WP3XmVohTjL4ipR18yiCzxrUmVj",
