@@ -99,7 +99,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-27T19:34:26.334Z",
+  "timestamp": "2021-11-28T00:46:30.145Z",
   "tokens": [
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
@@ -2144,6 +2144,13 @@
         "stablecoin",
         "saber-mkt-usd"
       ]
+    },
+    {
+      "address": "EqUHTBXXy8EYgG8DT9FN9AicbyqVvBC6oENL8TWAmFXA",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token EqUH",
+      "symbol": "EqUHT"
     },
     {
       "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
