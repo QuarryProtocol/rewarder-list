@@ -108,5 +108,18 @@
       "underlyingToken": "PoLEXM5xikzieXENFvP7WwHJPorcFiCUVuMo9BAGZT3",
       "method": "quarry-redeemer"
     }
+  },
+  {
+    "id": "port",
+    "name": "Port Finance",
+    "networks": ["mainnet-beta"],
+    "address": "GuHrjvzqDvLTB27ebd9iFKwceCxKvSswzTByDQUTsvdm",
+    "color": "#806df9",
+    "description": "Port Finance aims to provide a suite of fixed income products.",
+    "website": "https://port.finance",
+    "redeemer": {
+      "underlyingToken": "PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y",
+      "method": "quarry-redeemer"
+    }
   }
 ]
