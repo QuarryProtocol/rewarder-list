@@ -61,6 +61,12 @@
     ],
     "rewardsTokenMint": "7sbYKrWs5Rn5NVWB5soNHiwLeHaS3xwLwd4nzzMpMzLH"
   },
+  "3Q9QZW6MEKSkJ4yQ5qDhj2Nfb3dC1T39TMTgzhhKgpkF": {
+    "authority": "4dMS5Z2FRkw5Zed4wxmi2FnFKx192FtwwiLRSUXRtwNj",
+    "mintWrapper": "FJabs6SPUuuZqdWYLC7KgNvehCzBc9a5Z8Q7yQ6pPgyp",
+    "quarries": [],
+    "rewardsTokenMint": "7zMssWL23q9KTuCbhop4X2c84M3NbjnAXYwbpEXuBTmM"
+  },
   "3VL8En4rghBAwcB7RB5qyfQqN4MhLwon6AHv4d8V3AuW": {
     "authority": "J8cgZEeYRzQf71cHJsWa9AbzMsbfwsPLxSaBx6pz4LVH",
     "mintWrapper": "Wh7mbtHYhT5SpsUVWnWecW84rpTa6z7jU7etFdrzcPN",
@@ -431,6 +437,12 @@
       }
     ],
     "rewardsTokenMint": "FtjNnvRkr3cjUM93PDzuTU1Pyvx18iTxMzikfYABZrXj"
+  },
+  "8KEwoFJHnxveZnWyYaLJf3Y46XqCaircLNfF5TMmriWW": {
+    "authority": "EnHBYsRckMqtAkpfXhhRTpCo3XF5CFgywXyktqMYoJcV",
+    "mintWrapper": "FJabs6SPUuuZqdWYLC7KgNvehCzBc9a5Z8Q7yQ6pPgyp",
+    "quarries": [],
+    "rewardsTokenMint": "7zMssWL23q9KTuCbhop4X2c84M3NbjnAXYwbpEXuBTmM"
   },
   "8rNTFDnSLzZKsPuZuR7SxJhWw7qEC3LvxmfoHx4NVyqu": {
     "authority": "14YqZ3X4SgS3ybWH3DLLpjgDNaQah9ri7YkRDC5xLsKc",
@@ -836,6 +848,12 @@
       }
     ],
     "rewardsTokenMint": "8ZDA8ig2KhehrFEVJZ4WjCARCfWfT9WrCieFYWTWTCmU"
+  },
+  "BTyUeF5kQ4aHZySCAiW5DrDiRk9joF8U32aTGFMTRSJM": {
+    "authority": "4dMS5Z2FRkw5Zed4wxmi2FnFKx192FtwwiLRSUXRtwNj",
+    "mintWrapper": "FJabs6SPUuuZqdWYLC7KgNvehCzBc9a5Z8Q7yQ6pPgyp",
+    "quarries": [],
+    "rewardsTokenMint": "7zMssWL23q9KTuCbhop4X2c84M3NbjnAXYwbpEXuBTmM"
   },
   "BX6gJLjmviXQVuqxJB3V5mVEKvhD6k7ffc2UjdwcgNR7": {
     "authority": "6kRPKz9dietfo81JuNTBGqH1t9oT7tueftUNtcTepCzE",

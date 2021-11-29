@@ -5,6 +5,9 @@
     "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So": "msol"
   },
   "quarriesByStakedMint": {
+    "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a": [
+      "J5AMaL23VLHtnmby9LKCSCwUCRs9yP9RMCqNRGzuFB3u"
+    ],
     "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H": [
       "38YZThzNfHicsUGdSwNmWnZkx6Qfmj69r7kVhQQUy9Hy"
     ],
@@ -34,6 +37,9 @@
     ],
     "4z5LnYfPHJEnzgyPKTkdHd2RNDnU6YUpQQsUY8QAL4oR": [
       "5Wdqdyif7NXD5wbg1xG7GYmgz38CU2s5QFHD1EQAXRxt"
+    ],
+    "56ZJxfGbC5FkMEBHoV7jmEtMsdKjt8Up4Ude33EUdDzt": [
+      "9VFohgUq4qJENmYG5ZW6rPd6avjZXh4e2m4SckQbnueV"
     ],
     "5GiYdSyBkQegpqxsUUHwm4fJjd3qwdaMKt2qxVXUkbQ4": [
       "6kRXYhMe7vZ18XtvVsPRpDuRBr8nhMLpbriRAKf6XS75"
@@ -121,6 +127,9 @@
     ],
     "BAjkwBMsY9T4wiJ8nGeMhg5rkbzo1Qp9Vcvzsh3SjhHf": [
       "5gUpxzUyNHuqo6XCRBDbfGWjQzSytEDKSEDUxnK9MRA"
+    ],
+    "BCJJbBXo4YoBNsjvgyHeTYBpAa1RenqWUcRDFMgLwEGD": [
+      "8mqAaSWJbGwgAY7ZBDgTFPDhi95N9yADzPEMbmAyNpqt"
     ],
     "BRENm9SgYJZuCxM4ZJiH6CmZqEBn4MLpD9cnBZDnJgeT": [
       "FP4zv3sQiVLgr5j2jV6cfvLeMi7ekVQL8tNSJuyUyhdy"
@@ -350,6 +359,15 @@
     ],
     "WLP59xUDvQMQdzC2SgPmZeRF1oj2RSvGZiQLksj4bwj": [
       "ECbsUoB8LfzqwNe3zA3hNrvR7WX1vJRiMcL9sMsb92BE"
+    ],
+    "WLP7MDjSKGWxs2s6o2d8JFvvqLJD8KHZpcTAZf9ongE": [
+      "C7faBVAJad3obMyRxXn8dqbDJT7TT2A4oidKeELCMckp"
+    ],
+    "WLP9nwD2FUJyNeKWGEi8QnF1a5G3VC7zM9uCqE1W8tx": [
+      "AVFD1KFfbG1sc7ExxqLHaSJKbDCA6PMkUgGPovD21Dbe"
+    ],
+    "WLP9zHZ3FcsPAcM891AQBn4ZWyS3wYgddiLPbSyzmDm": [
+      "5iB8Ux2h9XD9pfCimkFMN9i8KnUzB9SERaAedoAaDFo4"
     ],
     "WLPAEUgB95YrU7Vk1FVPeSP5C3e66bf63frHRgsyxHv": [
       "86tqayCSmxprknt6Lu6rpJx7B7HjaurHXUmzev7Hx8v6"

@@ -30,6 +30,10 @@
       "description": "Decimal wrapper for a different token. See `assetContract` for the mint of the underlying.",
       "name": "saber-dec-wrapped"
     },
+    "saber-hidden": {
+      "description": "Hidden from main Saber UI.",
+      "name": "saber-hidden"
+    },
     "saber-mkt-btc": {
       "description": "Token which trades against other representations of BTC.",
       "name": "saber-mkt-btc"
@@ -99,8 +103,15 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-28T00:46:30.145Z",
+  "timestamp": "2021-11-29T00:45:18.751Z",
   "tokens": [
+    {
+      "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
+      "chainId": 104,
+      "decimals": 8,
+      "name": "Token 23SJ",
+      "symbol": "23SJV"
+    },
     {
       "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
       "chainId": 104,
@@ -340,6 +351,13 @@
       "symbol": "4z5Ln"
     },
     {
+      "address": "56ZJxfGbC5FkMEBHoV7jmEtMsdKjt8Up4Ude33EUdDzt",
+      "chainId": 104,
+      "decimals": 8,
+      "name": "Token 56ZJ",
+      "symbol": "56ZJx"
+    },
+    {
       "address": "5GiYdSyBkQegpqxsUUHwm4fJjd3qwdaMKt2qxVXUkbQ4",
       "chainId": 104,
       "decimals": 8,
@@ -516,6 +534,29 @@
       "symbol": "stSOL",
       "tags": [
         "saber-mkt-sol"
+      ]
+    },
+    {
+      "address": "7dVH61ChzgmN9BwG4PkzwRP8PbYwPJ7ZPNF2vamKT2H8",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "address": "0x0316eb71485b0ab14103307bf65a021042c6d380",
+        "assetContract": "https://etherscan.io/address/0x0316eb71485b0ab14103307bf65a021042c6d380",
+        "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
+        "coingeckoId": "huobi-btc",
+        "currency": "BTC",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/7dVH61ChzgmN9BwG4PkzwRP8PbYwPJ7ZPNF2vamKT2H8.png",
+      "name": "Huobi BTC (Wormhole)",
+      "symbol": "weHBTC",
+      "tags": [
+        "wrapped",
+        "wormhole",
+        "saber-mkt-btc",
+        "wormhole-v2"
       ]
     },
     {
@@ -789,6 +830,13 @@
         "stablecoin",
         "saber-mkt-sol"
       ]
+    },
+    {
+      "address": "9kCX6BmpmDTgc8ZCKKfkz9jyeo8ECjMH9fvCABE74Css",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 9kCX",
+      "symbol": "9kCX6"
     },
     {
       "address": "9mWRABuz2x6koTPCWiCPM49WUbcrNqGTHBV9T9k7y1o7",
@@ -1317,6 +1365,13 @@
       "symbol": "Bbs6a"
     },
     {
+      "address": "BCJJbBXo4YoBNsjvgyHeTYBpAa1RenqWUcRDFMgLwEGD",
+      "chainId": 104,
+      "decimals": 8,
+      "name": "Token BCJJ",
+      "symbol": "BCJJb"
+    },
+    {
       "address": "BdUJucPJyjkHxLMv6ipKNUhSeY3DWrVtgxAES1iSBAov",
       "chainId": 101,
       "decimals": 9,
@@ -1548,6 +1603,24 @@
       ]
     },
     {
+      "address": "Bzq68gAVedKqQkQbsM28yQ4LYpc2VComDUD9wJBywdTi",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "coingeckoId": "bitcoin",
+        "currency": "BTC",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer"
+      },
+      "logoURI": "https://registry.saber.so/token-icons/ibbtc.svg",
+      "name": "ibBTC (Wormhole)",
+      "symbol": "wibBTC",
+      "tags": [
+        "saber-mkt-btc",
+        "wormhole-v2"
+      ]
+    },
+    {
       "address": "C7wexfRxTm2Vc6szBF7DQDYYnEyZrpCqPbDDUK8Rwphs",
       "chainId": 104,
       "decimals": 8,
@@ -1556,10 +1629,18 @@
     },
     {
       "address": "C9PXceoq8uho2RZDGdtxYmyGYXeJUABaUP4qn37wQCgB",
-      "chainId": 104,
+      "chainId": 101,
       "decimals": 6,
-      "name": "Token C9PX",
-      "symbol": "C9PXc"
+      "extensions": {
+        "website": "https://pole.finance/"
+      },
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/C9PXceoq8uho2RZDGdtxYmyGYXeJUABaUP4qn37wQCgB/USDC.svg",
+      "name": "Pole Aggregator USDC",
+      "symbol": "poUSDC",
+      "tags": [
+        "pole",
+        "aggregator"
+      ]
     },
     {
       "address": "C9xqJe3gMTUDKidZsZ6jJ7tL9zSLimDUKVpgUbLZnNbi",
@@ -3306,9 +3387,12 @@
         "waterfallbot": "https://bit.ly/SBRwaterfall",
         "website": "https://saber.so"
       },
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1/logo.svg",
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1.svg",
       "name": "Saber Protocol Token",
-      "symbol": "SBR"
+      "symbol": "SBR",
+      "tags": [
+        "saber-hidden"
+      ]
     },
     {
       "address": "SBTCB6pWqeDo6zGi9WVRMLCsKsN6JiR1RMUqvLtgSRv",
@@ -3695,6 +3779,66 @@
       ]
     },
     {
+      "address": "WLP7MDjSKGWxs2s6o2d8JFvvqLJD8KHZpcTAZf9ongE",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "xnorPhAzWXUczCP3KjU5yDxmKKZi5cSbxytQ1LgE3kG",
+          "SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt"
+        ],
+        "website": "https://app.saber.so/#/pools/wsrm"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLP7MDjSKGWxs2s6o2d8JFvvqLJD8KHZpcTAZf9ongE/icon.png",
+      "name": "Saber weSRM-SRM LP",
+      "symbol": "weSRM-SRM",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-wormhole-v2"
+      ]
+    },
+    {
+      "address": "WLP9nwD2FUJyNeKWGEi8QnF1a5G3VC7zM9uCqE1W8tx",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "Bzq68gAVedKqQkQbsM28yQ4LYpc2VComDUD9wJBywdTi",
+          "CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5"
+        ],
+        "website": "https://app.saber.so/#/pools/wibbtc"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLP9nwD2FUJyNeKWGEi8QnF1a5G3VC7zM9uCqE1W8tx/icon.png",
+      "name": "Saber wibBTC-renBTC LP",
+      "symbol": "wibBTC-renBTC",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-wormhole-v2"
+      ]
+    },
+    {
+      "address": "WLP9zHZ3FcsPAcM891AQBn4ZWyS3wYgddiLPbSyzmDm",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "7dVH61ChzgmN9BwG4PkzwRP8PbYwPJ7ZPNF2vamKT2H8",
+          "CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5"
+        ],
+        "website": "https://app.saber.so/#/pools/whbtc"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLP9zHZ3FcsPAcM891AQBn4ZWyS3wYgddiLPbSyzmDm/icon.png",
+      "name": "Saber weHBTC-renBTC LP",
+      "symbol": "weHBTC-renBTC",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-wormhole-v2"
+      ]
+    },
+    {
       "address": "WLPAEUgB95YrU7Vk1FVPeSP5C3e66bf63frHRgsyxHv",
       "chainId": 101,
       "decimals": 8,
@@ -3852,6 +3996,29 @@
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-synthetify"
+      ]
+    },
+    {
+      "address": "xnorPhAzWXUczCP3KjU5yDxmKKZi5cSbxytQ1LgE3kG",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "address": "0x476c5e26a75bd202a9683ffd34359c0cc15be0ff",
+        "assetContract": "https://etherscan.io/address/0x476c5e26a75bd202a9683ffd34359c0cc15be0ff",
+        "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
+        "coingeckoId": "serum",
+        "currency": "SRM",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/xnorPhAzWXUczCP3KjU5yDxmKKZi5cSbxytQ1LgE3kG.png",
+      "name": "Serum (Wormhole)",
+      "symbol": "weSRM",
+      "tags": [
+        "wrapped",
+        "wormhole",
+        "saber-mkt-srm",
+        "wormhole-v2"
       ]
     },
     {

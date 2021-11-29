@@ -30,6 +30,10 @@
       "description": "Decimal wrapper for a different token. See `assetContract` for the mint of the underlying.",
       "name": "saber-dec-wrapped"
     },
+    "saber-hidden": {
+      "description": "Hidden from main Saber UI.",
+      "name": "saber-hidden"
+    },
     "saber-mkt-btc": {
       "description": "Token which trades against other representations of BTC.",
       "name": "saber-mkt-btc"
@@ -99,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-28T00:46:30.535Z",
+  "timestamp": "2021-11-29T00:45:19.392Z",
   "tokens": [
     {
       "address": "24bB56DwuV3AgfqGWX7rn4WuyYUL4Udn45d5BNQMQjkJ",
@@ -1372,10 +1376,13 @@
     },
     {
       "address": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1",
-      "chainId": 104,
+      "chainId": 103,
       "decimals": 6,
-      "name": "Token Sabe",
-      "symbol": "Saber"
+      "extensions": {},
+      "logoURI": "/tokens/sbr.svg",
+      "name": "Saber Protocol Token",
+      "symbol": "SBR",
+      "tags": []
     },
     {
       "address": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC",
