@@ -111,6 +111,13 @@
           "address": "J8Le9FqYK12xadDw3Mm8k37rWj4tLtHZaWs65fgFjf4F",
           "decimals": 6
         }
+      },
+      {
+        "quarry": "GGF2LWTFfyEGLgCzMF8KBTdzvZEUynwPruZTV54XukTZ",
+        "stakedToken": {
+          "address": "4CsomP6td9X9rQM3RiXa2E8vwinpRU7hVGhTToWjj6fe",
+          "decimals": 6
+        }
       }
     ],
     "rewardsTokenMint": "CowKesoLUaHSbAMaUxJUj7eodHHsaLsS65cy8NFyRDGP"
@@ -633,6 +640,35 @@
     "mintWrapper": "8XQJD7CgxwKHz2V23jS5ypRLtsAPZrPMcB8weoKBTTun",
     "quarries": [],
     "rewardsTokenMint": "GhhEPm3Jb9idakj7Jrqs5y4mAzBEwqXymg1kv2n7nNKP"
+  },
+  "GuHrjvzqDvLTB27ebd9iFKwceCxKvSswzTByDQUTsvdm": {
+    "authority": "J97XsFfGVkyi1uwy1wBnpJT9mB2KRbF8PZqnd3RihTbr",
+    "info": {
+      "address": "GuHrjvzqDvLTB27ebd9iFKwceCxKvSswzTByDQUTsvdm",
+      "color": "#806df9",
+      "description": "Port Finance aims to provide a suite of fixed income products.",
+      "id": "port",
+      "name": "Port Finance",
+      "networks": [
+        "mainnet-beta"
+      ],
+      "redeemer": {
+        "method": "quarry-redeemer",
+        "underlyingToken": "PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y"
+      },
+      "website": "https://port.finance"
+    },
+    "mintWrapper": "HV5q5fTPSQUugUg1xhNQkeviG1g9TL7SSANBizL6xx3W",
+    "quarries": [
+      {
+        "quarry": "3FfibMotQcjd6Tk71CBdLLxhiCv2G6bKZuenXedt4tDY",
+        "stakedToken": {
+          "address": "PortuzxBGYMQXeNmM9Kc6AtHLBwqSrb6xWwZ4trQ1en",
+          "decimals": 6
+        }
+      }
+    ],
+    "rewardsTokenMint": "ApojEPvkcNRQxPqLQa5stMDTyzvwaaHWgegkRQ2gv8xH"
   },
   "HNVbVKzNbLdXrUSb2hHxi67HjeLkN78FgAgAZ18Wk6vT": {
     "authority": "ATGmrZrpN7ajnwhYdJJLScAZmuvJyHQdpNyLGVZxzgKd",
