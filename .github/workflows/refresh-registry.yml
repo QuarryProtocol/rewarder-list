@@ -38,3 +38,10 @@ jobs:
             git commit -m "Update rewarder list"
             git push origin HEAD
           fi
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.REWARDER_LIST_BUILD_DEPLOY_KEY }}
+          external_repository: QuarryProtocol/rewarder-list-build
+          publish_branch: master
+          publish_dir: ./data/
