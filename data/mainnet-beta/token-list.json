@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-11-29T05:16:51.159Z",
+  "timestamp": "2021-11-30T00:47:26.753Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -1978,6 +1978,13 @@
         "stablecoin",
         "saber-mkt-usd"
       ]
+    },
+    {
+      "address": "DfSRa4BVTagZVD8SstHV4b9eHGFAfbkh233kyXGCooTk",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token DfSR",
+      "symbol": "DfSRa"
     },
     {
       "address": "DhAqdjjj8aM6wakquwCeVe6KDysShnfz9uud7bHBhHEy",
