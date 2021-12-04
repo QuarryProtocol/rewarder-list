@@ -400,6 +400,13 @@
         "address": "DfSRa4BVTagZVD8SstHV4b9eHGFAfbkh233kyXGCooTk",
         "decimals": 6
       }
+    },
+    {
+      "quarry": "Hg91ELTTibuAaNen3TKRyb2YiKQDf4W6i7BzHnEQWmYT",
+      "stakedToken": {
+        "address": "A6uRk8koNtrrnrkgk8GrbCX4c5iHWVxCsSC8a83i5JxQ",
+        "decimals": 9
+      }
     }
   ],
   "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
