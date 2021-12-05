@@ -8,6 +8,13 @@
         "address": "PortuzxBGYMQXeNmM9Kc6AtHLBwqSrb6xWwZ4trQ1en",
         "decimals": 6
       }
+    },
+    {
+      "quarry": "6SATFnRVoXHPnKKvtejYDoAni8XX26SDwfi5e3pfL1xN",
+      "stakedToken": {
+        "address": "E7AdPpqpyUsy5dzpDcu6g37Vi8phfNkcCoS2EzTP7w6j",
+        "decimals": 6
+      }
     }
   ],
   "rewardsTokenMint": "ApojEPvkcNRQxPqLQa5stMDTyzvwaaHWgegkRQ2gv8xH"

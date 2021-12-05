@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-05T00:50:03.878Z",
+  "timestamp": "2021-12-05T09:02:59.455Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -389,15 +389,19 @@
       "chainId": 101,
       "decimals": 6,
       "extensions": {
+        "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+        "assetContract": "https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+        "bridgeContract": "https://polygonscan.com/address/0x5a58505a96d1dbf8df91cb21b54419fc36e93fde",
         "coingeckoId": "tether",
         "currency": "USD",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
-      "logoURI": "https://registry.saber.so/token-icons/usdt.svg",
-      "name": "USDT (Polygon Wormhole)",
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/Dn4noZ5jgGfkntzcQSUZ8czkreiZ1ForXYoV2H8Dm7S1/logo.png",
+      "name": "Tether USD (Wormhole from Polygon)",
       "symbol": "wpUSDT",
       "tags": [
+        "wrapped",
         "saber-mkt-usd",
         "wormhole-v2"
       ]
@@ -2219,15 +2223,19 @@
       "chainId": 101,
       "decimals": 6,
       "extensions": {
+        "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "assetContract": "https://polygonscan.com/token/0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+        "bridgeContract": "https://polygonscan.com/address/0x5a58505a96d1dbf8df91cb21b54419fc36e93fde",
         "coingeckoId": "usd-coin",
         "currency": "USD",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
-      "logoURI": "https://registry.saber.so/token-icons/usdc.svg",
-      "name": "USDC (Polygon Wormhole)",
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/A9mUU4qviSctJVPJdBJWkb28deg915LYJKrzQ19ji3FM/logo.png",
+      "name": "USD Coin (Wormhole from Polygon)",
       "symbol": "wpUSDC",
       "tags": [
+        "wrapped",
         "saber-mkt-usd",
         "wormhole-v2"
       ]
@@ -2248,6 +2256,26 @@
       "tags": [
         "stablecoin",
         "saber-mkt-usd"
+      ]
+    },
+    {
+      "address": "E7AdPpqpyUsy5dzpDcu6g37Vi8phfNkcCoS2EzTP7w6j",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "source": "quarry-merge-mine-replica",
+        "underlyingTokens": [
+          "PortuzxBGYMQXeNmM9Kc6AtHLBwqSrb6xWwZ4trQ1en"
+        ],
+        "website": "https://app.saber.so/#/pools/port_2pool"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/PortuzxBGYMQXeNmM9Kc6AtHLBwqSrb6xWwZ4trQ1en/icon.png",
+      "name": "Saber pUSDT-pUSDC LP (Replica)",
+      "symbol": "qrpUSDT-pUSDC",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-port",
+        "quarry-merge-mine-replica"
       ]
     },
     {
