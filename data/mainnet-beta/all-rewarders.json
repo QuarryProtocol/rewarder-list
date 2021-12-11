@@ -1213,6 +1213,13 @@
           "address": "ALPDpWSYbwNkkuVB3wd1nZx7dZBLV7fEGvbDu9KJxLik",
           "decimals": 9
         }
+      },
+      {
+        "quarry": "2hk3Qcp1mDvGNdQuPN3GoFKaLeQ3QaGmfeg4UTtaZey7",
+        "stakedToken": {
+          "address": "son4WQ39xri8sqMqNQZAEtEEPTuUcCRHg7t1ZcYdkSw",
+          "decimals": 9
+        }
       }
     ],
     "rewardsTokenMint": "iouQcQBAiEXe6cKLS85zmZxUqaCqBdeHFpqKoSz615u"
