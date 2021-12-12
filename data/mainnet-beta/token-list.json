@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-11T00:46:09.592Z",
+  "timestamp": "2021-12-12T00:49:53.643Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -363,8 +363,8 @@
         "website": "https://sencha.so/#/pool/CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT/F6v4wfAdJB8D8p77bMXZgYt8TDKsYxLYxH5AFhUkYx9W"
       },
       "logoURI": "https://raw.githubusercontent.com/SenchaHQ/sencha-lp-token-list/master/assets/mainnet/4CsomP6td9X9rQM3RiXa2E8vwinpRU7hVGhTToWjj6fe/icon.png",
-      "name": "Sencha CASH-wtLUNA LP",
-      "symbol": "sCASH-wtLUNA"
+      "name": "Sencha CASH-LUNA LP",
+      "symbol": "sCASH-LUNA"
     },
     {
       "address": "4jL2htQtstTzatmtJL85M6z89E238ozg5eUa9u54Qyxb",
