@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-12T00:49:54.584Z",
+  "timestamp": "2021-12-13T00:47:23.480Z",
   "tokens": [
     {
       "address": "23jSGvv9Evuhg77Jqe4BL712FNZFZD4JFmFZrF9P1vh4",
@@ -111,6 +111,13 @@
       "decimals": 6,
       "name": "Token 23jS",
       "symbol": "23jSG"
+    },
+    {
+      "address": "23nYhh2LYJa14cMa1HsiuMufwmFqb2zK2WMr45zLu6WR",
+      "chainId": 104,
+      "decimals": 2,
+      "name": "Token 23nY",
+      "symbol": "23nYh"
     },
     {
       "address": "24bB56DwuV3AgfqGWX7rn4WuyYUL4Udn45d5BNQMQjkJ",
