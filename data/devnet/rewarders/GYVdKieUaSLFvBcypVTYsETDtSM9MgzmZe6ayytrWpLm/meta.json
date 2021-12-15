@@ -1,0 +1,21 @@
+{
+  "authority": "B5faiHhaXmaqbaZbWV8Gy2LjTz2anhpKwSsA77DeN5Yp",
+  "mintWrapper": "6uGpLuaReDJtKEGxgpuKsP2zva6atq7gPvY4pv2ktvtu",
+  "quarries": [
+    {
+      "quarry": "GntGVz1WcABz4r2TCm9gV8Jt6K3yyG6kbjCQxP3BU9hK",
+      "stakedToken": {
+        "address": "6KgVSAqNc5mwGGdgjhF1EEsKN1qrvFBja7e2mnjMpjm5",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "FnP63mtx7Gsv5b6KAcNZBp8dg4HdpBYjjzSS1bPccNND",
+      "stakedToken": {
+        "address": "9RAJGG39T3k6Za6Sa9BsjwQp9ZB6UchdUa6pnyePFuZz",
+        "decimals": 6
+      }
+    }
+  ],
+  "rewardsTokenMint": "Ctvr1U3YmTvHSKuqw7raM5STqmAJv4PpJQWUyNvdQdZT"
+}
