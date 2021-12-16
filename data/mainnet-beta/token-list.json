@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-15T00:46:52.321Z",
+  "timestamp": "2021-12-16T00:46:58.888Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -235,8 +235,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/33fsBLA8djQm82RpHmE3SuVrPGtZBWNYExsEUeKX1HXX.png",
-      "name": "Binance USD (Wormhole)",
-      "symbol": "weBUSD",
+      "name": "Binance USD (Wormhole from Ethereum)",
+      "symbol": "BUSDet",
       "tags": [
         "wrapped",
         "wormhole",
@@ -331,7 +331,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/43m2ewFV5nDepieFjT9EmAQnc1HRtAF247RBpLGFem5F.png",
       "name": "USDK (Wormhole)",
-      "symbol": "weUSDK",
+      "symbol": "USDK",
       "tags": [
         "wrapped",
         "wormhole",
@@ -423,7 +423,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/5goWRao6a3yNC4d6UjMdQxonkCMvKBwdpubU3qhfcdf1.png",
       "name": "Tether USD (Wormhole from Polygon)",
-      "symbol": "wpUSDT",
+      "symbol": "USDTpo",
       "tags": [
         "wrapped",
         "saber-mkt-usd",
@@ -473,8 +473,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/5RpUwQ8wtdPCZHhu6MERp2RGrpobsbZ6MH5dDHkUjs2.png",
-      "name": "BUSD Token (Wormhole)",
-      "symbol": "wbBUSD",
+      "name": "BUSD Token (Wormhole from BSC)",
+      "symbol": "BUSDbs",
       "tags": [
         "wrapped",
         "wormhole",
@@ -599,7 +599,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/7dVH61ChzgmN9BwG4PkzwRP8PbYwPJ7ZPNF2vamKT2H8.png",
       "name": "Huobi BTC (Wormhole)",
-      "symbol": "weHBTC",
+      "symbol": "HBTC",
       "tags": [
         "wrapped",
         "wormhole",
@@ -651,7 +651,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs.png",
       "name": "Wrapped Ether (Wormhole)",
-      "symbol": "weWETH",
+      "symbol": "ETH",
       "tags": [
         "wrapped",
         "wormhole",
@@ -674,7 +674,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/7VQo3HFLNH5QqGtM8eC3XQbPkJUu7nS9LeGWjerRh5Sw.png",
       "name": "HUSD (Wormhole)",
-      "symbol": "weHUSD",
+      "symbol": "HUSD",
       "tags": [
         "wrapped",
         "wormhole",
@@ -802,8 +802,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/8qJSyQprMC57TWKaYEmetUR3UUiTP2M3hXdcvFhkZdmv.png",
-      "name": "Tether USD (Wormhole)",
-      "symbol": "wbUSDT",
+      "name": "Tether USD (Wormhole from BSC)",
+      "symbol": "USDTbs",
       "tags": [
         "wrapped",
         "wormhole",
@@ -953,7 +953,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/9vMJfxuKxXBoEa7rM12mYLMwTacLMLDJqHozw96WQL8i.png",
       "name": "UST (Wormhole)",
-      "symbol": "wtUST",
+      "symbol": "UST",
       "tags": [
         "wrapped",
         "wormhole",
@@ -1014,8 +1014,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/A9mUU4qviSctJVPJdBJWkb28deg915LYJKrzQ19ji3FM.png",
-      "name": "USD Coin (Wormhole)",
-      "symbol": "weUSDC",
+      "name": "USD Coin (Wormhole from Ethereum)",
+      "symbol": "USDCet",
       "tags": [
         "wrapped",
         "saber-mkt-usd",
@@ -1093,8 +1093,8 @@
         "website": "https://app.saber.so/#/pools/aeeth"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/AET3m1Mp2SLi7QX3tSypcZWyEtk1d8dUGcwhweDiZdaR/icon.png",
-      "name": "Saber weWETH-aeWETH LP",
-      "symbol": "weWETH-aeWETH",
+      "name": "Saber ETH-aeWETH LP",
+      "symbol": "ETH-aeWETH",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-allbridge"
@@ -1305,8 +1305,8 @@
         "website": "https://app.saber.so/#/pools/fei_ust"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/ALPDpWSYbwNkkuVB3wd1nZx7dZBLV7fEGvbDu9KJxLik/icon.png",
-      "name": "Saber aeFEI-wtUST LP",
-      "symbol": "aeFEI-wtUST",
+      "name": "Saber aeFEI-UST LP",
+      "symbol": "aeFEI-UST",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-allbridge"
@@ -1325,8 +1325,8 @@
         "website": "https://app.saber.so/#/pools/mim_ust"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/ALPfb7HJd4oenNBknjzCbVc2RooC5N1H6N391hbZ82ky/icon.png",
-      "name": "Saber aeMIM-wtUST LP",
-      "symbol": "aeMIM-wtUST",
+      "name": "Saber aeMIM-UST LP",
+      "symbol": "aeMIM-UST",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-allbridge"
@@ -1345,8 +1345,8 @@
         "website": "https://app.saber.so/#/pools/afeth"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/ALPGFAuqQsWDB8NSKQ7rgQVhShj4LBCNC72ebdZrJs2e/icon.png",
-      "name": "Saber afETH-weWETH LP",
-      "symbol": "afETH-weWETH",
+      "name": "Saber afETH-ETH LP",
+      "symbol": "afETH-ETH",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-allbridge"
@@ -1365,8 +1365,8 @@
         "website": "https://app.saber.so/#/pools/abeth"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/ALPi51sXwH9kNcQuneDwz7kPzJs3hJ5xV6SmnuyqodQP/icon.png",
-      "name": "Saber abETH-weWETH LP",
-      "symbol": "abETH-weWETH",
+      "name": "Saber abETH-ETH LP",
+      "symbol": "abETH-ETH",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-allbridge"
@@ -1785,8 +1785,8 @@
         "website": "https://app.saber.so/#/pools/webusd"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/BSCNZ4GLnpZYv4BLk5edymk4qty8a6ZpiMbfvtv9gAzL/icon.png",
-      "name": "Saber weBUSD-USDC LP",
-      "symbol": "weBUSD-USDC",
+      "name": "Saber BUSDet-USDC LP",
+      "symbol": "BUSDet-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -2076,8 +2076,8 @@
         "website": "https://app.saber.so/#/pools/ust_cash"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/CLPRkuzQFiYnXddGTTKLvqgjgh4Tm7q16sVvivWNRzo8/icon.png",
-      "name": "Saber wtUST-CASH LP",
-      "symbol": "wtUST-CASH",
+      "name": "Saber UST-CASH LP",
+      "symbol": "UST-CASH",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-cashio"
@@ -2185,8 +2185,8 @@
         "website": "https://app.saber.so/#/pools/wdai"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/DAihWEjhBc8LEmV1rEekTaiC2zqE5ex7nEFkmoe1Ppp3/icon.png",
-      "name": "Saber weDAI-USDC LP",
-      "symbol": "weDAI-USDC",
+      "name": "Saber DAIet-USDC LP",
+      "symbol": "DAIet-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -2290,8 +2290,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/Dn4noZ5jgGfkntzcQSUZ8czkreiZ1ForXYoV2H8Dm7S1.png",
-      "name": "Tether USD (Wormhole)",
-      "symbol": "weUSDT",
+      "name": "Tether USD (Wormhole from Ethereum)",
+      "symbol": "USDTet",
       "tags": [
         "wrapped",
         "saber-mkt-usd",
@@ -2383,7 +2383,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/E2VmbootbVCBkMNNxKQgCLMS1X3NoGMaYAsufaAsf7M.png",
       "name": "USD Coin (Wormhole from Polygon)",
-      "symbol": "wpUSDC",
+      "symbol": "USDCpo",
       "tags": [
         "wrapped",
         "saber-mkt-usd",
@@ -2491,8 +2491,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o.png",
-      "name": "Dai Stablecoin (Wormhole)",
-      "symbol": "weDAI",
+      "name": "Dai Stablecoin (Wormhole from Ethereum)",
+      "symbol": "DAIet",
       "tags": [
         "wrapped",
         "saber-mkt-usd",
@@ -2617,7 +2617,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv.png",
       "name": "FTX Token (Wormhole)",
-      "symbol": "weFTT",
+      "symbol": "FTT",
       "tags": [
         "wrapped",
         "wormhole",
@@ -2639,7 +2639,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/F6v4wfAdJB8D8p77bMXZgYt8TDKsYxLYxH5AFhUkYx9W.png",
       "name": "LUNA (Wormhole)",
-      "symbol": "wtLUNA",
+      "symbol": "LUNA",
       "tags": [
         "wrapped",
         "wormhole",
@@ -2698,8 +2698,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/FCqfQSujuPxy6V42UvafBhsysWtEq1vhjfMN1PUbgaxA.png",
-      "name": "USD Coin (Wormhole)",
-      "symbol": "wbUSDC",
+      "name": "USD Coin (Wormhole from BSC)",
+      "symbol": "USDCbs",
       "tags": [
         "wrapped",
         "wormhole",
@@ -2849,7 +2849,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/FR87nWEUxVgerFGhZM8Y4AggKGLnaXswr1Pd8wZ4kZcp.png",
       "name": "Frax (Wormhole)",
-      "symbol": "weFRAX",
+      "symbol": "FRAX",
       "tags": [
         "wrapped",
         "wormhole",
@@ -2890,8 +2890,8 @@
         "website": "https://app.saber.so/#/pools/wfrax"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/FRXsjEv4jF3r72FgbCXu8uLbPoZGLmCmg3EN1S3cfC4x/icon.png",
-      "name": "Saber weFRAX-USDC LP",
-      "symbol": "weFRAX-USDC",
+      "name": "Saber FRAX-USDC LP",
+      "symbol": "FRAX-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -2923,7 +2923,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/FTT9GrHBVHvDeUTgLU8FxVJouGqg9uiWGmmjETdm32Sx.png",
       "name": "Saber Wrapped FTX Token (Wormhole) (9 decimals)",
-      "symbol": "sweFTT-9",
+      "symbol": "sFTT-9",
       "tags": [
         "wrapped",
         "wormhole",
@@ -2951,7 +2951,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/FTT9rBBrYwcHam4qLvkzzzhrsihYMbZ3k6wJbdoahxAt.png",
       "name": "Saber Wrapped Wrapped FTT (Sollet) (9 decimals)",
-      "symbol": "sFTT-9",
+      "symbol": "ssoFTT-9",
       "tags": [
         "wrapped-sollet",
         "ethereum",
@@ -2972,8 +2972,8 @@
         "website": "https://app.saber.so/#/pools/ftt"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/FTXdV5wFFhceKjcd1JRrRQTT2uB7ruMerAqbj2rj1Mz7/icon.png",
-      "name": "Saber wFTT_v1-FTT LP",
-      "symbol": "wFTTv1-FTT",
+      "name": "Saber wFTT_v1-soFTT LP",
+      "symbol": "wFTTv1-soFTT",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v1"
@@ -2992,8 +2992,8 @@
         "website": "https://app.saber.so/#/pools/wftt"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/FTXjwjwWqituSXEHnL5VF1mjDhZoAyJqvHiRPsRq3KWK/icon.png",
-      "name": "Saber aeFTT-weFTT LP",
-      "symbol": "aeFTT-weFTT",
+      "name": "Saber aeFTT-FTT LP",
+      "symbol": "aeFTT-FTT",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -3186,8 +3186,8 @@
         "website": "https://app.saber.so/#/pools/ust_cash"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/CLPRkuzQFiYnXddGTTKLvqgjgh4Tm7q16sVvivWNRzo8/icon.png",
-      "name": "Saber wtUST-CASH LP (Replica)",
-      "symbol": "qrwtUST-CASH",
+      "name": "Saber UST-CASH LP (Replica)",
+      "symbol": "qrUST-CASH",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-cashio",
@@ -3318,8 +3318,8 @@
         "website": "https://app.saber.so/#/pools/whusd"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/HUSzWddUQbavKn24cjozm65eps8rq9yhNn5edtTLWfdz/icon.png",
-      "name": "Saber weHUSD-USDC LP",
-      "symbol": "weHUSD-USDC",
+      "name": "Saber HUSD-USDC LP",
+      "symbol": "HUSD-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -3440,7 +3440,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/KNVfdSJyq1pRQk9AKKv1g5uyGuk6wpm4WG16Bjuwdma.png",
       "name": "Saber Wrapped Wrapped Ether (Wormhole) (9 decimals)",
-      "symbol": "sweWETH-9",
+      "symbol": "sETH-9",
       "tags": [
         "wrapped",
         "wormhole",
@@ -3510,8 +3510,8 @@
         "website": "https://app.saber.so/#/pools/wluna"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/LUN1p1dZwSBgTv1JSdn2apdUuLanHKtgNcnpDydVFTU/icon.png",
-      "name": "Saber wtLUNA-renLUNA LP",
-      "symbol": "wtLUNA-renLUNA",
+      "name": "Saber LUNA-renLUNA LP",
+      "symbol": "LUNA-renLUNA",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -3844,7 +3844,7 @@
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/SL819j8K9FuFPL84UepVcFkEZqDUUvVzwDmJjCHySYj.png",
       "name": "Saber Wrapped Wrapped Ethereum (Sollet) (8 decimals)",
-      "symbol": "sETH-8",
+      "symbol": "ssoETH-8",
       "tags": [
         "wrapped-sollet",
         "ethereum",
@@ -4072,8 +4072,8 @@
         "website": "https://app.saber.so/#/pools/weusdc"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/USDCgfM1psLGhAbx99iPA72mTySvUcVq33qhCJpm65c/icon.png",
-      "name": "Saber weUSDC-USDC LP",
-      "symbol": "weUSDC-USDC",
+      "name": "Saber USDCet-USDC LP",
+      "symbol": "USDCet-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4112,8 +4112,8 @@
         "website": "https://app.saber.so/#/pools/wusdk"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/USDKKmk1anWU1aEn6GJ6skL3ZvcB9CBAWVkmPGQEHtz/icon.png",
-      "name": "Saber weUSDK-USDC LP",
-      "symbol": "weUSDK-USDC",
+      "name": "Saber USDK-USDC LP",
+      "symbol": "USDK-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4132,8 +4132,8 @@
         "website": "https://app.saber.so/#/pools/weusdt"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/USDTJZL2vH92K5QeCvQTTzvMXUYAdvk3v46CwZyfsue/icon.png",
-      "name": "Saber weUSDT-USDT LP",
-      "symbol": "weUSDT-USDT",
+      "name": "Saber USDTet-USDT LP",
+      "symbol": "USDTet-USDT",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4176,9 +4176,9 @@
         ],
         "website": "https://app.saber.so"
       },
-      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/9vMJfxuKxXBoEa7rM12mYLMwTacLMLDJqHozw96WQL8i.png",
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/UST98bfV6EASdTFQrRwCBczpehdMFwYCUdLT5tEbhpW.png",
       "name": "Saber Wrapped UST (Wormhole) (9 decimals)",
-      "symbol": "swtUST-9",
+      "symbol": "sUST-9",
       "tags": [
         "wrapped",
         "wormhole",
@@ -4200,8 +4200,8 @@
         "website": "https://app.saber.so/#/pools/wust"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/USTCmQpbUGj5iTsXdnTYHZupY1QpftDZhLokSVk6UWi/icon.png",
-      "name": "Saber wtUST-USDC LP",
-      "symbol": "wtUST-USDC",
+      "name": "Saber UST-USDC LP",
+      "symbol": "UST-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4220,8 +4220,8 @@
         "website": "https://app.saber.so/#/pools/wpusdt"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLP59xUDvQMQdzC2SgPmZeRF1oj2RSvGZiQLksj4bwj/icon.png",
-      "name": "Saber wpUSDT-USDT LP",
-      "symbol": "wpUSDT-USDT",
+      "name": "Saber USDTpo-USDT LP",
+      "symbol": "USDTpo-USDT",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4240,8 +4240,8 @@
         "website": "https://app.saber.so/#/pools/wsrm"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLP7MDjSKGWxs2s6o2d8JFvvqLJD8KHZpcTAZf9ongE/icon.png",
-      "name": "Saber weSRM-SRM LP",
-      "symbol": "weSRM-SRM",
+      "name": "Saber SRMet-SRM LP",
+      "symbol": "SRMet-SRM",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4280,8 +4280,8 @@
         "website": "https://app.saber.so/#/pools/whbtc"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLP9zHZ3FcsPAcM891AQBn4ZWyS3wYgddiLPbSyzmDm/icon.png",
-      "name": "Saber weHBTC-renBTC LP",
-      "symbol": "weHBTC-renBTC",
+      "name": "Saber HBTC-renBTC LP",
+      "symbol": "HBTC-renBTC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4300,8 +4300,8 @@
         "website": "https://app.saber.so/#/pools/wbusdt"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLPAEUgB95YrU7Vk1FVPeSP5C3e66bf63frHRgsyxHv/icon.png",
-      "name": "Saber wbUSDT-USDT LP",
-      "symbol": "wbUSDT-USDT",
+      "name": "Saber USDTbs-USDT LP",
+      "symbol": "USDTbs-USDT",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4320,8 +4320,8 @@
         "website": "https://app.saber.so/#/pools/wbusd"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLPR8Sy6Fbnf2sZHVg8Z7uW1QnRThnjhb244kf4ddCS/icon.png",
-      "name": "Saber wbBUSD-USDC LP",
-      "symbol": "wbBUSD-USDC",
+      "name": "Saber BUSDbs-USDC LP",
+      "symbol": "BUSDbs-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4340,8 +4340,8 @@
         "website": "https://app.saber.so/#/pools/wbusdc"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLPsu8oyn1muh5nimxvBsgo6hh6t5jAdUtZ1VmJkohs/icon.png",
-      "name": "Saber wbUSDC-USDC LP",
-      "symbol": "wbUSDC-USDC",
+      "name": "Saber USDCbs-USDC LP",
+      "symbol": "USDCbs-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4360,8 +4360,8 @@
         "website": "https://app.saber.so/#/pools/wpusdc"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLPyXq7WRfdWLiP4fvRfSisrfDzLiPmCeVTE6okKQWE/icon.png",
-      "name": "Saber wpUSDC-USDC LP",
-      "symbol": "wpUSDC-USDC",
+      "name": "Saber USDCpo-USDC LP",
+      "symbol": "USDCpo-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4380,8 +4380,8 @@
         "website": "https://app.saber.so/#/pools/wheth"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WTHPuMavN9HBvgUafjrL65WqQytQHDwnTAmdFB9whXA/icon.png",
-      "name": "Saber ETH-weWETH LP",
-      "symbol": "ETH-weWETH",
+      "name": "Saber soETH-ETH LP",
+      "symbol": "soETH-ETH",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -4420,8 +4420,8 @@
         "website": "https://app.saber.so/#/pools/xeth"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/xETH89889mVRwsw9tSUnULsdLUPryTpijagy2YXxWyY/icon.png",
-      "name": "Saber xETH-weWETH LP",
-      "symbol": "xETH-weWETH",
+      "name": "Saber xETH-ETH LP",
+      "symbol": "xETH-ETH",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-synthetify"
@@ -4440,8 +4440,8 @@
         "website": "https://app.saber.so/#/pools/xftt"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/xFTTLsMdN28XHtYTTTVWYz5zwXWBm5r1WTuZ7Cc7SyA/icon.png",
-      "name": "Saber xFTT-weFTT LP",
-      "symbol": "xFTT-weFTT",
+      "name": "Saber xFTT-FTT LP",
+      "symbol": "xFTT-FTT",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-synthetify"
@@ -4461,8 +4461,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/xnorPhAzWXUczCP3KjU5yDxmKKZi5cSbxytQ1LgE3kG.png",
-      "name": "Serum (Wormhole)",
-      "symbol": "weSRM",
+      "name": "Serum (Wormhole from Ethereum)",
+      "symbol": "SRMet",
       "tags": [
         "wrapped",
         "wormhole",
