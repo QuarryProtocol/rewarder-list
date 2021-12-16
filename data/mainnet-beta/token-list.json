@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-16T00:46:58.888Z",
+  "timestamp": "2021-12-16T20:56:12.635Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -171,6 +171,13 @@
         "saber-mkt-usd",
         "wormhole-v1"
       ]
+    },
+    {
+      "address": "2L468wtJ9uUYK43zY2DTuXV8omrnCZ5SWXtbjfUbKQji",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 2L46",
+      "symbol": "2L468"
     },
     {
       "address": "2poo1w1DL6yd2WNTCnNTzDqkC6MBXq7axo77P16yrBuf",
@@ -301,6 +308,13 @@
         "collateral-tokens",
         "saber-mkt-usd"
       ]
+    },
+    {
+      "address": "3S6ytBWbnLaJr16waKk7GsSfSdnSDWSpXt7VXjnWd3xM",
+      "chainId": 104,
+      "decimals": 8,
+      "name": "Token 3S6y",
+      "symbol": "3S6yt"
     },
     {
       "address": "3T6Ftzvt7SLTm2HQXTtDbepsnQUxpAxxHvGWpEuGMgNM",
@@ -930,6 +944,25 @@
       "symbol": "MAI",
       "tags": [
         "saber-mkt-usd"
+      ]
+    },
+    {
+      "address": "9qkeuJ3bcskGrJySqx7koV7pqCVkVeywDzX47v3vdxJC",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "source": "quarry-merge-mine-replica",
+        "underlyingTokens": [
+          "stSjCmjQ96BiGhTk8gkU22j1739R8YBQVMq7KXWTqUV"
+        ],
+        "website": "https://app.saber.so/#/pools/stsol"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/stSjCmjQ96BiGhTk8gkU22j1739R8YBQVMq7KXWTqUV/icon.png",
+      "name": "Saber stSOL-SOL LP (Replica)",
+      "symbol": "qrstSOL-SOL",
+      "tags": [
+        "saber-stableswap-lp",
+        "quarry-merge-mine-replica"
       ]
     },
     {
@@ -3350,6 +3383,18 @@
       "decimals": 9,
       "name": "Token Hxko",
       "symbol": "HxkoC"
+    },
+    {
+      "address": "HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "twitter": "https://twitter.com/LidoFinance",
+        "website": "https://lido.fi/"
+      },
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p/logo.png",
+      "name": "Wormhole-wrapped Lido DAO Token",
+      "symbol": "wLDO"
     },
     {
       "address": "iouQcQBAiEXe6cKLS85zmZxUqaCqBdeHFpqKoSz615u",

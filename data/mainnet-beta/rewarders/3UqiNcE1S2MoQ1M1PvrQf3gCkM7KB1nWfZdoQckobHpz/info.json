@@ -1,0 +1,15 @@
+{
+  "address": "3UqiNcE1S2MoQ1M1PvrQf3gCkM7KB1nWfZdoQckobHpz",
+  "color": "#6966FB",
+  "description": "Lido rewards for Saber.",
+  "id": "saber-lido",
+  "name": "Saber Lido Rewards",
+  "networks": [
+    "mainnet-beta"
+  ],
+  "redeemer": {
+    "method": "quarry-redeemer",
+    "underlyingToken": "HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p"
+  },
+  "website": "https://saber.so"
+}

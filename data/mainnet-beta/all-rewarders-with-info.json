@@ -5,6 +5,35 @@
     "quarries": [],
     "rewardsTokenMint": "CyzrCNQ6hcwZVywbJx6XXHCe56U3cTAtfXRNxWtdDR6P"
   },
+  "3UqiNcE1S2MoQ1M1PvrQf3gCkM7KB1nWfZdoQckobHpz": {
+    "authority": "GVQzKmFPJDrJT1pBYiT7KhfhMqvmU6yQ6SAhQKR7roaj",
+    "info": {
+      "address": "3UqiNcE1S2MoQ1M1PvrQf3gCkM7KB1nWfZdoQckobHpz",
+      "color": "#6966FB",
+      "description": "Lido rewards for Saber.",
+      "id": "saber-lido",
+      "name": "Saber Lido Rewards",
+      "networks": [
+        "mainnet-beta"
+      ],
+      "redeemer": {
+        "method": "quarry-redeemer",
+        "underlyingToken": "HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p"
+      },
+      "website": "https://saber.so"
+    },
+    "mintWrapper": "8eKftWfkg5bY6XPHk3NdW7YYoFtGt5yeYr3weLyeTVDa",
+    "quarries": [
+      {
+        "quarry": "CagEB6JXq2kVtFLTgEt3PKG6UnZS1Pomb91VCPELCNB2",
+        "stakedToken": {
+          "address": "9qkeuJ3bcskGrJySqx7koV7pqCVkVeywDzX47v3vdxJC",
+          "decimals": 9
+        }
+      }
+    ],
+    "rewardsTokenMint": "3S6ytBWbnLaJr16waKk7GsSfSdnSDWSpXt7VXjnWd3xM"
+  },
   "3ahWtCwoyv4HHYdDtSzSPzD8DDo6jJKqEmPJrdztFnw4": {
     "authority": "GDi15vW1SDVpeT8ngy7aCsVamvHX9RsdyLXctScoqVJL",
     "info": {
@@ -642,6 +671,12 @@
       }
     ],
     "rewardsTokenMint": "M1KJcP7NGRoHHdjbzeLt2fCMFQBEneK1pj3ubhuLRtP"
+  },
+  "EF1dpPZSLGQt3j7DdEzWmPpYf6sZMn1D1tmSrAq8nx11": {
+    "authority": "5YVSS1xMkijnVJdPUQLebyDXiP77GhxLJZDFiW6C4NWD",
+    "mintWrapper": "HM83jJUFwyWVDTwjVuyzeq6Tub62NpavUvFTToQBXqs",
+    "quarries": [],
+    "rewardsTokenMint": "2L468wtJ9uUYK43zY2DTuXV8omrnCZ5SWXtbjfUbKQji"
   },
   "FwzgeCBvYjreUsH8nMXZ7ysijz5EpjXWF5aQh4SkWFnH": {
     "authority": "3icnwpLyUFEihFmETN6nzRXE8Spn8HAtuc35jVcKuPae",
