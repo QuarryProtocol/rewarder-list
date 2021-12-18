@@ -103,7 +103,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-17T00:49:51.708Z",
+  "timestamp": "2021-12-18T00:51:06.461Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -1981,6 +1981,33 @@
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/C9xqJe3gMTUDKidZsZ6jJ7tL9zSLimDUKVpgUbLZnNbi.png",
       "name": "Saber Wrapped Cashio Dollar (9 decimals)",
       "symbol": "sCASH-9",
+      "tags": [
+        "stablecoin",
+        "saber-mkt-usd",
+        "saber-dec-wrapped"
+      ]
+    },
+    {
+      "address": "CASHedBw9NfhsLBXq1WNVfueVznx255j8LLTScto3S6s",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "assetContract": "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT",
+        "coingeckoId": "usd-coin",
+        "currency": "USD",
+        "discord": "https://discord.com/invite/GmkRRKJkuh",
+        "medium": "https://medium.com/@cashioapp",
+        "source": "cashio",
+        "sourceUrl": "https://cashio.app/#/print",
+        "twitter": "https://twitter.com/CashioApp",
+        "underlyingTokens": [
+          "CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT"
+        ],
+        "website": "https://app.saber.so"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/CASHVDm2wsJXfhj6VWxb7GiMdoLc17Du7paH4bNr5woT.png",
+      "name": "Saber Wrapped Cashio Dollar (8 decimals)",
+      "symbol": "sCASH-8",
       "tags": [
         "stablecoin",
         "saber-mkt-usd",
@@ -4205,6 +4232,34 @@
       ]
     },
     {
+      "address": "UST8SCn7jrqsq51odVLqcmvnC658HkqrKrPL3w2hHQ7",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "address": "uusd",
+        "assetContract": "9vMJfxuKxXBoEa7rM12mYLMwTacLMLDJqHozw96WQL8i",
+        "bridgeContract": "https://finder.terra.money/columbus-5/address/terra10nmmwe8r3g99a9newtqa7a75xfgs2e8z87r2sf",
+        "coingeckoId": "terra-usd",
+        "currency": "USD",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer",
+        "underlyingTokens": [
+          "9vMJfxuKxXBoEa7rM12mYLMwTacLMLDJqHozw96WQL8i"
+        ],
+        "website": "https://app.saber.so"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/9vMJfxuKxXBoEa7rM12mYLMwTacLMLDJqHozw96WQL8i.png",
+      "name": "Saber Wrapped UST (Wormhole) (8 decimals)",
+      "symbol": "sUST-8",
+      "tags": [
+        "wrapped",
+        "wormhole",
+        "saber-mkt-usd",
+        "wormhole-v2",
+        "saber-dec-wrapped"
+      ]
+    },
+    {
       "address": "UST98bfV6EASdTFQrRwCBczpehdMFwYCUdLT5tEbhpW",
       "chainId": 101,
       "decimals": 9,
@@ -4353,6 +4408,26 @@
       ]
     },
     {
+      "address": "WLPGfDvnSsJg888FydDCRKkmKTwu4L3MHjfqBFj5LJD",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "FR87nWEUxVgerFGhZM8Y4AggKGLnaXswr1Pd8wZ4kZcp",
+          "UST8SCn7jrqsq51odVLqcmvnC658HkqrKrPL3w2hHQ7"
+        ],
+        "website": "https://app.saber.so/#/pools/frax_ust"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLPGfDvnSsJg888FydDCRKkmKTwu4L3MHjfqBFj5LJD/icon.png",
+      "name": "Saber FRAX-UST LP",
+      "symbol": "FRAX-UST",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-wormhole-v2"
+      ]
+    },
+    {
       "address": "WLPR8Sy6Fbnf2sZHVg8Z7uW1QnRThnjhb244kf4ddCS",
       "chainId": 101,
       "decimals": 8,
@@ -4390,6 +4465,26 @@
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
+      ]
+    },
+    {
+      "address": "WLPv9tHDgkx3ekW8Kyp1TC222oYpr5BMZXTyBTLbk2n",
+      "chainId": 101,
+      "decimals": 8,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "FR87nWEUxVgerFGhZM8Y4AggKGLnaXswr1Pd8wZ4kZcp",
+          "CASHedBw9NfhsLBXq1WNVfueVznx255j8LLTScto3S6s"
+        ],
+        "website": "https://app.saber.so/#/pools/frax_cash"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLPv9tHDgkx3ekW8Kyp1TC222oYpr5BMZXTyBTLbk2n/icon.png",
+      "name": "Saber FRAX-CASH LP",
+      "symbol": "FRAX-CASH",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-cashio"
       ]
     },
     {
