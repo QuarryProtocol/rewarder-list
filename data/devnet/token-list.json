@@ -42,6 +42,10 @@
       "description": "Token which trades against other representations of ETH.",
       "name": "saber-mkt-eth"
     },
+    "saber-mkt-eur": {
+      "description": "Token which trades against other representations of EUR.",
+      "name": "saber-mkt-eur"
+    },
     "saber-mkt-ftt": {
       "description": "Token which trades against other representations of FTT.",
       "name": "saber-mkt-ftt"
@@ -103,7 +107,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-18T00:51:07.230Z",
+  "timestamp": "2021-12-19T00:51:35.600Z",
   "tokens": [
     {
       "address": "13TqGx1e2Wo4Ef6jGXHerkGjgpF4KdMgMaFan2CPxke2",

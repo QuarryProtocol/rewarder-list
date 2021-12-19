@@ -42,6 +42,10 @@
       "description": "Token which trades against other representations of ETH.",
       "name": "saber-mkt-eth"
     },
+    "saber-mkt-eur": {
+      "description": "Token which trades against other representations of EUR.",
+      "name": "saber-mkt-eur"
+    },
     "saber-mkt-ftt": {
       "description": "Token which trades against other representations of FTT.",
       "name": "saber-mkt-ftt"
@@ -103,7 +107,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-18T00:51:06.461Z",
+  "timestamp": "2021-12-19T00:51:34.847Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -3151,6 +3155,22 @@
       ]
     },
     {
+      "address": "GEJpt3Wjmr628FqXxTgxMce1pLntcPV4uFi8ksxMyPQh",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "description": "daoSOL is the staking token issued by the MonkeDAO staking pool",
+        "twitter": "https://twitter.com/MonkeDAO",
+        "website": "https://monkedao.io/"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/GEJpt3Wjmr628FqXxTgxMce1pLntcPV4uFi8ksxMyPQh.png",
+      "name": "daoSOL Token",
+      "symbol": "daoSOL",
+      "tags": [
+        "stake-pool-token"
+      ]
+    },
+    {
       "address": "GFT1F4Zr7ETmuZrSmGhMAGk5rvmnD7S9g7nt2JdtwK83",
       "chainId": 104,
       "decimals": 9,
@@ -3672,6 +3692,25 @@
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey/logo.png",
       "name": "Marinade",
       "symbol": "MNDE"
+    },
+    {
+      "address": "monKYjV2bHTjbJVWCCcwhxE8C96sdTKR2HUNUHCjh4z",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "GEJpt3Wjmr628FqXxTgxMce1pLntcPV4uFi8ksxMyPQh",
+          "So11111111111111111111111111111111111111112"
+        ],
+        "website": "https://app.saber.so/#/pools/daob129AwBGn9Y5r91uLoWZeYiGzbPmksauMhFZKTze"
+      },
+      "logoURI": "https://registry.saber.so/token-icons/slp.png",
+      "name": "Saber daoSOL-SOL LP",
+      "symbol": "daoSOL-SOL",
+      "tags": [
+        "saber-stableswap-lp"
+      ]
     },
     {
       "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
