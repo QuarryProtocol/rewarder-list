@@ -107,7 +107,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-20T00:49:25.882Z",
+  "timestamp": "2021-12-21T00:51:18.479Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -623,6 +623,23 @@
         "wormhole",
         "saber-mkt-btc",
         "wormhole-v2"
+      ]
+    },
+    {
+      "address": "7g166TuBmnoHKvS2PEkZx6kREZtbfjUxCHGWjCqoDXZv",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "currency": "EUR",
+        "source": "allbridge",
+        "sourceUrl": "https://app.allbridge.io/bridge"
+      },
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/7g166TuBmnoHKvS2PEkZx6kREZtbfjUxCHGWjCqoDXZv/logo.png",
+      "name": "Wrapped CEUR (Allbridge from Celo)",
+      "symbol": "acEUR",
+      "tags": [
+        "stablecoin",
+        "saber-mkt-eur"
       ]
     },
     {
@@ -2632,6 +2649,38 @@
       ]
     },
     {
+      "address": "EU9aLffrTckFCs16da6CppHy63fAxMPF9ih1erQTuuRt",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "address": "0x1a7e4e63778B4f12a199C062f3eFdD288afCBce8",
+        "assetContract": "CbNYA9n3927uXUukee2Hf4tm3xxkffJPPZvGazc2EAH1",
+        "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
+        "coingeckoId": "ageur",
+        "currency": "EUR",
+        "description": "Angle is the first decentralized, capital efficient and over-collateralized stablecoin protocol",
+        "discord": "https://discord.gg/z3kCpTaKMh",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer",
+        "twitter": "https://twitter.com/AngleProtocol",
+        "underlyingTokens": [
+          "CbNYA9n3927uXUukee2Hf4tm3xxkffJPPZvGazc2EAH1"
+        ],
+        "website": "https://app.saber.so"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/CbNYA9n3927uXUukee2Hf4tm3xxkffJPPZvGazc2EAH1.svg",
+      "name": "Saber Wrapped agEUR (Wormhole) (9 decimals)",
+      "symbol": "sagEUR-9",
+      "tags": [
+        "ethereum",
+        "wrapped",
+        "wormhole",
+        "saber-mkt-eur",
+        "wormhole-v2",
+        "saber-dec-wrapped"
+      ]
+    },
+    {
       "address": "EwxNF8g9UfmsJVcZFTpL9Hx5MCkoQFoJi6XNWzKf1j8e",
       "chainId": 101,
       "decimals": 9,
@@ -4465,6 +4514,27 @@
       "symbol": "FRAX-UST",
       "tags": [
         "saber-stableswap-lp",
+        "saber-lp-wormhole-v2"
+      ]
+    },
+    {
+      "address": "WLPJD4jW6gnWKfwfL5jyJwcxEPHKLMbncNfQwMmkzKz",
+      "chainId": 101,
+      "decimals": 9,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "7g166TuBmnoHKvS2PEkZx6kREZtbfjUxCHGWjCqoDXZv",
+          "EU9aLffrTckFCs16da6CppHy63fAxMPF9ih1erQTuuRt"
+        ],
+        "website": "https://app.saber.so/#/pools/aceur_ageur"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/WLPJD4jW6gnWKfwfL5jyJwcxEPHKLMbncNfQwMmkzKz/icon.png",
+      "name": "Saber acEUR-agEUR LP",
+      "symbol": "acEUR-agEUR",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-allbridge",
         "saber-lp-wormhole-v2"
       ]
     },
