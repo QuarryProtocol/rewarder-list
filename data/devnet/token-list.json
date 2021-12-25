@@ -107,7 +107,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-24T00:47:45.848Z",
+  "timestamp": "2021-12-25T00:47:13.477Z",
   "tokens": [
     {
       "address": "13TqGx1e2Wo4Ef6jGXHerkGjgpF4KdMgMaFan2CPxke2",
@@ -3358,6 +3358,13 @@
       "decimals": 6,
       "name": "Token 9aM2",
       "symbol": "9aM2r"
+    },
+    {
+      "address": "9as9KevPyaS2wF3vqfQwRn2qjyDSpTDJiajqGBmxn7YL",
+      "chainId": 104,
+      "decimals": 2,
+      "name": "Token 9as9",
+      "symbol": "9as9K"
     },
     {
       "address": "9B6MDHfnu3dzEnPEhsVt5455VLrMa9ETRFY5tBBUqeVP",
@@ -7744,6 +7751,13 @@
       "decimals": 6,
       "name": "Token Mu7R",
       "symbol": "Mu7R9"
+    },
+    {
+      "address": "NdnRu4Vx99r4468Y7z176HxF2uGQPMtBQpHpu872fx3",
+      "chainId": 104,
+      "decimals": 2,
+      "name": "Token NdnR",
+      "symbol": "NdnRu"
     },
     {
       "address": "nvUjv4bYQDZmM9kf1g2wHQTFaeUjnd65F6mgnCm2QDD",

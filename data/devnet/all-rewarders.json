@@ -6545,6 +6545,20 @@
     ],
     "rewardsTokenMint": "BpwhVWWsVS1MTvYUm5MgJY2SuAKWzuDMbrc9w9xZ4GVx"
   },
+  "DutJwKDZnuPQZbmmRJxmDmWBWcLjkNdWU6Mc4CNTjCvG": {
+    "authority": "EnHBYsRckMqtAkpfXhhRTpCo3XF5CFgywXyktqMYoJcV",
+    "mintWrapper": "9KtA7AwjST8sANyZRsZxmBkTcfhLdYjkXd64iX6DtSav",
+    "quarries": [
+      {
+        "quarry": "G5pryr9V9EQ3e4yeGfsGREitSXcQwwMHHUs4Tvgj9NUB",
+        "stakedToken": {
+          "address": "NdnRu4Vx99r4468Y7z176HxF2uGQPMtBQpHpu872fx3",
+          "decimals": 2
+        }
+      }
+    ],
+    "rewardsTokenMint": "9as9KevPyaS2wF3vqfQwRn2qjyDSpTDJiajqGBmxn7YL"
+  },
   "DvqJNsZvfhj3mbdcjpuPWYVCbui41uGrPK2Vpt6o9JyQ": {
     "authority": "4goSAqd2yc7yASoBnMrZzeLosTF9dZtKGkRKMXJ2HPRT",
     "mintWrapper": "De9y98ZUAvBMUMAohzxCSsN33gUaYwKssz7MTujB2Yre",
