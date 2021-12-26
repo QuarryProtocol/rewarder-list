@@ -7,3 +7,4 @@
 .pnp.*
 
 .eslintcache
+data/
