@@ -428,6 +428,13 @@
         "address": "FqhLqpnoYAiudwkDbjjzkENaDDoJAFDAQXx3eNPbdkF2",
         "decimals": 6
       }
+    },
+    {
+      "quarry": "FFKbSbquWuTNwqpAq9pvxUzVHe1KgnWxWcK6PMvDQx4e",
+      "stakedToken": {
+        "address": "7747GKQJBT3HAnrqm7LBB7gV2qnn3A1TkUapoKrPinBj",
+        "decimals": 9
+      }
     }
   ],
   "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
