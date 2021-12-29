@@ -107,7 +107,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-28T00:48:35.299Z",
+  "timestamp": "2021-12-29T00:47:59.021Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -807,6 +807,13 @@
         "saber-mkt-usd",
         "wormhole-v1"
       ]
+    },
+    {
+      "address": "8neVCkhzRGyuQrxsEoMqy8UxotK1Qko7Vsfx15f8Ek1j",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token 8neV",
+      "symbol": "8neVC"
     },
     {
       "address": "8pBc4v9GAwCBNWPB5XKA93APexMGAS4qMr37vNke9Ref",
