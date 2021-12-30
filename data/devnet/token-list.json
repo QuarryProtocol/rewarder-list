@@ -107,7 +107,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-29T00:47:59.172Z",
+  "timestamp": "2021-12-30T00:48:15.676Z",
   "tokens": [
     {
       "address": "13TqGx1e2Wo4Ef6jGXHerkGjgpF4KdMgMaFan2CPxke2",
@@ -339,6 +339,13 @@
       "decimals": 6,
       "name": "Token 2KAD",
       "symbol": "2KADC"
+    },
+    {
+      "address": "2KShr8Ncsev39QgMHYuNzpBz8pm3hsRSNQ3Nj3zB9fDq",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 2KSh",
+      "symbol": "2KShr"
     },
     {
       "address": "2m3AJQj25D6yijVN5AoPCz7d14nmjfpnsHgag9Nzivsm",
@@ -4011,6 +4018,13 @@
       "symbol": "AEKbG"
     },
     {
+      "address": "Aevu9wMnGDSrqmck2jDwS3CKjpurj6ivjDZEFfb8zAWu",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token Aevu",
+      "symbol": "Aevu9"
+    },
+    {
       "address": "AF85pVQKACyTz9NHHQgNAGvoNW8or1AgknytdcUuKFNv",
       "chainId": 104,
       "decimals": 6,
@@ -6189,6 +6203,13 @@
       "decimals": 6,
       "name": "Token ERae",
       "symbol": "ERaei"
+    },
+    {
+      "address": "ERZC3nqwUJSZmZDWn9aCbTyXR8GMj62iHSsJzKM3dK7u",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token ERZC",
+      "symbol": "ERZC3"
     },
     {
       "address": "ESRtoRBFisF7JhFsGNyWtWXdEMd2JqBhjNTQqZtJEDtx",

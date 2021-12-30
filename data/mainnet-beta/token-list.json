@@ -107,7 +107,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-29T00:47:59.021Z",
+  "timestamp": "2021-12-30T00:48:15.432Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -2365,6 +2365,13 @@
       ]
     },
     {
+      "address": "DJZZzNM9wB1vdKj9xRckvgheqKpkvYzDXxNzDrrArLtS",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token DJZZ",
+      "symbol": "DJZZz"
+    },
+    {
       "address": "DMstNxE8CMc3ajCHHZp4VDia8QPQQpHfLBGRfTmeQLUh",
       "chainId": 104,
       "decimals": 6,
@@ -3501,12 +3508,20 @@
       "chainId": 101,
       "decimals": 8,
       "extensions": {
+        "address": "0x5a98fcbea516cf06857215779fd812ca3bef1b32",
+        "assetContract": "https://etherscan.io/address/0x5a98fcbea516cf06857215779fd812ca3bef1b32",
+        "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
+        "coingeckoId": "lido",
         "twitter": "https://twitter.com/LidoFinance",
         "website": "https://lido.fi/"
       },
       "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p/logo.png",
-      "name": "Wormhole-wrapped Lido DAO Token",
-      "symbol": "wLDO"
+      "name": "Lido DAO Token (Wormhole)",
+      "symbol": "LDO",
+      "tags": [
+        "wrapped",
+        "ethereum"
+      ]
     },
     {
       "address": "iouQcQBAiEXe6cKLS85zmZxUqaCqBdeHFpqKoSz615u",
