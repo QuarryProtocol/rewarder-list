@@ -62,6 +62,10 @@
       "description": "Token which trades against other representations of SRM.",
       "name": "saber-mkt-srm"
     },
+    "saber-mkt-try": {
+      "description": "Token which trades against other representations of TRY.",
+      "name": "saber-mkt-try"
+    },
     "saber-mkt-usd": {
       "description": "Token which trades against other representations of USD.",
       "name": "saber-mkt-usd"
@@ -107,7 +111,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-30T00:48:15.432Z",
+  "timestamp": "2021-12-31T00:50:16.540Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -686,13 +690,15 @@
         "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
         "assetContract": "https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
         "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
-        "coingeckoId": "weth",
+        "coingeckoId": "ethereum",
         "currency": "ETH",
+        "serumV3Usdc": "8Gmi2HhZmwQPVdCwzS7CM66MGstMXPcTVHA7jF19cLZz",
+        "serumV3Usdt": "ch7kmPrtoQUSEPBggcNAvLGiMQkJagVwd3gDYfd8m7Q",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs.png",
-      "name": "Wrapped Ether (Wormhole)",
+      "name": "Ether (Wormhole)",
       "symbol": "ETH",
       "tags": [
         "wrapped",
@@ -846,6 +852,7 @@
         "address": "0x55d398326f99059ff775485246999027b3197955",
         "assetContract": "https://bscscan.com/address/0x55d398326f99059ff775485246999027b3197955",
         "bridgeContract": "https://bscscan.com/address/0xB6F6D86a8f9879A9c87f643768d9efc38c1Da6E7",
+        "coingeckoId": "tether",
         "currency": "USD",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer"
@@ -922,6 +929,13 @@
       ]
     },
     {
+      "address": "93vWgVtXR6i4urVaSkvaQXzbBGHAJJyrtCPqc8QegyU3",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token 93vW",
+      "symbol": "93vWg"
+    },
+    {
       "address": "9812Jsmt2uRyRioG2RcZyqn5zoHLu69nrbHEhgEucw5o",
       "chainId": 104,
       "decimals": 6,
@@ -979,6 +993,33 @@
       "symbol": "MAI",
       "tags": [
         "saber-mkt-usd"
+      ]
+    },
+    {
+      "address": "9QBTKuSCDaJjtxYnYcVzoiKENMdJ5DRei5ZUCEeWyZnj",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "address": "0x2c537e5624e4af88a7ae4060c022609376c8d0eb",
+        "assetContract": "https://etherscan.io/token/0x2c537e5624e4af88a7ae4060c022609376c8d0eb",
+        "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
+        "currency": "TRY",
+        "github": "https://github.com/bilira-org",
+        "instagram": "https://instagram.com/bilira_official",
+        "source": "wormhole-v2",
+        "sourceUrl": "https://wormholebridge.com/#/transfer",
+        "telegram": "https://t.me/BiLira_Official",
+        "website": "http://bilira.co"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/9QBTKuSCDaJjtxYnYcVzoiKENMdJ5DRei5ZUCEeWyZnj.png",
+      "name": "BiLira (Wormhole)",
+      "symbol": "TRYB",
+      "tags": [
+        "stablecoin",
+        "wormhole",
+        "wrapped",
+        "saber-mkt-try",
+        "wormhole-v2"
       ]
     },
     {
@@ -1067,6 +1108,30 @@
       "decimals": 9,
       "name": "Token A6uR",
       "symbol": "A6uRk"
+    },
+    {
+      "address": "A94X2fRy3wydNShU4dRaDyap2UuoeWJGWyATtyp61WZf",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "coingeckoId": "bilira",
+        "currency": "TRY",
+        "github": "https://github.com/bilira-org",
+        "instagram": "https://instagram.com/bilira_official",
+        "source": "BiLira",
+        "sourceUrl": "https://www.bilira.co/",
+        "telegram": "https://t.me/BiLira_Official",
+        "website": "http://bilira.co"
+      },
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/A94X2fRy3wydNShU4dRaDyap2UuoeWJGWyATtyp61WZf.png",
+      "name": "BiLira",
+      "symbol": "TRYB",
+      "tags": [
+        "tryb",
+        "bilira",
+        "stablecoin",
+        "saber-mkt-try"
+      ]
     },
     {
       "address": "A9mUU4qviSctJVPJdBJWkb28deg915LYJKrzQ19ji3FM",
@@ -2280,8 +2345,8 @@
         "website": "https://app.saber.so/#/pools/wdai"
       },
       "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/DAihWEjhBc8LEmV1rEekTaiC2zqE5ex7nEFkmoe1Ppp3/icon.png",
-      "name": "Saber DAIet-USDC LP",
-      "symbol": "DAIet-USDC",
+      "name": "Saber DAI-USDC LP",
+      "symbol": "DAI-USDC",
       "tags": [
         "saber-stableswap-lp",
         "saber-lp-wormhole-v2"
@@ -2593,8 +2658,8 @@
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o.png",
-      "name": "Dai Stablecoin (Wormhole from Ethereum)",
-      "symbol": "DAIet",
+      "name": "Dai Stablecoin (Wormhole)",
+      "symbol": "DAI",
       "tags": [
         "wrapped",
         "saber-mkt-usd",
@@ -2746,6 +2811,8 @@
         "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
         "coingeckoId": "ftx-token",
         "currency": "FTT",
+        "serumV3Usdc": "2wteg25ch227n4Rh1CN4WNrDZXBpRBpWJ48mEC2K7f4r",
+        "serumV3Usdt": "BoHojHESAv4McZx9gXd1bWTZMq25JYyGz4qL1m5C3nvk",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
@@ -2768,6 +2835,7 @@
         "bridgeContract": "https://finder.terra.money/columbus-5/address/terra10nmmwe8r3g99a9newtqa7a75xfgs2e8z87r2sf",
         "coingeckoId": "terra-luna",
         "currency": "LUNA",
+        "serumV3Usdc": "HBTu8hNaoT3VyiSSzJYa8jwt9sDGKtJviSwFa11iXdmE",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer"
       },
@@ -2827,6 +2895,7 @@
         "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
         "assetContract": "https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d",
         "bridgeContract": "https://bscscan.com/address/0xB6F6D86a8f9879A9c87f643768d9efc38c1Da6E7",
+        "coingeckoId": "usd-coin",
         "currency": "USD",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer"
@@ -3048,6 +3117,8 @@
         "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
         "coingeckoId": "ftx-token",
         "currency": "FTT",
+        "serumV3Usdc": "2wteg25ch227n4Rh1CN4WNrDZXBpRBpWJ48mEC2K7f4r",
+        "serumV3Usdt": "BoHojHESAv4McZx9gXd1bWTZMq25JYyGz4qL1m5C3nvk",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer",
         "underlyingTokens": [
@@ -3231,6 +3302,8 @@
       "extensions": {
         "currency": "SOL",
         "description": "daoSOL is the staking token issued by the MonkeDAO staking pool",
+        "source": "monkedao",
+        "sourceUrl": "https://daopool.monkedao.io/",
         "twitter": "https://twitter.com/MonkeDAO",
         "website": "https://monkedao.io/"
       },
@@ -3601,8 +3674,10 @@
         "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
         "assetContract": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
         "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
-        "coingeckoId": "weth",
+        "coingeckoId": "ethereum",
         "currency": "ETH",
+        "serumV3Usdc": "8Gmi2HhZmwQPVdCwzS7CM66MGstMXPcTVHA7jF19cLZz",
+        "serumV3Usdt": "ch7kmPrtoQUSEPBggcNAvLGiMQkJagVwd3gDYfd8m7Q",
         "source": "wormhole-v2",
         "sourceUrl": "https://wormholebridge.com/#/transfer",
         "underlyingTokens": [
@@ -3611,7 +3686,7 @@
         "website": "https://app.saber.so"
       },
       "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/KNVfdSJyq1pRQk9AKKv1g5uyGuk6wpm4WG16Bjuwdma.png",
-      "name": "Saber Wrapped Wrapped Ether (Wormhole) (9 decimals)",
+      "name": "Saber Wrapped Ether (Wormhole) (9 decimals)",
       "symbol": "sETH-9",
       "tags": [
         "wrapped",
@@ -3650,6 +3725,26 @@
       "decimals": 9,
       "name": "Token LDdq",
       "symbol": "LDdq4"
+    },
+    {
+      "address": "Lirav2gsqs7jL1PFRUBp8uKACT8LYjDBV8c6nzchoer",
+      "chainId": 101,
+      "decimals": 6,
+      "extensions": {
+        "source": "saber",
+        "underlyingTokens": [
+          "9QBTKuSCDaJjtxYnYcVzoiKENMdJ5DRei5ZUCEeWyZnj",
+          "A94X2fRy3wydNShU4dRaDyap2UuoeWJGWyATtyp61WZf"
+        ],
+        "website": "https://app.saber.so/#/pools/bilira"
+      },
+      "logoURI": "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/assets/mainnet/Lirav2gsqs7jL1PFRUBp8uKACT8LYjDBV8c6nzchoer/icon.png",
+      "name": "Saber TRYB-TRYB LP",
+      "symbol": "TRYB-TRYB",
+      "tags": [
+        "saber-stableswap-lp",
+        "saber-lp-wormhole-v2"
+      ]
     },
     {
       "address": "LPmSozJJ8Jh69ut2WP3XmVohTjL4ipR18yiCzxrUmVj",
