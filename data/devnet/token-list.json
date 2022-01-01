@@ -111,7 +111,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2021-12-31T00:50:16.197Z",
+  "timestamp": "2022-01-01T00:50:34.602Z",
   "tokens": [
     {
       "address": "13TqGx1e2Wo4Ef6jGXHerkGjgpF4KdMgMaFan2CPxke2",
@@ -280,6 +280,13 @@
       "decimals": 6,
       "name": "Token 2g3f",
       "symbol": "2g3fX"
+    },
+    {
+      "address": "2gdS3bFXa6zBZ7gCJDKPpNfV71kv9Lap36GwQUmKf61e",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 2gdS",
+      "symbol": "2gdS3"
     },
     {
       "address": "2HCM5DU8pSUyndWTR6gDcmNMFj3xTBRjTaWwfjdUKtMs",
@@ -683,6 +690,13 @@
       "symbol": "3ErSC"
     },
     {
+      "address": "3F1gr1WHmo59SUEd4Dqq6JrFkqzSSVTvFs6PHKc2rxRx",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 3F1g",
+      "symbol": "3F1gr"
+    },
+    {
       "address": "3FA1HxgjzxcpC2RbnXKhcoxWdFN4hdipyq9qS9X3sbqu",
       "chainId": 104,
       "decimals": 6,
@@ -961,6 +975,13 @@
       "decimals": 6,
       "name": "Token 3XmH",
       "symbol": "3XmHJ"
+    },
+    {
+      "address": "3Y3QjfiUjDdPJ8qCjBy39VAjPcYMstEHvkL4q4SKEH6k",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 3Y3Q",
+      "symbol": "3Y3Qj"
     },
     {
       "address": "3yfSQZHKyNhU7pWtxr2uBDBhWhgPeXJVju2bR4oMz1Nj",
@@ -2377,6 +2398,13 @@
       "symbol": "6xYpQ"
     },
     {
+      "address": "6xZr9pjAMFChfsnCRvQcSbJTp8FcxB93p9DLTHQ15j4r",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 6xZr",
+      "symbol": "6xZr9"
+    },
+    {
       "address": "6y5M4CMCoB4gqJDwzrHR99ZouaCvnkhqjimAy7cj48iN",
       "chainId": 104,
       "decimals": 6,
@@ -2776,6 +2804,13 @@
       "symbol": "7r8nL"
     },
     {
+      "address": "7rJuqvNuS8Biw47J68zZGbdSs5cE6ZPEfn1BE5T55nQf",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 7rJu",
+      "symbol": "7rJuq"
+    },
+    {
       "address": "7sbYKrWs5Rn5NVWB5soNHiwLeHaS3xwLwd4nzzMpMzLH",
       "chainId": 104,
       "decimals": 6,
@@ -3082,6 +3117,13 @@
       "decimals": 6,
       "name": "Token 8JiG",
       "symbol": "8JiGh"
+    },
+    {
+      "address": "8jM7osPPdq52MubzNAPDs2suW5rxbBijPL5KZEvnLUC",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 8jM7",
+      "symbol": "8jM7o"
     },
     {
       "address": "8jT6YAMjfkKZx4QqABG24w4gYJ6xRt7nXWs1qrXgC3GG",
@@ -3558,6 +3600,13 @@
       "decimals": 6,
       "name": "Token 9ckA",
       "symbol": "9ckAn"
+    },
+    {
+      "address": "9D2iyKRYHabtSjG3E6h75ABEwF7GuaV6jRdtXUkVYgyR",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token 9D2i",
+      "symbol": "9D2iy"
     },
     {
       "address": "9D3cxkKDi2mtbWNCdm4TZQ8RqA5kexLPDQFcHp3btGf9",
@@ -7369,6 +7418,13 @@
       "symbol": "H25Wz"
     },
     {
+      "address": "H2Go96WeSe8cy7TrYJkcEaJVgPBqYkXN45KE3pGZAD2a",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token H2Go",
+      "symbol": "H2Go9"
+    },
+    {
       "address": "H2ywTXxwyohZezzmYbs5AngdpuZdyhK4rXNRWPy3jvUu",
       "chainId": 104,
       "decimals": 6,
@@ -7633,6 +7689,13 @@
       "decimals": 6,
       "name": "Token HPcU",
       "symbol": "HPcUb"
+    },
+    {
+      "address": "Hqe7XdkrQr9E3HzkRbFJ8wnGxicm8nEpyyCj7zjSJ4wg",
+      "chainId": 104,
+      "decimals": 6,
+      "name": "Token Hqe7",
+      "symbol": "Hqe7X"
     },
     {
       "address": "Hrq6LeY55MEuenC9HhkQGHV6vAh7afmGhJE859fyYw66",
