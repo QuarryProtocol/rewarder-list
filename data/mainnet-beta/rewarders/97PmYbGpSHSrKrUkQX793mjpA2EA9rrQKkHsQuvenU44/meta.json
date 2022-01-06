@@ -463,6 +463,13 @@
         "address": "9yGn47ojzSfw31vxNHijDcP3zaq3fsCopg23sRkpNd6F",
         "decimals": 9
       }
+    },
+    {
+      "quarry": "EetdHPvxx8qNLATgpLF2Vf1GHN7vXSJTBe5WrBSG2U5o",
+      "stakedToken": {
+        "address": "6HRsTKWeBDu7RPGr7nLT5r6ncSiVXE4ehP88jPxMsWxu",
+        "decimals": 9
+      }
     }
   ],
   "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
