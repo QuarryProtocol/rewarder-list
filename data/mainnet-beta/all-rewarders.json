@@ -588,6 +588,13 @@
           "address": "6HRsTKWeBDu7RPGr7nLT5r6ncSiVXE4ehP88jPxMsWxu",
           "decimals": 9
         }
+      },
+      {
+        "quarry": "3hJrSEXHLzcFtp8K9Z5Ux9SshHki2wmQ9BTKtrxtYcss",
+        "stakedToken": {
+          "address": "8EsexmQry4D1XpSNdhN8dnxg4ygneUHcTobNzh54HJWs",
+          "decimals": 9
+        }
       }
     ],
     "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
