@@ -111,7 +111,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2022-01-07T00:55:07.831Z",
+  "timestamp": "2022-01-08T00:49:52.325Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -3523,6 +3523,13 @@
         "saber-stableswap-lp",
         "quarry-merge-mine-replica"
       ]
+    },
+    {
+      "address": "HoPyVM4xb2zxBD4YCo6zV2odQeXqAeWuhfxY6UpRc2oA",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token HoPy",
+      "symbol": "HoPyV"
     },
     {
       "address": "HQiqXRu3YsoZDSxo73Q3GWDfRKtmm2kS49YixYQ3ojnQ",
