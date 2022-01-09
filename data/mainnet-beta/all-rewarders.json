@@ -602,6 +602,13 @@
           "address": "HoPyVM4xb2zxBD4YCo6zV2odQeXqAeWuhfxY6UpRc2oA",
           "decimals": 9
         }
+      },
+      {
+        "quarry": "63ieHD4csyWSDqEx55HR26FDVzqdXnEHoVcqKYwrUVP1",
+        "stakedToken": {
+          "address": "7XHupBYsvWZWNQndVoApd1nwR39dNiLHMiGKa884sFqu",
+          "decimals": 9
+        }
       }
     ],
     "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"

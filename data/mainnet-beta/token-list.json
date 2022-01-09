@@ -111,7 +111,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2022-01-08T00:49:52.325Z",
+  "timestamp": "2022-01-09T00:52:21.433Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -743,6 +743,13 @@
         "saber-mkt-usd",
         "wormhole-v2"
       ]
+    },
+    {
+      "address": "7XHupBYsvWZWNQndVoApd1nwR39dNiLHMiGKa884sFqu",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token 7XHu",
+      "symbol": "7XHup"
     },
     {
       "address": "83LGLCm7QKpYZbX8q4W2kYWbtt8NJBwbVwEepzkVnJ9y",
