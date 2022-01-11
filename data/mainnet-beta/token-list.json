@@ -111,7 +111,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2022-01-10T00:49:01.046Z",
+  "timestamp": "2022-01-11T00:52:12.228Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -389,6 +389,13 @@
       "symbol": "sCASH-LUNA"
     },
     {
+      "address": "4g7DwZVn8edcSYR34zE4Dm13YLH6ZvtXCNnaUyQSFy9w",
+      "chainId": 104,
+      "decimals": 2,
+      "name": "Token 4g7D",
+      "symbol": "4g7Dw"
+    },
+    {
       "address": "4jL2htQtstTzatmtJL85M6z89E238ozg5eUa9u54Qyxb",
       "chainId": 104,
       "decimals": 6,
@@ -659,7 +666,7 @@
         "source": "allbridge",
         "sourceUrl": "https://app.allbridge.io/bridge"
       },
-      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/7g166TuBmnoHKvS2PEkZx6kREZtbfjUxCHGWjCqoDXZv/logo.png",
+      "logoURI": "https://spl-token-icons.static-assets.ship.capital/icons/101/7g166TuBmnoHKvS2PEkZx6kREZtbfjUxCHGWjCqoDXZv.png",
       "name": "Wrapped CEUR (Allbridge from Celo)",
       "symbol": "acEUR",
       "tags": [
@@ -2472,6 +2479,13 @@
       ]
     },
     {
+      "address": "DHvEBPxbUbDr53DZtr7tJ1Wm1S1UQGe67ZN6Ciyv7tHW",
+      "chainId": 104,
+      "decimals": 2,
+      "name": "Token DHvE",
+      "symbol": "DHvEB"
+    },
+    {
       "address": "DJZZzNM9wB1vdKj9xRckvgheqKpkvYzDXxNzDrrArLtS",
       "chainId": 104,
       "decimals": 6,
@@ -2714,6 +2728,13 @@
       "decimals": 9,
       "name": "Token Ekzo",
       "symbol": "EkzoV"
+    },
+    {
+      "address": "EoNJJWQMdvMscCL7V6wNrGaDLi791sPZH1hSzHcwfsDj",
+      "chainId": 104,
+      "decimals": 2,
+      "name": "Token EoNJ",
+      "symbol": "EoNJJ"
     },
     {
       "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
@@ -3413,6 +3434,20 @@
       "decimals": 8,
       "name": "Token GVxZ",
       "symbol": "GVxZh"
+    },
+    {
+      "address": "Gwr9C41tv51oAjD1gqzpsLP1sGJ4KRTvQCLtaaWi72YD",
+      "chainId": 104,
+      "decimals": 2,
+      "name": "Token Gwr9",
+      "symbol": "Gwr9C"
+    },
+    {
+      "address": "Ha8LwqeXykYH1cUEx9vJgk8Z4MPwvjumNMThx95E8BLw",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token Ha8L",
+      "symbol": "Ha8Lw"
     },
     {
       "address": "HAbFcokDy82JroMCEiy8cKiRiU3FBWjM2mZksTxkDfVK",

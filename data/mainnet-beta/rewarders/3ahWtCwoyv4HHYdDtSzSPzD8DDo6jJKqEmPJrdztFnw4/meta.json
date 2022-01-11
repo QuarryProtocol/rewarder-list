@@ -8,6 +8,13 @@
         "address": "C9PXceoq8uho2RZDGdtxYmyGYXeJUABaUP4qn37wQCgB",
         "decimals": 6
       }
+    },
+    {
+      "quarry": "DYKdtzC8GgY977L3C62xizFYuCWy62gDAeKrna9kZBPK",
+      "stakedToken": {
+        "address": "3RudPTAkfcq9Q9Jk8SVeCoecCBmdKMj6q5smsWzxqtqZ",
+        "decimals": 6
+      }
     }
   ],
   "rewardsTokenMint": "4Bc2xGiHFmfkSWH2csinUTKVymGrYVADVZD2iKdWw5dp"

@@ -50,6 +50,34 @@
         "address": "4CsomP6td9X9rQM3RiXa2E8vwinpRU7hVGhTToWjj6fe",
         "decimals": 6
       }
+    },
+    {
+      "quarry": "AAqRP5aC1CYqH9bfPVTjLxSLj72NY75bWch3LLfQJHTm",
+      "stakedToken": {
+        "address": "EoNJJWQMdvMscCL7V6wNrGaDLi791sPZH1hSzHcwfsDj",
+        "decimals": 2
+      }
+    },
+    {
+      "quarry": "CpxUJPQibBjUXLhXzzvN3F2mARzBiSEgKPNa8D2tMQ2a",
+      "stakedToken": {
+        "address": "DHvEBPxbUbDr53DZtr7tJ1Wm1S1UQGe67ZN6Ciyv7tHW",
+        "decimals": 2
+      }
+    },
+    {
+      "quarry": "9uN6j3CL7aYNHbCvSg919NaEXSp6KJcTakZ5fQi9daaU",
+      "stakedToken": {
+        "address": "Gwr9C41tv51oAjD1gqzpsLP1sGJ4KRTvQCLtaaWi72YD",
+        "decimals": 2
+      }
+    },
+    {
+      "quarry": "BGLr39pyujk68LMNnS4tKd4FXfHAamytbazmE375Bgmo",
+      "stakedToken": {
+        "address": "4g7DwZVn8edcSYR34zE4Dm13YLH6ZvtXCNnaUyQSFy9w",
+        "decimals": 2
+      }
     }
   ],
   "rewardsTokenMint": "CowKesoLUaHSbAMaUxJUj7eodHHsaLsS65cy8NFyRDGP"
