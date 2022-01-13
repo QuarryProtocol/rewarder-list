@@ -1,9 +1,18 @@
+import { findReplicaMintAddress } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
+import { PublicKey } from "@saberhq/solana-contrib";
 import * as fs from "fs/promises";
-import { groupBy, mapValues } from "lodash";
+import { fromPairs, groupBy, mapValues } from "lodash";
+import invariant from "tiny-invariant";
 
 import rewarderList from "../config/rewarder-list.json";
-import type { RedemptionMethod, RewarderInfo, RewarderMeta } from "../types";
+import type {
+  QuarryMetaWithReplicas,
+  RedemptionMethod,
+  RewarderInfo,
+  RewarderMeta,
+  RewarderMetaWithInfo,
+} from "../types";
 import { stringify } from "../utils";
 
 interface RewarderInfoRaw extends Omit<RewarderInfo, "networks" | "redeemer"> {
@@ -38,17 +47,30 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
     kr.networks.includes(network)
   );
 
-  const rewardersByMint = mapValues(
-    groupBy(
-      Object.entries(rewarderMetas).flatMap(([rewarderKey, meta]) =>
-        meta.quarries.map((q) => ({
-          rewarder: rewarderKey,
-          token: q.stakedToken.address,
-        }))
-      ),
-      (el) => el.token
-    ),
-    (group) => group.map((g) => g.rewarder.toString())
+  const allQuarries = (
+    await Promise.all(
+      Object.entries(rewarderMetas).map(async ([rewarderKey, meta]) => {
+        return await Promise.all(
+          meta.quarries.map(async (q) => {
+            const [replicaMint] = await findReplicaMintAddress({
+              primaryMint: new PublicKey(q.stakedToken.address),
+            });
+            return {
+              rewarder: rewarderKey,
+              token: q.stakedToken.address,
+              quarry: q.quarry,
+              replicaMint: replicaMint.toString(),
+            };
+          })
+        );
+      })
+    )
+  ).flat();
+  const quarriesByMint = groupBy(allQuarries, (el) => el.token);
+  const quarriesByReplicaMint = groupBy(allQuarries, (el) => el.replicaMint);
+
+  const rewardersByMint = mapValues(quarriesByMint, (group) =>
+    group.map((g) => g.rewarder.toString())
   );
 
   for (const rewarderInfo of networkRewarders) {
@@ -58,20 +80,77 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
     );
   }
 
+  const allRewardersWithInfo: Record<string, RewarderMetaWithInfo> = fromPairs(
+    await Promise.all(
+      Object.entries(rewarderMetas).map(
+        async ([rewarderKey, meta]): Promise<
+          [string, RewarderMetaWithInfo]
+        > => {
+          const info = networkRewarders.find(
+            (nr) => nr.address === rewarderKey
+          );
+          const quarries = await Promise.all(
+            meta.quarries.map(
+              async (quarry): Promise<QuarryMetaWithReplicas> => {
+                const [replicaMint] = await findReplicaMintAddress({
+                  primaryMint: new PublicKey(quarry.stakedToken.address),
+                });
+
+                const primaryQuarries =
+                  quarriesByReplicaMint[quarry.stakedToken.address];
+                const otherQuarries =
+                  quarriesByMint[quarry.stakedToken.address];
+                const replicaQuarries =
+                  quarriesByReplicaMint[replicaMint.toString()];
+
+                const isReplica = !!primaryQuarries?.length;
+
+                const myPrimaryQuarries = isReplica ? primaryQuarries : [];
+                const myReplicaQuarries = isReplica
+                  ? otherQuarries
+                  : replicaQuarries;
+
+                const addRewardsTokenMint = (
+                  quarries: {
+                    rewarder: string;
+                    token: string;
+                    quarry: string;
+                  }[]
+                ) =>
+                  quarries.map(({ quarry, rewarder }) => {
+                    const rewardsTokenMint =
+                      rewarderMetas[rewarder]?.rewardsTokenMint;
+                    invariant(rewardsTokenMint);
+                    return { quarry, rewarder, rewardsTokenMint };
+                  });
+
+                return {
+                  ...quarry,
+                  primaryMint: isReplica
+                    ? primaryQuarries[0].token
+                    : quarry.stakedToken.address,
+                  replicaMint: isReplica
+                    ? quarry.stakedToken.address
+                    : replicaMint.toString(),
+                  primaryQuarries: addRewardsTokenMint(myPrimaryQuarries),
+                  replicaQuarries: addRewardsTokenMint(myReplicaQuarries ?? []),
+                };
+              }
+            )
+          );
+          const result: RewarderMetaWithInfo = { ...meta, quarries };
+          if (info) {
+            result.info = info;
+          }
+          return [rewarderKey, result];
+        }
+      )
+    )
+  );
+
   await fs.writeFile(
     `${dir}/all-rewarders-with-info.json`,
-    stringify(
-      mapValues(rewarderMetas, (meta, rewarderKey) => {
-        const info = networkRewarders.find((nr) => nr.address === rewarderKey);
-        if (info) {
-          return {
-            ...meta,
-            info,
-          };
-        }
-        return meta;
-      })
-    )
+    stringify(allRewardersWithInfo)
   );
   await fs.writeFile(
     `${dir}/rewarders-by-mint.json`,

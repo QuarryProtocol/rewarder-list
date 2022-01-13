@@ -87,7 +87,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   console.log(
     `Fetched ${allQuarriesJSON.length} quarries across ${
       Object.keys(allRewarders).length
-    } rewarders.`
+    } rewarders on ${network}.`
   );
 };
 
