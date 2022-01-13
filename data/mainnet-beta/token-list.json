@@ -111,7 +111,7 @@
       "name": "wrapped-sollet"
     }
   },
-  "timestamp": "2022-01-12T00:50:51.206Z",
+  "timestamp": "2022-01-13T00:01:57.634Z",
   "tokens": [
     {
       "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
@@ -410,6 +410,13 @@
       "decimals": 2,
       "name": "Token 4g7D",
       "symbol": "4g7Dw"
+    },
+    {
+      "address": "4hEzoSUB1WWXZdwCZQB1iXeSYoEVrc7jwH78RH5LkhpX",
+      "chainId": 104,
+      "decimals": 9,
+      "name": "Token 4hEz",
+      "symbol": "4hEzo"
     },
     {
       "address": "4jL2htQtstTzatmtJL85M6z89E238ozg5eUa9u54Qyxb",
@@ -3768,10 +3775,20 @@
     },
     {
       "address": "iouQcQBAiEXe6cKLS85zmZxUqaCqBdeHFpqKoSz615u",
-      "chainId": 104,
+      "chainId": 101,
       "decimals": 6,
-      "name": "Token iouQ",
-      "symbol": "iouQc"
+      "extensions": {
+        "coingeckoId": "saber",
+        "discord": "https://chat.saber.so",
+        "github": "https://github.com/saber-hq",
+        "medium": "https://blog.saber.so",
+        "serumV3Usdc": "HXBi8YBwbh4TXF6PjVw81m8Z3Cc4WBofvauj5SBFdgUs",
+        "twitter": "https://twitter.com/saber_hq",
+        "website": "https://saber.so"
+      },
+      "logoURI": "https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1/logo.svg",
+      "name": "Saber IOU Token (Liquidity Mining Rewards)",
+      "symbol": "SBR"
     },
     {
       "address": "J8Le9FqYK12xadDw3Mm8k37rWj4tLtHZaWs65fgFjf4F",
