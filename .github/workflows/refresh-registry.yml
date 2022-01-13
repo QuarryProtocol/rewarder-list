@@ -29,18 +29,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-modules-
       - run: yarn install
+      - run: cp -R static/* data/
       - run: yarn fetch-all-rewarders
       - run: yarn decorate-rewarders
       - run: yarn build-token-list
       - run: yarn build-tvl-list
-      - run: |
-          if [ "$(git diff-index HEAD)" != '' ]; then
-            git config --global user.email "larry@quarry.so"
-            git config --global user.name "Larry Jarry"
-            git add .
-            git commit -m "Update rewarder list"
-            git push origin HEAD
-          fi
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
