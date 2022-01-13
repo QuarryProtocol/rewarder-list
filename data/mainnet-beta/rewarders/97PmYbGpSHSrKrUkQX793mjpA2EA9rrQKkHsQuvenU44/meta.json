@@ -1,0 +1,532 @@
+{
+  "authority": "6nkKEQNWkMS1EXeypCQB5QvRVqSbDDxJM7furzPGmxmR",
+  "mintWrapper": "9AMTd87fjLQzVt2fM9fdm2h4RNWHBVv9QR1UvYt8fVHP",
+  "quarries": [
+    {
+      "quarry": "HeEnZP6BtwrWkWNbg6aepGAUt5LhvhKw2tX4yY2qDtKm",
+      "stakedToken": {
+        "address": "3T6Ftzvt7SLTm2HQXTtDbepsnQUxpAxxHvGWpEuGMgNM",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "5Wdqdyif7NXD5wbg1xG7GYmgz38CU2s5QFHD1EQAXRxt",
+      "stakedToken": {
+        "address": "4z5LnYfPHJEnzgyPKTkdHd2RNDnU6YUpQQsUY8QAL4oR",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "4SuKYiCBivMpvdzQftyutdcR4NQyV56WSX4VGAePRKu3",
+      "stakedToken": {
+        "address": "GVxZhiqjdiLSjSKwHtd3Fqf4YgY4vSDsgyzpA5xbq94K",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "DCRMdUfGsWYUxzYvvF2AvNCgA3x682Ad82imukC1bYmL",
+      "stakedToken": {
+        "address": "HS8k4hP9PnLeKL9FYnprbPmUSNBNDm9LoGzZfWcabuAJ",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "CDBn1CbSdM5UMerjUWoQHZemRsMtTM1F59CwKaoSLshU",
+      "stakedToken": {
+        "address": "3BX2cbMzQHTNrwQWcnDjJwpQQ14uq3N5hmg3k2nq5HRE",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "8BXSqaByVAphSQCaKv9BgPEuGAztQp7nc1jgREUqq74k",
+      "stakedToken": {
+        "address": "DMstNxE8CMc3ajCHHZp4VDia8QPQQpHfLBGRfTmeQLUh",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "6kRXYhMe7vZ18XtvVsPRpDuRBr8nhMLpbriRAKf6XS75",
+      "stakedToken": {
+        "address": "5GiYdSyBkQegpqxsUUHwm4fJjd3qwdaMKt2qxVXUkbQ4",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "9WZ6jroZFd6AuLoSnPi6q2ByEVhhNBW71gT3zPoiQCvM",
+      "stakedToken": {
+        "address": "Ap8BbmNQHhHnMDX7j7YNVa4uV6pdmH2EfVC2tkfdySxk",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "7dj2G5YgjjvZpFpv2r3ovPa26qC5MiMeiCVNcUHqT67f",
+      "stakedToken": {
+        "address": "DT26tjv9SEuSrQohJ7vSAVShy3xDqjBazGSciDYdZzNP",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "56ccb1X3kCofG8NyF9RZb65ScKhH8z6cGf5QMTq27Nk",
+      "stakedToken": {
+        "address": "FU61MFJ8annMSYfA5D2V5DQ3CJ8UUFD9LXHvveSAe4SD",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "9zDN4DGYCg7ykJgoVhEzv6VFrmi3rqH2hmCWABYfhUEf",
+      "stakedToken": {
+        "address": "DhAqdjjj8aM6wakquwCeVe6KDysShnfz9uud7bHBhHEy",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "A3d9WnHvFqXaSBkHXWebRoSSGLXnM6Ci66XRnxdZ4Zir",
+      "stakedToken": {
+        "address": "6J4zMS6PJ3g5p6s8fd97J3HBJucnk3crZ3yTpaRHd8SQ",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "EuQRwGreQZ56tfHrB1dvQfkm8gYkKp6HPbTK1Z6fGZhy",
+      "stakedToken": {
+        "address": "5mLQTfsdDhXF7s7KYXYcKNSBWxpFVScvLUsi2F6fATMD",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "38YZThzNfHicsUGdSwNmWnZkx6Qfmj69r7kVhQQUy9Hy",
+      "stakedToken": {
+        "address": "2jpwA28K9fokPpkEaJrR8CUVXk2vR1MphA9hUb3vyH7H",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "63d1LspRoxShvjffHCkTobeBPhz7YKUrwBm1841Xhoo6",
+      "stakedToken": {
+        "address": "9dmGtaUzYQisCzwLGJGSRexoLtwkjGZHTu8MDPff5bgP",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "BWNtfCHMFTmX9E5BtLX2nGABgenyDV7W3qy3oZmjKWA5",
+      "stakedToken": {
+        "address": "AgSk7jnS9FNK6pLNizVtQvTHJ1NZq2KwkH7vqaPMj3qq",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "EPmv3W1ixyHnKMM1tbmn6exm3nyP5RUVYUVygsRfeoj6",
+      "stakedToken": {
+        "address": "DNC5KD9PhqSEjbxtqNgYR4BYEFXepYHfi4zNYHu7oYpP",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "25s2kKgnU6xkQAsAniULg2ADdij73k3N9Y5cnbe6mc79",
+      "stakedToken": {
+        "address": "7jgvLxAqEYKXexwCwBXw9ztxxobe2AS9RuppfGnFXRqw",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "BPiimdeknykjkAnBz18S1Z4NTYrrGxnqJMS7YA1kvBGN",
+      "stakedToken": {
+        "address": "FLocut1r4ziUJuWCMjZa875XGkvhErFnEzzZC9sQve4r",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "F27saDmubAYDshF4283fVDDcxY4mihzNjnsW77ijk8KV",
+      "stakedToken": {
+        "address": "C7wexfRxTm2Vc6szBF7DQDYYnEyZrpCqPbDDUK8Rwphs",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "5m59nV4fEjJRoEuygLmmk8zPApgZRcxcUYgjQEh7iYNU",
+      "stakedToken": {
+        "address": "HQiqXRu3YsoZDSxo73Q3GWDfRKtmm2kS49YixYQ3ojnQ",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "38B38bHiWT5bEYPbtnKMJeqGiMeqoPHPnTMVpuQ6anbc",
+      "stakedToken": {
+        "address": "D7fk5ZZasQqXqGdsHaRoxqHkte61ubRN5HyorZddvVGt",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "4WQa1nxLe8durEUiykuTVm6J69t72a45P55uq3F4HTMY",
+      "stakedToken": {
+        "address": "DYBdnBx81Rr12FNE1rSCe4NWoLjhvVCcM8qYuUmioE6k",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "CtQYorjwg7WUqpmcoSoXhadLqxVB6c2dbXmz2ExJJWKF",
+      "stakedToken": {
+        "address": "FH91oQqEoGLKhxJx1qQaHD9Jw1ND2KSCibm1Zj8Wj5Kw",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "EfU5ygEbZ5VwKQZKFD41Uyi873T6w18Jdu34871bt2Yq",
+      "stakedToken": {
+        "address": "CBkCh7zmjkWUVopr4t91fcMvs3ScziXf56mHXic5NM7q",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "K2xrvTpDdR6cGrxsLQREGHEUmhcWhA4CRzoMUiow8B2",
+      "stakedToken": {
+        "address": "aoooXdSCSi4D3hNtYffJtkktXuy4uPMe4pMJqFkA7XL",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "2ofzMR6rGRe4b4XAJrN4ohTa45xWsBSR877V7AsZAKuE",
+      "stakedToken": {
+        "address": "9wtUFSgXSSTP28G4QesRGkQxh8r3WW4kw98LZko16hNS",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "8JXbSsMwjHztoTXJLsiu8z9ac5xB7mxTPCtkkwdT2mZ6",
+      "stakedToken": {
+        "address": "9sE6Rcaf3PBDnLhWTQ7R5sJiu6a3DuKsXFj4FGLK2CpN",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "3DwXK58hzBoLLrWcLxtVzHK8Zd6bHKLkiQJuxVmHYp5z",
+      "stakedToken": {
+        "address": "HAbFcokDy82JroMCEiy8cKiRiU3FBWjM2mZksTxkDfVK",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "349HYxpjukD7x7NAhNzK1728WWncGpNN2Q2MQUDzdH59",
+      "stakedToken": {
+        "address": "FeFQiet6qwZ95AtWxDEn4sypskxe6fmD2pi9muzoR4qy",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "ooibHuvMmovY63KsdVXEyHkQnP65y7NetdazLiRpxsC",
+      "stakedToken": {
+        "address": "4xtSPhhx28VfiYNiG2A1xs8cTeLYXWjcethpDsUhQd5g",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "FvRmPFR77zEv5bxB3yDTLfkY6k33uUtDswiWhYRtnEq9",
+      "stakedToken": {
+        "address": "HxkoCQY48GTT7hncTpATncmHwswboitC75bWMviAAgxh",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "FttEdv91Y5CqHPZQvdbARFj3tSp28JoNHVCXqqmgFV3h",
+      "stakedToken": {
+        "address": "EkzoVXTNw489Ru41TjmTemN7hbRgeeCp5KJ4ESTfnBUJ",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "EL4QHqPtWRXL9Rn5qmpq8VJLb7uTUaszaSpWT1wQ98Uc",
+      "stakedToken": {
+        "address": "7C9hvkE9BqwXbNiqMAejEwLwTCfgxpfzZi5QyLMwDmBv",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "BZWRDQE3nL8ae5huEwfn45uNwBuwtsNAUXiGLo1gyjbf",
+      "stakedToken": {
+        "address": "FSTaurkQGVAdBbMnjwcUjAVcWaJ7YHAw2ygX6kpfxvfV",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "HRCJDun816jDDQdupM2RH2qBfHQUM7fHUNvZCyWJCkYr",
+      "stakedToken": {
+        "address": "3jzooTwPcXe9jaWrYbHceK1JYX6W2qnkByQer5WRgZ5P",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "GjWJw9W69ZZsYjBqWMRbTQCEDisdheR9surTS8ejrJ5z",
+      "stakedToken": {
+        "address": "9zzqeZCX8xA72xFyPW4zt59r1LSfscKuzEpXViwwCi56",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "E42BNnZbm2ik26LnTxk5WLiXpAi9ScBmmre6Hv4UPiuA",
+      "stakedToken": {
+        "address": "GFT1F4Zr7ETmuZrSmGhMAGk5rvmnD7S9g7nt2JdtwK83",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "9kGKaEV3A7PMjZyZRmzt6agJ41k3SM6rxUYXgknSGNTZ",
+      "stakedToken": {
+        "address": "6f3VcijBEeu1cNWV8BdQzoeAN4daNXpCG44PzwVRbV9Y",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "CYGau8XU2Q73DTExYxUJkoiSbqps6xPzg5VP4z6V9xtq",
+      "stakedToken": {
+        "address": "Bbs6aVcWKq1RcSpMD8XFSvnWwGxuWFpDpQeQhGXp6bhr",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "HhwTyJtzUkkJqmkSqM9ehRZ2HhJAczfpXrj1vTmvapkC",
+      "stakedToken": {
+        "address": "DauSzTYjqWHtQu2eY7TdeFXz4RjB1wqftGdkgheoSfjK",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "EzuZkSq22ojUKtoDHcU2t5QKuwbxyxfZZGFnx7EAYRF5",
+      "stakedToken": {
+        "address": "41bWR2kDEEbnbE6SFfabJp7PuTYJsNKa6PyMcZTWz8Wm",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "5gUpxzUyNHuqo6XCRBDbfGWjQzSytEDKSEDUxnK9MRA",
+      "stakedToken": {
+        "address": "BAjkwBMsY9T4wiJ8nGeMhg5rkbzo1Qp9Vcvzsh3SjhHf",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "7tzhXARggb64MYwcqaUPNs6PEBaq9v34Hp2XYF1TQsBF",
+      "stakedToken": {
+        "address": "TEMs1tdDkvBQ4sdqQdpAQEiJmB48JBcN9qhZou4jmDM",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "4gB3BSuFNmu97niXHYZHTUXSEhfZAAMu5LTdy8hTDWUW",
+      "stakedToken": {
+        "address": "BtAwcgJ5DZWvvjdfHXZ3T8QiwxUjRbwDgsfqyCpG7yEZ",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "3rKH1WSPjzyRfbXYyww5Gct1FKPbpuCZXDsuRjipuWAr",
+      "stakedToken": {
+        "address": "CnxwJAg5oroTFDr3NJtEoM954EYH2bNgiswnJcUUa1Vn",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "8hMGkpj9EuTNnMsqrcZ9a9LXh4UCgRS2DaGFJzK5KyaM",
+      "stakedToken": {
+        "address": "2saGyuRCVBkNqaJthYzsXBg6c7frdBbzxR1NpGoe4rEq",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "13nUpv7rJ1Sz6Chqh3kD5ZHxfPVh38abSrVT54xpXBsD",
+      "stakedToken": {
+        "address": "78zx22DH6towgM7mGT7nZGmnPyJEgVgcSThDDsQRRQgw",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "EuLpc9s1caxWetHBLRxnetQUKkAygngRb1PgYA8qwK1S",
+      "stakedToken": {
+        "address": "F7tt5sohvc1D4dvn2cmJkD2mR6cwtujWG2naKX8x7L7o",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "3n2mXWgnWwUdPnkc258oPTB3YvSHJiw8AJALbgg6bpV3",
+      "stakedToken": {
+        "address": "DsFMPzEE7F6CG3PJDa5KFFaYEetTwDWxuHe844fMrHz3",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "8BhgfEMKFSqNUmhCKyh255A67EAqPc9vkCxZRwp1Y5Yz",
+      "stakedToken": {
+        "address": "AUSDK6tzpjBSd7ZJH46wTHAgxaU4Q2CoUSvcFY2fg3fr",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "G1ZpzaBpqNt7hpbRnc6vbiA6fvt2wAoESpnoEM2uFKyk",
+      "stakedToken": {
+        "address": "LDdq4KhNRuGUjno4waam4HTkyftYpeRjC6Rbjtiao8b",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "764sxDpYDFnt3i4hSt4ekw41E4ddPWWoAVoxWtHAisPT",
+      "stakedToken": {
+        "address": "EqUHTBXXy8EYgG8DT9FN9AicbyqVvBC6oENL8TWAmFXA",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "9VFohgUq4qJENmYG5ZW6rPd6avjZXh4e2m4SckQbnueV",
+      "stakedToken": {
+        "address": "56ZJxfGbC5FkMEBHoV7jmEtMsdKjt8Up4Ude33EUdDzt",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "J5AMaL23VLHtnmby9LKCSCwUCRs9yP9RMCqNRGzuFB3u",
+      "stakedToken": {
+        "address": "23SJVf6PRAe9VbmbLi6sajSnxVP4TnCRMNYkkfV6VM9a",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "8mqAaSWJbGwgAY7ZBDgTFPDhi95N9yADzPEMbmAyNpqt",
+      "stakedToken": {
+        "address": "BCJJbBXo4YoBNsjvgyHeTYBpAa1RenqWUcRDFMgLwEGD",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "EGqkvcUgwuA1ggFTKWNVBbMXzsXbWGNs9qDxkGZrjyjc",
+      "stakedToken": {
+        "address": "DfSRa4BVTagZVD8SstHV4b9eHGFAfbkh233kyXGCooTk",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "Hg91ELTTibuAaNen3TKRyb2YiKQDf4W6i7BzHnEQWmYT",
+      "stakedToken": {
+        "address": "A6uRk8koNtrrnrkgk8GrbCX4c5iHWVxCsSC8a83i5JxQ",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "J7Vt4tt3Z2gboGea7VvzAfsQUs7Pkfdynh6N21mtR2SD",
+      "stakedToken": {
+        "address": "4p6x62AjML5ZSUEPWLuYp4Ts17bUeqD5eWtHyGCjBoaB",
+        "decimals": 10
+      }
+    },
+    {
+      "quarry": "8N4b4eJ16eemfk3Hk7oZAR1wX9h8oh9oSN1n3JmCRcQL",
+      "stakedToken": {
+        "address": "FCMEte9VcGWMsqSb3ur8DM1fwYQVRLY7FaRdqZo6SerE",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "GWmRdemqPr6WH2zYxiH4YhtnhHB8fEyLR8uS77y6Rxyo",
+      "stakedToken": {
+        "address": "FqhLqpnoYAiudwkDbjjzkENaDDoJAFDAQXx3eNPbdkF2",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "FFKbSbquWuTNwqpAq9pvxUzVHe1KgnWxWcK6PMvDQx4e",
+      "stakedToken": {
+        "address": "7747GKQJBT3HAnrqm7LBB7gV2qnn3A1TkUapoKrPinBj",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "3WmX4cKnkMQ4F5HyWgEYjtidNJGpeBDBAq8EHqe2AqD3",
+      "stakedToken": {
+        "address": "8neVCkhzRGyuQrxsEoMqy8UxotK1Qko7Vsfx15f8Ek1j",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "FKAqAGRL3CbrF4Y6krHFBtx8SaXpvjAtwTRpqs2rwWbH",
+      "stakedToken": {
+        "address": "DJZZzNM9wB1vdKj9xRckvgheqKpkvYzDXxNzDrrArLtS",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "EYWdteNQk9twExmpQvR3LoTkBGzRE8HBZxcjq3XSbC5A",
+      "stakedToken": {
+        "address": "93vWgVtXR6i4urVaSkvaQXzbBGHAJJyrtCPqc8QegyU3",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "8A1NttUoSXVYy4V2KZqtGf636agUGLqToXeTe195efSt",
+      "stakedToken": {
+        "address": "9yGn47ojzSfw31vxNHijDcP3zaq3fsCopg23sRkpNd6F",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "EetdHPvxx8qNLATgpLF2Vf1GHN7vXSJTBe5WrBSG2U5o",
+      "stakedToken": {
+        "address": "6HRsTKWeBDu7RPGr7nLT5r6ncSiVXE4ehP88jPxMsWxu",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "3hJrSEXHLzcFtp8K9Z5Ux9SshHki2wmQ9BTKtrxtYcss",
+      "stakedToken": {
+        "address": "8EsexmQry4D1XpSNdhN8dnxg4ygneUHcTobNzh54HJWs",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "FcmRi8iAFRm83m22xyhzni7aLSoVVW5jHiqi8B6ATwdf",
+      "stakedToken": {
+        "address": "HoPyVM4xb2zxBD4YCo6zV2odQeXqAeWuhfxY6UpRc2oA",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "63ieHD4csyWSDqEx55HR26FDVzqdXnEHoVcqKYwrUVP1",
+      "stakedToken": {
+        "address": "7XHupBYsvWZWNQndVoApd1nwR39dNiLHMiGKa884sFqu",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "3qir8Mc6EwXizMGgET1yYC6tBazxDXDyHyHfPFiv4gxp",
+      "stakedToken": {
+        "address": "CsNTd8i2zT791CtoGzRbtojraHzfzvS9LrcwYtYQfmsM",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "F1qSLqhd5TxYZZuKg76XVN3vEqpyyZeSkFZeoLvm4YX6",
+      "stakedToken": {
+        "address": "Ha8LwqeXykYH1cUEx9vJgk8Z4MPwvjumNMThx95E8BLw",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "8YToqFmtpAvh2QHe4LirPXfY2Tp1cawx5YD3KDs6JGz3",
+      "stakedToken": {
+        "address": "Ek7Bb5MwakAUq47JTPqcAduAZMauN8QY9aDQC2rLKHRw",
+        "decimals": 8
+      }
+    },
+    {
+      "quarry": "21isJxasPQPwz2kxUEDaZQyTEioZdsXuhBcm3gGFonyC",
+      "stakedToken": {
+        "address": "84s5zKAYbMpKm5QEg6JpgbQGse5YsywKuzUaNTUcqGLD",
+        "decimals": 9
+      }
+    },
+    {
+      "quarry": "AYfjiCVb2QXmixG88hnDQ9wpF3e1KNUKQnxYem8pJgoL",
+      "stakedToken": {
+        "address": "4hEzoSUB1WWXZdwCZQB1iXeSYoEVrc7jwH78RH5LkhpX",
+        "decimals": 9
+      }
+    }
+  ],
+  "rewardsTokenMint": "SRYWvj5Xw1UoivpdfJN4hFZU1qbtceMvfM5nBc3PsRC"
+}

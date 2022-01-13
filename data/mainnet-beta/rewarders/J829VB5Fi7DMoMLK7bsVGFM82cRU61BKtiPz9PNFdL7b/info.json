@@ -1,0 +1,16 @@
+{
+  "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
+  "color": "#EF39F8",
+  "description": "The easiest way to stake Solana.",
+  "id": "marinade",
+  "name": "Marinade",
+  "networks": [
+    "mainnet-beta",
+    "devnet"
+  ],
+  "redeemer": {
+    "method": "marinade",
+    "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey"
+  },
+  "website": "https://marinade.finance"
+}

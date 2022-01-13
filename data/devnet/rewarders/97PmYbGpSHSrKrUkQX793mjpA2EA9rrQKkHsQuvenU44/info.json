@@ -1,0 +1,17 @@
+{
+  "address": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
+  "color": "#DC723F",
+  "description": "Solana's cross-chain DeFi yield aggregator.",
+  "hidden": true,
+  "id": "sunny",
+  "name": "Sunny Aggregator",
+  "networks": [
+    "mainnet-beta",
+    "devnet"
+  ],
+  "redeemer": {
+    "method": "sunny",
+    "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag"
+  },
+  "website": "https://sunny.ag"
+}

@@ -1,0 +1,77 @@
+{
+  "authority": "3JTLnmS6HsNatq5gWPMPJgGVgivFztRV4zdgG9XSB6Qk",
+  "mintWrapper": "CcykWMF8fyN555TBvoUKbmVXBudWbvE2Hst41Ff7aozV",
+  "quarries": [
+    {
+      "quarry": "AmeHT7gzDaNprtrwPCYytQ7n7d58f7spahaExHQfeqDf",
+      "stakedToken": {
+        "address": "DEjsoW2aNiSqdw57828BukUkQemwsx483SX95xNX9hzW",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "EgeHTXKS3mdYj3Nk85VKzEQVFuJwwb4ZsYPHtPQwr6Zc",
+      "stakedToken": {
+        "address": "HAjm9tvBeR2wVfYULdQesPFzsFhP7NUYAdwMT2M26X6b",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "6sPHRXWZ1qmZp412g5XDDZNZjCCGb7TpViJjth9GkFbD",
+      "stakedToken": {
+        "address": "3g5xFfFPwTvT1ZmGSsb42rSpPdbAVwKjMHyWJoRQxD3E",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "G947DZYChb3G6tfExA5fP4pncQsGt7596kyw65UzzJKZ",
+      "stakedToken": {
+        "address": "DhBbx641KtRk8ZzwrhLZHncC2tudyUrf6oJDwkUgxNL1",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "8rK5tYtY5i7vJge1wJU4385rCuXbnthJ5uuKQrDg5v6Y",
+      "stakedToken": {
+        "address": "8BMy6D4TxE7jPrn9fz2k9MFcETp2MpcYmvkraZvGRt4W",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "6N9Pp449AhCBTct7wi4zQpVwcZkBd8x3XiMaP7LCHwNt",
+      "stakedToken": {
+        "address": "4arXyGHtcDGSFBVvZdgZfhnB3XtJH5wFoohPaKjm8zLD",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "6DYmMqbRLs4oHJWpZDR9iq8VtAdVt1VM161XopQrnXoi",
+      "stakedToken": {
+        "address": "Fd35SRikKGtPxAFFA4szN2BDmq3GyaHStVVEfU2usjP3",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "6ykF8xSggqCxFi6SF24jEknfyFEvLQsnR7Fyb97sQBMM",
+      "stakedToken": {
+        "address": "5pc98Rx8Qa2NgrJEBT2B2jMwmKNeutWB2vvBoENiN5En",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "ECKnnGhDVdrGiyv8Dbydi1nQGHpuSEBPp5DwA4SMudy7",
+      "stakedToken": {
+        "address": "CajXYbhhqL72xuhQnRuDkSzBCY4VyrMonnAjQSx7h7cg",
+        "decimals": 6
+      }
+    },
+    {
+      "quarry": "Bv1mRHLMmRByf3hBPCizSJnYHjm62pioRMmvjyESvYBJ",
+      "stakedToken": {
+        "address": "4NTUQ9N7wg2eBPH14AvkXLLhiAeKNAbipULEcHfsw9v1",
+        "decimals": 6
+      }
+    }
+  ],
+  "rewardsTokenMint": "FnHA1GbWfBHqZPPUSwhXuYwoL8h5Uks6vD6FmQdFehP3"
+}

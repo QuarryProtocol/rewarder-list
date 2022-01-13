@@ -1,0 +1,16 @@
+{
+  "address": "rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk",
+  "color": "#6966FB",
+  "description": "Saber is a protocol enabling seamless cross-chain liquidity exchange.",
+  "id": "saber",
+  "name": "Saber",
+  "networks": [
+    "mainnet-beta",
+    "devnet"
+  ],
+  "redeemer": {
+    "method": "saber",
+    "underlyingToken": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1"
+  },
+  "website": "https://saber.so"
+}

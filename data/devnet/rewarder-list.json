@@ -1,0 +1,77 @@
+[
+  {
+    "address": "rXhAofQCT7NN9TUqigyEAUzV1uLL4boeD8CRkNBSkYk",
+    "color": "#6966FB",
+    "description": "Saber is a protocol enabling seamless cross-chain liquidity exchange.",
+    "id": "saber",
+    "name": "Saber",
+    "networks": [
+      "mainnet-beta",
+      "devnet"
+    ],
+    "redeemer": {
+      "method": "saber",
+      "underlyingToken": "Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1"
+    },
+    "website": "https://saber.so"
+  },
+  {
+    "address": "97PmYbGpSHSrKrUkQX793mjpA2EA9rrQKkHsQuvenU44",
+    "color": "#DC723F",
+    "description": "Solana's cross-chain DeFi yield aggregator.",
+    "hidden": true,
+    "id": "sunny",
+    "name": "Sunny Aggregator",
+    "networks": [
+      "mainnet-beta",
+      "devnet"
+    ],
+    "redeemer": {
+      "method": "sunny",
+      "underlyingToken": "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag"
+    },
+    "website": "https://sunny.ag"
+  },
+  {
+    "address": "AaQnmceRh5phVdqYsH8QnoYeYPMvGm2PtYJoe2T3w5oE",
+    "color": "#ffdc00",
+    "description": "Larry is giving out fake and useless tokens on devnet.",
+    "id": "larry-test",
+    "name": "Larry's Testing Rewarder",
+    "networks": [
+      "devnet"
+    ],
+    "redeemer": {
+      "method": "quarry-redeemer",
+      "underlyingToken": "2jmzZmwSnL9B6WRt9ZG1ayK8A2iQsNbvz3XR8KnXSheB"
+    },
+    "website": "https://quarry.so"
+  },
+  {
+    "address": "BX6gJLjmviXQVuqxJB3V5mVEKvhD6k7ffc2UjdwcgNR7",
+    "color": "#00ffff",
+    "description": "Larry is giving out more fake and useless tokens on devnet.",
+    "id": "larry-test-other",
+    "name": "Larry's Other Testing Rewarder",
+    "networks": [
+      "devnet"
+    ],
+    "website": "https://quarry.so"
+  },
+  {
+    "address": "J829VB5Fi7DMoMLK7bsVGFM82cRU61BKtiPz9PNFdL7b",
+    "color": "#EF39F8",
+    "description": "The easiest way to stake Solana.",
+    "id": "marinade",
+    "name": "Marinade",
+    "networks": [
+      "mainnet-beta",
+      "devnet"
+    ],
+    "redeemer": {
+      "method": "marinade",
+      "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey"
+    },
+    "website": "https://marinade.finance"
+  }
+]
