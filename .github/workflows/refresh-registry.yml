@@ -29,6 +29,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-modules-
       - run: yarn install
+      - run: mkdir -p data/
       - run: cp -R static/* data/
       - run: yarn fetch-all-rewarders
       - run: yarn decorate-rewarders
