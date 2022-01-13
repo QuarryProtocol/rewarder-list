@@ -40,6 +40,7 @@ export type QuarryMetaWithReplicas = QuarryMeta & {
     quarry: string;
     rewardsTokenMint: string;
   }[];
+  isReplica: boolean;
 };
 
 export interface RewarderMetaWithInfo extends RewarderMeta {
