@@ -33,13 +33,11 @@ export type QuarryMetaWithReplicas = QuarryMeta & {
   primaryQuarries: {
     rewarder: string;
     quarry: string;
-    quarryMint: string;
     rewardsTokenMint: string;
   }[];
   replicaQuarries: {
     rewarder: string;
     quarry: string;
-    quarryMint: string;
     rewardsTokenMint: string;
   }[];
   isReplica: boolean;
