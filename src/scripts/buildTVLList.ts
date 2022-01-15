@@ -18,7 +18,7 @@ export const buildTVLList = async (network: Network): Promise<void> => {
     groupBy(
       Object.values(rewarderMetas).flatMap((rew) =>
         rew.quarries.map((q) => ({
-          address: q.stakedToken.address,
+          address: q.stakedToken.mint,
           quarry: q.quarry,
         }))
       ),

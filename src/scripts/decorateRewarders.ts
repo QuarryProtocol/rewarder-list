@@ -12,6 +12,7 @@ import type {
   RewarderInfo,
   RewarderMeta,
   RewarderMetaWithInfo,
+  TokenMeta,
 } from "../types";
 import { stringify } from "../utils";
 
@@ -53,11 +54,11 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
         return await Promise.all(
           meta.quarries.map(async (q) => {
             const [replicaMint] = await findReplicaMintAddress({
-              primaryMint: new PublicKey(q.stakedToken.address),
+              primaryMint: new PublicKey(q.stakedToken.mint),
             });
             return {
               rewarder: rewarderKey,
-              token: q.stakedToken.address,
+              token: q.stakedToken,
               quarry: q.quarry,
               replicaMint: replicaMint.toString(),
             };
@@ -66,7 +67,8 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
       })
     )
   ).flat();
-  const quarriesByMint = groupBy(allQuarries, (el) => el.token);
+
+  const quarriesByMint = groupBy(allQuarries, (el) => el.token.mint);
   const quarriesByReplicaMint = groupBy(allQuarries, (el) => el.replicaMint);
 
   const rewardersByMint = mapValues(quarriesByMint, (group) =>
@@ -93,13 +95,12 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
             meta.quarries.map(
               async (quarry): Promise<QuarryMetaWithReplicas> => {
                 const [replicaMint] = await findReplicaMintAddress({
-                  primaryMint: new PublicKey(quarry.stakedToken.address),
+                  primaryMint: new PublicKey(quarry.stakedToken.mint),
                 });
 
                 const primaryQuarries =
-                  quarriesByReplicaMint[quarry.stakedToken.address];
-                const otherQuarries =
-                  quarriesByMint[quarry.stakedToken.address];
+                  quarriesByReplicaMint[quarry.stakedToken.mint];
+                const otherQuarries = quarriesByMint[quarry.stakedToken.mint];
                 const replicaQuarries = quarriesByMint[replicaMint.toString()];
 
                 // It is a replica if primary quarries exist for this as a replica token.
@@ -110,30 +111,29 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                   ? otherQuarries
                   : replicaQuarries;
 
-                const addRewardsTokenMint = (
+                const addRewardsToken = (
                   quarries: {
                     rewarder: string;
-                    token: string;
                     quarry: string;
+                    token: TokenMeta;
                   }[]
                 ) =>
                   quarries.map(({ quarry, rewarder }) => {
-                    const rewardsTokenMint =
-                      rewarderMetas[rewarder]?.rewardsTokenMint;
-                    invariant(rewardsTokenMint);
-                    return { quarry, rewarder, rewardsTokenMint };
+                    const rewardsToken = rewarderMetas[rewarder]?.rewardsToken;
+                    invariant(rewardsToken);
+                    return { quarry, rewarder, rewardsToken };
                   });
 
                 return {
                   ...quarry,
-                  primaryMint: isReplica
+                  primaryToken: isReplica
                     ? primaryQuarries[0].token
-                    : quarry.stakedToken.address,
+                    : quarry.stakedToken,
                   replicaMint: isReplica
-                    ? quarry.stakedToken.address
+                    ? quarry.stakedToken.mint
                     : replicaMint.toString(),
-                  primaryQuarries: addRewardsTokenMint(myPrimaryQuarries),
-                  replicaQuarries: addRewardsTokenMint(myReplicaQuarries ?? []),
+                  primaryQuarries: addRewardsToken(myPrimaryQuarries),
+                  replicaQuarries: addRewardsToken(myReplicaQuarries ?? []),
                   isReplica,
                 };
               }

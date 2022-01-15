@@ -22,16 +22,6 @@ const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
     .sort((a, b) => a.address.localeCompare(b.address));
 };
 
-const TOKEN_LIST_URLS = [
-  "https://raw.githubusercontent.com/SenchaHQ/sencha-lp-token-list/master/lists/sencha-lp.mainnet-beta.json",
-  "https://raw.githubusercontent.com/cashioapp/cashio-token-list/main/cashio.mainnet.json",
-  "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.mainnet-beta.json",
-  "https://raw.githubusercontent.com/saber-hq/saber-lp-token-list/master/lists/saber-lp.devnet.json",
-  "https://registry.saber.so/data/token-list.mainnet.json",
-  "https://registry.saber.so/data/token-list.devnet.json",
-  "https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/solana.tokenlist.json",
-];
-
 const makeReplicaTokenInfo = (
   mint: PublicKey,
   primary: TokenInfo
@@ -52,12 +42,9 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
 
   const dir = `${__dirname}/../../data/${network}`;
-  const lists = await Promise.all(
-    TOKEN_LIST_URLS.map(async (url) => {
-      const result = await axios.get<TokenList>(url);
-      return result.data;
-    })
-  );
+  const lists = JSON.parse(
+    (await fs.readFile(".tmp.token-list.json")).toString()
+  ) as TokenList[];
 
   const rewarderList = JSON.parse(
     (await fs.readFile(`${dir}/rewarder-list.json`)).toString()
@@ -70,7 +57,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
     ...rewarderList
       .map((rwl) => rwl.redeemer?.underlyingToken)
       .filter((x): x is string => !!x),
-    ...Object.values(allRewarders).map((r) => r.rewardsTokenMint),
+    ...Object.values(allRewarders).map((r) => r.rewardsToken.mint),
     ...Object.keys(
       JSON.parse(
         (await fs.readFile(`${dir}/rewarders-by-mint.json`)).toString()

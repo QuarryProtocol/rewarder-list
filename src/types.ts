@@ -9,12 +9,14 @@ export type RedemptionMethod =
   | "sunny"
   | "marinade";
 
+export interface TokenMeta {
+  mint: string;
+  decimals: number;
+}
+
 export interface QuarryMeta {
   quarry: string;
-  stakedToken: {
-    address: string;
-    decimals: number;
-  };
+  stakedToken: TokenMeta;
 }
 
 /**
@@ -22,23 +24,23 @@ export interface QuarryMeta {
  */
 export interface RewarderMeta {
   authority: string;
-  rewardsTokenMint: string;
+  rewardsToken: TokenMeta;
   mintWrapper: string;
   quarries: QuarryMeta[];
 }
 
 export type QuarryMetaWithReplicas = QuarryMeta & {
-  primaryMint: string;
+  primaryToken: TokenMeta;
   replicaMint: string;
   primaryQuarries: {
     rewarder: string;
     quarry: string;
-    rewardsTokenMint: string;
+    rewardsToken: TokenMeta;
   }[];
   replicaQuarries: {
     rewarder: string;
     quarry: string;
-    rewardsTokenMint: string;
+    rewardsToken: TokenMeta;
   }[];
   isReplica: boolean;
 };

@@ -1,8 +1,11 @@
 import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
+import type { TokenList } from "@saberhq/token-utils";
+import axios from "axios";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
+import { TOKEN_LIST_URLS } from "../constants";
 import { makeProvider, stringify } from "../utils";
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
@@ -10,6 +13,12 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const quarry = QuarrySDK.load({ provider });
   const allRewarders = await quarry.programs.Mine.account.rewarder.all();
   const allQuarries = await quarry.programs.Mine.account.quarry.all();
+  const tokenLists = await Promise.all(
+    TOKEN_LIST_URLS.map(async (url) => {
+      const result = await axios.get<TokenList>(url);
+      return result.data;
+    })
+  );
 
   const dir = `${__dirname}/../../data/${network}/`;
   await fs.mkdir(dir, { recursive: true });
@@ -19,7 +28,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     rewarder: q.account.rewarderKey.toString(),
     quarry: q.publicKey.toString(),
     stakedToken: {
-      address: q.account.tokenMintKey.toString(),
+      mint: q.account.tokenMintKey.toString(),
       decimals: q.account.tokenMintDecimals,
     },
     cached: {
@@ -53,10 +62,30 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
         }`
       );
     }
+
+    const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
+    let rewardsTokenInfo = null;
+    for (const list of tokenLists) {
+      rewardsTokenInfo = list.tokens.find(
+        (t) => t.address === rewardsTokenMint
+      );
+      if (rewardsTokenInfo) {
+        break;
+      }
+    }
+    if (!rewardsTokenInfo) {
+      console.warn(
+        `rewards token ${rewardsTokenMint} not found in any of the token lists`
+      );
+    }
+
     return {
       rewarder: rewarder.publicKey.toString(),
       authority: rewarder.account.authority.toString(),
-      rewardsTokenMint: rewarder.account.rewardsTokenMint.toString(),
+      rewardsToken: {
+        mint: rewardsTokenMint,
+        decimals: rewardsTokenInfo?.decimals ?? -1,
+      },
       mintWrapper: rewarder.account.mintWrapper.toString(),
       quarries,
     };
@@ -70,6 +99,9 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       ),
     })
   );
+
+  // tmp-token-list
+  await fs.writeFile(`.tmp.token-list.json`, stringify(tokenLists));
 
   // rewarders without the cached values
   await fs.writeFile(`${dir}/all-rewarders.json`, stringify(allRewardersJSON));
