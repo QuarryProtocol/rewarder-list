@@ -1,4 +1,7 @@
-import { findReplicaMintAddress } from "@quarryprotocol/quarry-sdk";
+import {
+  findPoolAddress,
+  findReplicaMintAddress,
+} from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
 import { PublicKey } from "@saberhq/solana-contrib";
 import * as fs from "fs/promises";
@@ -94,6 +97,9 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           const quarries = await Promise.all(
             meta.quarries.map(
               async (quarry): Promise<QuarryMetaWithReplicas> => {
+                const [mergePool] = await findPoolAddress({
+                  primaryMint: new PublicKey(quarry.stakedToken.mint),
+                });
                 const [replicaMint] = await findReplicaMintAddress({
                   primaryMint: new PublicKey(quarry.stakedToken.mint),
                 });
@@ -129,6 +135,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                   primaryToken: isReplica
                     ? primaryQuarries[0].token
                     : quarry.stakedToken,
+                  mergePool: mergePool.toString(),
                   replicaMint: isReplica
                     ? quarry.stakedToken.mint
                     : replicaMint.toString(),

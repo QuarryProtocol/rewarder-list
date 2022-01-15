@@ -31,6 +31,7 @@ export interface RewarderMeta {
 
 export type QuarryMetaWithReplicas = QuarryMeta & {
   primaryToken: TokenMeta;
+  mergePool: string;
   replicaMint: string;
   primaryQuarries: {
     rewarder: string;
