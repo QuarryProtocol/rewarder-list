@@ -5,7 +5,7 @@ import axios from "axios";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
-import { TOKEN_LIST_URLS } from "../constants";
+import { INACTIVE_REWARDERS, TOKEN_LIST_URLS } from "../constants";
 import { makeProvider, stringify } from "../utils";
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
@@ -51,45 +51,49 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     }
   );
 
-  const allRewardersList = allRewarders.map((rewarder) => {
-    const quarries = allRewarderQuarries[rewarder.publicKey.toString()] ?? [];
-    if (rewarder.account.numQuarries !== quarries.length) {
-      console.warn(
-        `Expected ${
-          rewarder.account.numQuarries
-        } quarries on rewarder ${rewarder.publicKey.toString()}; got ${
-          quarries.length
-        }`
-      );
-    }
-
-    const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
-    let rewardsTokenInfo = null;
-    for (const list of tokenLists) {
-      rewardsTokenInfo = list.tokens.find(
-        (t) => t.address === rewardsTokenMint
-      );
-      if (rewardsTokenInfo) {
-        break;
+  const allRewardersList = allRewarders
+    .filter(
+      (rewarder) => !INACTIVE_REWARDERS.includes(rewarder.publicKey.toString())
+    )
+    .map((rewarder) => {
+      const quarries = allRewarderQuarries[rewarder.publicKey.toString()] ?? [];
+      if (rewarder.account.numQuarries !== quarries.length) {
+        console.warn(
+          `Expected ${
+            rewarder.account.numQuarries
+          } quarries on rewarder ${rewarder.publicKey.toString()}; got ${
+            quarries.length
+          }`
+        );
       }
-    }
-    if (!rewardsTokenInfo) {
-      console.warn(
-        `rewards token ${rewardsTokenMint} not found in any of the token lists`
-      );
-    }
 
-    return {
-      rewarder: rewarder.publicKey.toString(),
-      authority: rewarder.account.authority.toString(),
-      rewardsToken: {
-        mint: rewardsTokenMint,
-        decimals: rewardsTokenInfo?.decimals ?? -1,
-      },
-      mintWrapper: rewarder.account.mintWrapper.toString(),
-      quarries,
-    };
-  });
+      const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
+      let rewardsTokenInfo = null;
+      for (const list of tokenLists) {
+        rewardsTokenInfo = list.tokens.find(
+          (t) => t.address === rewardsTokenMint
+        );
+        if (rewardsTokenInfo) {
+          break;
+        }
+      }
+      if (!rewardsTokenInfo) {
+        console.warn(
+          `rewards token ${rewardsTokenMint} not found in any of the token lists`
+        );
+      }
+
+      return {
+        rewarder: rewarder.publicKey.toString(),
+        authority: rewarder.account.authority.toString(),
+        rewardsToken: {
+          mint: rewardsTokenMint,
+          decimals: rewardsTokenInfo?.decimals ?? -1,
+        },
+        mintWrapper: rewarder.account.mintWrapper.toString(),
+        quarries,
+      };
+    });
   const allRewardersJSON = mapValues(
     keyBy(allRewardersList, (r) => r.rewarder),
     ({ rewarder: _rewarder, quarries, ...info }) => ({

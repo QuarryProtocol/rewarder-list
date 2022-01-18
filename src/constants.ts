@@ -7,3 +7,7 @@ export const TOKEN_LIST_URLS = [
   "https://registry.saber.so/data/token-list.devnet.json",
   "https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/solana.tokenlist.json",
 ];
+
+export const INACTIVE_REWARDERS = [
+  "CduAhHmZe3n5KkxhP4EjqTZjWTuptYnfXvi4ULyF7fVc",
+];
