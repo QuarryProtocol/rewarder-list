@@ -84,19 +84,6 @@
     "website": "https://cashio.app"
   },
   {
-    "id": "saber-mnde",
-    "name": "Saber Marinade Rewards",
-    "networks": ["mainnet-beta"],
-    "address": "CduAhHmZe3n5KkxhP4EjqTZjWTuptYnfXvi4ULyF7fVc",
-    "color": "#6966FB",
-    "description": "Marinade rewards for Saber.",
-    "website": "https://saber.so",
-    "redeemer": {
-      "underlyingToken": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
-      "method": "quarry-redeemer"
-    }
-  },
-  {
     "id": "saber-lido",
     "name": "Saber Lido Rewards",
     "networks": ["mainnet-beta"],
