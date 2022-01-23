@@ -21,7 +21,7 @@ export const makeProvider = (network: Network) => {
   return SolanaProvider.load({
     connection: new Connection(
       network === "mainnet-beta"
-        ? "https://api.mainnet-beta.solana.com"
+        ? "https://solana-api.projectserum.com"
         : "https://api.devnet.solana.com"
     ),
     wallet: new SignerWallet(Keypair.generate()),

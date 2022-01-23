@@ -108,6 +108,10 @@ export interface RedeemerInfo {
    */
   underlyingToken: string;
   /**
+   * The address of the Redeemer PDA.
+   */
+  redeemerKey?: string;
+  /**
    * Redemption method.
    */
   method: RedemptionMethod;

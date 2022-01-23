@@ -1,5 +1,6 @@
 import {
   findPoolAddress,
+  findRedeemerKey,
   findReplicaMintAddress,
 } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
@@ -94,6 +95,12 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           const info = networkRewarders.find(
             (nr) => nr.address === rewarderKey
           );
+          const redeemerKeyAndBump = info?.redeemer?.underlyingToken
+            ? await findRedeemerKey({
+                iouMint: new PublicKey(meta.rewardsToken.mint),
+                redemptionMint: new PublicKey(info?.redeemer?.underlyingToken),
+              })
+            : null;
           const quarries = await Promise.all(
             meta.quarries.map(
               async (quarry): Promise<QuarryMetaWithReplicas> => {
@@ -148,6 +155,9 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           );
           const result: RewarderMetaWithInfo = { ...meta, quarries };
           if (info) {
+            if (info.redeemer && redeemerKeyAndBump) {
+              info.redeemer.redeemerKey = redeemerKeyAndBump[0].toString();
+            }
             result.info = info;
           }
           return [rewarderKey, result];

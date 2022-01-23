@@ -3,7 +3,6 @@ import type { Network } from "@saberhq/solana-contrib";
 import type { TokenInfo, TokenList } from "@saberhq/token-utils";
 import { deserializeMint, networkToChainId, Token } from "@saberhq/token-utils";
 import { PublicKey } from "@solana/web3.js";
-import axios from "axios";
 import * as fs from "fs/promises";
 import { chunk, uniq, zip } from "lodash";
 import invariant from "tiny-invariant";
