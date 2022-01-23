@@ -102,12 +102,13 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                 redemptionMint: new PublicKey(info?.redeemer?.underlyingToken),
               })
             : null;
-          const redeemerVaultATA = redeemerKeyAndBump
-            ? await getATAAddress({
-                mint: new PublicKey(meta.rewardsToken.mint),
-                owner: redeemerKeyAndBump[0],
-              })
-            : redeemerKeyAndBump;
+          const redeemerVaultATA =
+            redeemerKeyAndBump && info?.redeemer?.underlyingToken
+              ? await getATAAddress({
+                  mint: new PublicKey(info.redeemer.underlyingToken),
+                  owner: redeemerKeyAndBump[0],
+                })
+              : redeemerKeyAndBump;
 
           const quarries = await Promise.all(
             meta.quarries.map(
