@@ -112,6 +112,10 @@ export interface RedeemerInfo {
    */
   redeemerKey?: string;
   /**
+   * The address of the Redeemer ATA.
+   */
+  redeemerVaultATA?: string;
+  /**
    * Redemption method.
    */
   method: RedemptionMethod;

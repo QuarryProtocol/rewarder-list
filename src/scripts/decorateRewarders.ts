@@ -5,6 +5,7 @@ import {
 } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
 import { PublicKey } from "@saberhq/solana-contrib";
+import { getATAAddress } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { fromPairs, groupBy, mapValues } from "lodash";
 import invariant from "tiny-invariant";
@@ -101,6 +102,13 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                 redemptionMint: new PublicKey(info?.redeemer?.underlyingToken),
               })
             : null;
+          const redeemerVaultATA = redeemerKeyAndBump
+            ? await getATAAddress({
+                mint: new PublicKey(meta.rewardsToken.mint),
+                owner: redeemerKeyAndBump[0],
+              })
+            : redeemerKeyAndBump;
+
           const quarries = await Promise.all(
             meta.quarries.map(
               async (quarry): Promise<QuarryMetaWithReplicas> => {
@@ -157,6 +165,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           if (info) {
             if (info.redeemer && redeemerKeyAndBump) {
               info.redeemer.redeemerKey = redeemerKeyAndBump[0].toString();
+              info.redeemer.redeemerVaultATA = redeemerVaultATA?.toString();
             }
             result.info = info;
           }
