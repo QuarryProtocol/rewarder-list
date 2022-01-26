@@ -134,5 +134,18 @@
       "underlyingToken": "PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y",
       "method": "quarry-redeemer"
     }
+  },
+  {
+    "id": "swim-devnet",
+    "name": "Swim Protocol Devnet",
+    "networks": ["devnet"],
+    "address": "HCW7URopNHQHB9sdPP2vx5uUu3pU19FVSy9AG2sZB1GM",
+    "color": "#2596be",
+    "description": "Swim Protocol is a seamless multi-chain liquidity protocol",
+    "website": "https://swim.io",
+    "redeemer": {
+      "underlyingToken": "G2Ftt9yakMXgbHP3r5fzGScctG9kXPEbKHPvJn11M3s3",
+      "method": "quarry-redeemer"
+    }
   }
 ]
