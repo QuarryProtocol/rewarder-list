@@ -140,7 +140,7 @@
     "name": "Swim Protocol Devnet",
     "networks": ["devnet"],
     "address": "HCW7URopNHQHB9sdPP2vx5uUu3pU19FVSy9AG2sZB1GM",
-    "color": "#2596be",
+    "color": "#277CE2",
     "description": "Swim Protocol is a seamless multi-chain liquidity protocol",
     "website": "https://swim.io",
     "redeemer": {
