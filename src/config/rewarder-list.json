@@ -13,6 +13,19 @@
     }
   },
   {
+    "id": "lido_super_test",
+    "name": "lido_super_test",
+    "address": "58u68XDr3VF31PPssUM4MKWduXxWoYmZWdpGRz74Lhuo",
+    "networks": ["devnet"],
+    "color": "#6966FB",
+    "description": "Lido test rewarder.",
+    "website": "https://saber.so",
+    "redeemer": {
+      "underlyingToken": "bLpASoWNdsz5DsjCaxpbM2FrkMowTJCydpwiDP4Vdzm",
+      "method": "saber"
+    }
+  },
+  {
     "id": "saber-luna",
     "name": "Saber Luna Rewards",
     "address": "9eNj2Y4YdqM9Unw8qTm8kzx1Xt64Rft8a6HjvpkPL7QJ",
