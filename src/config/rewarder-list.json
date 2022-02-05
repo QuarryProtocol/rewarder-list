@@ -186,5 +186,18 @@
       "underlyingToken": "swimnKEr963p7EbCjsSnBCoYwytuZHPm3zbq6fKLHXb",
       "method": "quarry-redeemer"
     }
+  },
+  {
+    "id": "saber-hubb",
+    "name": "Saber Hubble Rewards",
+    "networks": ["mainnet"],
+    "address": "Wz2Zzi5BHmYr75yNzJG8NZ8U1T9cSWKf6ATRwZF7qV6",
+    "color": "#7a84ff",
+    "description": "",
+    "website": "https://hubbleprotocol.io",
+    "redeemer": {
+      "underlyingToken": "HBB111SCo9jkCejsZfz8Ec8nH7T6THF8KEKSnvwT6XK6",
+      "method": "quarry-redeemer"
+    }
   }
 ]
