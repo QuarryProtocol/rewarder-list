@@ -15,8 +15,13 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const allQuarries = await quarry.programs.Mine.account.quarry.all();
   const tokenLists = await Promise.all(
     TOKEN_LIST_URLS.map(async (url) => {
-      const result = await axios.get<TokenList>(url);
-      return result.data;
+      try {
+        const result = await axios.get<TokenList>(url);
+        return result.data;
+      } catch (e) {
+        console.error(`Error fetching ${url}`, e);
+        throw e;
+      }
     })
   );
 
