@@ -193,7 +193,7 @@
     "networks": ["mainnet-beta"],
     "address": "Wz2Zzi5BHmYr75yNzJG8NZ8U1T9cSWKf6ATRwZF7qV6",
     "color": "#7a84ff",
-    "description": "",
+    "description": "Hubble rewards for Saber.",
     "website": "https://hubbleprotocol.io",
     "redeemer": {
       "underlyingToken": "HBB111SCo9jkCejsZfz8Ec8nH7T6THF8KEKSnvwT6XK6",
