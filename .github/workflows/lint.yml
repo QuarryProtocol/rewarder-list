@@ -1,4 +1,4 @@
-name: Build Registry
+name: Lint
 
 on:
   pull-request:
