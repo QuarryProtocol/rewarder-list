@@ -100,6 +100,11 @@ export interface RewarderInfo {
    * The Quarry application will automatically register the reward token in its internal token list.
    */
   redeemer?: RedeemerInfo;
+
+  /**
+   * If true, this pool will show up on the main page even if annual rewards rate is set to 0.
+   */
+  prelaunch?: boolean;
 }
 
 export interface RedeemerInfo {
