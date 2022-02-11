@@ -1,6 +1,6 @@
 import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
-import type { TokenList } from "@saberhq/token-utils";
+import type { TokenInfo, TokenList } from "@saberhq/token-utils";
 import axios from "axios";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
@@ -69,11 +69,10 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     }
 
     const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
-    let rewardsTokenInfo = null;
+    let rewardsTokenInfo: TokenInfo | null = null;
     for (const list of tokenLists) {
-      rewardsTokenInfo = list.tokens.find(
-        (t) => t.address === rewardsTokenMint
-      );
+      rewardsTokenInfo =
+        list.tokens.find((t) => t.address === rewardsTokenMint) ?? null;
       if (rewardsTokenInfo) {
         break;
       }

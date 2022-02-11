@@ -187,6 +187,16 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
     stringify(rewardersByMint)
   );
   await fs.writeFile(`${dir}/rewarder-list.json`, stringify(networkRewarders));
+
+  for (const [rewarderKey, rewarderInfoFull] of Object.entries(
+    allRewardersWithInfo
+  )) {
+    await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
+    await fs.writeFile(
+      `${dir}/rewarders/${rewarderKey}/full.json`,
+      stringify(rewarderInfoFull)
+    );
+  }
 };
 
 Promise.all([
