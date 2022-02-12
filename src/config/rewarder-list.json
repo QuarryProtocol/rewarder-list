@@ -200,5 +200,18 @@
       "method": "quarry-redeemer"
     },
     "prelaunch": true
+  },
+  {
+    "id": "sentre",
+    "name": "Sentre Protocol",
+    "networks": ["devnet"],
+    "address": "2ZP24TRHo5fJMdLuiTSzzpPfFcjkCtML4wxeRNWgwprP",
+    "color": "#ff0000",
+    "description": "Sentre dummy des",
+    "website": "https://sentre.io",
+    "redeemer": {
+      "underlyingToken": "5YwUkPdXLoujGkZuo9B4LsLKj3hdkDcfP4derpspifSJ",
+      "method": "quarry-redeemer"
+    }
   }
 ]
