@@ -212,6 +212,18 @@
     "redeemer": {
       "underlyingToken": "5YwUkPdXLoujGkZuo9B4LsLKj3hdkDcfP4derpspifSJ",
       "method": "quarry-redeemer"
+    },
+    {
+    "id": "Jungle Test",
+    "name": "Jungle Finance",
+    "networks": ["devnet"],
+    "address": "7WqMqLaYpadshvUPuaHHf8busLU2XUDNRWw7g3xv4Aum",
+    "color": "#ff0000",
+    "description": "Jungle Test",
+    "website": "https://jungledefi.io",
+    "redeemer": {
+      "underlyingToken": "2tWC4JAdL4AxEFJySziYJfsAnW2MHKRo98vbAPiRDSk8",
+      "method": "quarry-redeemer"
     }
   }
 ]
