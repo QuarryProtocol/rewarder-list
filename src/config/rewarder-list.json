@@ -202,7 +202,7 @@
     "prelaunch": true
   },
   {
-    "id": "sentre",
+    "id": "sentre-devnet",
     "name": "Sentre Protocol",
     "networks": ["devnet"],
     "address": "2ZP24TRHo5fJMdLuiTSzzpPfFcjkCtML4wxeRNWgwprP",
@@ -211,6 +211,19 @@
     "website": "https://sentre.io",
     "redeemer": {
       "underlyingToken": "5YwUkPdXLoujGkZuo9B4LsLKj3hdkDcfP4derpspifSJ",
+      "method": "quarry-redeemer"
+    }
+  },
+  {
+    "id": "sentre",
+    "name": "Sentre Protocol",
+    "networks": ["mainnet-beta"],
+    "address": "9JrJzACR6MbqXdBPKD5YPUEVbxaC3KeHZEymafkw5VYw",
+    "color": "#f9575e",
+    "description": "All-in-One Solana Open Platform with DApps Store and Universal Protocol for Liquidity.",
+    "website": "https://sentre.io",
+    "redeemer": {
+      "underlyingToken": "SENBBKVCM7homnf5RX9zqpf1GFe935hnbU4uVzY1Y6M",
       "method": "quarry-redeemer"
     }
   }
