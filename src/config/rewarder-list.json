@@ -214,4 +214,17 @@
       "method": "quarry-redeemer"
     }
   }
+   {
+    "id": "Jungle",
+    "name": "Jungle Finance",
+    "networks": ["mainnet-beta"],
+    "address": "HsryAVAm1TA917GuGc1h6fcjBLd1gnUoEfjzQs688DAx",
+    "color": "#00ff0a",
+    "description": "Jungle Finance Governance Token",
+    "website": "https://jungledefi.io",
+    "redeemer": {
+      "underlyingToken": "GePFQaZKHcWE5vpxHfviQtH5jgxokSs51Y5Q4zgBiMDs",
+      "method": "quarry-redeemer"
+    }
+  }
 ]
