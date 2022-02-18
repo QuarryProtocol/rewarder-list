@@ -237,6 +237,7 @@
     "website": "https://jungledefi.io",
     "redeemer": {
       "underlyingToken": "GePFQaZKHcWE5vpxHfviQtH5jgxokSs51Y5Q4zgBiMDs",
+      "method": "quarry-redeemer"
     }
-  },
+  }
 ]
