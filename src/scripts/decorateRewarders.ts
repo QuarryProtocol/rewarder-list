@@ -67,6 +67,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
               rewarder: rewarderKey,
               token: q.stakedToken,
               quarry: q.quarry,
+              slug: q.slug,
               replicaMint: replicaMint.toString(),
             };
           })
@@ -140,12 +141,13 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                     rewarder: string;
                     quarry: string;
                     token: TokenMeta;
+                    slug: string;
                   }[]
                 ) =>
-                  quarries.map(({ quarry, rewarder }) => {
+                  quarries.map(({ quarry, rewarder, slug }) => {
                     const rewardsToken = rewarderMetas[rewarder]?.rewardsToken;
                     invariant(rewardsToken);
-                    return { quarry, rewarder, rewardsToken };
+                    return { quarry, rewarder, rewardsToken, slug };
                   });
 
                 return {
@@ -208,4 +210,5 @@ Promise.all([
   decorateRewarders("devnet"),
 ]).catch((err) => {
   console.error(err);
+  process.exit(1);
 });

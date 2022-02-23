@@ -39,6 +39,7 @@
     "tiny-invariant": "^1.2.0"
   },
   "scripts": {
+    "typecheck": "tsc",
     "lint": "eslint . --cache",
     "build-token-list": "ts-node src/scripts/buildTokenList.ts",
     "build-tvl-list": "ts-node src/scripts/buildTVLList.ts",

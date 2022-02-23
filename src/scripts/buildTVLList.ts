@@ -50,4 +50,5 @@ export const buildTVLList = async (network: Network): Promise<void> => {
 
 Promise.all([buildTVLList("mainnet-beta")]).catch((err) => {
   console.error(err);
+  process.exit(1);
 });

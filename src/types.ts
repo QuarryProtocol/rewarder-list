@@ -18,6 +18,7 @@ export interface QuarryMeta {
   quarry: string;
   stakedToken: TokenMeta;
   index: number;
+  slug: string;
 }
 
 /**

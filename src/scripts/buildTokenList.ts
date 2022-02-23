@@ -191,5 +191,6 @@ export const buildTokenList = async (network: Network): Promise<void> => {
 Promise.all([buildTokenList("mainnet-beta"), buildTokenList("devnet")]).catch(
   (err) => {
     console.error(err);
+    process.exit(1);
   }
 );
