@@ -36,6 +36,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       mint: q.account.tokenMintKey.toString(),
       decimals: q.account.tokenMintDecimals,
     },
+    index: q.account.index,
     cached: {
       index: q.account.index,
       famineTs: q.account.famineTs.toString(),
@@ -94,6 +95,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       quarries,
     };
   });
+
   const allRewardersJSON = mapValues(
     keyBy(allRewardersList, (r) => r.rewarder),
     ({ rewarder: _rewarder, quarries, ...info }) => ({
@@ -101,6 +103,14 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       quarries: quarries.map(
         ({ cached: _cached, ...quarryInfo }) => quarryInfo
       ),
+    })
+  );
+
+  const allRewardersJSONWithCache = mapValues(
+    keyBy(allRewardersList, (r) => r.rewarder),
+    ({ rewarder: _rewarder, quarries, ...info }) => ({
+      ...info,
+      quarries,
     })
   );
 
@@ -112,7 +122,9 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
 
   // quarries with cached values -- go in their own files
   await fs.mkdir(`${dir}/rewarders`, { recursive: true });
-  for (const [rewarderKey, rewarderInfo] of Object.entries(allRewardersJSON)) {
+  for (const [rewarderKey, rewarderInfo] of Object.entries(
+    allRewardersJSONWithCache
+  )) {
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/meta.json`,
