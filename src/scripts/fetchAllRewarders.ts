@@ -130,6 +130,16 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       `${dir}/rewarders/${rewarderKey}/meta.json`,
       stringify(rewarderInfo)
     );
+
+    await fs.mkdir(`${dir}/rewarders/${rewarderKey}/quarries`, {
+      recursive: true,
+    });
+    for (const quarry of rewarderInfo.quarries) {
+      await fs.writeFile(
+        `${dir}/rewarders/${rewarderKey}/quarries/${quarry.index}.json`,
+        stringify(quarry)
+      );
+    }
   }
 
   console.log(
