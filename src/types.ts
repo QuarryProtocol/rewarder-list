@@ -49,6 +49,7 @@ export type QuarryMetaWithReplicas = QuarryMeta & {
 
 export interface RewarderMetaWithInfo extends RewarderMeta {
   info?: RewarderInfo;
+  slug: string;
   quarries: QuarryMetaWithReplicas[];
 }
 

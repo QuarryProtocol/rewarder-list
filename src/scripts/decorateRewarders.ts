@@ -164,7 +164,11 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
               }
             )
           );
-          const result: RewarderMetaWithInfo = { ...meta, quarries };
+          const result: RewarderMetaWithInfo = {
+            ...meta,
+            quarries,
+            slug: info?.id ?? rewarderKey,
+          };
           if (info) {
             if (info.redeemer && redeemerKeyAndBump) {
               info.redeemer.redeemerKey = redeemerKeyAndBump[0].toString();
