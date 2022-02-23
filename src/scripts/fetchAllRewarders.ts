@@ -188,19 +188,22 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
             underlyingTokens.push(...(await pushUnderlying(stakedToken)));
           }
         }
+
+        const slug = stakedToken?.symbol.toLowerCase();
         const quarryInfoStr = stringify({
           quarry,
           stakedToken,
           underlyingTokens,
+          slug: slug ?? quarry.index.toString(),
         });
 
         await fs.writeFile(
           `${dir}/rewarders/${rewarderKey}/quarries/${quarry.index}.json`,
           quarryInfoStr
         );
-        if (stakedToken) {
+        if (slug && slug !== quarry.index.toString()) {
           await fs.writeFile(
-            `${dir}/rewarders/${rewarderKey}/quarries/${stakedToken.symbol.toLowerCase()}.json`,
+            `${dir}/rewarders/${rewarderKey}/quarries/${slug}.json`,
             quarryInfoStr
           );
         }
