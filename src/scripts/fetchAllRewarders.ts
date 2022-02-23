@@ -53,6 +53,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const quarry = QuarrySDK.load({ provider });
   const allRewarders = await quarry.programs.Mine.account.rewarder.all();
   const allQuarries = await quarry.programs.Mine.account.quarry.all();
+
   const tokenLists = await Promise.all(
     TOKEN_LIST_URLS.map(async (url) => {
       try {
@@ -64,29 +65,41 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       }
     })
   );
+  const tokens: Record<string, TokenInfo> = {};
+  tokenLists
+    .flatMap((list) => list.tokens)
+    .forEach((token) => {
+      if (!tokens[token.address]) {
+        tokens[token.address] = token;
+      }
+    });
 
   const dir = `${__dirname}/../../data/${network}/`;
   await fs.mkdir(dir, { recursive: true });
 
   // addresses of each quarry
-  const allQuarriesJSON = allQuarries.map((q) => ({
-    rewarder: q.account.rewarderKey.toString(),
-    quarry: q.publicKey.toString(),
-    stakedToken: {
-      mint: q.account.tokenMintKey.toString(),
-      decimals: q.account.tokenMintDecimals,
-    },
-    index: q.account.index,
-    cached: {
+  const allQuarriesJSON = allQuarries.map((q) => {
+    const stakedTokenInfo = tokens[q.account.tokenMintKey.toString()];
+    return {
+      rewarder: q.account.rewarderKey.toString(),
+      quarry: q.publicKey.toString(),
+      stakedToken: {
+        mint: q.account.tokenMintKey.toString(),
+        decimals: q.account.tokenMintDecimals,
+      },
       index: q.account.index,
-      famineTs: q.account.famineTs.toString(),
-      lastUpdateTs: q.account.lastUpdateTs.toString(),
-      rewardsPerTokenStored: q.account.rewardsPerTokenStored.toString(),
-      rewardsShare: q.account.rewardsShare.toString(),
-      numMiners: q.account.numMiners.toString(),
-      totalTokensDeposited: q.account.totalTokensDeposited.toString(),
-    },
-  }));
+      slug: stakedTokenInfo?.symbol.toLowerCase() ?? q.account.index,
+      cached: {
+        index: q.account.index,
+        famineTs: q.account.famineTs.toString(),
+        lastUpdateTs: q.account.lastUpdateTs.toString(),
+        rewardsPerTokenStored: q.account.rewardsPerTokenStored.toString(),
+        rewardsShare: q.account.rewardsShare.toString(),
+        numMiners: q.account.numMiners.toString(),
+        totalTokensDeposited: q.account.totalTokensDeposited.toString(),
+      },
+    };
+  });
 
   const allRewarderQuarries = mapValues(
     groupBy(allQuarriesJSON, (q) => q.rewarder),
@@ -189,21 +202,19 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
           }
         }
 
-        const slug = stakedToken?.symbol.toLowerCase();
         const quarryInfoStr = stringify({
           quarry,
           stakedToken,
           underlyingTokens,
-          slug: slug ?? quarry.index.toString(),
         });
 
         await fs.writeFile(
           `${dir}/rewarders/${rewarderKey}/quarries/${quarry.index}.json`,
           quarryInfoStr
         );
-        if (slug && slug !== quarry.index.toString()) {
+        if (quarry.slug && quarry.slug !== quarry.index.toString()) {
           await fs.writeFile(
-            `${dir}/rewarders/${rewarderKey}/quarries/${slug}.json`,
+            `${dir}/rewarders/${rewarderKey}/quarries/${quarry.slug}.json`,
             quarryInfoStr
           );
         }
