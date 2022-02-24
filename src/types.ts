@@ -1,4 +1,5 @@
 import type { Network } from "@saberhq/solana-contrib";
+import type { TokenInfo } from "@saberhq/token-utils";
 
 /**
  * Method on how to redeem the rewards tokens.
@@ -127,4 +128,8 @@ export interface RedeemerInfo {
    * Redemption method.
    */
   method: RedemptionMethod;
+  /**
+   * Information about the underlying rewards token, if applicable.
+   */
+  underlyingTokenInfo?: TokenInfo;
 }

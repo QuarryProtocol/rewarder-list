@@ -9,4 +9,4 @@
 .eslintcache
 data/
 .tmp.*
-src/config/rewarders-list.json
+src/config/rewarder-list.json

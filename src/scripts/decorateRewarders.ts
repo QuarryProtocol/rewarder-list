@@ -11,6 +11,7 @@ import { fromPairs, groupBy, mapValues } from "lodash";
 import invariant from "tiny-invariant";
 
 import rewarderList from "../config/rewarder-list.json";
+import { fetchAllTokens } from "../helpers/tokenList";
 import type {
   QuarryMetaWithReplicas,
   RedemptionMethod,
@@ -90,6 +91,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
       stringify(rewarderInfo)
     );
   }
+  const { tokens } = await fetchAllTokens(network);
 
   const allRewardersWithInfo: Record<string, RewarderMetaWithInfo> = fromPairs(
     await Promise.all(
@@ -106,6 +108,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                 redemptionMint: new PublicKey(info?.redeemer?.underlyingToken),
               })
             : null;
+
           const redeemerVaultATA =
             redeemerKeyAndBump && info?.redeemer?.underlyingToken
               ? await getATAAddress({
@@ -174,6 +177,8 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           };
           if (info) {
             if (info.redeemer && redeemerKeyAndBump) {
+              info.redeemer.underlyingTokenInfo =
+                tokens[info.redeemer.underlyingToken];
               info.redeemer.redeemerKey = redeemerKeyAndBump[0].toString();
               info.redeemer.redeemerVaultATA = redeemerVaultATA?.toString();
             }
