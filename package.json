@@ -9,7 +9,7 @@
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
-    "@saberhq/eslint-config": "^1.12.45",
+    "@saberhq/eslint-config": "^1.12.46",
     "@types/bn.js": "^5.1.0",
     "@types/eslint": "^8.4.1",
     "@types/lodash": "^4.14.178",
@@ -27,9 +27,9 @@
   "dependencies": {
     "@project-serum/anchor": "^0.22.0",
     "@quarryprotocol/quarry-sdk": "^3.0.0",
-    "@saberhq/anchor-contrib": "^1.12.45",
-    "@saberhq/solana-contrib": "^1.12.45",
-    "@saberhq/token-utils": "^1.12.45",
+    "@saberhq/anchor-contrib": "^1.12.46",
+    "@saberhq/solana-contrib": "^1.12.46",
+    "@saberhq/token-utils": "^1.12.46",
     "@solana/web3.js": "^1.35.1",
     "axios": "^0.26.0",
     "bn.js": "^5.2.0",
