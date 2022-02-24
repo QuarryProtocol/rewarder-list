@@ -1,13 +1,13 @@
 import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
-import type { TokenInfo, TokenList } from "@saberhq/token-utils";
+import type { TokenInfo } from "@saberhq/token-utils";
 import { networkToChainId } from "@saberhq/token-utils";
 import type { AxiosError } from "axios";
 import axios from "axios";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
-import { TOKEN_LIST_URLS } from "../constants";
+import { fetchAllTokens } from "../helpers/tokenList";
 import { makeProvider, stringify } from "../utils";
 
 const tokenInfoCache: Record<string, TokenInfo | null> = {};
@@ -54,25 +54,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const allRewarders = await quarry.programs.Mine.account.rewarder.all();
   const allQuarries = await quarry.programs.Mine.account.quarry.all();
 
-  const tokenLists = await Promise.all(
-    TOKEN_LIST_URLS.map(async (url) => {
-      try {
-        const result = await axios.get<TokenList>(url);
-        return result.data;
-      } catch (e) {
-        console.error(`Error fetching ${url}`, e);
-        throw e;
-      }
-    })
-  );
-  const tokens: Record<string, TokenInfo> = {};
-  tokenLists
-    .flatMap((list) => list.tokens)
-    .forEach((token) => {
-      if (!tokens[token.address]) {
-        tokens[token.address] = token;
-      }
-    });
+  const { tokens, tokenLists } = await fetchAllTokens(network);
 
   const dir = `${__dirname}/../../data/${network}/`;
   await fs.mkdir(dir, { recursive: true });
@@ -123,14 +105,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     }
 
     const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
-    let rewardsTokenInfo: TokenInfo | null = null;
-    for (const list of tokenLists) {
-      rewardsTokenInfo =
-        list.tokens.find((t) => t.address === rewardsTokenMint) ?? null;
-      if (rewardsTokenInfo) {
-        break;
-      }
-    }
+    const rewardsTokenInfo: TokenInfo | null = tokens[rewardsTokenMint] ?? null;
     if (!rewardsTokenInfo) {
       console.warn(
         `rewards token ${rewardsTokenMint} not found in any of the token lists`

@@ -21,7 +21,8 @@ import type {
 } from "../types";
 import { stringify } from "../utils";
 
-interface RewarderInfoRaw extends Omit<RewarderInfo, "networks" | "redeemer"> {
+export interface RewarderInfoRaw
+  extends Omit<RewarderInfo, "networks" | "redeemer"> {
   networks: string[];
   redeemer?: Omit<NonNullable<RewarderInfo["redeemer"]>, "method"> & {
     method: string;
@@ -29,7 +30,7 @@ interface RewarderInfoRaw extends Omit<RewarderInfo, "networks" | "redeemer"> {
   prelaunch?: boolean;
 }
 
-const KNOWN_REWARDERS_RAW: RewarderInfoRaw[] = rewarderList;
+const KNOWN_REWARDERS_RAW: RewarderInfoRaw[] = rewarderList.rewarders;
 
 const KNOWN_REWARDERS: RewarderInfo[] = KNOWN_REWARDERS_RAW.map((kr) => ({
   ...kr,

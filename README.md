@@ -4,7 +4,7 @@ Cache of a list of rewarders associated with each mint.
 
 ## Adding a Rewarder
 
-To add a rewarder, edit [src/config/rewarder-list.json](src/config/rewarder-list.json) with your rewarder's information and send a pull request.
+To add a rewarder, edit [src/config/Rewarders.toml](src/config/Rewarders.toml) with your rewarder's information and send a pull request.
 
 This will add the rewarder to the Quarry UI, allowing others to discover your protocol's rewards.
 
@@ -13,6 +13,7 @@ This will add the rewarder to the Quarry UI, allowing others to discover your pr
 The following scripts should be run periodically:
 
 ```bash
+yarn compile-rewarders-list
 yarn fetch-all-rewarders
 yarn decorate-rewarders
 yarn build-token-list

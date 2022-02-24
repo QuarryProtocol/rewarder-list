@@ -36,11 +36,13 @@
     "fast-json-stable-stringify": "^2.1.0",
     "jsbi": "^4.1.0",
     "lodash": "^4.17.21",
-    "tiny-invariant": "^1.2.0"
+    "tiny-invariant": "^1.2.0",
+    "toml": "^3.0.0"
   },
   "scripts": {
     "typecheck": "tsc",
     "lint": "eslint . --cache",
+    "compile-rewarders-list": "ts-node src/scripts/compileRewardersList.ts",
     "build-token-list": "ts-node src/scripts/buildTokenList.ts",
     "build-tvl-list": "ts-node src/scripts/buildTVLList.ts",
     "fetch-all-rewarders": "ts-node src/scripts/fetchAllRewarders.ts",
