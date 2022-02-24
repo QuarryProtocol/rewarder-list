@@ -70,7 +70,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
         decimals: q.account.tokenMintDecimals,
       },
       index: q.account.index,
-      slug: stakedTokenInfo?.symbol.toLowerCase() ?? q.account.index,
+      slug: stakedTokenInfo?.symbol.toLowerCase() ?? q.account.index.toString(),
       cached: {
         index: q.account.index,
         famineTs: q.account.famineTs.toString(),
