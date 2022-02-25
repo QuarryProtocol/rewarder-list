@@ -5,6 +5,7 @@ import {
 } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
 import { PublicKey } from "@saberhq/solana-contrib";
+import type { TokenInfo } from "@saberhq/token-utils";
 import { getATAAddress } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { fromPairs, groupBy, mapValues } from "lodash";
@@ -21,6 +22,25 @@ import type {
   TokenMeta,
 } from "../types";
 import { stringify } from "../utils";
+
+const pushUnderlying = (
+  token: TokenInfo,
+  allTokens: Record<string, TokenInfo>
+): TokenInfo[] => {
+  const ret: TokenInfo[] = [];
+  token.extensions?.underlyingTokens?.map((underlyingToken) => {
+    const underlying = allTokens[underlyingToken];
+    if (underlying) {
+      const underlyingOfUnderlying = pushUnderlying(underlying, allTokens);
+      if (underlyingOfUnderlying.length === 0) {
+        ret.push(underlying);
+      } else {
+        ret.push(...underlyingOfUnderlying);
+      }
+    }
+  }) ?? [];
+  return ret;
+};
 
 export interface RewarderInfoRaw
   extends Omit<RewarderInfo, "networks" | "redeemer"> {
@@ -150,8 +170,17 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                 ) =>
                   quarries.map(({ quarry, rewarder, slug }) => {
                     const rewardsToken = rewarderMetas[rewarder]?.rewardsToken;
+                    const rewardsTokenInfo = rewardsToken
+                      ? tokens[rewardsToken.mint]
+                      : null;
                     invariant(rewardsToken);
-                    return { quarry, rewarder, rewardsToken, slug };
+                    return {
+                      quarry,
+                      rewarder,
+                      rewardsToken,
+                      slug,
+                      rewardsTokenInfo,
+                    };
                   });
 
                 return {
@@ -163,7 +192,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                   replicaMint: isReplica
                     ? quarry.stakedToken.mint
                     : replicaMint.toString(),
-                  primaryQuarries: addRewardsToken(myPrimaryQuarries),
+                  primaryQuarries: addRewardsToken(myPrimaryQuarries ?? []),
                   replicaQuarries: addRewardsToken(myReplicaQuarries ?? []),
                   isReplica,
                 };
@@ -203,10 +232,48 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
   for (const [rewarderKey, rewarderInfoFull] of Object.entries(
     allRewardersWithInfo
   )) {
+    const rewardsToken = tokens[rewarderInfoFull.rewardsToken.mint];
+
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/full.json`,
-      stringify(rewarderInfoFull)
+      stringify({ ...rewarderInfoFull, rewardsTokenInfo: rewardsToken })
+    );
+
+    await fs.mkdir(`${dir}/rewarders/${rewarderKey}/quarries`, {
+      recursive: true,
+    });
+    await Promise.all(
+      rewarderInfoFull.quarries.map(async (quarry) => {
+        let stakedToken: TokenInfo | null = null;
+
+        const underlyingTokens: TokenInfo[] = [];
+        stakedToken = tokens[quarry.stakedToken.mint] ?? null;
+        if (stakedToken) {
+          underlyingTokens.push(...pushUnderlying(stakedToken, tokens));
+        }
+
+        const { quarries: _, ...rewarderInfoWithoutQuarries } =
+          rewarderInfoFull;
+        const quarryInfoStr = stringify({
+          rewarder: rewarderInfoWithoutQuarries,
+          rewardsToken,
+          quarry,
+          stakedToken,
+          underlyingTokens,
+        });
+
+        await fs.writeFile(
+          `${dir}/rewarders/${rewarderKey}/quarries/${quarry.index}.json`,
+          quarryInfoStr
+        );
+        if (quarry.slug && quarry.slug !== quarry.index.toString()) {
+          await fs.writeFile(
+            `${dir}/rewarders/${rewarderKey}/quarries/${quarry.slug}.json`,
+            quarryInfoStr
+          );
+        }
+      })
     );
   }
 };

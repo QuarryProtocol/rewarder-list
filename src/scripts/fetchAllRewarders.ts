@@ -1,52 +1,11 @@
 import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
 import type { TokenInfo } from "@saberhq/token-utils";
-import { networkToChainId } from "@saberhq/token-utils";
-import type { AxiosError } from "axios";
-import axios from "axios";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
 import { fetchAllTokens } from "../helpers/tokenList";
 import { makeProvider, stringify } from "../utils";
-
-const tokenInfoCache: Record<string, TokenInfo | null> = {};
-
-const fetchTokenInfo = async (chainId: number, address: string) => {
-  const cacheKey = `${chainId}-${address}`;
-
-  if (cacheKey in tokenInfoCache) {
-    return tokenInfoCache[cacheKey] ?? null;
-  }
-
-  try {
-    const { data: underlying } = await axios.get<TokenInfo>(
-      `https://cdn.jsdelivr.net/gh/CLBExchange/certified-token-list/${chainId}/${address}.json`
-    );
-    tokenInfoCache[cacheKey] = underlying;
-    return underlying;
-  } catch (e) {
-    if ((e as AxiosError).response?.status !== 404) {
-      throw e;
-    }
-    tokenInfoCache[cacheKey] = null;
-    return null;
-  }
-};
-
-const pushUnderlying = async (token: TokenInfo): Promise<TokenInfo[]> => {
-  const ret: TokenInfo[] = [];
-  await Promise.all(
-    token.extensions?.underlyingTokens?.map(async (underlyingToken) => {
-      const underlying = await fetchTokenInfo(token.chainId, underlyingToken);
-      if (underlying) {
-        ret.push(underlying);
-        ret.push(...(await pushUnderlying(underlying)));
-      }
-    }) ?? []
-  );
-  return ret;
-};
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
@@ -159,48 +118,6 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/meta.json`,
       stringify({ ...rewarderInfo, rewardsTokenInfo: rewardsToken })
-    );
-
-    await fs.mkdir(`${dir}/rewarders/${rewarderKey}/quarries`, {
-      recursive: true,
-    });
-    await Promise.all(
-      rewarderInfo.quarries.map(async (quarry) => {
-        let stakedToken: TokenInfo | null = null;
-        const underlyingTokens: TokenInfo[] = [];
-
-        if (network === "mainnet-beta") {
-          stakedToken =
-            tokens[quarry.stakedToken.mint] ??
-            (await fetchTokenInfo(
-              networkToChainId(network),
-              quarry.stakedToken.mint
-            ));
-          if (stakedToken) {
-            underlyingTokens.push(...(await pushUnderlying(stakedToken)));
-          }
-        }
-
-        const { quarries: _, ...rewarderInfoWithoutQuarries } = rewarderInfo;
-        const quarryInfoStr = stringify({
-          rewarder: rewarderInfoWithoutQuarries,
-          rewardsToken,
-          quarry,
-          stakedToken,
-          underlyingTokens,
-        });
-
-        await fs.writeFile(
-          `${dir}/rewarders/${rewarderKey}/quarries/${quarry.index}.json`,
-          quarryInfoStr
-        );
-        if (quarry.slug && quarry.slug !== quarry.index.toString()) {
-          await fs.writeFile(
-            `${dir}/rewarders/${rewarderKey}/quarries/${quarry.slug}.json`,
-            quarryInfoStr
-          );
-        }
-      })
     );
   }
 
