@@ -177,7 +177,9 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
           }
         }
 
+        const { quarries: _, ...rewarderInfoWithoutQuarries } = rewarderInfo;
         const quarryInfoStr = stringify({
+          rewarder: rewarderInfoWithoutQuarries,
           quarry,
           stakedToken,
           underlyingTokens,
