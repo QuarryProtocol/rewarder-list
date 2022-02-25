@@ -153,10 +153,12 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   for (const [rewarderKey, rewarderInfo] of Object.entries(
     allRewardersJSONWithCache
   )) {
+    const rewardsToken = tokens[rewarderInfo.rewardsToken.mint];
+
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/meta.json`,
-      stringify(rewarderInfo)
+      stringify({ ...rewarderInfo, rewardsTokenInfo: rewardsToken })
     );
 
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}/quarries`, {
@@ -168,10 +170,12 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
         const underlyingTokens: TokenInfo[] = [];
 
         if (network === "mainnet-beta") {
-          stakedToken = await fetchTokenInfo(
-            networkToChainId(network),
-            quarry.stakedToken.mint
-          );
+          stakedToken =
+            tokens[quarry.stakedToken.mint] ??
+            (await fetchTokenInfo(
+              networkToChainId(network),
+              quarry.stakedToken.mint
+            ));
           if (stakedToken) {
             underlyingTokens.push(...(await pushUnderlying(stakedToken)));
           }
@@ -180,6 +184,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
         const { quarries: _, ...rewarderInfoWithoutQuarries } = rewarderInfo;
         const quarryInfoStr = stringify({
           rewarder: rewarderInfoWithoutQuarries,
+          rewardsToken,
           quarry,
           stakedToken,
           underlyingTokens,
