@@ -170,16 +170,16 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                 ) =>
                   quarries.map(({ quarry, rewarder, slug }) => {
                     const rewardsToken = rewarderMetas[rewarder]?.rewardsToken;
-                    const rewardsTokenInfo = rewardsToken
-                      ? tokens[rewardsToken.mint]
-                      : null;
+                    const displayRewardsToken =
+                      info?.redeemer?.underlyingTokenInfo ??
+                      (rewardsToken ? tokens[rewardsToken.mint] : null);
                     invariant(rewardsToken);
                     return {
                       quarry,
                       rewarder,
                       rewardsToken,
                       slug,
-                      rewardsTokenInfo,
+                      displayRewardsToken,
                     };
                   });
 
