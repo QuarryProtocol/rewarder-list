@@ -238,3 +238,17 @@ website = "https://jungledefi.io"
 [rewarders.redeemer]
 underlyingToken = "GePFQaZKHcWE5vpxHfviQtH5jgxokSs51Y5Q4zgBiMDs"
 method = "quarry-redeemer"
+
+[[rewarders]]
+id = "saber-frax"
+name = "Saber Frax Rewards"
+networks = ["mainnet-beta"]
+address = "2UsGfm8S36eW58U4JeKgVC9fcXsqf7D6vfm4GHUtnENn"
+color = "#6966FB"
+description = "Frax rewards for Saber."
+website = "https://saber.so"
+
+[rewarders.redeemer]
+underlyingToken = "6LX8BhMQ4Sy2otmAWj7Y5sKd9YTVVUgfMsBzT6B9W7ct"
+method = "quarry-redeemer"
+
