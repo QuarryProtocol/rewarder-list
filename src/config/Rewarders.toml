@@ -194,7 +194,6 @@ address = "Wz2Zzi5BHmYr75yNzJG8NZ8U1T9cSWKf6ATRwZF7qV6"
 color = "#7a84ff"
 description = "Hubble rewards for Saber."
 website = "https://hubbleprotocol.io"
-prelaunch = true
 
 [rewarders.redeemer]
 underlyingToken = "HBB111SCo9jkCejsZfz8Ec8nH7T6THF8KEKSnvwT6XK6"
@@ -247,6 +246,7 @@ address = "2UsGfm8S36eW58U4JeKgVC9fcXsqf7D6vfm4GHUtnENn"
 color = "#6966FB"
 description = "Frax rewards for Saber."
 website = "https://saber.so"
+prelaunch = true
 
 [rewarders.redeemer]
 underlyingToken = "6LX8BhMQ4Sy2otmAWj7Y5sKd9YTVVUgfMsBzT6B9W7ct"
