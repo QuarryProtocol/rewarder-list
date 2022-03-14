@@ -252,3 +252,11 @@ prelaunch = true
 underlyingToken = "6LX8BhMQ4Sy2otmAWj7Y5sKd9YTVVUgfMsBzT6B9W7ct"
 method = "quarry-redeemer"
 
+[[rewarders]]
+id = "soluna"
+name = "Soluna"
+address = "AnYPEy4H3U3XhT5hwM4cGPxLk3CNqn9kkqzyaXhj1LKc"
+networks = ["mainnet-beta"]
+color = "#FEAB53"
+description = "The gateway to Anchor interest bearing assets on Solana."
+website = "https://soluna.money"
