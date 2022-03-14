@@ -153,7 +153,8 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                 const replicaQuarries = quarriesByMint[replicaMint.toString()];
 
                 // It is a replica if primary quarries exist for this as a replica token.
-                const isReplica = !!primaryQuarries?.length;
+                const firstPrimaryQuarry = primaryQuarries?.[0];
+                const isReplica = !!firstPrimaryQuarry;
 
                 const myPrimaryQuarries = isReplica ? primaryQuarries : [];
                 const myReplicaQuarries = isReplica
@@ -187,7 +188,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                 return {
                   ...quarry,
                   primaryToken: isReplica
-                    ? primaryQuarries[0].token
+                    ? firstPrimaryQuarry.token
                     : quarry.stakedToken,
                   mergePool: mergePool.toString(),
                   replicaMint: isReplica
