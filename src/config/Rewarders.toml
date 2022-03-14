@@ -260,3 +260,16 @@ networks = ["mainnet-beta"]
 color = "#FEAB53"
 description = "The gateway to Anchor interest bearing assets on Solana."
 website = "https://soluna.money"
+
+[[rewarders]]
+id = "swim"
+name = "Swim Protocol"
+networks = ["mainnet-beta"]
+address = "DMCkQtog6e1Pfo1kYxkDnZPBC8kpMnMysiNkK6evk2zR"
+color = "#277CE2"
+description = "Swim Protocol is a seamless multi-chain liquidity protocol"
+website = "https://swim.io"
+
+[rewarders.redeemer]
+underlyingToken = "swimnKEr963p7EbCjsSnBCoYwytuZHPm3zbq6fKLHXb"
+method = "quarry-redeemer"
