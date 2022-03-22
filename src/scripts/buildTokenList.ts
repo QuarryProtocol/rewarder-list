@@ -1,5 +1,6 @@
 import { findReplicaMintAddress } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
+import { exists } from "@saberhq/solana-contrib";
 import type { TokenInfo, TokenList } from "@saberhq/token-utils";
 import { deserializeMint, networkToChainId, Token } from "@saberhq/token-utils";
 import { PublicKey } from "@solana/web3.js";
@@ -20,6 +21,22 @@ const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
     })
     .sort((a, b) => a.address.localeCompare(b.address));
 };
+
+const makeIOUTokenInfo = (
+  mint: PublicKey,
+  underlying: TokenInfo
+): TokenInfo => ({
+  ...underlying,
+  symbol: `iou${underlying.symbol}`,
+  name: `${underlying.name} (IOU)`,
+  address: mint.toString(),
+  tags: [...(underlying.tags ?? []), "quarry-iou"],
+  extensions: {
+    ...underlying.extensions,
+    underlyingTokens: [underlying.address],
+    source: "quarry-iou",
+  },
+});
 
 const makeReplicaTokenInfo = (
   mint: PublicKey,
@@ -81,6 +98,34 @@ export const buildTokenList = async (network: Network): Promise<void> => {
       return null;
     })
     .filter((x): x is TokenInfo => !!x);
+
+  const iouTokens = rewarderList
+    .filter((rwl) => !!rwl.redeemer?.underlyingToken)
+    .map((rwl) => {
+      const underlyingStr = rwl.redeemer?.underlyingToken;
+      const real = allRewarders[rwl.address];
+      if (!real || !underlyingStr) {
+        return null;
+      }
+      const redemptionInfo = tokenListTokens.find(
+        (tok) => tok.address === real.rewardsToken.mint
+      );
+      if (redemptionInfo && rwl.redeemer?.method !== "quarry-redeemer") {
+        return redemptionInfo;
+      }
+      const underlyingInfo = tokenListTokens.find(
+        (tok) => tok.address === underlyingStr
+      );
+      if (!underlyingInfo) {
+        return null;
+      }
+      return makeIOUTokenInfo(
+        new PublicKey(real.rewardsToken.mint),
+        underlyingInfo
+      );
+    })
+    .filter(exists);
+  console.log(`Found ${iouTokens.length} Quarry Redeemer IOU tokens`);
 
   const underlyingTokens = tokenListTokens
     .flatMap((tok) => {
@@ -166,6 +211,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   );
 
   const tokens = dedupeTokenList([
+    ...iouTokens,
     ...tokenListTokens,
     ...underlyingTokens,
     ...tokenListReplicas,
