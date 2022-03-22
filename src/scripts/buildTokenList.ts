@@ -193,8 +193,9 @@ export const buildTokenList = async (network: Network): Promise<void> => {
     ([mint, mintDataRaw]) => {
       invariant(mint);
       invariant(mintDataRaw);
-      return Token.fromMint(mint, deserializeMint(mintDataRaw.data).decimals)
-        .info;
+      return Token.fromMint(mint, deserializeMint(mintDataRaw.data).decimals, {
+        chainId: networkToChainId(network),
+      }).info;
     }
   );
   const missingReplicaTokens = missingReplicaMappings.map(
