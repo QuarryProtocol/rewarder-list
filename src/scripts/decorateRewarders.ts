@@ -85,12 +85,16 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
             const [replicaMint] = await findReplicaMintAddress({
               primaryMint: new PublicKey(q.stakedToken.mint),
             });
+            const [mergePool] = await findPoolAddress({
+              primaryMint: new PublicKey(q.stakedToken.mint),
+            });
             return {
               rewarder: rewarderKey,
               token: q.stakedToken,
               quarry: q.quarry,
               slug: q.slug,
               replicaMint: replicaMint.toString(),
+              mergePool: mergePool.toString(),
             };
           })
         );
@@ -100,7 +104,6 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
 
   const quarriesByMint = groupBy(allQuarries, (el) => el.token.mint);
   const quarriesByReplicaMint = groupBy(allQuarries, (el) => el.replicaMint);
-
   const rewardersByMint = mapValues(quarriesByMint, (group) =>
     group.map((g) => g.rewarder.toString())
   );
@@ -220,6 +223,8 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
       )
     )
   );
+
+  await fs.writeFile(`${dir}/quarries-by-mint.json`, stringify(quarriesByMint));
 
   await fs.writeFile(
     `${dir}/all-rewarders-with-info.json`,
