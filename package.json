@@ -29,7 +29,7 @@
     "@quarryprotocol/quarry-sdk": "^3.0.0",
     "@saberhq/anchor-contrib": "^1.12.55",
     "@saberhq/solana-contrib": "^1.12.55",
-    "@saberhq/token-utils": "^1.12.55",
+    "@saberhq/token-utils": "^1.12.60",
     "@solana/web3.js": "^1.36.0",
     "axios": "^0.26.1",
     "bn.js": "^5.2.0",
