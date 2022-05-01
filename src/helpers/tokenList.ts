@@ -25,15 +25,13 @@ export const fetchAllTokens = async (
   tokens: Record<string, TokenInfo>;
   tokenLists: readonly TokenList[];
 }> => {
+  const chainId = networkToChainId(network);
   const tokenLists = await fetchAllTokenLists();
   const tokens: Record<string, TokenInfo> = {};
   tokenLists
     .flatMap((list) => list.tokens)
     .forEach((token) => {
-      if (
-        !tokens[token.address] &&
-        token.chainId === networkToChainId(network)
-      ) {
+      if (!tokens[token.address] && token.chainId === chainId) {
         tokens[token.address] = token;
       }
     });
