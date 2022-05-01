@@ -242,16 +242,30 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
     const rewardsToken = tokens[rewarderInfoFull.rewardsToken.mint];
 
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
+
+    // Add the name of the staked token & name of the rewards token to the result
+    const fullInfo = {
+      ...rewarderInfoFull,
+      quarries: rewarderInfoFull.quarries.map((quarry) => {
+        const primaryTokenInfo = tokens[quarry.primaryToken.mint] ?? null;
+        return {
+          ...quarry,
+          primaryTokenInfo,
+        };
+      }),
+      rewardsTokenInfo: rewardsToken,
+    };
+
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/full.json`,
-      stringify({ ...rewarderInfoFull, rewardsTokenInfo: rewardsToken })
+      stringify(fullInfo)
     );
 
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}/quarries`, {
       recursive: true,
     });
     await Promise.all(
-      rewarderInfoFull.quarries.map(async (quarry) => {
+      fullInfo.quarries.map(async (quarry) => {
         let stakedToken: TokenInfo | null = null;
 
         const underlyingTokens: TokenInfo[] = [];
@@ -260,8 +274,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           underlyingTokens.push(...pushUnderlying(stakedToken, tokens));
         }
 
-        const { quarries: _, ...rewarderInfoWithoutQuarries } =
-          rewarderInfoFull;
+        const { quarries: _, ...rewarderInfoWithoutQuarries } = fullInfo;
         const quarryInfoStr = stringify({
           rewarder: rewarderInfoWithoutQuarries,
           rewardsToken,
