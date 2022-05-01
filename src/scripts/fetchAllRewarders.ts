@@ -22,7 +22,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const allQuarriesJSON = allQuarries.map((q) => {
     const stakedTokenInfo = tokens[q.account.tokenMintKey.toString()];
     return {
-      rewarder: q.account.rewarderKey.toString(),
+      rewarder: q.account.rewarder.toString(),
       quarry: q.publicKey.toString(),
       stakedToken: {
         mint: q.account.tokenMintKey.toString(),
