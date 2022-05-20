@@ -273,3 +273,12 @@ website = "https://swim.io"
 [rewarders.redeemer]
 underlyingToken = "swimnKEr963p7EbCjsSnBCoYwytuZHPm3zbq6fKLHXb"
 method = "quarry-redeemer"
+
+[[rewarders]]
+id = "2xd"
+name = "2XD"
+networks = ["mainnet-beta"]
+address = "Euv9QFYjjPVzF56Pvp8aUZisAnU465oKEfn858apHmsf"
+color = "#59FF04"
+description = "Get FUXD"
+website = "https://2xd.fi/"
