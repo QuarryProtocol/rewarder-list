@@ -282,3 +282,16 @@ address = "Euv9QFYjjPVzF56Pvp8aUZisAnU465oKEfn858apHmsf"
 color = "#59FF04"
 description = "Get FUXD"
 website = "https://2xd.fi/"
+
+[rewarders.redeemer]
+underlyingToken = "HK3Q8SJYiV1kLo3b6vfwLnL45nhunnt4kSBVQNa3Z28J"
+method = "quarry-redeemer"
+
+[[rewarders]]
+id = "parasol-devnet"
+name = "Parasol Finance"
+networks = ["devnet"]
+address = "CWbKCRhEgqEvPvS1cdDYuMsRayn19YMeYVbUV5vhHV2m"
+color = "#7939FF"
+description = "PSOL devnet rewarder."
+website = "https://devnet.parasol.finance"
