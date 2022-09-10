@@ -1,5 +1,7 @@
 # Quarry Rewarder List
 
+[![Refresh Registry](https://github.com/QuarryProtocol/rewarder-list/actions/workflows/refresh-registry.yml/badge.svg)](https://github.com/QuarryProtocol/rewarder-list/actions/workflows/refresh-registry.yml)
+
 Cache of a list of rewarders associated with each mint.
 
 ## Adding a Rewarder
