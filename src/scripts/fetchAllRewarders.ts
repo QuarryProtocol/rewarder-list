@@ -128,10 +128,16 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   );
 };
 
-Promise.all([
-  fetchAllRewarders("mainnet-beta"),
-  fetchAllRewarders("devnet"),
-]).catch((err) => {
+(async () => {
+  if (process.env.NETWORK) {
+    await fetchAllRewarders(process.env.NETWORK as Network);
+  } else {
+    await Promise.all([
+      fetchAllRewarders("mainnet-beta"),
+      fetchAllRewarders("devnet"),
+    ]);
+  }
+})().catch((err) => {
   console.error(err);
   process.exit(1);
 });
