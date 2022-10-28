@@ -10,8 +10,16 @@ on:
 
 jobs:
   refresh:
+    strategy:
+      matrix:
+        network:
+          - mainnet-beta
+          - devnet
+
     runs-on: ubuntu-latest
     name: Refresh Registry from chain
+    env:
+      NETWORK: ${{ matrix.network }}
 
     steps:
       - uses: actions/checkout@v3
