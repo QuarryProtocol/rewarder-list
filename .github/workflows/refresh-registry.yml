@@ -10,16 +10,8 @@ on:
 
 jobs:
   refresh:
-    strategy:
-      matrix:
-        network:
-          - mainnet-beta
-          - devnet
-
     runs-on: ubuntu-latest
     name: Refresh Registry from chain
-    env:
-      NETWORK: ${{ matrix.network }}
 
     steps:
       - uses: actions/checkout@v3
@@ -39,6 +31,11 @@ jobs:
       - run: cp -R static/* data/
       - run: yarn compile-rewarders-list
       - run: yarn fetch-all-rewarders
+        env:
+          NETWORK: mainnet-beta
+      - run: yarn fetch-all-rewarders
+        env:
+          NETWORK: devnet
       - run: yarn decorate-rewarders
       - run: yarn build-token-list
       - run: yarn build-tvl-list
