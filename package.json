@@ -12,7 +12,7 @@
     "@saberhq/eslint-config": "^2.1.0",
     "@saberhq/tsconfig": "^2.1.0",
     "@types/bn.js": "^5.1.1",
-    "@types/eslint": "^8.4.8",
+    "@types/eslint": "^8.4.9",
     "@types/lodash": "^4.14.186",
     "@types/node": "^18.11.7",
     "@types/prettier": "^2.7.1",
