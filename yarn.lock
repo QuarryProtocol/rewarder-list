@@ -269,7 +269,7 @@ __metadata:
     "@solana/web3.js": "npm:^1.66.2"
     "@types/bn.js": "npm:^5.1.1"
     "@types/eslint": "npm:^8.4.8"
-    "@types/lodash": "npm:^4.14.186"
+    "@types/lodash": "npm:^4.14.187"
     "@types/node": "npm:^18.11.7"
     "@types/prettier": "npm:^2.7.1"
     axios: "npm:^0.27.2"
@@ -605,10 +605,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.186":
-  version: 4.14.186
-  resolution: "@types/lodash@npm:4.14.186"
-  checksum: 27149ac2daac2c7f75ba1012a995a80382edab71addf23dc81f1659357753fdcdb5e6b6181c2de8cf2a8e23aa227ecfa8502bea8c7c24743a9ebae37a19e28f5
+"@types/lodash@npm:^4.14.187":
+  version: 4.14.187
+  resolution: "@types/lodash@npm:4.14.187"
+  checksum: 90fc80ad884fce65f8d8bc407b4209e3bc9f3a7c70de0fa61deb680b671d314e237464ff243f06e14294edda417742f8cbd0d10406cf69fe16980e4d70a6f6d1
   languageName: node
   linkType: hard
 
