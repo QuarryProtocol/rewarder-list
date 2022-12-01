@@ -308,3 +308,16 @@ website = "https://parasol.finance"
 [rewarders.redeemer]
 underlyingToken = "HK3Q8SJYiV1kLo3b6vfwLnL45nhunnt4kSBVQNa3Z28J"
 method = "parasol-devnet"
+
+[[rewarders]]
+id = "solax-devnet"
+name = "SOLA-X"
+networks = ["devnet"]
+address = "BX8DFsowxrqvTH7r22EhkNpRqtKDrXyEj9dvLahUf2Gn"
+color = "#B89DF1"
+description = "Smart Liquidity Protocol powered by Solana"
+website = "https://solax.so"
+
+[rewarders.redeemer]
+underlyingToken = "SAX2cChnuhnKfUDERWVHyd8CoeDNR4NjoxwjuW8uiqa"
+method = "solax-devnet"
