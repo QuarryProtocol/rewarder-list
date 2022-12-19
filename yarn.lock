@@ -270,7 +270,7 @@ __metadata:
     "@types/bn.js": "npm:^5.1.1"
     "@types/eslint": "npm:^8.4.8"
     "@types/lodash": "npm:^4.14.186"
-    "@types/node": "npm:^18.11.7"
+    "@types/node": "npm:^18.11.17"
     "@types/prettier": "npm:^2.7.1"
     axios: "npm:^0.27.2"
     bn.js: "npm:^5.2.1"
@@ -626,10 +626,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.7":
-  version: 18.11.7
-  resolution: "@types/node@npm:18.11.7"
-  checksum: 1756caf0177b764ca8153e7a5d58a2f70466105f5cd64933b40f0f390a0f53167f87898ef6e9e1da4b5ceb00468fca457fe174abd87b3b5b5a0ccc8aba38787a
+"@types/node@npm:^18.11.17":
+  version: 18.11.17
+  resolution: "@types/node@npm:18.11.17"
+  checksum: c344af96ffdcc429d8d79576de72061553cd083d06cde8209a82b3d927c62ecf2211f24c3b970194636833f9dcfd94228f2b019f2d796f1f20dfc0d12e6dcc2b
   languageName: node
   linkType: hard
 
