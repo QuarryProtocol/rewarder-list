@@ -33,6 +33,7 @@ jobs:
       - run: yarn fetch-all-rewarders
         env:
           NETWORK: mainnet-beta
+          MAINNET_SOLANA_RPC_ENDPOINT: ${{ secrets.MAINNET_SOLANA_RPC_ENDPOINT }}
       - run: yarn fetch-all-rewarders
         env:
           NETWORK: devnet
