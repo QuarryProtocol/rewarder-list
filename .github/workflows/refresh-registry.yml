@@ -39,6 +39,8 @@ jobs:
           NETWORK: devnet
       - run: yarn decorate-rewarders
       - run: yarn build-token-list
+        env:
+          MAINNET_SOLANA_RPC_ENDPOINT: ${{ secrets.MAINNET_SOLANA_RPC_ENDPOINT }}
       - run: yarn build-tvl-list
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

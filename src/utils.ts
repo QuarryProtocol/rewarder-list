@@ -20,10 +20,10 @@ export const serialize = (_: unknown, v: unknown) => {
 export const makeProvider = (network: Network) => {
   return SolanaProvider.init({
     connection: new Connection(
-      process.env.MAINNET_SOLANA_RPC_ENDPOINT ??
-        (network === "mainnet-beta"
-          ? "https://api.mainnet-beta.solana.com"
-          : "https://api.devnet.solana.com")
+      network === "mainnet-beta"
+        ? process.env.MAINNET_SOLANA_RPC_ENDPOINT ??
+          "https://api.mainnet-beta.solana.com"
+        : "https://api.devnet.solana.com"
     ),
     wallet: new SignerWallet(Keypair.generate()),
   });
