@@ -3,15 +3,15 @@ import type { TokenList } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { groupBy, mapValues } from "lodash";
 
-import type { RewarderMeta } from "../types";
-import { stringify } from "../utils";
+import type { RewarderMeta } from "../types.js";
+import { stringify } from "../utils.js";
 
 export const buildTVLList = async (network: Network): Promise<void> => {
   const dir = `${__dirname}/../../data/${network}/`;
   await fs.mkdir(dir, { recursive: true });
 
   const rewarderMetas = JSON.parse(
-    (await fs.readFile(`${dir}/all-rewarders.json`)).toString()
+    (await fs.readFile(`${dir}/all-rewarders.json`)).toString(),
   ) as Record<string, RewarderMeta>;
 
   const quarriesByStakedMint = mapValues(
@@ -20,15 +20,15 @@ export const buildTVLList = async (network: Network): Promise<void> => {
         rew.quarries.map((q) => ({
           address: q.stakedToken.mint,
           quarry: q.quarry,
-        }))
+        })),
       ),
-      (q) => q.address
+      (q) => q.address,
     ),
-    (v) => v.map((q) => q.quarry)
+    (v) => v.map((q) => q.quarry),
   );
 
   const tokenList = JSON.parse(
-    (await fs.readFile(`${dir}/token-list.json`)).toString()
+    (await fs.readFile(`${dir}/token-list.json`)).toString(),
   ) as TokenList;
 
   const coingeckoIDs = Object.keys(quarriesByStakedMint).reduce(
@@ -40,7 +40,7 @@ export const buildTVLList = async (network: Network): Promise<void> => {
       }
       return acc;
     },
-    {}
+    {},
   );
 
   const tvl = { quarriesByStakedMint, coingeckoIDs };

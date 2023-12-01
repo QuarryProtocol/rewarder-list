@@ -3,7 +3,7 @@ import type { TokenInfo, TokenList } from "@saberhq/token-utils";
 import { networkToChainId } from "@saberhq/token-utils";
 import axios from "axios";
 
-import { TOKEN_LIST_URLS } from "../constants";
+import { TOKEN_LIST_URLS } from "../constants.js";
 
 export const fetchAllTokenLists = async () => {
   return await Promise.all(
@@ -15,12 +15,12 @@ export const fetchAllTokenLists = async () => {
         console.error(`Error fetching ${url}`, e);
         throw e;
       }
-    })
+    }),
   );
 };
 
 export const fetchAllTokens = async (
-  network: Network
+  network: Network,
 ): Promise<{
   tokens: Record<string, TokenInfo>;
   tokenLists: readonly TokenList[];
@@ -32,7 +32,7 @@ export const fetchAllTokens = async (
     .forEach((token) => {
       if (
         !tokens[token.address] &&
-        token.chainId === networkToChainId(network)
+        token.chainId === (networkToChainId(network) as number)
       ) {
         tokens[token.address] = token;
       }

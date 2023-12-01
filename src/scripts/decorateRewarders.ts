@@ -5,14 +5,13 @@ import {
 } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
 import { PublicKey } from "@saberhq/solana-contrib";
-import type { TokenInfo } from "@saberhq/token-utils";
-import { getATAAddress } from "@saberhq/token-utils";
+import { getATAAddressSync, type TokenInfo } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { fromPairs, groupBy, mapValues } from "lodash";
 import invariant from "tiny-invariant";
 
 import rewarderList from "../config/rewarder-list.json";
-import { fetchAllTokens } from "../helpers/tokenList";
+import { fetchAllTokens } from "../helpers/tokenList.js";
 import type {
   QuarryMetaWithReplicas,
   RedemptionMethod,
@@ -20,12 +19,12 @@ import type {
   RewarderMeta,
   RewarderMetaWithInfo,
   TokenMeta,
-} from "../types";
-import { stringify } from "../utils";
+} from "../types.js";
+import { stringify } from "../utils.js";
 
 const pushUnderlying = (
   token: TokenInfo,
-  allTokens: Record<string, TokenInfo>
+  allTokens: Record<string, TokenInfo>,
 ): TokenInfo[] => {
   const ret: TokenInfo[] = [];
   token.extensions?.underlyingTokens?.map((underlyingToken) => {
@@ -70,11 +69,11 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
   await fs.mkdir(dir, { recursive: true });
 
   const rewarderMetas = JSON.parse(
-    (await fs.readFile(`${dir}/all-rewarders.json`)).toString()
+    (await fs.readFile(`${dir}/all-rewarders.json`)).toString(),
   ) as Record<string, RewarderMeta>;
 
   const networkRewarders = KNOWN_REWARDERS.filter((kr) =>
-    kr.networks.includes(network)
+    kr.networks.includes(network),
   );
 
   const allQuarries = (
@@ -96,22 +95,22 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
               replicaMint: replicaMint.toString(),
               mergePool: mergePool.toString(),
             };
-          })
+          }),
         );
-      })
+      }),
     )
   ).flat();
 
   const quarriesByMint = groupBy(allQuarries, (el) => el.token.mint);
   const quarriesByReplicaMint = groupBy(allQuarries, (el) => el.replicaMint);
   const rewardersByMint = mapValues(quarriesByMint, (group) =>
-    group.map((g) => g.rewarder.toString())
+    group.map((g) => g.rewarder.toString()),
   );
 
   for (const rewarderInfo of networkRewarders) {
     await fs.writeFile(
       `${dir}/rewarders/${rewarderInfo.address}/info.json`,
-      stringify(rewarderInfo)
+      stringify(rewarderInfo),
     );
   }
   const { tokens } = await fetchAllTokens(network);
@@ -123,7 +122,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
           [string, RewarderMetaWithInfo]
         > => {
           const info = networkRewarders.find(
-            (nr) => nr.address === rewarderKey
+            (nr) => nr.address === rewarderKey,
           );
           const redeemerKeyAndBump = info?.redeemer?.underlyingToken
             ? await findRedeemerKey({
@@ -134,7 +133,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
 
           const redeemerVaultATA =
             redeemerKeyAndBump && info?.redeemer?.underlyingToken
-              ? await getATAAddress({
+              ? getATAAddressSync({
                   mint: new PublicKey(info.redeemer.underlyingToken),
                   owner: redeemerKeyAndBump[0],
                 })
@@ -170,7 +169,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                     quarry: string;
                     token: TokenMeta;
                     slug: string;
-                  }[]
+                  }[],
                 ) =>
                   quarries.map(({ quarry, rewarder, slug }) => {
                     const rewardsToken = rewarderMetas[rewarder]?.rewardsToken;
@@ -205,8 +204,8 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
                   replicaQuarries: addRewardsToken(myReplicaQuarries ?? []),
                   isReplica,
                 };
-              }
-            )
+              },
+            ),
           );
           const rewardsTokenInfo = tokens[meta.rewardsToken.mint] ?? null;
           const result: RewarderMetaWithInfo = {
@@ -225,25 +224,25 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
             result.info = info;
           }
           return [rewarderKey, result];
-        }
-      )
-    )
+        },
+      ),
+    ),
   );
 
   await fs.writeFile(`${dir}/quarries-by-mint.json`, stringify(quarriesByMint));
 
   await fs.writeFile(
     `${dir}/all-rewarders-with-info.json`,
-    stringify(allRewardersWithInfo)
+    stringify(allRewardersWithInfo),
   );
   await fs.writeFile(
     `${dir}/rewarders-by-mint.json`,
-    stringify(rewardersByMint)
+    stringify(rewardersByMint),
   );
   await fs.writeFile(`${dir}/rewarder-list.json`, stringify(networkRewarders));
 
   for (const [rewarderKey, rewarderInfoFull] of Object.entries(
-    allRewardersWithInfo
+    allRewardersWithInfo,
   )) {
     const rewardsToken = tokens[rewarderInfoFull.rewardsToken.mint];
 
@@ -253,7 +252,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
 
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/full.json`,
-      stringify(rewarderInfoFull)
+      stringify(rewarderInfoFull),
     );
 
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}/quarries`, {
@@ -281,15 +280,15 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
 
         await fs.writeFile(
           `${dir}/rewarders/${rewarderKey}/quarries/${quarry.index}.json`,
-          quarryInfoStr
+          quarryInfoStr,
         );
         if (quarry.slug && quarry.slug !== quarry.index.toString()) {
           await fs.writeFile(
             `${dir}/rewarders/${rewarderKey}/quarries/${quarry.slug}.json`,
-            quarryInfoStr
+            quarryInfoStr,
           );
         }
-      })
+      }),
     );
   }
 };

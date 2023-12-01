@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Check
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
       - name: Yarn Cache
-        uses: actions/cache@v3.0.11
+        uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
@@ -28,6 +28,6 @@ jobs:
       - run: yarn install
       - run: yarn compile-rewarders-list
       - name: Typecheck
-        run: yarn typecheck
+        run: yarn build
       - name: Lint
         run: yarn lint

@@ -1,9 +1,8 @@
 {
-  "extends": "@saberhq/tsconfig/tsconfig.lib.json",
+  "extends": "@saberhq/tsconfig/tsconfig.cjs.json",
   "compilerOptions": {
-    "module": "CommonJS",
     "resolveJsonModule": true,
-    "noEmit": true
+    "outDir": "dist/"
   },
-  "include": ["src/", ".eslintrc.cjs"]
+  "include": ["src/"]
 }
