@@ -29,8 +29,8 @@ jobs:
       - run: yarn install
       - run: mkdir -p data/
       - run: cp -R static/* data/
-      - run: yarn build
       - run: yarn compile-rewarders-list
+      - run: yarn build
       - run: yarn fetch-all-rewarders
         env:
           NETWORK: mainnet-beta
