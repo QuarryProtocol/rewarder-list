@@ -48,7 +48,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       return v
         .map(({ rewarder: _rewarder, ...rest }) => rest)
         .sort((a, b) => (a.cached.index < b.cached.index ? -1 : 1));
-    }
+    },
   );
 
   const allRewardersList = allRewarders.map((rewarder) => {
@@ -59,7 +59,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
           rewarder.account.numQuarries
         } quarries on rewarder ${rewarder.publicKey.toString()}; got ${
           quarries.length
-        }`
+        }`,
       );
     }
 
@@ -67,7 +67,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     const rewardsTokenInfo: TokenInfo | null = tokens[rewardsTokenMint] ?? null;
     if (!rewardsTokenInfo) {
       console.warn(
-        `rewards token ${rewardsTokenMint} not found in any of the token lists`
+        `rewards token ${rewardsTokenMint} not found in any of the token lists`,
       );
     }
 
@@ -88,9 +88,9 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     ({ rewarder: _rewarder, quarries, ...info }) => ({
       ...info,
       quarries: quarries.map(
-        ({ cached: _cached, ...quarryInfo }) => quarryInfo
+        ({ cached: _cached, ...quarryInfo }) => quarryInfo,
       ),
-    })
+    }),
   );
 
   const allRewardersJSONWithCache = mapValues(
@@ -98,7 +98,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     ({ rewarder: _rewarder, quarries, ...info }) => ({
       ...info,
       quarries,
-    })
+    }),
   );
 
   // tmp-token-list
@@ -110,21 +110,21 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   // quarries with cached values -- go in their own files
   await fs.mkdir(`${dir}/rewarders`, { recursive: true });
   for (const [rewarderKey, rewarderInfo] of Object.entries(
-    allRewardersJSONWithCache
+    allRewardersJSONWithCache,
   )) {
     const rewardsToken = tokens[rewarderInfo.rewardsToken.mint];
 
     await fs.mkdir(`${dir}/rewarders/${rewarderKey}`, { recursive: true });
     await fs.writeFile(
       `${dir}/rewarders/${rewarderKey}/meta.json`,
-      stringify({ ...rewarderInfo, rewardsTokenInfo: rewardsToken })
+      stringify({ ...rewarderInfo, rewardsTokenInfo: rewardsToken }),
     );
   }
 
   console.log(
     `Fetched ${allQuarriesJSON.length} quarries across ${
       Object.keys(allRewarders).length
-    } rewarders on ${network}.`
+    } rewarders on ${network}.`,
   );
 };
 

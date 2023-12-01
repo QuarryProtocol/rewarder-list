@@ -8,7 +8,7 @@ const main = async () => {
   const data = toml.parse(raw.toString()) as { rewarders: RewarderInfoRaw[] };
   await fs.writeFile(
     `${__dirname}/../config/rewarder-list.json`,
-    JSON.stringify(data, null, 2)
+    JSON.stringify(data, null, 2),
   );
 };
 

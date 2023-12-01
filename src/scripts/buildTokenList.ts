@@ -15,7 +15,7 @@ const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
   return tokens
     .filter((tok, i) => {
       const prev = tokens.findIndex(
-        (otherTok) => tok.address === otherTok.address
+        (otherTok) => tok.address === otherTok.address,
       );
       return prev === i;
     })
@@ -24,7 +24,7 @@ const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
 
 const makeIOUTokenInfo = (
   mint: PublicKey,
-  underlying: TokenInfo
+  underlying: TokenInfo,
 ): TokenInfo => ({
   ...underlying,
   symbol: `iou${underlying.symbol}`,
@@ -40,7 +40,7 @@ const makeIOUTokenInfo = (
 
 const makeReplicaTokenInfo = (
   mint: PublicKey,
-  primary: TokenInfo
+  primary: TokenInfo,
 ): TokenInfo => ({
   ...primary,
   symbol: `qr${primary.symbol}`,
@@ -59,14 +59,14 @@ export const buildTokenList = async (network: Network): Promise<void> => {
 
   const dir = `${__dirname}/../../data/${network}`;
   const lists = JSON.parse(
-    (await fs.readFile(".tmp.token-list.json")).toString()
+    (await fs.readFile(".tmp.token-list.json")).toString(),
   ) as TokenList[];
 
   const rewarderList = JSON.parse(
-    (await fs.readFile(`${dir}/rewarder-list.json`)).toString()
+    (await fs.readFile(`${dir}/rewarder-list.json`)).toString(),
   ) as RewarderInfo[];
   const allRewarders = JSON.parse(
-    (await fs.readFile(`${dir}/all-rewarders.json`)).toString()
+    (await fs.readFile(`${dir}/all-rewarders.json`)).toString(),
   ) as Record<string, RewarderMeta>;
 
   const allMints = uniq([
@@ -76,8 +76,8 @@ export const buildTokenList = async (network: Network): Promise<void> => {
     ...Object.values(allRewarders).map((r) => r.rewardsToken.mint),
     ...Object.keys(
       JSON.parse(
-        (await fs.readFile(`${dir}/rewarders-by-mint.json`)).toString()
-      ) as Record<string, unknown>
+        (await fs.readFile(`${dir}/rewarders-by-mint.json`)).toString(),
+      ) as Record<string, unknown>,
     ),
   ]).map((x) => new PublicKey(x));
 
@@ -88,8 +88,8 @@ export const buildTokenList = async (network: Network): Promise<void> => {
     .map((mint) => {
       const info = allTokens.find(
         (tok) =>
-          tok.chainId === networkToChainId(network) &&
-          tok.address === mint.toString()
+          tok.chainId === (networkToChainId(network) as number) &&
+          tok.address === mint.toString(),
       );
       if (info) {
         return info;
@@ -108,20 +108,20 @@ export const buildTokenList = async (network: Network): Promise<void> => {
         return null;
       }
       const redemptionInfo = tokenListTokens.find(
-        (tok) => tok.address === real.rewardsToken.mint
+        (tok) => tok.address === real.rewardsToken.mint,
       );
       if (redemptionInfo && rwl.redeemer?.method !== "quarry-redeemer") {
         return redemptionInfo;
       }
       const underlyingInfo = tokenListTokens.find(
-        (tok) => tok.address === underlyingStr
+        (tok) => tok.address === underlyingStr,
       );
       if (!underlyingInfo) {
         return null;
       }
       return makeIOUTokenInfo(
         new PublicKey(real.rewardsToken.mint),
-        underlyingInfo
+        underlyingInfo,
       );
     })
     .filter(exists);
@@ -134,7 +134,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
           return allTokens.find(
             (t) =>
               t.address === ut.toString() &&
-              t.chainId === networkToChainId(network)
+              t.chainId === (networkToChainId(network) as number),
           );
         }) ?? []
       );
@@ -149,7 +149,7 @@ export const buildTokenList = async (network: Network): Promise<void> => {
           primaryMint: mint,
         });
         return { replicaMint, underlyingMint: mint };
-      })
+      }),
     )
   ).filter((rm) => allMints.find((m) => m.equals(rm.replicaMint)));
 
@@ -160,16 +160,16 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   const tokenListReplicas = missingMints
     .map((replicaMint): TokenInfo | null => {
       const replicaMapping = replicaMappings.find((rm) =>
-        rm.replicaMint.equals(replicaMint)
+        rm.replicaMint.equals(replicaMint),
       );
       if (replicaMapping) {
         const existingToken = tokenListTokens.find(
-          (tok) => tok.address === replicaMapping.underlyingMint.toString()
+          (tok) => tok.address === replicaMapping.underlyingMint.toString(),
         );
         if (existingToken) {
           return makeReplicaTokenInfo(
             replicaMapping.replicaMint,
-            existingToken
+            existingToken,
           );
         } else {
           missingReplicaMappings.push(replicaMapping);
@@ -180,13 +180,13 @@ export const buildTokenList = async (network: Network): Promise<void> => {
     .filter((x): x is TokenInfo => !!x);
 
   const missingMintsNonReplica = missingMints.filter(
-    (mm) => !missingReplicaMappings.find((mrm) => mrm.replicaMint.equals(mm))
+    (mm) => !missingReplicaMappings.find((mrm) => mrm.replicaMint.equals(mm)),
   );
   const missingMintsData = (
     await Promise.all(
       chunk(missingMintsNonReplica, 100).map(async (mintsChunk) =>
-        provider.connection.getMultipleAccountsInfo(mintsChunk)
-      )
+        provider.connection.getMultipleAccountsInfo(mintsChunk),
+      ),
     )
   ).flat();
   const missingTokens = zip(missingMintsNonReplica, missingMintsData).map(
@@ -196,19 +196,19 @@ export const buildTokenList = async (network: Network): Promise<void> => {
       return Token.fromMint(mint, deserializeMint(mintDataRaw.data).decimals, {
         chainId: networkToChainId(network),
       }).info;
-    }
+    },
   );
   const missingReplicaTokens = missingReplicaMappings.map(
     ({ replicaMint, underlyingMint }) => {
       const existingToken = missingTokens.find(
-        (tok) => tok.address === underlyingMint.toString()
+        (tok) => tok.address === underlyingMint.toString(),
       );
       invariant(
         existingToken,
-        `missing ${underlyingMint.toString()} for ${replicaMint.toString()}`
+        `missing ${underlyingMint.toString()} for ${replicaMint.toString()}`,
       );
       return makeReplicaTokenInfo(replicaMint, existingToken);
-    }
+    },
   );
 
   const tokens = dedupeTokenList([
@@ -237,5 +237,5 @@ Promise.all([buildTokenList("mainnet-beta"), buildTokenList("devnet")]).catch(
   (err) => {
     console.error(err);
     process.exit(1);
-  }
+  },
 );
