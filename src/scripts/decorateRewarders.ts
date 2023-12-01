@@ -12,7 +12,7 @@ import { fromPairs, groupBy, mapValues } from "lodash";
 import invariant from "tiny-invariant";
 
 import rewarderList from "../config/rewarder-list.json";
-import { fetchAllTokens } from "../helpers/tokenList";
+import { fetchAllTokens } from "../helpers/tokenList.js";
 import type {
   QuarryMetaWithReplicas,
   RedemptionMethod,
@@ -20,8 +20,8 @@ import type {
   RewarderMeta,
   RewarderMetaWithInfo,
   TokenMeta,
-} from "../types";
-import { stringify } from "../utils";
+} from "../types.js";
+import { stringify } from "../utils.js";
 
 const pushUnderlying = (
   token: TokenInfo,

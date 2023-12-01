@@ -3,7 +3,7 @@ import type { TokenInfo, TokenList } from "@saberhq/token-utils";
 import { networkToChainId } from "@saberhq/token-utils";
 import axios from "axios";
 
-import { TOKEN_LIST_URLS } from "../constants";
+import { TOKEN_LIST_URLS } from "../constants.js";
 
 export const fetchAllTokenLists = async () => {
   return await Promise.all(

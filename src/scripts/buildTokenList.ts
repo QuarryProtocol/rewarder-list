@@ -8,8 +8,8 @@ import * as fs from "fs/promises";
 import { chunk, uniq, zip } from "lodash";
 import invariant from "tiny-invariant";
 
-import type { RewarderInfo, RewarderMeta } from "../types";
-import { makeProvider, stringify } from "../utils";
+import type { RewarderInfo, RewarderMeta } from "../types.js";
+import { makeProvider, stringify } from "../utils.js";
 
 const dedupeTokenList = (tokens: TokenInfo[]): TokenInfo[] => {
   return tokens

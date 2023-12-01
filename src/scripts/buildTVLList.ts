@@ -3,8 +3,8 @@ import type { TokenList } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { groupBy, mapValues } from "lodash";
 
-import type { RewarderMeta } from "../types";
-import { stringify } from "../utils";
+import type { RewarderMeta } from "../types.js";
+import { stringify } from "../utils.js";
 
 export const buildTVLList = async (network: Network): Promise<void> => {
   const dir = `${__dirname}/../../data/${network}/`;

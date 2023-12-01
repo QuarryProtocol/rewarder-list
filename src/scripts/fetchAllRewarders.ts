@@ -4,11 +4,13 @@ import type { TokenInfo } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
-import { fetchAllTokens } from "../helpers/tokenList";
-import { makeProvider, stringify } from "../utils";
+import { fetchAllTokens } from "../helpers/tokenList.js";
+import { makeProvider, stringify } from "../utils.js";
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   const quarry = QuarrySDK.load({ provider });
   const allRewarders = await quarry.programs.Mine.account.rewarder.all();
   const allQuarries = await quarry.programs.Mine.account.quarry.all();

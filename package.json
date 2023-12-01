@@ -1,6 +1,7 @@
 {
   "name": "@quarryprotocol/rewarder-list",
   "private": true,
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:quarryprotocol/rewarder-list.git",
@@ -32,7 +33,7 @@
     "@saberhq/solana-contrib": "^1.15.0",
     "@saberhq/token-utils": "^1.15.0",
     "@solana/web3.js": "^1.36.0",
-    "axios": "^0.26.1",
+    "axios": "^1.6.2",
     "bn.js": "^5.2.1",
     "fast-json-stable-stringify": "^2.1.0",
     "jsbi": "^4.3.0",
@@ -44,7 +45,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --cache",
-    "compile-rewarders-list": "node dist/scripts/compileRewardersList.js",
+    "compile-rewarders-list": "node compileRewardersList.js",
     "build-token-list": "node dist/scripts/buildTokenList.js",
     "build-tvl-list": "node dist/scripts/buildTVLList.js",
     "fetch-all-rewarders": "node dist/scripts/fetchAllRewarders.js",
