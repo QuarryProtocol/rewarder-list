@@ -26,8 +26,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-modules-
       - run: yarn install
-      - run: yarn compile-rewarders-list
       - name: Typecheck
         run: yarn build
+      - run: yarn compile-rewarders-list
       - name: Lint
         run: yarn lint
