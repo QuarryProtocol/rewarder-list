@@ -42,13 +42,13 @@
     "tslib": "^2.6.2"
   },
   "scripts": {
-    "typecheck": "tsc",
+    "build": "tsc",
     "lint": "eslint . --cache",
-    "compile-rewarders-list": "ts-node src/scripts/compileRewardersList.ts",
-    "build-token-list": "ts-node src/scripts/buildTokenList.ts",
-    "build-tvl-list": "ts-node src/scripts/buildTVLList.ts",
-    "fetch-all-rewarders": "ts-node src/scripts/fetchAllRewarders.ts",
-    "decorate-rewarders": "ts-node src/scripts/decorateRewarders.ts",
+    "compile-rewarders-list": "node dist/scripts/compileRewardersList.js",
+    "build-token-list": "node dist/scripts/buildTokenList.js",
+    "build-tvl-list": "node dist/scripts/buildTVLList.js",
+    "fetch-all-rewarders": "node dist/scripts/fetchAllRewarders.js",
+    "decorate-rewarders": "node dist/scripts/decorateRewarders.js",
     "prepare": "husky install"
   },
   "lint-staged": {

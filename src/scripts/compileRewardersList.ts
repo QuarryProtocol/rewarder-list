@@ -4,7 +4,7 @@ import * as toml from "toml";
 import type { RewarderInfoRaw } from "./decorateRewarders";
 
 const main = async () => {
-  const raw = await fs.readFile(`${__dirname}/../config/Rewarders.toml`);
+  const raw = await fs.readFile(`${__dirname}/../../Rewarders.toml`);
   const data = toml.parse(raw.toString()) as { rewarders: RewarderInfoRaw[] };
   await fs.writeFile(
     `${__dirname}/../config/rewarder-list.json`,

@@ -10,3 +10,5 @@
 data/
 .tmp.*
 src/config/rewarder-list.json
+
+dist/
