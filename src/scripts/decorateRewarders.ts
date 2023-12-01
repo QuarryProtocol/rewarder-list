@@ -5,8 +5,7 @@ import {
 } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
 import { PublicKey } from "@saberhq/solana-contrib";
-import type { TokenInfo } from "@saberhq/token-utils";
-import { getATAAddress } from "@saberhq/token-utils";
+import { getATAAddressSync, type TokenInfo } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { fromPairs, groupBy, mapValues } from "lodash";
 import invariant from "tiny-invariant";
@@ -134,7 +133,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
 
           const redeemerVaultATA =
             redeemerKeyAndBump && info?.redeemer?.underlyingToken
-              ? await getATAAddress({
+              ? getATAAddressSync({
                   mint: new PublicKey(info.redeemer.underlyingToken),
                   owner: redeemerKeyAndBump[0],
                 })
