@@ -9,18 +9,18 @@
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.6.0",
-    "@saberhq/eslint-config": "^3.2.0",
-    "@saberhq/tsconfig": "^3.2.0",
+    "@saberhq/eslint-config": "^3.2.1",
+    "@saberhq/tsconfig": "^3.2.1",
     "@types/bn.js": "^5.1.5",
     "@types/eslint": "^8.44.8",
     "@types/lodash": "^4.14.202",
-    "@types/node": "^17.0.45",
+    "@types/node": "^18",
     "@types/prettier": "^3.0.0",
-    "eslint": "^8.54.0",
+    "eslint": "^8.55.0",
     "eslint-import-resolver-node": "^0.3.9",
     "eslint-plugin-import": "^2.29.0",
     "husky": "^8.0.3",
-    "lint-staged": "^15.1.0",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
@@ -54,5 +54,8 @@
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
     "*.{md,json,js,yml,yaml,html}": "prettier --write"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

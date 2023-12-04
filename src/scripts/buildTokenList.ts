@@ -5,7 +5,7 @@ import type { TokenInfo, TokenList } from "@saberhq/token-utils";
 import { deserializeMint, networkToChainId, Token } from "@saberhq/token-utils";
 import { PublicKey } from "@solana/web3.js";
 import * as fs from "fs/promises";
-import { chunk, uniq, zip } from "lodash";
+import { uniq, zip } from "lodash";
 import invariant from "tiny-invariant";
 
 import type { RewarderInfo, RewarderMeta } from "../types.js";
@@ -182,18 +182,52 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   const missingMintsNonReplica = missingMints.filter(
     (mm) => !missingReplicaMappings.find((mrm) => mrm.replicaMint.equals(mm)),
   );
-  const missingMintsData = (
-    await Promise.all(
-      chunk(missingMintsNonReplica, 100).map(async (mintsChunk) =>
-        provider.connection.getMultipleAccountsInfo(mintsChunk),
-      ),
-    )
-  ).flat();
-  const missingTokens = zip(missingMintsNonReplica, missingMintsData).map(
-    ([mint, mintDataRaw]) => {
+  console.log(
+    `${network}: There are ${
+      missingMintsNonReplica.length
+    } missing mints (${missingMintsNonReplica
+      .map((x) => x.toBase58())
+      .join(", ")})`,
+  );
+
+  const missingMintsDecimals = await Promise.all(
+    missingMintsNonReplica.map(async (mint) => {
+      if (network === "mainnet-beta") {
+        // TODO(igm): this is hardcoded for now since there's something wrong with getAccountInfo.
+        // We will investigate this when there is less time pressure.
+        if (
+          mint.toString() === "6sdr6tCfBwMzEbEhrv5oxde3KBBrJftfHQZr7xgP4C56"
+        ) {
+          return 6;
+        }
+        if (
+          mint.toString() === "2wL27tLE24Vs4DmSNTnF1SPiNin2aVMPuReXesyPQFMR"
+        ) {
+          return 6;
+        }
+      }
+
+      const mintDataRaw = await provider.connection.getAccountInfo(mint);
+      if (!mintDataRaw) {
+        throw new Error(`"Mint ${mint.toString()} not found on chain`);
+      }
+      return deserializeMint(mintDataRaw.data).decimals;
+    }),
+  );
+
+  // const missingMintsData = (
+  //   await Promise.all(
+  //     chunk(missingMintsNonReplica, 100).map(async (mintsChunk) =>
+  //       provider.connection.getMultipleAccountsInfo(mintsChunk),
+  //     ),
+  //   )
+  // ).flat();
+  console.log(`${network}: Mints fetched`);
+  const missingTokens = zip(missingMintsNonReplica, missingMintsDecimals).map(
+    ([mint, mintDecimalsRaw]) => {
       invariant(mint);
-      invariant(mintDataRaw);
-      return Token.fromMint(mint, deserializeMint(mintDataRaw.data).decimals, {
+      invariant(mintDecimalsRaw);
+      return Token.fromMint(mint, mintDecimalsRaw, {
         chainId: networkToChainId(network),
       }).info;
     },

@@ -22,7 +22,7 @@ export const makeProvider = (network: Network) => {
     connection: new Connection(
       network === "mainnet-beta"
         ? process.env.MAINNET_SOLANA_RPC_ENDPOINT ??
-          "https://samaria-8hm1z4-fast-mainnet.helius-rpc.com/"
+          "https://mainnet.helius-rpc.com/?api-key=26bec238-00c2-4961-ba13-faa7c0a2d767"
         : "https://api.devnet.solana.com",
     ),
     wallet: new SignerWallet(Keypair.generate()),
