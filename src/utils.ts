@@ -24,6 +24,11 @@ export const makeProvider = (network: Network) => {
         ? process.env.MAINNET_SOLANA_RPC_ENDPOINT ??
           "https://mainnet.helius-rpc.com/?api-key=26bec238-00c2-4961-ba13-faa7c0a2d767"
         : "https://api.devnet.solana.com",
+      {
+        // https://solana.stackexchange.com/questions/6376/premature-close-error-when-fetching-25-or-more-accounts-at-once-with-solana-web
+        // https://github.com/solana-labs/solana-web3.js/issues/1418
+        httpAgent: false,
+      },
     ),
     wallet: new SignerWallet(Keypair.generate()),
   });
