@@ -256,9 +256,23 @@ export const buildTokenList = async (network: Network): Promise<void> => {
   await fs.writeFile(`${dir}/token-list.json`, stringify(list));
 };
 
-Promise.all([buildTokenList("mainnet-beta"), buildTokenList("devnet")]).catch(
-  (err) => {
-    console.error(err);
-    process.exit(1);
-  },
-);
+// Promise.all([buildTokenList("mainnet-beta"), buildTokenList("devnet")]).catch(
+//   (err) => {
+//     console.error(err);
+//     process.exit(1);
+//   },
+// );
+
+(async () => {
+  if (process.env.NETWORK) {
+    await buildTokenList(process.env.NETWORK as Network);
+  } else {
+    await Promise.all([
+      buildTokenList("mainnet-beta"),
+      buildTokenList("devnet"),
+    ]);
+  }
+})().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
