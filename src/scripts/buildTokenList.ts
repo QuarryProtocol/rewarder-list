@@ -190,30 +190,19 @@ export const buildTokenList = async (network: Network): Promise<void> => {
       .join(", ")})`,
   );
 
-  const missingMintsDecimals = await Promise.all(
-    missingMintsNonReplica.map(async (mint) => {
-      if (network === "mainnet-beta") {
-        // TODO(igm): this is hardcoded for now since there's something wrong with getAccountInfo.
-        // We will investigate this when there is less time pressure.
-        if (
-          mint.toString() === "6sdr6tCfBwMzEbEhrv5oxde3KBBrJftfHQZr7xgP4C56"
-        ) {
-          return 6;
-        }
-        if (
-          mint.toString() === "2wL27tLE24Vs4DmSNTnF1SPiNin2aVMPuReXesyPQFMR"
-        ) {
-          return 6;
-        }
-      }
+  const missingMintsAccounts =
+    await provider.connection.getMultipleAccountsInfo(missingMintsNonReplica);
 
-      const mintDataRaw = await provider.connection.getAccountInfo(mint);
-      if (!mintDataRaw) {
-        throw new Error(`"Mint ${mint.toString()} not found on chain`);
-      }
-      return deserializeMint(mintDataRaw.data).decimals;
-    }),
-  );
+  const missingMintsDecimals = zip(
+    missingMintsNonReplica,
+    missingMintsAccounts,
+  ).map(([mint, account]) => {
+    invariant(mint, "MINT");
+    if (!account) {
+      throw new Error(`"Mint ${mint.toString()} not found on chain`);
+    }
+    return deserializeMint(account.data).decimals;
+  });
 
   // const missingMintsData = (
   //   await Promise.all(
