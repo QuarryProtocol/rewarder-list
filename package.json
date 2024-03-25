@@ -26,12 +26,13 @@
     "typescript": "^5.3.2"
   },
   "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
     "@project-serum/anchor": "^0.23.0",
     "@quarryprotocol/quarry-sdk": "^5.3.0",
-    "@saberhq/anchor-contrib": "^1.15.0",
-    "@saberhq/solana-contrib": "^1.15.0",
-    "@saberhq/token-utils": "^1.15.0",
-    "@solana/web3.js": "^1.87.6",
+    "@saberhq/anchor-contrib": "^2.0.0",
+    "@saberhq/solana-contrib": "^2.0.0",
+    "@saberhq/token-utils": "^2.0.0",
+    "@solana/web3.js": "^1.91.1",
     "axios": "^1.6.2",
     "bn.js": "^5.2.1",
     "fast-json-stable-stringify": "^2.1.0",
