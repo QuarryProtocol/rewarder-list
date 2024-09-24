@@ -317,3 +317,16 @@ address = "9aE2s74qwiyWkRyRtfxKYLTX6XFLdoaTx8UEr6DE8SEd"
 color = "#ffad03"
 description = "Solana stake pool for creating and supporting up-and-coming validators"
 website = "https://thevault.finance"
+
+[[rewarders]]
+id = "blaze"
+name = "SolBlaze"
+networks = ["mainnet-beta"]
+address = "6RPcQRjUUbKya7atUMiFipsRwSsh4E8c9qmUAUpGVbnu"
+color = "#7a84ff"
+description = "Solbalze stake pool."
+website = "https://solblaze.org/"
+
+[rewarders.redeemer]
+underlyingToken = "BLZEEuZUBVqFhj8adcCFPJvPVCiCyVmh3hkJMrU8KuJA"
+method = "quarry-redeemer"
