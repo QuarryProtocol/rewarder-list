@@ -252,12 +252,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@metaplex-foundation/umi-options@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-options@npm:0.8.9"
+  checksum: 10c0/da0bcec5188ab5638ee4bbdbba22236b69f5e89f33bf279ef9ea584d5e5ed428ab6a7cddcc73d29b8bf1e8ea840d641b509e01b9778b470baded5ab30d18cc3d
+  languageName: node
+  linkType: hard
+
 "@metaplex-foundation/umi-program-repository@npm:^0.9.2":
   version: 0.9.2
   resolution: "@metaplex-foundation/umi-program-repository@npm:0.9.2"
   peerDependencies:
     "@metaplex-foundation/umi": ^0.9.2
   checksum: 10c0/14ded229854f84b4a30d810171ea35a5576291fa881ae7534dff6b281b1098fd7952ed1616452b37e0f5a73a0c23353d6226ad2f4df5d808dcb7853d25a108b2
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-public-keys@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-public-keys@npm:0.8.9"
+  dependencies:
+    "@metaplex-foundation/umi-serializers-encodings": "npm:^0.8.9"
+  checksum: 10c0/961281b83cb6b60eb7872fb6c818798ee3b81b5457fb5c31c9b96bc73010d77e12d9952659f7d16d0352eb219ac7644d59d1147f27817d8c46722ea6bad23d83
   languageName: node
   linkType: hard
 
@@ -291,6 +307,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@metaplex-foundation/umi-serializers-core@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-serializers-core@npm:0.8.9"
+  checksum: 10c0/b169b62b55b6fe7f529c94c8387e9bea25c66a7e9c66bc38027fc89d230f267192f0002a16a663a07dff787d3160424c26d090243edda0aefaaf7f0d874b9adb
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializers-encodings@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-serializers-encodings@npm:0.8.9"
+  dependencies:
+    "@metaplex-foundation/umi-serializers-core": "npm:^0.8.9"
+  checksum: 10c0/13bd3a58278284d640b941d26580c86e9bc52390dfc6ee145c3934cd50bf65b42838812f2c4d7adfc1aa93be5c5d3293dcabec2d170ed80406941fa252f0a3d9
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializers-numbers@npm:^0.8.9":
+  version: 0.8.9
+  resolution: "@metaplex-foundation/umi-serializers-numbers@npm:0.8.9"
+  dependencies:
+    "@metaplex-foundation/umi-serializers-core": "npm:^0.8.9"
+  checksum: 10c0/3dcea7c90ab5c97e631a20d1a73f7fec7f5767200187b79ea6c1ee9763f17ae14cb66f401409662e83f406e7c40b980db62c87506711b95c3be67dd52ab1d2bb
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi-serializers@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@metaplex-foundation/umi-serializers@npm:0.9.0"
+  dependencies:
+    "@metaplex-foundation/umi-options": "npm:^0.8.9"
+    "@metaplex-foundation/umi-public-keys": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers-core": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers-encodings": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers-numbers": "npm:^0.8.9"
+  checksum: 10c0/8f8f93e23666aac4cf1ed8fc5eecb726c9865f526535e379ae599c8b295dd78fe4e325d9efdcd545a85c0f3bdff39896d93b33c8087db962cc10a156b03a29d6
+  languageName: node
+  linkType: hard
+
 "@metaplex-foundation/umi-transaction-factory-web3js@npm:^0.9.2":
   version: 0.9.2
   resolution: "@metaplex-foundation/umi-transaction-factory-web3js@npm:0.9.2"
@@ -312,6 +366,17 @@ __metadata:
     "@metaplex-foundation/umi": ^0.9.2
     "@solana/web3.js": ^1.72.0
   checksum: 10c0/fa3ea589621411c38f5c7e6114dd6e1eac797644fa1d7288bd40af467fc50e7e46d80317c7f13d5dfdd1d1ac062794cf445c3158e8ee362094ab02f19a493323
+  languageName: node
+  linkType: hard
+
+"@metaplex-foundation/umi@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "@metaplex-foundation/umi@npm:0.9.2"
+  dependencies:
+    "@metaplex-foundation/umi-options": "npm:^0.8.9"
+    "@metaplex-foundation/umi-public-keys": "npm:^0.8.9"
+    "@metaplex-foundation/umi-serializers": "npm:^0.9.0"
+  checksum: 10c0/babe76abba8dc8da9e12441dc1624db418b044943e6a4a91c75b6efba58fa6d963940172c5686e25604d8c546eb12024f501856176d23025240de1864cb38b05
   languageName: node
   linkType: hard
 
@@ -475,6 +540,7 @@ __metadata:
   dependencies:
     "@coral-xyz/anchor": "npm:^0.29.0"
     "@metaplex-foundation/mpl-token-metadata": "npm:^3.2.1"
+    "@metaplex-foundation/umi": "npm:^0.9.2"
     "@metaplex-foundation/umi-bundle-defaults": "npm:^0.9.2"
     "@metaplex-foundation/umi-web3js-adapters": "npm:^0.9.2"
     "@project-serum/anchor": "npm:^0.23.0"
