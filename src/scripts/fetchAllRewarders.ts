@@ -4,9 +4,9 @@ import type { TokenInfo } from "@saberhq/token-utils";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
+import { getMetadata } from "../helpers/metadata.js";
 import { fetchAllTokens } from "../helpers/tokenList.js";
 import { makeProvider, stringify } from "../utils.js";
-import { getMetadata } from "../helpers/metadata.js";
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
@@ -54,49 +54,50 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     },
   );
 
-  const allRewardersList = await Promise.all(allRewarders.map(async (rewarder) => {
-    const quarries = allRewarderQuarries[rewarder.publicKey.toString()] ?? [];
-    if (rewarder.account.numQuarries !== quarries.length) {
-      console.warn(
-        `Expected ${
-          rewarder.account.numQuarries
-        } quarries on rewarder ${rewarder.publicKey.toString()}; got ${
-          quarries.length
-        }`,
-      );
-    }
-
-    const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
-    let rewardsTokenInfo: TokenInfo | null = tokens[rewardsTokenMint] ?? null;
-    if (!rewardsTokenInfo) {
-      // Try to get it from token metadata
-      const [metadata] = await getMetadata([rewardsTokenMint]);
-      
-      if (!metadata) {
+  const allRewardersList = await Promise.all(
+    allRewarders.map(async (rewarder) => {
+      const quarries = allRewarderQuarries[rewarder.publicKey.toString()] ?? [];
+      if (rewarder.account.numQuarries !== quarries.length) {
         console.warn(
-          `rewards token ${rewardsTokenMint} not found in any of the token lists`,
+          `Expected ${
+            rewarder.account.numQuarries
+          } quarries on rewarder ${rewarder.publicKey.toString()}; got ${
+            quarries.length
+          }`,
         );
-      } else {
-        rewardsTokenInfo = {
-          symbol: metadata.metadata.symbol,
-          name: metadata.metadata.name,
-          decimals: metadata.mint.decimals,
-          address: metadata.metadata.mint,
-          chainId: 101,
-          logoURI: metadata.imageUrl,
+      }
+
+      const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
+      let rewardsTokenInfo: TokenInfo | null = tokens[rewardsTokenMint] ?? null;
+      if (!rewardsTokenInfo) {
+        // Try to get it from token metadata
+        const [metadata] = await getMetadata([rewardsTokenMint]);
+
+        if (!metadata) {
+          console.warn(
+            `rewards token ${rewardsTokenMint} not found in any of the token lists`,
+          );
+        } else {
+          rewardsTokenInfo = {
+            symbol: metadata.metadata.symbol,
+            name: metadata.metadata.name,
+            decimals: metadata.mint.decimals,
+            address: metadata.metadata.mint,
+            chainId: 101,
+            logoURI: metadata.imageUrl,
+          };
         }
       }
-     }
 
-    return {
-      rewarder: rewarder.publicKey.toString(),
-      authority: rewarder.account.authority.toString(),
-      rewardsToken: {
-        mint: rewardsTokenMint,
-        decimals: rewardsTokenInfo?.decimals ?? -1,
-      },
-      mintWrapper: rewarder.account.mintWrapper.toString(),
-      quarries,
+      return {
+        rewarder: rewarder.publicKey.toString(),
+        authority: rewarder.account.authority.toString(),
+        rewardsToken: {
+          mint: rewardsTokenMint,
+          decimals: rewardsTokenInfo?.decimals ?? -1,
+        },
+        mintWrapper: rewarder.account.mintWrapper.toString(),
+        quarries,
       };
     }),
   );
