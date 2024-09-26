@@ -12,3 +12,4 @@ data/
 src/config/rewarder-list.json
 
 dist/
+node_modules

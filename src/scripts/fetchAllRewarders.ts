@@ -6,6 +6,7 @@ import { groupBy, keyBy, mapValues } from "lodash";
 
 import { fetchAllTokens } from "../helpers/tokenList.js";
 import { makeProvider, stringify } from "../utils.js";
+import { getMetadata } from "../helpers/metadata.js";
 
 export const fetchAllRewarders = async (network: Network): Promise<void> => {
   const provider = makeProvider(network);
@@ -53,7 +54,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     },
   );
 
-  const allRewardersList = allRewarders.map((rewarder) => {
+  const allRewardersList = await Promise.all(allRewarders.map(async (rewarder) => {
     const quarries = allRewarderQuarries[rewarder.publicKey.toString()] ?? [];
     if (rewarder.account.numQuarries !== quarries.length) {
       console.warn(
@@ -66,12 +67,26 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
     }
 
     const rewardsTokenMint = rewarder.account.rewardsTokenMint.toString();
-    const rewardsTokenInfo: TokenInfo | null = tokens[rewardsTokenMint] ?? null;
+    let rewardsTokenInfo: TokenInfo | null = tokens[rewardsTokenMint] ?? null;
     if (!rewardsTokenInfo) {
-      console.warn(
-        `rewards token ${rewardsTokenMint} not found in any of the token lists`,
-      );
-    }
+      // Try to get it from token metadata
+      const [metadata] = await getMetadata([rewardsTokenMint]);
+      
+      if (!metadata) {
+        console.warn(
+          `rewards token ${rewardsTokenMint} not found in any of the token lists`,
+        );
+      } else {
+        rewardsTokenInfo = {
+          symbol: metadata.metadata.symbol,
+          name: metadata.metadata.name,
+          decimals: metadata.metadata.decimals,
+          address: metadata.metadata.mint,
+          chainId: 101,
+          logoURI: metadata.imageUrl,
+        }
+      }
+     }
 
     return {
       rewarder: rewarder.publicKey.toString(),
@@ -82,8 +97,9 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
       },
       mintWrapper: rewarder.account.mintWrapper.toString(),
       quarries,
-    };
-  });
+      };
+    }),
+  );
 
   const allRewardersJSON = mapValues(
     keyBy(allRewardersList, (r) => r.rewarder),
