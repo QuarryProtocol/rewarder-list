@@ -4,13 +4,13 @@ import { fromWeb3JsPublicKey } from "@metaplex-foundation/umi-web3js-adapters";
 import { PublicKey } from "@solana/web3.js";
 
 export const getMetadata = async (mints: string[]) => {
-    const umi = createUmi(process.env.MAINNET_SOLANA_RPC_ENDPOINT)
+    const umi = createUmi(process.env.MAINNET_SOLANA_RPC_ENDPOINT!)
         .use(mplTokenMetadata())
 
     const metadata = await Promise.all(mints.map(async mint => { 
         try {
             const data = await fetchDigitalAsset(umi, fromWeb3JsPublicKey(new PublicKey(mint)));
-            const dataFromUrl = await fetch(data.metadata.uri).then(res => res.json());
+            const dataFromUrl = (await fetch(data.metadata.uri).then(res => res.json())) as { image: string };
         
             return { ...data, imageUrl: dataFromUrl.image };
         } catch (e) {
