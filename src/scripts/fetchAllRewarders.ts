@@ -80,7 +80,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
         rewardsTokenInfo = {
           symbol: metadata.metadata.symbol,
           name: metadata.metadata.name,
-          decimals: metadata.metadata.decimals,
+          decimals: metadata.mint.decimals,
           address: metadata.metadata.mint,
           chainId: 101,
           logoURI: metadata.imageUrl,
