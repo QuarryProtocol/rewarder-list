@@ -295,7 +295,7 @@ export const decorateRewarders = async (network: Network): Promise<void> => {
 
 Promise.all([
   decorateRewarders("mainnet-beta"),
-  decorateRewarders("devnet"),
+  // decorateRewarders("devnet"),
 ]).catch((err) => {
   console.error(err);
   process.exit(1);
