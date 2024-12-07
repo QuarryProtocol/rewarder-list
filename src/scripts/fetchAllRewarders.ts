@@ -153,7 +153,7 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
   } else {
     await Promise.all([
       fetchAllRewarders("mainnet-beta"),
-      fetchAllRewarders("devnet"),
+      // fetchAllRewarders("devnet"),
     ]);
   }
 })().catch((err) => {
