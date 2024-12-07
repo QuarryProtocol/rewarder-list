@@ -22,7 +22,7 @@ export const makeProvider = (network: Network) => {
     connection: new Connection(
       network === "mainnet-beta"
         ? process.env.MAINNET_SOLANA_RPC_ENDPOINT ??
-          "https://mainnet.helius-rpc.com/?api-key=6754a0dd-84ff-4992-8201-09234640767a"
+          "https://saber-solanam-77b6.mainnet.rpcpool.com/d1c03a8b-bd71-4d78-93a0-4f17bd818c1e"
         : "https://api.devnet.solana.com",
       {
         // https://solana.stackexchange.com/questions/6376/premature-close-error-when-fetching-25-or-more-accounts-at-once-with-solana-web
