@@ -330,3 +330,16 @@ website = "https://solblaze.org/"
 [rewarders.redeemer]
 underlyingToken = "BLZEEuZUBVqFhj8adcCFPJvPVCiCyVmh3hkJMrU8KuJA"
 method = "quarry-redeemer"
+
+[[rewarders]]
+id = "brosolUSDC"
+name = "broSOL USDC"
+networks = ["mainnet-beta"]
+address = "mTiFk3A92GbDbgVRYr88CEULFxGmtKRM57He3iBJizj"
+color = "#7a84ff"
+description = "broSOL USDC reward pool."
+website = ""
+
+[rewarders.redeemer]
+underlyingToken = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+method = "quarry-redeemer"
