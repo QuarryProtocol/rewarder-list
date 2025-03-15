@@ -343,3 +343,16 @@ website = ""
 [rewarders.redeemer]
 underlyingToken = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
 method = "quarry-redeemer"
+
+[[rewarders]]
+id = "brosol"
+name = "broSOL"
+networks = ["mainnet-beta"]
+address = "AqebGW9ScxpZ7SCWpLGPFhDTwJsMB626jrtnQSoSCYJ4"
+color = "#7a84ff"
+description = "broSOL reward pool."
+website = ""
+
+[rewarders.redeemer]
+underlyingToken = "broKrYYAnJ4jHSQVTCf2wmS6i6SR2sDXDDaWrPD2kJJ"
+method = "quarry-redeemer"
