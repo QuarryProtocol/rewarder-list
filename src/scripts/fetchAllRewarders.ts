@@ -77,6 +77,18 @@ export const fetchAllRewarders = async (network: Network): Promise<void> => {
           console.warn(
             `rewards token ${rewardsTokenMint} not found in any of the token lists`,
           );
+          const token = await getMintInfo(
+            provider,
+            new PublicKey(rewardsTokenMint),
+          );
+          rewardsTokenInfo = {
+            symbol: rewardsTokenMint.slice(0, 4),
+            name: rewardsTokenMint.slice(0, 4),
+            decimals: token.decimals,
+            address: rewardsTokenMint,
+            chainId: 101,
+            logoURI: "",
+          };
         } else {
           rewardsTokenInfo = {
             symbol: metadata.metadata.symbol,
