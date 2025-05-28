@@ -1,6 +1,7 @@
 import { QuarrySDK } from "@quarryprotocol/quarry-sdk";
 import type { Network } from "@saberhq/solana-contrib";
-import type { TokenInfo } from "@saberhq/token-utils";
+import { getMintInfo, type TokenInfo } from "@saberhq/token-utils";
+import { PublicKey } from "@solana/web3.js";
 import * as fs from "fs/promises";
 import { groupBy, keyBy, mapValues } from "lodash";
 
